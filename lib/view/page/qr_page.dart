@@ -1,11 +1,9 @@
 import 'dart:math';
-import 'dart:ui';
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:material_ui/material_ui.dart';
@@ -13,13 +11,11 @@ import 'package:pretty_qr_code/pretty_qr_code.dart';
 import 'package:screen_brightness/screen_brightness.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 
-import '../../gen/assets.gen.dart';
 import '../../i18n/strings.g.dart';
 import '../../model/account.dart';
 import '../../provider/api/i_notifier_provider.dart';
 import '../../provider/api/meta_notifier_provider.dart';
 import '../../provider/cache_manager_provider.dart';
-import '../../provider/node_info_provider.dart';
 import '../../provider/server_url_notifier_provider.dart';
 import '../widget/acct_widget.dart';
 import '../widget/user_avatar.dart';
@@ -53,7 +49,6 @@ class const QrPage({super.key, required final Account account})
   Widget build(BuildContext context, WidgetRef ref) {
     final i = ref.watch(iNotifierProvider(account)).value;
     final meta = ref.watch(metaNotifierProvider(account.host)).value;
-    final nodeInfo = ref.watch(nodeInfoProvider(account.host)).value;
     final serverUrl = ref.watch(serverUrlNotifierProvider(account.host));
     final url = serverUrl.replace(path: '@${account.username}');
     final iconUrl = meta?.iconUrl ?? serverUrl.replace(path: 'favicon.ico');
@@ -238,58 +233,6 @@ class const QrPage({super.key, required final Account account})
                                 ),
                               ),
                             ),
-                            if (isTall &&
-                                switch (nodeInfo?['software']) {
-                                  {'name': final String softwareName} =>
-                                    softwareName.toLowerCase().contains(
-                                      'misskey',
-                                    ),
-                                  _ => true,
-                                })
-                              Center(
-                                child: SizedBox(
-                                  width: 100.0,
-                                  child: Stack(
-                                    children: [
-                                      if (theme.brightness == Brightness.light)
-                                        ImageFiltered(
-                                          imageFilter: ImageFilter.blur(
-                                            sigmaX: 4.0,
-                                            sigmaY: 4.0,
-                                          ),
-                                          child: SvgPicture.asset(
-                                            Assets
-                                                .misskey
-                                                .packages
-                                                .frontend
-                                                .assets
-                                                .misskey,
-                                            colorFilter: ColorFilter.mode(
-                                              theme.colorScheme.onSurface
-                                                  .withValues(alpha: 0.5),
-                                              BlendMode.srcIn,
-                                            ),
-                                          ),
-                                        ),
-                                      SvgPicture.asset(
-                                        Assets
-                                            .misskey
-                                            .packages
-                                            .frontend
-                                            .assets
-                                            .misskey,
-                                        colorFilter:
-                                            theme.brightness == Brightness.dark
-                                            ? const ColorFilter.mode(
-                                                Colors.white38,
-                                                BlendMode.srcIn,
-                                              )
-                                            : null,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
                           ],
                         ),
                       )

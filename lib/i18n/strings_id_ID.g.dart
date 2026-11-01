@@ -45,14 +45,8 @@ class _Translations$aria$id_ID extends Translations$aria$en_US {
 	final TranslationsIdId _root; // ignore: unused_field
 
 	// Translations
-	@override String get aboutAria => 'Tentang Aria';
-	@override TextSpan acknowledgements({required InlineSpan miria, required InlineSpan misskey}) => TextSpan(children: [
-		const TextSpan(text: 'Aria adalah fork dari '),
-		miria,
-		const TextSpan(text: '.\nTerjemahan Aria berdasarkan dari berkas terjemahan dari '),
-		misskey,
-		const TextSpan(text: '.\nKami ingin menunjukkan apresiasi kami kepada semua kontributor projek ini.'),
-	]);
+	@override String get aboutAria => 'Tentang Wenyan';
+	@override String get acknowledgements => 'Wenyan is an open-source client for a single instance.\nInterface texts are organized from community localization work.\nThanks to every open-source contributor.';
 	@override String get addTab => 'Tambah tab';
 	@override String get alwaysExpandCw => 'Selalu tampilkan isi Content Warning';
 	@override String get alwaysExpandLongNote => 'Selalu tampilkan isi note panjang';
@@ -100,7 +94,7 @@ class _Translations$aria$id_ID extends Translations$aria$en_US {
 	@override String get expandNote => 'Tampilkan note';
 	@override String get extraMentionsWarning => 'Note ini memiliki mention yang tidak tercantum di target balasan note';
 	@override String get fileNotFound => 'Berkas tidak ditemukan';
-	@override String get findServer => 'Cari server Misskey';
+	@override String get findServer => 'Cari server Wenyan';
 	@override TextSpan followConfirm({required InlineSpan name}) => TextSpan(children: [
 		const TextSpan(text: 'Apakah kamu yakin ingin mengikuti '),
 		name,
@@ -110,12 +104,12 @@ class _Translations$aria$id_ID extends Translations$aria$en_US {
 	@override String get fromDevice => 'Dari perangkat';
 	@override String get guest => 'Pengunjung';
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria diterjemahkan ke dalam banyak bahasa oleh sukarelawan. Kamu juga dapat ikut membantu menerjemahkannya di '),
+		const TextSpan(text: 'Wenyan diterjemahkan ke dalam banyak bahasa oleh sukarelawan. Kamu juga dapat ikut membantu menerjemahkannya di '),
 		link,
 		const TextSpan(text: '.'),
 	]);
 	@override TextSpan iconAttribution({required InlineSpan sevenc_nanashi, required InlineSpan cc_by}) => TextSpan(children: [
-		const TextSpan(text: 'Icon dari Aria dibuat oleh '),
+		const TextSpan(text: 'Icon dari Wenyan dibuat oleh '),
 		sevenc_nanashi,
 		const TextSpan(text: ' dan memiliki lisensi di bawah '),
 		cc_by,
@@ -194,7 +188,7 @@ class _Translations$aria$id_ID extends Translations$aria$en_US {
 		user,
 	]);
 	@override String get serverUrl => 'URL Server';
-	@override String get settingsFileForAria => 'Berkas pengaturan untuk Aria';
+	@override String get settingsFileForAria => 'Berkas pengaturan untuk Wenyan';
 	@override TextSpan settingsForUser({required InlineSpan user}) => TextSpan(children: [
 		const TextSpan(text: 'Pengaturan untuk '),
 		user,
@@ -264,8 +258,8 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'Bahasa Indonesia';
 	@override String get headlineMisskey => 'Jaringan terhubung melalui catatan';
-	@override String get introMisskey => 'Selamat datang! Misskey adalah perangkat mikroblog tercatu bersifat sumber terbuka.\nMulailah menuliskan catatan, bagikan peristiwa terkini, serta ceritakan segala tentangmu.📡\nTunjukkan juga reaksimu pada catatan pengguna lain.👍\nMari jelajahi dunia baru🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} adalah sebuah layanan (instance) yang menggunakan platform sumber terbuka <b>Misskey</b>.';
+	@override String get introMisskey => 'Selamat datang! Wenyan adalah perangkat mikroblog tercatu bersifat sumber terbuka.\nMulailah menuliskan catatan, bagikan peristiwa terkini, serta ceritakan segala tentangmu.📡\nTunjukkan juga reaksimu pada catatan pengguna lain.👍\nMari jelajahi dunia baru🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} adalah sebuah layanan (instance) yang menggunakan platform sumber terbuka <b>Wenyan</b>.';
 	@override String monthAndDay({required Object day, required Object month}) => '${day} ${month}';
 	@override String get search => 'Cari';
 	@override String get reset => 'Reset';
@@ -274,7 +268,7 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	@override String get password => 'Kata sandi';
 	@override String get initialPasswordForSetup => 'Kata sandi untuk konfigurasi awal';
 	@override String get initialPasswordIsIncorrect => 'Kata sandi untuk konfigurasi awal salah.';
-	@override String get initialPasswordForSetupDescription => 'Jika Anda memasang Misskey sendiri, gunakan kata sandi yang Anda masukkan di berkas konfigurasi.\nJika Anda menggunakan layanan hosting Misskey, gunakan kata sandi yang diberikan.\nJika Anda belum mengatur kata sandi, biarkan kosong dan lanjutkan.';
+	@override String get initialPasswordForSetupDescription => 'Jika Anda memasang Wenyan sendiri, gunakan kata sandi yang Anda masukkan di berkas konfigurasi.\nJika Anda menggunakan layanan hosting Wenyan, gunakan kata sandi yang diberikan.\nJika Anda belum mengatur kata sandi, biarkan kosong dan lanjutkan.';
 	@override String get forgotPassword => 'Lupa Kata Sandi';
 	@override String get fetchingAsApObject => 'Mengambil data dari Fediverse...';
 	@override String get ok => 'Oke';
@@ -442,7 +436,7 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	@override String get cacheRemoteSensitiveFiles => 'Tembolokkan berkas dari instansi luar';
 	@override String get cacheRemoteSensitiveFilesDescription => 'Menonaktifkan pengaturan ini menyebabkan berkas sensitif dari instansi luar ditautkan secara langsung, bukan ditembolok.';
 	@override String get flagAsBot => 'Atur akun ini sebagai Bot';
-	@override String get flagAsBotDescription => 'Jika akun ini dikendalikan oleh program, tetapkanlah opsi ini. Jika diaktifkan, ini akan berfungsi sebagai tanda bagi pengembang lain untuk mencegah interaksi berantai dengan bot lain dan menyesuaikan sistem internal Misskey untuk memperlakukan akun ini sebagai bot.';
+	@override String get flagAsBotDescription => 'Jika akun ini dikendalikan oleh program, tetapkanlah opsi ini. Jika diaktifkan, ini akan berfungsi sebagai tanda bagi pengembang lain untuk mencegah interaksi berantai dengan bot lain dan menyesuaikan sistem internal Wenyan untuk memperlakukan akun ini sebagai bot.';
 	@override String get flagAsCat => 'Atur akun ini sebagai kucing';
 	@override String get flagAsCatDescription => 'Nyalakan tanda ini untuk menandai akun ini sebagai kucing.';
 	@override String get flagShowTimelineReplies => 'Tampilkan balasan di lini masa';
@@ -453,7 +447,7 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	@override String get loginFailed => 'Gagal untuk masuk';
 	@override String get showOnRemote => 'Lihat profil asli';
 	@override String get continueOnRemote => 'Lihat di peladen asal';
-	@override String get chooseServerOnMisskeyHub => 'Pilih peladen dari Misskey Hub';
+	@override String get chooseServerOnMisskeyHub => 'Pilih peladen dari Wenyan Hub';
 	@override String get specifyServerHost => 'Tentukan domain peladen';
 	@override String get inputHostName => 'Masukkan nama domain';
 	@override String get general => 'Umum';
@@ -716,7 +710,7 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	@override String get popularTags => 'Tag populer';
 	@override String get userList => 'Daftar';
 	@override String get about => 'Informasi';
-	@override String get aboutMisskey => 'Tentang Misskey';
+	@override String get aboutMisskey => 'Tentang Wenyan';
 	@override String get administrator => 'Admin';
 	@override String get token => 'Token';
 	@override String get x2fa => 'Autentikasi 2-faktor';
@@ -858,7 +852,7 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	@override String get volume => 'Volume';
 	@override String get masterVolume => 'Master volume';
 	@override String get notUseSound => 'Tidak ada keluaran suara';
-	@override String get useSoundOnlyWhenActive => 'Hanya keluarkan suara jika Misskey sedang aktif';
+	@override String get useSoundOnlyWhenActive => 'Hanya keluarkan suara jika Wenyan sedang aktif';
 	@override String get details => 'Selengkapnya';
 	@override String get renoteDetails => 'Rincian renote';
 	@override String get chooseEmoji => 'Pilih emoji';
@@ -875,7 +869,7 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	@override String get ascendingOrder => 'Urutkan naik';
 	@override String get descendingOrder => 'Urutkan menurun';
 	@override String get scratchpad => 'Scratchpad';
-	@override String get scratchpadDescription => 'Scratchpad menyediakan lingkungan eksperimen untuk AiScript. Kamu  bisa menulis, mengeksuksi, serta mengecek hasil yang berinteraksi dengan Misskey.';
+	@override String get scratchpadDescription => 'Scratchpad menyediakan lingkungan eksperimen untuk AiScript. Kamu bisa menulis, mengeksuksi, serta mengecek hasil yang berinteraksi dengan Wenyan.';
 	@override String get uiInspector => 'Inspektor UI';
 	@override String get uiInspectorDescription => 'Anda dapat melihat peladen komponen UI di memori. Komponen UI akan dibuat oleh fungsi UI:C.';
 	@override String get output => 'Keluaran';
@@ -1022,7 +1016,7 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	@override String removeNoteFromAntennaConfirm({required Object name}) => 'Apa anda yakin ingin menghapus note dari ${name} ini?';
 	@override String get public => 'Publik';
 	@override String get private => 'Tersembunyi';
-	@override String i18nInfo({required Object link}) => 'Misskey diterjemahkan ke dalam banyak bahasa oleh sukarelawan. Kamu juga dapat ikut membantu menerjemahkannya di ${link}.';
+	@override String i18nInfo({required Object link}) => 'Wenyan diterjemahkan ke dalam banyak bahasa oleh sukarelawan. Kamu juga dapat ikut membantu menerjemahkannya di ${link}.';
 	@override String get manageAccessTokens => 'Kelola token akses';
 	@override String get accountInfo => 'Informasi akun';
 	@override String get notesCount => 'Jumlah catatan';
@@ -1070,14 +1064,14 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	@override String get narrow => 'Sempit';
 	@override String get reloadToApplySetting => 'Pengaturan ini akan diterapkan saat memuat halaman kembali. Apakah kamu ingin memuat halaman kembali sekarang?';
 	@override String get needReloadToApply => 'Pengaturan ini hanya akan diterapkan setelah memuat ulang halaman.';
-	@override String get needToRestartServerToApply => 'Perlu memulai ulang Misskey untuk memunculkan pengubahan.';
+	@override String get needToRestartServerToApply => 'Perlu memulai ulang Wenyan untuk memunculkan pengubahan.';
 	@override String get showTitlebar => 'Tampilkan bilah judul';
 	@override String get clearCache => 'Hapus tembolok';
 	@override String onlineUsersCount({required Object n}) => '${n} orang sedang daring';
 	@override String nUsers({required Object n}) => '${n} Pengguna';
 	@override String nNotes({required Object n}) => '${n} Catatan';
 	@override String get sendErrorReports => 'Kirim laporan kesalahan';
-	@override String get sendErrorReportsDescription => 'Ketika dinyalakan, informasi kesalahan rinci akan dibagikan dengan Misskey ketika masalah terjadi, hal ini untuk membantu kualitas Misskey. Fitur ini memungkinkan memuat informasi seperti sistem operasi yang kamu gunakan dan versinya, aplikasi peramban yang kamu gunakan, riwayat aktivitas kamu, dll.';
+	@override String get sendErrorReportsDescription => 'Ketika dinyalakan, informasi kesalahan rinci akan dibagikan dengan Wenyan ketika masalah terjadi, hal ini untuk membantu kualitas Wenyan. Fitur ini memungkinkan memuat informasi seperti sistem operasi yang kamu gunakan dan versinya, aplikasi peramban yang kamu gunakan, riwayat aktivitas kamu, dll.';
 	@override String get myTheme => 'Tema saya';
 	@override String get backgroundColor => 'Latar Belakang';
 	@override String get accentColor => 'Aksen';
@@ -1172,7 +1166,7 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'Penyelesaian Masalah';
 	@override String get useBlurEffect => 'Gunakan efek blur pada antarmuka';
 	@override String get learnMore => 'Pelajari lebih lanjut';
-	@override String get misskeyUpdated => 'Misskey telah dimutakhirkan!';
+	@override String get misskeyUpdated => 'Wenyan telah dimutakhirkan!';
 	@override String get whatIsNew => 'Lihat perubahan pemutakhiran';
 	@override String get translate => 'Terjemahkan';
 	@override String translatedFrom({required Object x}) => 'Terjemahkan dari ${x}';
@@ -1311,8 +1305,8 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	@override String get show => 'Tampilkan';
 	@override String get neverShow => 'Jangan tampilkan lagi';
 	@override String get remindMeLater => 'Mungkin nanti';
-	@override String get didYouLikeMisskey => 'Apakah kamu mulai menyukai Misskey?';
-	@override String pleaseDonate({required Object host}) => '${host} menggunakan perangkat lunak bebas yaitu Misskey. Kami sangat mengapresiasi sekali donasi dari kamu agar pengembangan Misskey tetap dapat berlanjut!';
+	@override String get didYouLikeMisskey => 'Apakah kamu mulai menyukai Wenyan?';
+	@override String pleaseDonate({required Object host}) => '${host} menggunakan perangkat lunak bebas yaitu Wenyan. Kami sangat mengapresiasi sekali donasi dari kamu agar pengembangan Wenyan tetap dapat berlanjut!';
 	@override String correspondingSourceIsAvailable({required Object anchor}) => 'Sumber kode terkait tersedia di ${anchor}';
 	@override String get roles => 'Peran';
 	@override String get role => 'Peran';
@@ -1441,7 +1435,7 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	@override String get cancelReactionConfirm => 'Yakin untuk menghapus reaksimu?';
 	@override String get changeReactionConfirm => 'Yakin untuk mengganti reaksimu?';
 	@override String get later => 'Nanti saja';
-	@override String get goToMisskey => 'Ke Misskey';
+	@override String get goToMisskey => 'Ke Wenyan';
 	@override String get additionalEmojiDictionary => 'Kamus emoji tambahan';
 	@override String get installed => 'Terpasang';
 	@override String get branding => 'Merek';
@@ -1505,7 +1499,7 @@ class _Translations$misskey$id_ID extends Translations$misskey$en_US {
 	@override String get sourceCode => 'Sumber kode';
 	@override String get sourceCodeIsNotYetProvided => 'Sumber kode belum tersedia. Hubungi admin untuk memperbaiki masalah ini.';
 	@override String get repositoryUrl => 'URL Repositori';
-	@override String get repositoryUrlDescription => 'Jika kamu menggunakan Misskey begitu saja (tanpa ada perubahan dalam kode sumber), masukkan https://github.com/misskey-dev/misskey';
+	@override String get repositoryUrlDescription => 'Jika kamu menggunakan Wenyan begitu saja (tanpa ada perubahan dalam kode sumber), masukkan ';
 	@override String get repositoryUrlOrTarballRequired => 'Apabila kamu masih mempublikasikan repositori, kamu setidaknya harus menyediakan berkas tarball. Lihat .config/example.yml untuk informasi lebih lanjut.';
 	@override String get feedback => 'Umpan balik';
 	@override String get feedbackUrl => 'URL Umpan balik';
@@ -1883,7 +1877,7 @@ class _Translations$misskey$initialAccountSetting_$id_ID extends Translations$mi
 	@override String pushNotificationDescription({required Object name}) => 'Menyalakan notifikasi dorong akan membuatmu menerima notifikasi dari ${name} secara langsung ke perangkatmu.';
 	@override String get initialAccountSettingCompleted => 'Pengaturan profil selesai!';
 	@override String haveFun({required Object name}) => 'Selamat menikmati, ${name}!';
-	@override String youCanContinueTutorial({required Object name}) => 'Kamu dapat menjutkan ke tutorial dalam bagaimana menggunakan ${name} (Misskey) atau kamu dapat keluar dari pemasangan ini dan langsung menggunakannya segera.';
+	@override String youCanContinueTutorial({required Object name}) => 'Kamu dapat menjutkan ke tutorial dalam bagaimana menggunakan ${name} (Wenyan) atau kamu dapat keluar dari pemasangan ini dan langsung menggunakannya segera.';
 	@override String get startTutorial => 'Mulai Tutorial';
 	@override String get skipAreYouSure => 'Yakin melewati atur profil?';
 	@override String get laterAreYouSure => 'Yakin banget untuk atur profil nanti?';
@@ -1971,7 +1965,7 @@ class _Translations$misskey$accountMigration_$id_ID extends Translations$misskey
 	@override String get moveTo => 'Pindahkan akun ini ke akun lain';
 	@override String get moveToLabel => 'Akun tujuan pindah:';
 	@override String get moveCannotBeUndone => 'Pemindahan akun tidak dapat diurungkan.';
-	@override String get moveAccountDescription => 'Hal ini akan memindahkan akun kamu ke akun lain.\n　・Pengikut dari akun ini akan secara otomatis dipindahkan ke akun baru\n　・Akun ini akan berhenti mengikuti dari semua pengguna yang sedang kamu ikuti\n　・Kamu akan tidak dapat membuat catatan baru dan lain-lain pada akun ini\n\nMeskipun pemindahan pengikut dilakukan secara otomatis, kamu harus mempersiapkan beberapa langkah secara manual untuk memindahkan daftar pengguna yang sedang kamu ikuti. Untuk melakukan tersebut, lakukan ekspor daftar ikuti yang nantinya dapat kamu impor pada menu pengaturan di akun baru kamu. Prosedur yang sama juga dapat diterapkan pada daftar seperti pengguna yang kamu bisukan atau blokir.\n\n(Penjelasan ini hanya berlaku pada Misskey versi 13.12.0 dan setelahnya. Perangkat lunak ActivityPub lainnya seperti Mastodon berkemungkinan befungsi berbeda.)';
+	@override String get moveAccountDescription => 'Hal ini akan memindahkan akun kamu ke akun lain.\n　・Pengikut dari akun ini akan secara otomatis dipindahkan ke akun baru\n　・Akun ini akan berhenti mengikuti dari semua pengguna yang sedang kamu ikuti\n　・Kamu akan tidak dapat membuat catatan baru dan lain-lain pada akun ini\n\nMeskipun pemindahan pengikut dilakukan secara otomatis, kamu harus mempersiapkan beberapa langkah secara manual untuk memindahkan daftar pengguna yang sedang kamu ikuti. Untuk melakukan tersebut, lakukan ekspor daftar ikuti yang nantinya dapat kamu impor pada menu pengaturan di akun baru kamu. Prosedur yang sama juga dapat diterapkan pada daftar seperti pengguna yang kamu bisukan atau blokir.\n\n(Penjelasan ini hanya berlaku pada Wenyan versi 13.12.0 dan setelahnya. Perangkat lunak ActivityPub lainnya seperti Mastodon berkemungkinan befungsi berbeda.)';
 	@override String get moveAccountHowTo => 'Untuk pindah, pertama buat alias untuk akun ini pada akun tujuan kamu berpindah.\nSetelah kamu membuat alias, masukkan akun tujuan kamu berpindah ke dalam format berikut:\n@namapengguna@nama.server.com';
 	@override String get startMigration => 'Pindahkan';
 	@override String migrationConfirm({required Object account}) => 'Yakin untuk memindahkan akun ini ke ${account}? Sekali dimulai, proses ini tidak dapat dihentikan atau ditarik kembali, dan kamu tidak dapat menggunakan akun ini lagi dalam keadaan asli semula.';
@@ -2218,14 +2212,14 @@ class _Translations$misskey$aboutMisskey_$id_ID extends Translations$misskey$abo
 	final TranslationsIdId _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'Misskey adalah perangkat lunak sumber terbuka yang sedang dikembangkan oleh syuilo sejak 2014.';
+	@override String get about => 'Wenyan adalah perangkat lunak sumber terbuka yang sedang dikembangkan oleh syuilo sejak 2014.';
 	@override String get contributors => 'Kontributor utama';
 	@override String get allContributors => 'Seluruh kontributor';
 	@override String get source => 'Sumber kode';
 	@override String get original => 'Asli';
-	@override String thisIsModifiedVersion({required Object name}) => '${name} menggunakan versi modifikasi dari Misskey yang asli.';
-	@override String get translation => 'Terjemahkan Misskey';
-	@override String get donate => 'Donasi ke Misskey';
+	@override String thisIsModifiedVersion({required Object name}) => '${name} menggunakan versi modifikasi dari Wenyan yang asli.';
+	@override String get translation => 'Terjemahkan Wenyan';
+	@override String get donate => 'Donasi ke Wenyan';
 	@override String get morePatrons => 'Kami sangat mengapresiasi dukungan dari banyak penolong lain yang tidak tercantum disini. Terima kasih! 🥰';
 	@override String get patrons => 'Pendukung';
 	@override String get projectMembers => 'Anggota proyek';
@@ -2391,7 +2385,7 @@ class _Translations$misskey$soundSettings_$id_ID extends Translations$misskey$so
 	@override String get driveFileTypeWarn => 'Berkas ini tidak didukung';
 	@override String get driveFileTypeWarnDescription => 'Pilih berkas audio';
 	@override String get driveFileDurationWarn => 'Audio ini terlalu panjang';
-	@override String get driveFileDurationWarnDescription => 'Audio panjang dapat mengganggu penggunaan Misskey. Masih ingin melanjutkan?';
+	@override String get driveFileDurationWarnDescription => 'Audio panjang dapat mengganggu penggunaan Wenyan. Masih ingin melanjutkan?';
 	@override String get driveFileError => 'Tak bisa memuat audio. Mohon ubah pengaturan';
 }
 
@@ -3204,7 +3198,7 @@ class _Translations$misskey$reversi_$id_ID extends Translations$misskey$reversi_
 	@override String get lookingForPlayer => 'Mencari lawan...';
 	@override String get gameCanceled => 'Permainan ini telah dibatalkan.';
 	@override String get shareToTlTheGameWhenStart => 'Bagikan permainan ke lini masa ketika dimulai';
-	@override String get iStartedAGame => 'Permainan telah dimulai! #MisskeyReversi';
+	@override String get iStartedAGame => 'Permainan telah dimulai! #WenyanReversi';
 	@override String get opponentHasSettingsChanged => 'Lawan telah mengganti pengaturan mereka.';
 	@override String get allowIrregularRules => 'Aturan non-reguler (bebas sepenuhnya)';
 	@override String get disallowIrregularRules => 'Tanpa aturan non-reguler';
@@ -3241,7 +3235,7 @@ class _Translations$misskey$urlPreviewSetting_$id_ID extends Translations$misske
 	@override String get userAgent => 'User-Agent';
 	@override String get userAgentDescription => 'Atur User-Agent yang digunakan untuk mengambil pratinjau. Apabila dibiarkan kosong, User-Agent bawaan akan digunakan.';
 	@override String get summaryProxy => 'Titik akhir proksi yang membuat pratinjau';
-	@override String get summaryProxyDescription => 'Bukan untuk Misskey, namun untuk menghasilkan pratinjau menggunakan Summaly Proxy.';
+	@override String get summaryProxyDescription => 'Bukan untuk Wenyan, namun untuk menghasilkan pratinjau menggunakan Summaly Proxy.';
 	@override String get summaryProxyDescription2 => 'Parameter berikut tertautkan dengan proksi sebagai string kueri. Apabila proksi tidak mendukung tersebut, nilai di dalamnya diabaikan.';
 }
 
@@ -3414,7 +3408,7 @@ class _Translations$misskey$initialTutorial_$landing_$id_ID extends Translations
 
 	// Translations
 	@override String get title => 'Selamat datang di Tutorial';
-	@override String get description => 'Di sini kamu dapat mempelajari dasar-dasar dari penggunaan Misskey dan fitur-fiturnya.';
+	@override String get description => 'Di sini kamu dapat mempelajari dasar-dasar dari penggunaan Wenyan dan fitur-fiturnya.';
 }
 
 // Path: misskey.initialTutorial_.note_
@@ -3425,7 +3419,7 @@ class _Translations$misskey$initialTutorial_$note_$id_ID extends Translations$mi
 
 	// Translations
 	@override String get title => 'Apa itu Catatan?';
-	@override String get description => 'Postingan di Misskey disebut sebagai \'Catatan\'. Catatan ditampilkan secara kronologis pada lini masa dan dimutakhirkan secara real-time.';
+	@override String get description => 'Postingan di Wenyan disebut sebagai \'Catatan\'. Catatan ditampilkan secara kronologis pada lini masa dan dimutakhirkan secara real-time.';
 	@override String get reply => 'Klik pada tombol ini untuk membalas ke sebuah pesan. Bisa juga untuk membalas ke sebuah balasan dan melanjutkannya seperti percakapan selayaknya utas.';
 	@override String get renote => 'Kamu dapat membagikan catatan ke lini masa milikmu. Kamu juga dapat mengutipnya dengan komentarmu.';
 	@override String get reaction => 'Kamu dapat menambahkan reaksi ke Catatan. Detil lebih lanjut akan dijelaskan di halaman berikutnya.';
@@ -3455,7 +3449,7 @@ class _Translations$misskey$initialTutorial_$timeline_$id_ID extends Translation
 
 	// Translations
 	@override String get title => 'Konsep Lini Masa';
-	@override String get description1 => 'Misskey menyediakan berbagai lini masa sesuai dengan penggunaan (beberapa mungkin tidak tersedia karena bergantung dengan kebijakan peladen).';
+	@override String get description1 => 'Wenyan menyediakan berbagai lini masa sesuai dengan penggunaan (beberapa mungkin tidak tersedia karena bergantung dengan kebijakan peladen).';
 	@override String get home => 'Kamu dapat melihat catatan dari akun yang kamu ikuti.';
 	@override String get local => 'Kamu dapat melihat catatan dari semua pengguna yang ada pada peladen ini.';
 	@override String get social => 'Catatan dari linimasa Beranda dan Lokal akan ditampilkan.';
@@ -3472,7 +3466,7 @@ class _Translations$misskey$initialTutorial_$postNote_$id_ID extends Translation
 
 	// Translations
 	@override String get title => 'Pengaturan posting Catatan';
-	@override String get description1 => 'Ketika memposting catatan ke Misskey, terdapat beberapa opsi yang tersedia. Form posting terlihat seperti ini.';
+	@override String get description1 => 'Ketika memposting catatan ke Wenyan, terdapat beberapa opsi yang tersedia. Form posting terlihat seperti ini.';
 	@override late final _Translations$misskey$initialTutorial_$postNote_$visibility_$id_ID visibility_ = _Translations$misskey$initialTutorial_$postNote_$visibility_$id_ID._(_root);
 	@override late final _Translations$misskey$initialTutorial_$postNote_$cw_$id_ID cw_ = _Translations$misskey$initialTutorial_$postNote_$cw_$id_ID._(_root);
 }
@@ -3501,7 +3495,7 @@ class _Translations$misskey$initialTutorial_$done_$id_ID extends Translations$mi
 
 	// Translations
 	@override String get title => 'Kamu telah menyelesaikan tutorial! 🎉';
-	@override String description({required Object link}) => 'Fungsi yang diperkenalkan di sini merupakan sebagian kecil dari fitur yang ada. Untuk pemahaman lebih detil dalam menggunakan Misskey, kamu dapat merujuk ke ${link}.';
+	@override String description({required Object link}) => 'Fungsi yang diperkenalkan di sini merupakan sebagian kecil dari fitur yang ada. Untuk pemahaman lebih detil dalam menggunakan Wenyan, kamu dapat merujuk ke ${link}.';
 }
 
 // Path: misskey.achievements_.types_
@@ -3623,7 +3617,7 @@ class _Translations$misskey$role_$options_$id_ID extends Translations$misskey$ro
 	@override String get driveCapacity => 'Kapasitas Drive';
 	@override String get maxFileSize => 'Ukuran berkas maksimal yang dapat diunggah';
 	@override String get maxFileSize_caption => 'Proksi terbalik, CDN, dan komponen antarmuka-depan bisa memiliki pengaturan tersendiri.';
-	@override String maxFileSize_caption2({required Object max}) => 'Ukuran berkas maksimal di keseluruhan peladen adalah ${max}. Untuk memperbolehkan unggahan berkas yang lebih besar dari ini, silahkan mengubah pengaturan ini di dalam berkas pengaturan Misskey.';
+	@override String maxFileSize_caption2({required Object max}) => 'Ukuran berkas maksimal di keseluruhan peladen adalah ${max}. Untuk memperbolehkan unggahan berkas yang lebih besar dari ini, silahkan mengubah pengaturan ini di dalam berkas pengaturan Wenyan.';
 	@override String get alwaysMarkNsfw => 'Selalu tandai berkas sebagai NSFW';
 	@override String get pinMax => 'Jumlah maksimal catatan yang disematkan';
 	@override String get antennaMax => 'Jumlah maksimum antena';
@@ -4087,9 +4081,9 @@ class _Translations$misskey$achievements_$types_$notes1_$id_ID extends Translati
 	final TranslationsIdId _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Cus, baru gabung Misskey nih!';
+	@override String get title => 'Cus, baru gabung Wenyan nih!';
 	@override String get description => 'Catat catatan pertama kamu';
-	@override String get flavor => 'Selamat bersenang-senang dengan Misskey!';
+	@override String get flavor => 'Selamat bersenang-senang dengan Wenyan!';
 }
 
 // Path: misskey.achievements_.types_.notes10_
@@ -4267,7 +4261,7 @@ class _Translations$misskey$achievements_$types_$login3_$id_ID extends Translati
 	// Translations
 	@override String get title => 'Pemula I';
 	@override String get description => 'Login selama 3 hari';
-	@override String get flavor => 'Mulai hari ini, panggil gue Misskist';
+	@override String get flavor => 'Mulai hari ini, panggil gue Wenyanist';
 }
 
 // Path: misskey.achievements_.types_.login7_
@@ -4300,7 +4294,7 @@ class _Translations$misskey$achievements_$types_$login30_$id_ID extends Translat
 	final TranslationsIdId _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskist I';
+	@override String get title => 'Wenyanist I';
 	@override String get description => 'Login selama 30 hari';
 }
 
@@ -4311,7 +4305,7 @@ class _Translations$misskey$achievements_$types_$login60_$id_ID extends Translat
 	final TranslationsIdId _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskist II';
+	@override String get title => 'Wenyanist II';
 	@override String get description => 'Login selama 60 hari';
 }
 
@@ -4322,9 +4316,9 @@ class _Translations$misskey$achievements_$types_$login100_$id_ID extends Transla
 	final TranslationsIdId _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskist III';
+	@override String get title => 'Wenyanist III';
 	@override String get description => 'Login selama 100 hari';
-	@override String get flavor => 'Violent Misskist';
+	@override String get flavor => 'Violent Wenyanist';
 }
 
 // Path: misskey.achievements_.types_.login200_
@@ -4425,7 +4419,7 @@ class _Translations$misskey$achievements_$types_$login1000_$id_ID extends Transl
 	// Translations
 	@override String get title => 'Sepuh Catatan III';
 	@override String get description => 'Login selama 1000 hari';
-	@override String get flavor => 'Terima kasih telah menggunakan Misskey!';
+	@override String get flavor => 'Terima kasih telah menggunakan Wenyan!';
 }
 
 // Path: misskey.achievements_.types_.noteClipped1_
@@ -4645,9 +4639,9 @@ class _Translations$misskey$achievements_$types_$iLoveMisskey_$id_ID extends Tra
 	final TranslationsIdId _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'I Love Misskey';
-	@override String get description => 'Catat "I ❤ #Misskey"';
-	@override String get flavor => 'Tim pengembang misskey sangat mengapresiasi dukungan kamu!';
+	@override String get title => 'I Love Wenyan';
+	@override String get description => 'Catat "I ❤ #Wenyan"';
+	@override String get flavor => 'Tim pengembang Wenyan sangat mengapresiasi dukungan kamu!';
 }
 
 // Path: misskey.achievements_.types_.foundTreasure_
@@ -4669,7 +4663,7 @@ class _Translations$misskey$achievements_$types_$client30min_$id_ID extends Tran
 
 	// Translations
 	@override String get title => 'Istirahat pendek';
-	@override String get description => 'Habiskan waktu 30 menit di Misskey';
+	@override String get description => 'Habiskan waktu 30 menit di Wenyan';
 }
 
 // Path: misskey.achievements_.types_.client60min_
@@ -4679,8 +4673,8 @@ class _Translations$misskey$achievements_$types_$client60min_$id_ID extends Tran
 	final TranslationsIdId _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Tidak ada "Miss" dalam Misskey';
-	@override String get description => 'Biarkan Misskey tetap terbuka setidaknya selama 60 menit';
+	@override String get title => 'Tidak ada "Miss" dalam Wenyan';
+	@override String get description => 'Biarkan Wenyan tetap terbuka setidaknya selama 60 menit';
 }
 
 // Path: misskey.achievements_.types_.noteDeletedWithin1min_
@@ -4905,7 +4899,7 @@ class _Translations$misskey$achievements_$types_$brainDiver_$id_ID extends Trans
 	// Translations
 	@override String get title => 'Brain Diver';
 	@override String get description => 'Posting tautan mengenai Brain Diver';
-	@override String get flavor => 'Misskey-Misskey La-Tu-Ma';
+	@override String get flavor => 'Wenyan-Wenyan La-Tu-Ma';
 }
 
 // Path: misskey.achievements_.types_.smashTestNotificationButton_
@@ -4926,7 +4920,7 @@ class _Translations$misskey$achievements_$types_$tutorialCompleted_$id_ID extend
 	final TranslationsIdId _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Ijazah Sekolah Dasar Misskey';
+	@override String get title => 'Ijazah Sekolah Dasar Wenyan';
 	@override String get description => 'Tutorial selesai';
 }
 

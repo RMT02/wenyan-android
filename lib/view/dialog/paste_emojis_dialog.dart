@@ -18,7 +18,7 @@ import '../widget/url_sheet.dart';
 import '../widget/url_widget.dart';
 import 'message_dialog.dart';
 
-const _sampleEmojis = ['👍', '❤️', ':misskey:', ':ai_yay@.:'];
+const _sampleEmojis = ['👍', '❤️', ':cat:', ':ai_yay@.:'];
 
 class const PasteEmojisDialog({
   super.key,

@@ -1,7 +1,7 @@
 name: aria
-description: "A client app for Misskey, a federated social media platform."
+description: "闻言：面向单一实例的社交客户端。"
 publish_to: "none"
-version: 1.0.5+6
+version: 1.0.6+7
 
 environment:
   sdk: ">=3.13.0 <4.0.0"
@@ -220,14 +220,13 @@ flutter:
     - assets/fonts/Noto_Serif_JP/OFL.txt
     - assets/fonts/Pretendard/LICENSE.txt
     - assets/fonts/Twemoji_Mozilla/LICENSE.md
-    - assets/icons/aria.png
     - assets/icons/wenyan.png
-    - assets/misskey/COPYING
-    - assets/misskey/LICENSE
-    - assets/misskey/packages/frontend/assets/
-    - assets/misskey/packages/frontend/assets/sounds/aisha/
-    - assets/misskey/packages/frontend/assets/sounds/noizenecio/
-    - assets/misskey/packages/frontend/assets/sounds/syuilo/
+    - assets/wenyan/COPYING
+    - assets/wenyan/LICENSE
+    - assets/wenyan/packages/frontend/assets/
+    - assets/wenyan/packages/frontend/assets/sounds/aisha/
+    - assets/wenyan/packages/frontend/assets/sounds/noizenecio/
+    - assets/wenyan/packages/frontend/assets/sounds/syuilo/
     - assets/twemoji/
     - assets/twemoji/assets/svg/
   fonts:
@@ -248,10 +247,8 @@ flutter:
         - asset: assets/fonts/Twemoji_Mozilla/TwemojiMozilla.ttf
 
 flutter_launcher_icons:
-  image_path: assets/icons/aria.png
+  image_path: assets/icons/wenyan.png
   android: true
-  adaptive_icon_foreground: assets/icons/aria_android.png
+  adaptive_icon_foreground: assets/icons/wenyan_android.png
   adaptive_icon_background: "#ffffff"
-  adaptive_icon_monochrome: assets/icons/aria_android_monochrome.png
-  windows:
-    generate: true
+  adaptive_icon_monochrome: assets/icons/wenyan_android_monochrome.png

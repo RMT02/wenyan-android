@@ -51,7 +51,7 @@ class _Translations$aria$ru_RU extends Translations$aria$en_US {
 		const TextSpan(text: '?'),
 	]);
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria переводят на разные языки добровольцы со всего света. Ваша помощь тоже пригодится здесь: '),
+		const TextSpan(text: 'Вэньянь переводят на разные языки добровольцы со всего света. Ваша помощь тоже пригодится здесь: '),
 		link,
 		const TextSpan(text: '.'),
 	]);
@@ -83,8 +83,8 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'Русский';
 	@override String get headlineMisskey => 'Сеть, сплетённая из заметок';
-	@override String get introMisskey => 'Добро пожаловать! Misskey — это децентрализованный сервис микроблогов с открытым исходным кодом.\nПишите «заметки» — делитесь со всеми происходящим вокруг или рассказывайте о себе 📡\nСтавьте «реакции» — выражайте свои чувства и эмоции от заметок других 👍\nОткройте для себя новый мир 🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} – один из инстансов (также называемый экземпляром Misskey), использующий платформу с открытым исходным кодом <b>Misskey</b>.';
+	@override String get introMisskey => 'Добро пожаловать! Вэньянь — это децентрализованный сервис микроблогов с открытым исходным кодом.\nПишите «заметки» — делитесь со всеми происходящим вокруг или рассказывайте о себе 📡\nСтавьте «реакции» — выражайте свои чувства и эмоции от заметок других 👍\nОткройте для себя новый мир 🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} – один из инстансов (также называемый экземпляром Вэньянь), использующий платформу с открытым исходным кодом <b>Вэньянь</b>.';
 	@override String monthAndDay({required Object day, required Object month}) => '${day}.${month}';
 	@override String get search => 'Поиск';
 	@override String get reset => 'Сброс';
@@ -93,7 +93,7 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	@override String get password => 'Пароль';
 	@override String get initialPasswordForSetup => 'Пароль для начала настройки';
 	@override String get initialPasswordIsIncorrect => 'Пароль для запуска настройки неверен';
-	@override String get initialPasswordForSetupDescription => 'Если вы установили Misskey самостоятельно, используйте пароль, который вы указали в файле конфигурации.\nЕсли вы используете что-то вроде хостинга Misskey, используйте предоставленный пароль.\nЕсли вы не установили пароль, оставьте его пустым и продолжайте.';
+	@override String get initialPasswordForSetupDescription => 'Если вы установили Вэньянь самостоятельно, используйте пароль, который вы указали в файле конфигурации.\nЕсли вы используете что-то вроде хостинга Вэньянь, используйте предоставленный пароль.\nЕсли вы не установили пароль, оставьте его пустым и продолжайте.';
 	@override String get forgotPassword => 'Забыли пароль?';
 	@override String get fetchingAsApObject => 'Приём с других сайтов';
 	@override String get ok => 'Подтвердить';
@@ -261,7 +261,7 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	@override String get cacheRemoteSensitiveFiles => 'Кэшировать внешние файлы «не для всех»';
 	@override String get cacheRemoteSensitiveFilesDescription => 'Если отключено, файлы «не для всех» загружаются непосредственно с удалённых серверов, не кэшируясь.';
 	@override String get flagAsBot => 'Аккаунт бота';
-	@override String get flagAsBotDescription => 'Включите, если этот аккаунт управляется программой. Это позволит системе Misskey учитывать это, а также поможет разработчикам других ботов предотвратить бесконечные циклы взаимодействия.';
+	@override String get flagAsBotDescription => 'Включите, если этот аккаунт управляется программой. Это позволит системе Вэньянь учитывать это, а также поможет разработчикам других ботов предотвратить бесконечные циклы взаимодействия.';
 	@override String get flagAsCat => 'Аккаунт кота';
 	@override String get flagAsCatDescription => 'Включите, и этот аккаунт будет помечен как кошачий.';
 	@override String get flagShowTimelineReplies => 'Показывать ответы на заметки в ленте';
@@ -272,7 +272,7 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	@override String get loginFailed => 'Неудачная попытка входа';
 	@override String get showOnRemote => 'Перейти к оригиналу на сайт';
 	@override String get continueOnRemote => 'Продолжить на удалённом сервере';
-	@override String get chooseServerOnMisskeyHub => 'Выбрать сервер с Misskey Hub';
+	@override String get chooseServerOnMisskeyHub => 'Выбрать сервер с Вэньянь Hub';
 	@override String get specifyServerHost => 'Укажите сервер напрямую';
 	@override String get inputHostName => 'Введите домен';
 	@override String get general => 'Общее';
@@ -535,7 +535,7 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	@override String get popularTags => 'Популярные теги';
 	@override String get userList => 'Списки';
 	@override String get about => 'Описание';
-	@override String get aboutMisskey => 'О Misskey';
+	@override String get aboutMisskey => 'О Вэньянь';
 	@override String get administrator => 'Администратор';
 	@override String get token => 'Токен';
 	@override String get x2fa => 'Двухфакторная аутентификация';
@@ -677,7 +677,7 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	@override String get volume => 'Громкость';
 	@override String get masterVolume => 'Основная регулировка громкости';
 	@override String get notUseSound => 'Выключить звук';
-	@override String get useSoundOnlyWhenActive => 'Воспроизводить звук только когда Misskey активен.';
+	@override String get useSoundOnlyWhenActive => 'Воспроизводить звук только когда Вэньянь активен.';
 	@override String get details => 'Подробнее';
 	@override String get renoteDetails => 'Узнать больше';
 	@override String get chooseEmoji => 'Выберите эмодзи';
@@ -694,7 +694,7 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	@override String get ascendingOrder => 'По возрастанию';
 	@override String get descendingOrder => 'По убыванию';
 	@override String get scratchpad => 'Когтеточка';
-	@override String get scratchpadDescription => '«Когтеточка» — это место для опытов с AiScript. Здесь можно писать программы, взаимодействующие с Misskey, запускать и смотреть что из этого получается.';
+	@override String get scratchpadDescription => '«Когтеточка» — это место для опытов с AiScript. Здесь можно писать программы, взаимодействующие с Вэньянь, запускать и смотреть что из этого получается.';
 	@override String get uiInspector => 'Средство проверки пользовательского интерфейса';
 	@override String get uiInspectorDescription => 'Вы можете просмотреть список экземпляров компонентов пользовательского интерфейса, существующих в памяти.  Элементы пользовательского интерфейса генерируются с помощью серии функций Ui:C:.';
 	@override String get output => 'Выходы';
@@ -841,7 +841,7 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	@override String removeNoteFromAntennaConfirm({required Object name}) => 'Вы уверены, что хотите удалить эту заметку из ${name}?';
 	@override String get public => 'Общедоступно';
 	@override String get private => 'Личное';
-	@override String i18nInfo({required Object link}) => 'Misskey переводят на разные языки добровольцы со всего света. Ваша помощь тоже пригодится здесь: ${link}.';
+	@override String i18nInfo({required Object link}) => 'Вэньянь переводят на разные языки добровольцы со всего света. Ваша помощь тоже пригодится здесь: ${link}.';
 	@override String get manageAccessTokens => 'Управление токенами доступа';
 	@override String get accountInfo => 'Сведения об учётной записи';
 	@override String get notesCount => 'Количество заметок';
@@ -896,7 +896,7 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	@override String nUsers({required Object n}) => 'Пользователей: ${n}';
 	@override String nNotes({required Object n}) => 'Заметок: ${n}';
 	@override String get sendErrorReports => 'Посылать отчёты о сбоях';
-	@override String get sendErrorReportsDescription => 'Если включено, когда возникнет какая-нибудь техническая проблема, подробные сведения об этом будут отправлены разработчикам Misskey. Это очень помогает делать программу лучше. В отчёты попадают тип и версия ОС, браузера, журнал действий (что привело к сбою) и тому подобное.';
+	@override String get sendErrorReportsDescription => 'Если включено, когда возникнет какая-нибудь техническая проблема, подробные сведения об этом будут отправлены разработчикам Вэньянь. Это очень помогает делать программу лучше. В отчёты попадают тип и версия ОС, браузера, журнал действий (что привело к сбою) и тому подобное.';
 	@override String get myTheme => 'Личная тема';
 	@override String get backgroundColor => 'Фон';
 	@override String get accentColor => 'Акцент';
@@ -991,7 +991,7 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'Разрешение проблем';
 	@override String get useBlurEffect => 'Размытие в интерфейсе';
 	@override String get learnMore => 'Подробнее';
-	@override String get misskeyUpdated => 'Misskey обновился!';
+	@override String get misskeyUpdated => 'Вэньянь обновился!';
 	@override String get whatIsNew => 'Что новенького?';
 	@override String get translate => 'Перевести';
 	@override String translatedFrom({required Object x}) => 'Перевод. Язык оригинала — ${x}';
@@ -1130,8 +1130,8 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	@override String get show => 'Показать';
 	@override String get neverShow => 'Больше не показывать';
 	@override String get remindMeLater => 'Напомнить позже';
-	@override String get didYouLikeMisskey => 'Вам нравится Misskey?';
-	@override String pleaseDonate({required Object host}) => 'Сайт ${host} работает на Misskey. Это бесплатное программное обеспечение, и ваши пожертвования очень бы помогли продолжать его разработку!';
+	@override String get didYouLikeMisskey => 'Вам нравится Вэньянь?';
+	@override String pleaseDonate({required Object host}) => 'Сайт ${host} работает на Вэньянь. Это бесплатное программное обеспечение, и ваши пожертвования очень бы помогли продолжать его разработку!';
 	@override String correspondingSourceIsAvailable({required Object anchor}) => 'Соответствующий исходный код можно найти по адресу ${anchor} ';
 	@override String get roles => 'Роли';
 	@override String get role => 'Роль';
@@ -1260,7 +1260,7 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	@override String get cancelReactionConfirm => 'Вы действительно хотите удалить свою реакцию?';
 	@override String get changeReactionConfirm => 'Вы действительно хотите удалить свою реакцию?';
 	@override String get later => 'Позже';
-	@override String get goToMisskey => 'К Misskey';
+	@override String get goToMisskey => 'К Вэньянь';
 	@override String get additionalEmojiDictionary => 'Дополнительные словари эмодзи';
 	@override String get installed => 'Установлено';
 	@override String get branding => 'Бренд';
@@ -1324,7 +1324,7 @@ class _Translations$misskey$ru_RU extends Translations$misskey$en_US {
 	@override String get sourceCode => 'Исходный код';
 	@override String get sourceCodeIsNotYetProvided => 'Исходный код пока не доступен. Свяжитесь с администратором, чтобы исправить эту проблему.';
 	@override String get repositoryUrl => 'Ссылка на репозиторий';
-	@override String get repositoryUrlDescription => 'Если вы используете Misskey как есть (без изменений в исходном коде), введите https://github.com/misskey-dev/misskey';
+	@override String get repositoryUrlDescription => 'Если вы используете Вэньянь как есть (без изменений в исходном коде), введите ';
 	@override String get repositoryUrlOrTarballRequired => 'Если репозиторий закрыт, необходимо предоставить ссылку на tarball. Подробности см. в файле ".config/example.yml"';
 	@override String get feedback => 'Обратная связь';
 	@override String get feedbackUrl => 'Ссылка для обратной связи';
@@ -1806,7 +1806,7 @@ class _Translations$misskey$initialAccountSetting_$ru_RU extends Translations$mi
 	@override String pushNotificationDescription({required Object name}) => 'Включение уведомлений позволит вам получать уведомления от ${name} напрямую на ваше устройство.';
 	@override String get initialAccountSettingCompleted => 'Первоначальная настройка успешно завершена!';
 	@override String haveFun({required Object name}) => 'Наслаждайтесь ${name}!';
-	@override String youCanContinueTutorial({required Object name}) => 'Вы можете продолжить туториал по тому как пользоваться ${name} (Misskey), или вы можете сразу перейти к его использованию.';
+	@override String youCanContinueTutorial({required Object name}) => 'Вы можете продолжить туториал по тому как пользоваться ${name} (Вэньянь), или вы можете сразу перейти к его использованию.';
 	@override String get startTutorial => 'Пройти Обучение';
 	@override String get skipAreYouSure => 'Пропустить настройку?';
 	@override String get laterAreYouSure => 'Точно настроить профиль позже?';
@@ -1863,7 +1863,7 @@ class _Translations$misskey$accountMigration_$ru_RU extends Translations$misskey
 	// Translations
 	@override String get moveFrom => 'Перенести другую учётную запись сюда';
 	@override String get moveTo => 'Перенести учётную запись на другой сервер';
-	@override String get moveAccountDescription => 'Это действие перенесёт ваш аккаунт на другой сервер.\n　・Подписчики с этого аккаунта автоматически подпишутся на новый\n　・Этот аккаунт отпишется от всех пользователей, на которых подписан сейчас\n　・Вы не сможете создавать новые заметки и т.д. на этом аккаунте\n\nТогда как перенос подписчиков происходит автоматически, вы должны будете подготовиться, сделав некоторые шаги, чтобы перенести список пользователей, на которых вы подписаны. Чтобы сделать это, экспортируйте список подписчиков в файл, который затем импортируете на новом аккаунте в меню настроек. То же самое необходимо будет сделать со списками, также как и со скрытыми и заблокированными пользователями.\n\n(Это объяснение применяется к Misskey v13.12.0 и выше. Другое ActivityPub программное обеспечение, такое, как Mastodon, может работать по-другому.';
+	@override String get moveAccountDescription => 'Это действие перенесёт ваш аккаунт на другой сервер.\n　・Подписчики с этого аккаунта автоматически подпишутся на новый\n　・Этот аккаунт отпишется от всех пользователей, на которых подписан сейчас\n　・Вы не сможете создавать новые заметки и т.д. на этом аккаунте\n\nТогда как перенос подписчиков происходит автоматически, вы должны будете подготовиться, сделав некоторые шаги, чтобы перенести список пользователей, на которых вы подписаны. Чтобы сделать это, экспортируйте список подписчиков в файл, который затем импортируете на новом аккаунте в меню настроек. То же самое необходимо будет сделать со списками, также как и со скрытыми и заблокированными пользователями.\n\n(Это объяснение применяется к Вэньянь v13.12.0 и выше. Другое ActivityPub программное обеспечение, такое, как Mastodon, может работать по-другому.';
 	@override String get startMigration => 'Перенести';
 	@override String get movedAndCannotBeUndone => 'Аккаунт был перемещён. Это действие необратимо.';
 }
@@ -2094,12 +2094,12 @@ class _Translations$misskey$aboutMisskey_$ru_RU extends Translations$misskey$abo
 	final TranslationsRuRu _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'Misskey — программа с открытым исходным кодом, которую разрабатывает syuilo с 2014 года.';
+	@override String get about => 'Вэньянь — программа с открытым исходным кодом, которую разрабатывает syuilo с 2014 года.';
 	@override String get contributors => 'Основные соавторы';
 	@override String get allContributors => 'Все соавторы';
 	@override String get source => 'Исходный код';
-	@override String get translation => 'Перевод Misskey';
-	@override String get donate => 'Пожертвование на Misskey';
+	@override String get translation => 'Перевод Вэньянь';
+	@override String get donate => 'Пожертвование на Вэньянь';
 	@override String get morePatrons => 'Большое спасибо и многим другим, кто принял участие в этом проекте! 🥰';
 	@override String get patrons => 'Материальная поддержка';
 	@override String get projectMembers => 'Участники проекта';
@@ -3132,7 +3132,7 @@ class _Translations$misskey$initialTutorial_$landing_$ru_RU extends Translations
 
 	// Translations
 	@override String get title => 'Добро пожаловать в Туториал';
-	@override String get description => 'Здесь вы можете изучить основы пользования Misskey и его особенностями.';
+	@override String get description => 'Здесь вы можете изучить основы пользования Вэньянь и его особенностями.';
 }
 
 // Path: misskey.initialTutorial_.note_
@@ -3143,7 +3143,7 @@ class _Translations$misskey$initialTutorial_$note_$ru_RU extends Translations$mi
 
 	// Translations
 	@override String get title => 'Что такое заметка?';
-	@override String get description => 'Посты в Misskey называются \'Заметками.\' Заметки отсортированы в хронологическом порядке в ленте и обновляются в режиме реального времени.';
+	@override String get description => 'Посты в Вэньянь называются \'Заметками.\' Заметки отсортированы в хронологическом порядке в ленте и обновляются в режиме реального времени.';
 	@override String get reply => 'Нажмите на кнопку для того что бы ответить на сообщение. Так же можно ответить на ответ, продолжая дискуссию.';
 	@override String get renote => 'Вы можете поделиться этой заметкой в своей ленте. Вы так же можете процитировать её в ваших комментариях.';
 	@override String get reaction => 'Вы можете ставить реакции на заметки. Подробнее на следующей странице.';
@@ -3173,7 +3173,7 @@ class _Translations$misskey$initialTutorial_$timeline_$ru_RU extends Translation
 
 	// Translations
 	@override String get title => 'Концепция Лент';
-	@override String get description1 => 'Misskey предоставляет несколько лент в зависимости от того как вы им пользуетесь (некоторые могут быть недоступны в зависимости от правил сервера).';
+	@override String get description1 => 'Вэньянь предоставляет несколько лент в зависимости от того как вы им пользуетесь (некоторые могут быть недоступны в зависимости от правил сервера).';
 	@override String get home => 'Вы можете смотреть заметки от пользователей на которых вы подписаны.';
 	@override String get local => 'Вы можете смотреть заметки от всех пользователей на сервере.';
 	@override String get social => 'Посты из домашней и локальной ленты будут показаны тут.';
@@ -3190,7 +3190,7 @@ class _Translations$misskey$initialTutorial_$postNote_$ru_RU extends Translation
 
 	// Translations
 	@override String get title => 'Настройки выкладывания заметки';
-	@override String get description1 => 'Когда вы публикуете заметку на Misskey, вы можете изменить некоторые настройки. Окно написания заметки выглядит вот так.';
+	@override String get description1 => 'Когда вы публикуете заметку на Вэньянь, вы можете изменить некоторые настройки. Окно написания заметки выглядит вот так.';
 	@override late final _Translations$misskey$initialTutorial_$postNote_$visibility_$ru_RU visibility_ = _Translations$misskey$initialTutorial_$postNote_$visibility_$ru_RU._(_root);
 	@override late final _Translations$misskey$initialTutorial_$postNote_$cw_$ru_RU cw_ = _Translations$misskey$initialTutorial_$postNote_$cw_$ru_RU._(_root);
 }
@@ -3203,7 +3203,7 @@ class _Translations$misskey$initialTutorial_$done_$ru_RU extends Translations$mi
 
 	// Translations
 	@override String get title => 'Вы прошли туториал! 🎉';
-	@override String description({required Object link}) => 'Вещи показанные тут это лишь малая часть. Для более детального понимания Misskey загляните в ${link}.';
+	@override String description({required Object link}) => 'Вещи показанные тут это лишь малая часть. Для более детального понимания Вэньянь загляните в ${link}.';
 }
 
 // Path: misskey.achievements_.types_
@@ -3724,9 +3724,9 @@ class _Translations$misskey$achievements_$types_$notes1_$ru_RU extends Translati
 	final TranslationsRuRu _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Первые шаги в Misskey';
+	@override String get title => 'Первые шаги в Вэньянь';
 	@override String get description => 'Опубликована первая заметка';
-	@override String get flavor => 'Приятных дней с Misskey!';
+	@override String get flavor => 'Приятных дней с Вэньянь!';
 }
 
 // Path: misskey.achievements_.types_.notes10_
@@ -4062,7 +4062,7 @@ class _Translations$misskey$achievements_$types_$login1000_$ru_RU extends Transl
 	// Translations
 	@override String get title => 'Повелитель заметок Ⅲ';
 	@override String get description => '1000 дней на сайте';
-	@override String get flavor => 'Спасибо, что пользуетесь Misskey!';
+	@override String get flavor => 'Спасибо, что пользуетесь Вэньянь!';
 }
 
 // Path: misskey.achievements_.types_.noteClipped1_
@@ -4282,9 +4282,9 @@ class _Translations$misskey$achievements_$types_$iLoveMisskey_$ru_RU extends Tra
 	final TranslationsRuRu _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Я люблю Misskey';
-	@override String get description => 'Написана заметка «I ❤ #Misskey»';
-	@override String get flavor => 'Спасибо за поддержку Misskey! Ваша команда разработчиков';
+	@override String get title => 'Я люблю Вэньянь';
+	@override String get description => 'Написана заметка «I ❤ #Вэньянь»';
+	@override String get flavor => 'Спасибо за поддержку Вэньянь! Ваша команда разработчиков';
 }
 
 // Path: misskey.achievements_.types_.foundTreasure_
@@ -4316,8 +4316,8 @@ class _Translations$misskey$achievements_$types_$client60min_$ru_RU extends Tran
 	final TranslationsRuRu _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Не наглядеться на Misskey';
-	@override String get description => 'Misskey был открыт 60 минут подряд';
+	@override String get title => 'Не наглядеться на Вэньянь';
+	@override String get description => 'Вэньянь был открыт 60 минут подряд';
 }
 
 // Path: misskey.achievements_.types_.noteDeletedWithin1min_
@@ -4542,7 +4542,7 @@ class _Translations$misskey$achievements_$types_$brainDiver_$ru_RU extends Trans
 	// Translations
 	@override String get title => 'Brain Diver';
 	@override String get description => 'Опубликована ссылка на песню «Brain Diver»';
-	@override String get flavor => 'Мисски-Мисски Ла-Ту-Ма';
+	@override String get flavor => 'Вэньянь-Вэньянь Ла-Ту-Ма';
 }
 
 // Path: misskey.achievements_.types_.smashTestNotificationButton_
@@ -4563,7 +4563,7 @@ class _Translations$misskey$achievements_$types_$tutorialCompleted_$ru_RU extend
 	final TranslationsRuRu _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Диплом начального курса Misskey';
+	@override String get title => 'Диплом начального курса Вэньянь';
 	@override String get description => 'Закончите туториал';
 }
 

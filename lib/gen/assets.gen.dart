@@ -69,30 +69,11 @@ class $AssetsFontsGen {
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
-  /// File path: assets/icons/aria.png
-  AssetGenImage get aria => const AssetGenImage('assets/icons/aria.png');
-
   /// File path: assets/icons/wenyan.png
   AssetGenImage get wenyan => const AssetGenImage('assets/icons/wenyan.png');
 
   /// List of all assets
-  List<AssetGenImage> get values => [aria, wenyan];
-}
-
-class $AssetsMisskeyGen {
-  const $AssetsMisskeyGen();
-
-  /// File path: assets/misskey/COPYING
-  String get copying => 'assets/misskey/COPYING';
-
-  /// File path: assets/misskey/LICENSE
-  String get license => 'assets/misskey/LICENSE';
-
-  /// Directory path: assets/misskey/packages
-  $AssetsMisskeyPackagesGen get packages => const $AssetsMisskeyPackagesGen();
-
-  /// List of all assets
-  List<String> get values => [copying, license];
+  List<AssetGenImage> get values => [wenyan];
 }
 
 class $AssetsTwemojiGen {
@@ -109,6 +90,22 @@ class $AssetsTwemojiGen {
 
   /// List of all assets
   List<String> get values => [license, licenseGraphics];
+}
+
+class $AssetsWenyanGen {
+  const $AssetsWenyanGen();
+
+  /// File path: assets/wenyan/COPYING
+  String get copying => 'assets/wenyan/COPYING';
+
+  /// File path: assets/wenyan/LICENSE
+  String get license => 'assets/wenyan/LICENSE';
+
+  /// Directory path: assets/wenyan/packages
+  $AssetsWenyanPackagesGen get packages => const $AssetsWenyanPackagesGen();
+
+  /// List of all assets
+  List<String> get values => [copying, license];
 }
 
 class $AssetsFontsBIZUDGothicGen {
@@ -151,14 +148,6 @@ class $AssetsFontsTwemojiMozillaGen {
   List<String> get values => [license];
 }
 
-class $AssetsMisskeyPackagesGen {
-  const $AssetsMisskeyPackagesGen();
-
-  /// Directory path: assets/misskey/packages/frontend
-  $AssetsMisskeyPackagesFrontendGen get frontend =>
-      const $AssetsMisskeyPackagesFrontendGen();
-}
-
 class $AssetsTwemojiAssetsGen {
   const $AssetsTwemojiAssetsGen();
 
@@ -166,12 +155,12 @@ class $AssetsTwemojiAssetsGen {
   $AssetsTwemojiAssetsSvgGen get svg => const $AssetsTwemojiAssetsSvgGen();
 }
 
-class $AssetsMisskeyPackagesFrontendGen {
-  const $AssetsMisskeyPackagesFrontendGen();
+class $AssetsWenyanPackagesGen {
+  const $AssetsWenyanPackagesGen();
 
-  /// Directory path: assets/misskey/packages/frontend/assets
-  $AssetsMisskeyPackagesFrontendAssetsGen get assets =>
-      const $AssetsMisskeyPackagesFrontendAssetsGen();
+  /// Directory path: assets/wenyan/packages/frontend
+  $AssetsWenyanPackagesFrontendGen get frontend =>
+      const $AssetsWenyanPackagesFrontendGen();
 }
 
 class $AssetsTwemojiAssetsSvgGen {
@@ -190,96 +179,103 @@ class $AssetsTwemojiAssetsSvgGen {
   List<String> get values => [a1f306, a1f337, a1fae0];
 }
 
-class $AssetsMisskeyPackagesFrontendAssetsGen {
-  const $AssetsMisskeyPackagesFrontendAssetsGen();
+class $AssetsWenyanPackagesFrontendGen {
+  const $AssetsWenyanPackagesFrontendGen();
 
-  /// File path: assets/misskey/packages/frontend/assets/about-icon.png
+  /// Directory path: assets/wenyan/packages/frontend/assets
+  $AssetsWenyanPackagesFrontendAssetsGen get assets =>
+      const $AssetsWenyanPackagesFrontendAssetsGen();
+}
+
+class $AssetsWenyanPackagesFrontendAssetsGen {
+  const $AssetsWenyanPackagesFrontendAssetsGen();
+
+  /// File path: assets/wenyan/packages/frontend/assets/about-icon.png
   AssetGenImage get aboutIcon => const AssetGenImage(
-    'assets/misskey/packages/frontend/assets/about-icon.png',
+    'assets/wenyan/packages/frontend/assets/about-icon.png',
   );
 
-  /// File path: assets/misskey/packages/frontend/assets/dummy.png
+  /// File path: assets/wenyan/packages/frontend/assets/dummy.png
   AssetGenImage get dummy =>
-      const AssetGenImage('assets/misskey/packages/frontend/assets/dummy.png');
+      const AssetGenImage('assets/wenyan/packages/frontend/assets/dummy.png');
 
-  /// File path: assets/misskey/packages/frontend/assets/misskey.svg
-  String get misskey => 'assets/misskey/packages/frontend/assets/misskey.svg';
+  /// File path: assets/wenyan/packages/frontend/assets/platform.svg
+  String get platform => 'assets/wenyan/packages/frontend/assets/platform.svg';
 
-  /// Directory path: assets/misskey/packages/frontend/assets/sounds
-  $AssetsMisskeyPackagesFrontendAssetsSoundsGen get sounds =>
-      const $AssetsMisskeyPackagesFrontendAssetsSoundsGen();
+  /// Directory path: assets/wenyan/packages/frontend/assets/sounds
+  $AssetsWenyanPackagesFrontendAssetsSoundsGen get sounds =>
+      const $AssetsWenyanPackagesFrontendAssetsSoundsGen();
 
-  /// File path: assets/misskey/packages/frontend/assets/unknown.png
-  AssetGenImage get unknown => const AssetGenImage(
-    'assets/misskey/packages/frontend/assets/unknown.png',
-  );
+  /// File path: assets/wenyan/packages/frontend/assets/unknown.png
+  AssetGenImage get unknown =>
+      const AssetGenImage('assets/wenyan/packages/frontend/assets/unknown.png');
 
   /// List of all assets
-  List<dynamic> get values => [aboutIcon, dummy, misskey, unknown];
+  List<dynamic> get values => [aboutIcon, dummy, platform, unknown];
 }
 
-class $AssetsMisskeyPackagesFrontendAssetsSoundsGen {
-  const $AssetsMisskeyPackagesFrontendAssetsSoundsGen();
+class $AssetsWenyanPackagesFrontendAssetsSoundsGen {
+  const $AssetsWenyanPackagesFrontendAssetsSoundsGen();
 
-  /// Directory path: assets/misskey/packages/frontend/assets/sounds/aisha
-  $AssetsMisskeyPackagesFrontendAssetsSoundsAishaGen get aisha =>
-      const $AssetsMisskeyPackagesFrontendAssetsSoundsAishaGen();
+  /// Directory path: assets/wenyan/packages/frontend/assets/sounds/aisha
+  $AssetsWenyanPackagesFrontendAssetsSoundsAishaGen get aisha =>
+      const $AssetsWenyanPackagesFrontendAssetsSoundsAishaGen();
 
-  /// Directory path: assets/misskey/packages/frontend/assets/sounds/noizenecio
-  $AssetsMisskeyPackagesFrontendAssetsSoundsNoizenecioGen get noizenecio =>
-      const $AssetsMisskeyPackagesFrontendAssetsSoundsNoizenecioGen();
+  /// Directory path: assets/wenyan/packages/frontend/assets/sounds/noizenecio
+  $AssetsWenyanPackagesFrontendAssetsSoundsNoizenecioGen get noizenecio =>
+      const $AssetsWenyanPackagesFrontendAssetsSoundsNoizenecioGen();
 
-  /// Directory path: assets/misskey/packages/frontend/assets/sounds/syuilo
-  $AssetsMisskeyPackagesFrontendAssetsSoundsSyuiloGen get syuilo =>
-      const $AssetsMisskeyPackagesFrontendAssetsSoundsSyuiloGen();
+  /// Directory path: assets/wenyan/packages/frontend/assets/sounds/syuilo
+  $AssetsWenyanPackagesFrontendAssetsSoundsSyuiloGen get syuilo =>
+      const $AssetsWenyanPackagesFrontendAssetsSoundsSyuiloGen();
 }
 
-class $AssetsMisskeyPackagesFrontendAssetsSoundsAishaGen {
-  const $AssetsMisskeyPackagesFrontendAssetsSoundsAishaGen();
+class $AssetsWenyanPackagesFrontendAssetsSoundsAishaGen {
+  const $AssetsWenyanPackagesFrontendAssetsSoundsAishaGen();
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/aisha/1.mp3
-  String get a1 => 'assets/misskey/packages/frontend/assets/sounds/aisha/1.mp3';
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/aisha/1.mp3
+  String get a1 => 'assets/wenyan/packages/frontend/assets/sounds/aisha/1.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/aisha/2.mp3
-  String get a2 => 'assets/misskey/packages/frontend/assets/sounds/aisha/2.mp3';
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/aisha/2.mp3
+  String get a2 => 'assets/wenyan/packages/frontend/assets/sounds/aisha/2.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/aisha/3.mp3
-  String get a3 => 'assets/misskey/packages/frontend/assets/sounds/aisha/3.mp3';
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/aisha/3.mp3
+  String get a3 => 'assets/wenyan/packages/frontend/assets/sounds/aisha/3.mp3';
 
   /// List of all assets
   List<String> get values => [a1, a2, a3];
 }
 
-class $AssetsMisskeyPackagesFrontendAssetsSoundsNoizenecioGen {
-  const $AssetsMisskeyPackagesFrontendAssetsSoundsNoizenecioGen();
+class $AssetsWenyanPackagesFrontendAssetsSoundsNoizenecioGen {
+  const $AssetsWenyanPackagesFrontendAssetsSoundsNoizenecioGen();
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba1.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba1.mp3
   String get kickGaba1 =>
-      'assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba1.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba1.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba2.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba2.mp3
   String get kickGaba2 =>
-      'assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba2.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba2.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba3.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba3.mp3
   String get kickGaba3 =>
-      'assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba3.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba3.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba4.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba4.mp3
   String get kickGaba4 =>
-      'assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba4.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba4.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba5.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba5.mp3
   String get kickGaba5 =>
-      'assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba5.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba5.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba6.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba6.mp3
   String get kickGaba6 =>
-      'assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba6.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba6.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba7.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba7.mp3
   String get kickGaba7 =>
-      'assets/misskey/packages/frontend/assets/sounds/noizenecio/kick_gaba7.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/noizenecio/kick_gaba7.mp3';
 
   /// List of all assets
   List<String> get values => [
@@ -293,172 +289,172 @@ class $AssetsMisskeyPackagesFrontendAssetsSoundsNoizenecioGen {
   ];
 }
 
-class $AssetsMisskeyPackagesFrontendAssetsSoundsSyuiloGen {
-  const $AssetsMisskeyPackagesFrontendAssetsSoundsSyuiloGen();
+class $AssetsWenyanPackagesFrontendAssetsSoundsSyuiloGen {
+  const $AssetsWenyanPackagesFrontendAssetsSoundsSyuiloGen();
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/bubble1.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/bubble1.mp3
   String get bubble1 =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/bubble1.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/bubble1.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/bubble2.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/bubble2.mp3
   String get bubble2 =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/bubble2.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/bubble2.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/down.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/down.mp3
   String get down =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/down.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/down.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/kick.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/kick.mp3
   String get kick =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/kick.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/kick.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-aec-4va.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-aec-4va.mp3
   String get nAec4va =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-aec-4va.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-aec-4va.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-aec-4vb.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-aec-4vb.mp3
   String get nAec4vb =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-aec-4vb.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-aec-4vb.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-aec-8va.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-aec-8va.mp3
   String get nAec8va =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-aec-8va.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-aec-8va.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-aec-8vb.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-aec-8vb.mp3
   String get nAec8vb =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-aec-8vb.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-aec-8vb.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-aec.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-aec.mp3
   String get nAec =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-aec.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-aec.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-cea-4va.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-cea-4va.mp3
   String get nCea4va =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-cea-4va.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-cea-4va.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-cea-4vb.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-cea-4vb.mp3
   String get nCea4vb =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-cea-4vb.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-cea-4vb.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-cea-8va.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-cea-8va.mp3
   String get nCea8va =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-cea-8va.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-cea-8va.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-cea-8vb.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-cea-8vb.mp3
   String get nCea8vb =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-cea-8vb.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-cea-8vb.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-cea.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-cea.mp3
   String get nCea =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-cea.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-cea.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-ea-4va.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-ea-4va.mp3
   String get nEa4va =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-ea-4va.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-ea-4va.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-ea-4vb.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-ea-4vb.mp3
   String get nEa4vb =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-ea-4vb.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-ea-4vb.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-ea-8va.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-ea-8va.mp3
   String get nEa8va =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-ea-8va.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-ea-8va.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-ea-8vb.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-ea-8vb.mp3
   String get nEa8vb =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-ea-8vb.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-ea-8vb.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-ea-harmony.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-ea-harmony.mp3
   String get nEaHarmony =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-ea-harmony.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-ea-harmony.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-ea.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-ea.mp3
   String get nEa =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-ea.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-ea.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-eca-4va.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-eca-4va.mp3
   String get nEca4va =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-eca-4va.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-eca-4va.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-eca-4vb.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-eca-4vb.mp3
   String get nEca4vb =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-eca-4vb.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-eca-4vb.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-eca-8va.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-eca-8va.mp3
   String get nEca8va =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-eca-8va.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-eca-8va.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-eca-8vb.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-eca-8vb.mp3
   String get nEca8vb =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-eca-8vb.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-eca-8vb.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/n-eca.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/n-eca.mp3
   String get nEca =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/n-eca.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/n-eca.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/pirori-square-wet.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/pirori-square-wet.mp3
   String get piroriSquareWet =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/pirori-square-wet.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/pirori-square-wet.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/pirori-wet.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/pirori-wet.mp3
   String get piroriWet =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/pirori-wet.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/pirori-wet.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/pirori.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/pirori.mp3
   String get pirori =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/pirori.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/pirori.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/poi1.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/poi1.mp3
   String get poi1 =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/poi1.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/poi1.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/poi2.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/poi2.mp3
   String get poi2 =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/poi2.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/poi2.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/pope1.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/pope1.mp3
   String get pope1 =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/pope1.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/pope1.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/pope2.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/pope2.mp3
   String get pope2 =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/pope2.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/pope2.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/popo.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/popo.mp3
   String get popo =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/popo.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/popo.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/queue-jammed.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/queue-jammed.mp3
   String get queueJammed =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/queue-jammed.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/queue-jammed.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/reverved.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/reverved.mp3
   String get reverved =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/reverved.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/reverved.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/ryukyu.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/ryukyu.mp3
   String get ryukyu =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/ryukyu.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/ryukyu.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/snare.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/snare.mp3
   String get snare =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/snare.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/snare.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/square-pico.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/square-pico.mp3
   String get squarePico =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/square-pico.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/square-pico.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/triple.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/triple.mp3
   String get triple =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/triple.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/triple.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/up.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/up.mp3
   String get up =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/up.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/up.mp3';
 
-  /// File path: assets/misskey/packages/frontend/assets/sounds/syuilo/waon.mp3
+  /// File path: assets/wenyan/packages/frontend/assets/sounds/syuilo/waon.mp3
   String get waon =>
-      'assets/misskey/packages/frontend/assets/sounds/syuilo/waon.mp3';
+      'assets/wenyan/packages/frontend/assets/sounds/syuilo/waon.mp3';
 
   /// List of all assets
   List<String> get values => [
@@ -512,8 +508,8 @@ abstract final class Assets {
   static const $AssetsEmojisGen emojis = $AssetsEmojisGen();
   static const $AssetsFontsGen fonts = $AssetsFontsGen();
   static const $AssetsIconsGen icons = $AssetsIconsGen();
-  static const $AssetsMisskeyGen misskey = $AssetsMisskeyGen();
   static const $AssetsTwemojiGen twemoji = $AssetsTwemojiGen();
+  static const $AssetsWenyanGen wenyan = $AssetsWenyanGen();
 
   /// List of all assets
   static List<AssetGenImage> get values => [bird, cat];

@@ -39,7 +39,7 @@ class const LanguagesPage({super.key}) extends ConsumerWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Text(
-                        '闻言 的界面文本来自 Misskey 与 Aria 等开源项目，简体中文由 RMT 汉化维护。',
+                        '闻言 的界面文本由 RMT 整理维护，简体中文为原生文案。',
                         style: TextStyle(
                           color: theme.colorScheme.onSecondaryContainer,
                         ),

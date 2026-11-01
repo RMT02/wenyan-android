@@ -1525,7 +1525,7 @@ class const _NotePreview() extends HookWidget {
     final aboutIcon = useFuture(
       useMemoized(
         () => rootBundle
-            .load(Assets.misskey.packages.frontend.assets.aboutIcon.path)
+            .load(Assets.icons.wenyan.path)
             .then(
               (bytes) => Uri.dataFromBytes(
                 bytes.buffer.asUint8List(),

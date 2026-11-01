@@ -70,8 +70,8 @@ class _Translations$misskey$nl_NL extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'Nederlands';
 	@override String get headlineMisskey => 'Netwerk verbonden door notities';
-	@override String get introMisskey => 'Welkom! Misskey is een open source, gedecentraliseerde microblogdienst.\nMaak "notities" om je gedachten te delen met iedereen om je heen. 📡\nMet "reacties" kun je ook snel je mening geven over berichten van anderen. 👍\nLaten we een nieuwe wereld verkennen! 🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} is één van de services die door het open source platform <b>Misskey</b> wordt geleverd (het wordt ook wel een "Misskey server genmoemd").';
+	@override String get introMisskey => 'Welkom! Wenyan is een open source, gedecentraliseerde microblogdienst.\nMaak "notities" om je gedachten te delen met iedereen om je heen. 📡\nMet "reacties" kun je ook snel je mening geven over berichten van anderen. 👍\nLaten we een nieuwe wereld verkennen! 🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} is één van de services die door het open source platform <b>Wenyan</b> wordt geleverd (het wordt ook wel een "Wenyan server genmoemd").';
 	@override String monthAndDay({required Object day, required Object month}) => '${day} ${month}';
 	@override String get search => 'Zoeken';
 	@override String get reset => 'Herstellen';
@@ -80,7 +80,7 @@ class _Translations$misskey$nl_NL extends Translations$misskey$en_US {
 	@override String get password => 'Wachtwoord';
 	@override String get initialPasswordForSetup => 'Initiële wachtwoord voor configuratie';
 	@override String get initialPasswordIsIncorrect => 'Initiële wachtwoord voor configuratie is onjuist';
-	@override String get initialPasswordForSetupDescription => 'Gebruik het initiële wachtwoord uit de configuratie, als je Misskey zelf hebt geïnstalleerd.\nAls je een Misskey hosting provider gebruikt, gebruik dan het gegeven wachtwoord.\nAls je geen wachtwoord hebt gezet, laat het dan leeg om verder te gaan.';
+	@override String get initialPasswordForSetupDescription => 'Gebruik het initiële wachtwoord uit de configuratie, als je Wenyan zelf hebt geïnstalleerd.\nAls je een Wenyan hosting provider gebruikt, gebruik dan het gegeven wachtwoord.\nAls je geen wachtwoord hebt gezet, laat het dan leeg om verder te gaan.';
 	@override String get forgotPassword => 'Wachtwoord vergeten';
 	@override String get fetchingAsApObject => 'Ophalen vanuit de Fediverse';
 	@override String get ok => 'Ok';
@@ -246,7 +246,7 @@ class _Translations$misskey$nl_NL extends Translations$misskey$en_US {
 	@override String get cacheRemoteSensitiveFiles => 'Gevoelige bestanden van externe instances in de cache bewaren';
 	@override String get cacheRemoteSensitiveFilesDescription => 'Als deze instelling is uitgeschakeld, worden gevoelige bestanden op afstand direct vanuit de instantie op afstand geladen zonder caching.';
 	@override String get flagAsBot => 'Markeer dit account als een robot.';
-	@override String get flagAsBotDescription => 'Als dit account van een programma wordt beheerd, zet deze vlag aan. Het aanzetten helpt andere ontwikkelaars om bijvoorbeeld onbedoelde feedback loops te doorbreken of om Misskey meer geschikt te maken.';
+	@override String get flagAsBotDescription => 'Als dit account van een programma wordt beheerd, zet deze vlag aan. Het aanzetten helpt andere ontwikkelaars om bijvoorbeeld onbedoelde feedback loops te doorbreken of om Wenyan meer geschikt te maken.';
 	@override String get flagAsCat => 'Markeer dit account als een kat.';
 	@override String get flagAsCatDescription => 'Zet deze vlag aan als je wilt aangeven dat dit account een kat is.';
 	@override String get flagShowTimelineReplies => 'Toon antwoorden op de tijdlijn.';
@@ -257,7 +257,7 @@ class _Translations$misskey$nl_NL extends Translations$misskey$en_US {
 	@override String get loginFailed => 'Aanmelding mislukt.';
 	@override String get showOnRemote => 'Toon op de externe instantie.';
 	@override String get continueOnRemote => 'Verder op remote server';
-	@override String get chooseServerOnMisskeyHub => 'Kies een server van de Misskey Hub';
+	@override String get chooseServerOnMisskeyHub => 'Kies een server van de Wenyan Hub';
 	@override String get specifyServerHost => 'Serverhost uitkiezen';
 	@override String get inputHostName => 'Domein invullen';
 	@override String get general => 'Algemeen';
@@ -513,7 +513,7 @@ class _Translations$misskey$nl_NL extends Translations$misskey$en_US {
 	@override String get popularTags => 'Populaire tags';
 	@override String get userList => 'Lijsten';
 	@override String get about => 'Over';
-	@override String get aboutMisskey => 'Over Misskey';
+	@override String get aboutMisskey => 'Over Wenyan';
 	@override String get administrator => 'Beheerder';
 	@override String get token => 'Token';
 	@override String get x2fa => 'Twee factor authenticatie';
@@ -652,7 +652,7 @@ class _Translations$misskey$nl_NL extends Translations$misskey$en_US {
 	@override String get volume => 'Volume';
 	@override String get masterVolume => 'Hoofdvolume';
 	@override String get notUseSound => 'Geluid uitschakelen';
-	@override String get useSoundOnlyWhenActive => 'Geluid alleen inschakelen wanneer Misskey actief is';
+	@override String get useSoundOnlyWhenActive => 'Geluid alleen inschakelen wanneer Wenyan actief is';
 	@override String get details => 'Details';
 	@override String get renoteDetails => 'Renote Details';
 	@override String get chooseEmoji => 'Emoji selecteren';
@@ -669,7 +669,7 @@ class _Translations$misskey$nl_NL extends Translations$misskey$en_US {
 	@override String get ascendingOrder => 'Oplopende volgorde';
 	@override String get descendingOrder => 'Aflopende volgorde';
 	@override String get scratchpad => 'Testomgeving';
-	@override String get scratchpadDescription => 'De testomgeving biedt een gebied voor AiScript experimenten. Daar kunt u AiScript schrijven en uitvoeren en de effecten ervan op Misskey controleren.';
+	@override String get scratchpadDescription => 'De testomgeving biedt een gebied voor AiScript experimenten. Daar kunt u AiScript schrijven en uitvoeren en de effecten ervan op Wenyan controleren.';
 	@override String get uiInspector => 'UI-inspecteur';
 	@override String get uiInspectorDescription => 'De lijst met servers van UI-componenten kan worden bekeken in de cache. De UI-component wordt gegenereerd door de functie Ui:C:';
 	@override String get output => 'Uitvoer';
@@ -812,7 +812,7 @@ class _Translations$misskey$nl_NL extends Translations$misskey$en_US {
 	@override String confirmToUnclipAlreadyClippedNote({required Object name}) => 'Deze notitie is al toegevoegd aan de clip “${name}”. Wil je deze uit deze clip verwijderen?';
 	@override String get public => 'Openbare';
 	@override String get private => 'Privé';
-	@override String i18nInfo({required Object link}) => 'Misskey wordt in veel verschillende talen vertaald door vrijwilligers. Je kunt helpen op ${link}';
+	@override String i18nInfo({required Object link}) => 'Wenyan wordt in veel verschillende talen vertaald door vrijwilligers. Je kunt helpen op ${link}';
 	@override String get manageAccessTokens => 'Toegangstokens beheren';
 	@override String get accountInfo => 'Informatie over gebruikersaccount';
 	@override String get notesCount => 'Aantal notities';
@@ -865,7 +865,7 @@ class _Translations$misskey$nl_NL extends Translations$misskey$en_US {
 	@override String nUsers({required Object n}) => '${n} Gebruikers';
 	@override String nNotes({required Object n}) => '${n} Notities';
 	@override String get sendErrorReports => 'Foutrapporten sturen';
-	@override String get sendErrorReportsDescription => 'Als u deze optie inschakelt, wordt gedetailleerde foutinformatie met Misskey gedeeld wanneer zich een probleem voordoet. Dit helpt de kwaliteit van Misskey te verbeteren.\nDit omvat informatie zoals de versie van uw OS, welke browser u gebruikt, uw activiteit in Misskey, enz.';
+	@override String get sendErrorReportsDescription => 'Als u deze optie inschakelt, wordt gedetailleerde foutinformatie met Wenyan gedeeld wanneer zich een probleem voordoet. Dit helpt de kwaliteit van Wenyan te verbeteren.\nDit omvat informatie zoals de versie van uw OS, welke browser u gebruikt, uw activiteit in Wenyan, enz.';
 	@override String get myTheme => 'Mijn thema';
 	@override String get backgroundColor => 'Achtergrondkleur';
 	@override String get accentColor => 'Accentkleur';
@@ -960,7 +960,7 @@ class _Translations$misskey$nl_NL extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'Probleemoplossing';
 	@override String get useBlurEffect => 'Vervagingseffecten in de UI gebruike';
 	@override String get learnMore => 'Meer leren';
-	@override String get misskeyUpdated => 'Misskey is bijgewerkt!';
+	@override String get misskeyUpdated => 'Wenyan is bijgewerkt!';
 	@override String get whatIsNew => 'Wijzigingen tonen';
 	@override String get translate => 'Vertalen';
 	@override String translatedFrom({required Object x}) => 'Vertaald uit ${x}';

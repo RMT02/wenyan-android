@@ -392,7 +392,7 @@ class const _SimpleMfm({
         if (mutedEmojis.contains(emoji)) {
           return WidgetSpan(
             alignment: PlaceholderAlignment.middle,
-            child: Assets.misskey.packages.frontend.assets.unknown.image(
+            child: Assets.wenyan.packages.frontend.assets.unknown.image(
               height: (style.fontSize ?? 14.0) * 1.25,
               opacity: AlwaysStoppedAnimation(
                 (style.color?.a ?? 1.0) * opacity,
@@ -867,7 +867,7 @@ class const _Mfm({
                   targetMessageId: messageId,
                 ),
               ),
-              child: Assets.misskey.packages.frontend.assets.unknown.image(
+              child: Assets.wenyan.packages.frontend.assets.unknown.image(
                 height: (config.style.fontSize ?? 14.0) * config.scale,
                 opacity: AlwaysStoppedAnimation(
                   (config.style.color?.a ?? 1.0) * config.opacity,

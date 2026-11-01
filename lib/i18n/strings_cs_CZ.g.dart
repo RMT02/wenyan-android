@@ -51,7 +51,7 @@ class _Translations$aria$cs_CZ extends Translations$aria$en_US {
 		const TextSpan(text: '?'),
 	]);
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria je překládán do jiných jazyků dobrovolníkama. Můžete pomoci na '),
+		const TextSpan(text: 'Wenyan je překládán do jiných jazyků dobrovolníkama. Můžete pomoci na '),
 		link,
 		const TextSpan(text: '.'),
 	]);
@@ -83,8 +83,8 @@ class _Translations$misskey$cs_CZ extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'Čeština';
 	@override String get headlineMisskey => 'Síť propojená poznámkami';
-	@override String get introMisskey => 'Vítejte! Misskey je otevřená a decentralizovaná microblogovací služba.\n"Poznámkami" můžete sdílet co se zrovna děje se všemi ve Vašem okolí. 📡\nPomocí "reakcí" můžete sdílet své názory a pocity na ostatní poznámky. 👍\nPojďte objevovat nový svět! 🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} je jeden ze serverů využívající open source platformu <b>Misskey<b> (nazývaná "Misskey instance").';
+	@override String get introMisskey => 'Vítejte! Wenyan je otevřená a decentralizovaná microblogovací služba.\n"Poznámkami" můžete sdílet co se zrovna děje se všemi ve Vašem okolí. 📡\nPomocí "reakcí" můžete sdílet své názory a pocity na ostatní poznámky. 👍\nPojďte objevovat nový svět! 🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} je jeden ze serverů využívající open source platformu <b>Wenyan<b> (nazývaná "Wenyan instance").';
 	@override String monthAndDay({required Object day, required Object month}) => '${day}. ${month}.';
 	@override String get search => 'Vyhledávání';
 	@override String get reset => 'Obnovit';
@@ -93,7 +93,7 @@ class _Translations$misskey$cs_CZ extends Translations$misskey$en_US {
 	@override String get password => 'Heslo';
 	@override String get initialPasswordForSetup => 'Počáteční heslo pro nastavení';
 	@override String get initialPasswordIsIncorrect => 'Počáteční heslo pro nastavení je nesprávné';
-	@override String get initialPasswordForSetupDescription => 'Použijte heslo, které jste nastavili v konfiguračním souboru, pokud jste Misskey instalovali ručně.\nPokud užíváte Misskey hostovací službu, použijte poskytnuté heslo.\nPokud jste heslo nenastavovali, zanechte prázdné.';
+	@override String get initialPasswordForSetupDescription => 'Použijte heslo, které jste nastavili v konfiguračním souboru, pokud jste Wenyan instalovali ručně.\nPokud užíváte Wenyan hostovací službu, použijte poskytnuté heslo.\nPokud jste heslo nenastavovali, zanechte prázdné.';
 	@override String get forgotPassword => 'Zapomenuté heslo';
 	@override String get fetchingAsApObject => 'Načítám data z Fediversu...';
 	@override String get ok => 'Potvrdit';
@@ -248,7 +248,7 @@ class _Translations$misskey$cs_CZ extends Translations$misskey$en_US {
 	@override String get cacheRemoteSensitiveFiles => 'Uložit do mezipaměti vzdálené citlivé soubory';
 	@override String get cacheRemoteSensitiveFilesDescription => 'Když je tohle nastavení zrušeno, tak jsou vzdálené citlivé soubory načítány přímo ze vzdálených instancí bez uložení do mezipaměti.';
 	@override String get flagAsBot => 'Tento účet je bot';
-	@override String get flagAsBotDescription => 'Pokud je tento účet kontrolován programem zaškrtněte tuto možnost. To označí tento účet jako bot pro ostatní vývojáře a zabrání tak nekonečným interakcím s ostatními boty a upraví Misskey systém aby se choval k tomuhle účtu jako bot.';
+	@override String get flagAsBotDescription => 'Pokud je tento účet kontrolován programem zaškrtněte tuto možnost. To označí tento účet jako bot pro ostatní vývojáře a zabrání tak nekonečným interakcím s ostatními boty a upraví Wenyan systém aby se choval k tomuhle účtu jako bot.';
 	@override String get flagAsCat => 'Tenhle účet je kočka';
 	@override String get flagAsCatDescription => 'Vyberte tuto možnost aby tento účet byl označen jako kočka.';
 	@override String get flagShowTimelineReplies => 'Zobrazovat odpovědi na časové ose';
@@ -259,7 +259,7 @@ class _Translations$misskey$cs_CZ extends Translations$misskey$en_US {
 	@override String get loginFailed => 'Přihlášení se nezdařilo.';
 	@override String get showOnRemote => 'Více na původním profilu';
 	@override String get continueOnRemote => 'Pokračujte na původní profil';
-	@override String get chooseServerOnMisskeyHub => 'Vyberete si server z Misskey Hubu';
+	@override String get chooseServerOnMisskeyHub => 'Vyberete si server z Wenyan Hubu';
 	@override String get inputHostName => 'Zadejte doménu';
 	@override String get general => 'Obecně';
 	@override String get wallpaper => 'Obrázek na pozadí';
@@ -508,7 +508,7 @@ class _Translations$misskey$cs_CZ extends Translations$misskey$en_US {
 	@override String get popularTags => 'Populární tagy';
 	@override String get userList => 'Seznamy';
 	@override String get about => 'Informace';
-	@override String get aboutMisskey => 'O Misskey';
+	@override String get aboutMisskey => 'O Wenyan';
 	@override String get administrator => 'Administrátor';
 	@override String get token => 'Token';
 	@override String get x2fa => 'Dvoufázové ověření';
@@ -655,7 +655,7 @@ class _Translations$misskey$cs_CZ extends Translations$misskey$en_US {
 	@override String get ascendingOrder => 'Vzestupně';
 	@override String get descendingOrder => 'Sestupně';
 	@override String get scratchpad => 'Zápisník';
-	@override String get scratchpadDescription => 'Scratchpad poskytuje rozhraní pro AiScript experimenty. Můžete psát, spustit či zkontrolovat výsledky jeho interakce s Misskey.';
+	@override String get scratchpadDescription => 'Scratchpad poskytuje rozhraní pro AiScript experimenty. Můžete psát, spustit či zkontrolovat výsledky jeho interakce s Wenyan.';
 	@override String get output => 'Výstup';
 	@override String get script => 'Skript';
 	@override String get disablePagesScript => 'Vypnout AiScript na stránkách';
@@ -784,7 +784,7 @@ class _Translations$misskey$cs_CZ extends Translations$misskey$en_US {
 	@override String confirmToUnclipAlreadyClippedNote({required Object name}) => 'Tahle poznámku je už součásti "${name}" klipu. Chcete ji místo toho odepnout z tohodle klipu?';
 	@override String get public => 'Veřejný';
 	@override String get private => 'Soukromý';
-	@override String i18nInfo({required Object link}) => 'Misskey je překládán do jiných jazyků dobrovolníkama. Můžete pomoci na ${link}.';
+	@override String i18nInfo({required Object link}) => 'Wenyan je překládán do jiných jazyků dobrovolníkama. Můžete pomoci na ${link}.';
 	@override String get manageAccessTokens => 'Spravovat přístupové tokeny';
 	@override String get accountInfo => 'Informace o účtu';
 	@override String get notesCount => 'Počet poznámek';
@@ -836,7 +836,7 @@ class _Translations$misskey$cs_CZ extends Translations$misskey$en_US {
 	@override String nUsers({required Object n}) => '${n} užívatelů';
 	@override String nNotes({required Object n}) => '${n} poznámek';
 	@override String get sendErrorReports => 'Odesílat chybové záznamy';
-	@override String get sendErrorReportsDescription => 'Pokud je tato funkce zapnutá, budou se při výskytu problému sdílet podrobné informace o chybách se službou Misskey, což pomůže zlepšit kvalitu služby Misskey. Tyto informace budou zahrnovat například verzi operačního systému, jaký prohlížeč používáte, vaši aktivitu v Misskey atd.';
+	@override String get sendErrorReportsDescription => 'Pokud je tato funkce zapnutá, budou se při výskytu problému sdílet podrobné informace o chybách se službou Wenyan, což pomůže zlepšit kvalitu služby Wenyan. Tyto informace budou zahrnovat například verzi operačního systému, jaký prohlížeč používáte, vaši aktivitu v Wenyan atd.';
 	@override String get myTheme => 'Moje vzhledy';
 	@override String get backgroundColor => 'Pozadí';
 	@override String get accentColor => 'Akcent';
@@ -930,7 +930,7 @@ class _Translations$misskey$cs_CZ extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'Poradce při potížích';
 	@override String get useBlurEffect => 'Použít efekt rozostření v UI';
 	@override String get learnMore => 'Zjistit více';
-	@override String get misskeyUpdated => 'Misskey byl aktualizován!';
+	@override String get misskeyUpdated => 'Wenyan byl aktualizován!';
 	@override String get whatIsNew => 'Zobrazit změny';
 	@override String get translate => 'Přeložit';
 	@override String translatedFrom({required Object x}) => 'Přeloženo z ${x}';
@@ -1061,8 +1061,8 @@ class _Translations$misskey$cs_CZ extends Translations$misskey$en_US {
 	@override String get show => 'Zobrazit';
 	@override String get neverShow => 'Znovu nezobrazovat';
 	@override String get remindMeLater => 'Možná později';
-	@override String get didYouLikeMisskey => 'Oblíbili jste si Misskey?';
-	@override String pleaseDonate({required Object host}) => '${host} používá bezplatný software Misskey. Velmi bychom ocenili vaše dary, aby mohl vývoj Misskey pokračovat!';
+	@override String get didYouLikeMisskey => 'Oblíbili jste si Wenyan?';
+	@override String pleaseDonate({required Object host}) => '${host} používá bezplatný software Wenyan. Velmi bychom ocenili vaše dary, aby mohl vývoj Wenyan pokračovat!';
 	@override String get roles => 'Role';
 	@override String get role => 'Role';
 	@override String get noRole => 'Role nenalezena';
@@ -1176,7 +1176,7 @@ class _Translations$misskey$cs_CZ extends Translations$misskey$en_US {
 	@override String get cancelReactionConfirm => 'Opravdu chcete odstranit vaší reakci?';
 	@override String get changeReactionConfirm => 'Opravdu chcete změnit vaši reakci?';
 	@override String get later => 'Později';
-	@override String get goToMisskey => 'Jít na Misskey';
+	@override String get goToMisskey => 'Jít na Wenyan';
 	@override String get additionalEmojiDictionary => 'Další slovníky emoji';
 	@override String get installed => 'Nainstalováno';
 	@override String get branding => 'Značka';
@@ -1391,7 +1391,7 @@ class _Translations$misskey$accountMigration_$cs_CZ extends Translations$misskey
 	@override String get moveTo => 'Přesunout tenhle účet do jiného';
 	@override String get moveToLabel => 'Cílový účet pro přesunutí:';
 	@override String get moveCannotBeUndone => 'Migrace účtu nemůže být vrácena.';
-	@override String get moveAccountDescription => 'Tím dojde k migraci vašeho účtu na jiný účet.\n　・Sledovatelé z tohoto účtu budou automaticky převedeni na nový účet.\n　・Tento účet zruší sledování všech uživatelů, které aktuálně sleduje.\n　・Na tomto účtu nebude možné vytvářet nové poznámky atd.\n\nZatímco migrace sledovaných uživatelů probíhá automaticky, pro migraci seznamu sledovaných uživatelů je nutné připravit některé kroky ručně. Za tímto účelem proveďte export sledovaných, který později naimportujete na nový účet v nabídce nastavení. Stejný postup platí pro seznamy i pro ztlumené a zablokované uživatele.\n\n(Tento výklad platí pro Misskey v13.12.0 a novější. Jiný software ActivityPub, například Mastodon, může fungovat jinak.)';
+	@override String get moveAccountDescription => 'Tím dojde k migraci vašeho účtu na jiný účet.\n　・Sledovatelé z tohoto účtu budou automaticky převedeni na nový účet.\n　・Tento účet zruší sledování všech uživatelů, které aktuálně sleduje.\n　・Na tomto účtu nebude možné vytvářet nové poznámky atd.\n\nZatímco migrace sledovaných uživatelů probíhá automaticky, pro migraci seznamu sledovaných uživatelů je nutné připravit některé kroky ručně. Za tímto účelem proveďte export sledovaných, který později naimportujete na nový účet v nabídce nastavení. Stejný postup platí pro seznamy i pro ztlumené a zablokované uživatele.\n\n(Tento výklad platí pro Wenyan v13.12.0 a novější. Jiný software ActivityPub, například Mastodon, může fungovat jinak.)';
 	@override String get moveAccountHowTo => 'Chcete-li migrovat, vytvořte nejprve alias tohoto účtu na účtu, na který chcete přejít.\nPo vytvoření aliasu zadejte účet, na který chcete přejít, v následujícím formátu: @username@server.example.com';
 	@override String get startMigration => 'Migrovat';
 	@override String migrationConfirm({required Object account}) => 'Opravdu chcete migrovat tento účet na ${account}? Jednou zahájený proces nelze zastavit ani vrátit zpět a tento účet již nebudete moci používat v původním stavu.';
@@ -1630,12 +1630,12 @@ class _Translations$misskey$aboutMisskey_$cs_CZ extends Translations$misskey$abo
 	final TranslationsCsCz _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'Misskey je open-source software vyvíjený syuilo od roku 2014.';
+	@override String get about => 'Wenyan je open-source software vyvíjený syuilo od roku 2014.';
 	@override String get contributors => 'Hlavní přispěvatelé';
 	@override String get allContributors => 'Všichni přispěvatelé';
 	@override String get source => 'Zdrojový kód';
-	@override String get translation => 'Přeložit Misskey';
-	@override String get donate => 'Přispějte na Misskey';
+	@override String get translation => 'Přeložit Wenyan';
+	@override String get donate => 'Přispějte na Wenyan';
 	@override String get morePatrons => 'Vážíme si také podpory mnoha dalších pomocníků, kteří zde nejsou uvedeni. Děkujeme! 🥰';
 	@override String get patrons => 'Patroni';
 }
@@ -2845,9 +2845,9 @@ class _Translations$misskey$achievements_$types_$notes1_$cs_CZ extends Translati
 	final TranslationsCsCz _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Dobrý den Misskey!';
+	@override String get title => 'Dobrý den Wenyan!';
 	@override String get description => 'Zveřejněte vaší první poznámku';
-	@override String get flavor => 'Užijte si to s Misskey!';
+	@override String get flavor => 'Užijte si to s Wenyan!';
 }
 
 // Path: misskey.achievements_.types_.notes10_
@@ -3025,7 +3025,7 @@ class _Translations$misskey$achievements_$types_$login3_$cs_CZ extends Translati
 	// Translations
 	@override String get title => 'Začátečník I';
 	@override String get description => 'Přihlaste se celkově za 3 dny';
-	@override String get flavor => 'Ode dneška mi říkejte Misskista.';
+	@override String get flavor => 'Ode dneška mi říkejte Wenyanist.';
 }
 
 // Path: misskey.achievements_.types_.login7_
@@ -3058,7 +3058,7 @@ class _Translations$misskey$achievements_$types_$login30_$cs_CZ extends Translat
 	final TranslationsCsCz _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskista I';
+	@override String get title => 'Wenyanist I';
 	@override String get description => 'Přihlaste se celkově za 30 dní';
 }
 
@@ -3069,7 +3069,7 @@ class _Translations$misskey$achievements_$types_$login60_$cs_CZ extends Translat
 	final TranslationsCsCz _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskista II';
+	@override String get title => 'Wenyanist II';
 	@override String get description => 'Přihlaste se celkově za 60 dní';
 }
 
@@ -3080,9 +3080,9 @@ class _Translations$misskey$achievements_$types_$login100_$cs_CZ extends Transla
 	final TranslationsCsCz _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskista III';
+	@override String get title => 'Wenyanist III';
 	@override String get description => 'Přihlaste se celkově za 100 dní';
-	@override String get flavor => 'Violent Misskista';
+	@override String get flavor => 'Violent Wenyanist';
 }
 
 // Path: misskey.achievements_.types_.login200_
@@ -3183,7 +3183,7 @@ class _Translations$misskey$achievements_$types_$login1000_$cs_CZ extends Transl
 	// Translations
 	@override String get title => 'Mistr poznámek III';
 	@override String get description => 'Přihlaste se celkově za 1000 dní';
-	@override String get flavor => 'Děkujeme, že používáte Misskey!';
+	@override String get flavor => 'Děkujeme, že používáte Wenyan!';
 }
 
 // Path: misskey.achievements_.types_.noteClipped1_
@@ -3403,9 +3403,9 @@ class _Translations$misskey$achievements_$types_$iLoveMisskey_$cs_CZ extends Tra
 	final TranslationsCsCz _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Miluju Misskey';
-	@override String get description => 'Zveřejněte " I ❤ #Misskey"';
-	@override String get flavor => 'Vývojový tým Misskey si velmi váží vaší podpory!';
+	@override String get title => 'Miluju Wenyan';
+	@override String get description => 'Zveřejněte " I ❤ #Wenyan"';
+	@override String get flavor => 'Vývojový tým Wenyan si velmi váží vaší podpory!';
 }
 
 // Path: misskey.achievements_.types_.foundTreasure_
@@ -3427,7 +3427,7 @@ class _Translations$misskey$achievements_$types_$client30min_$cs_CZ extends Tran
 
 	// Translations
 	@override String get title => 'Krátká pauza';
-	@override String get description => 'Mějte otevřený Misskey alespoň po dobu 30 minut';
+	@override String get description => 'Mějte otevřený Wenyan alespoň po dobu 30 minut';
 }
 
 // Path: misskey.achievements_.types_.client60min_
@@ -3437,8 +3437,8 @@ class _Translations$misskey$achievements_$types_$client60min_$cs_CZ extends Tran
 	final TranslationsCsCz _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Žádný "Miss" v Misskey';
-	@override String get description => 'Mějte otevřený Misskey alespoň po dobu 60 minut';
+	@override String get title => 'Žádný "Miss" v Wenyan';
+	@override String get description => 'Mějte otevřený Wenyan alespoň po dobu 60 minut';
 }
 
 // Path: misskey.achievements_.types_.noteDeletedWithin1min_
@@ -3663,7 +3663,7 @@ class _Translations$misskey$achievements_$types_$brainDiver_$cs_CZ extends Trans
 	// Translations
 	@override String get title => 'Brain Diver';
 	@override String get description => 'Zveřejněte odkaz na Brain Diver';
-	@override String get flavor => 'Misskey-Misskey La-Tu-Ma';
+	@override String get flavor => 'Wenyan-Wenyan La-Tu-Ma';
 }
 
 // Path: misskey.pages_.blocks.note_

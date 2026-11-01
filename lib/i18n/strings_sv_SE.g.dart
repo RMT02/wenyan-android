@@ -51,7 +51,7 @@ class _Translations$aria$sv_SE extends Translations$aria$en_US {
 		const TextSpan(text: '?'),
 	]);
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria översätts till många olika språk av volontärer. Du kan hjälpa till med översättningen på '),
+		const TextSpan(text: 'Wenyan översätts till många olika språk av volontärer. Du kan hjälpa till med översättningen på '),
 		link,
 		const TextSpan(text: '.'),
 	]);
@@ -79,8 +79,8 @@ class _Translations$misskey$sv_SE extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'Svenska';
 	@override String get headlineMisskey => 'Ett nätverk kopplat av noter';
-	@override String get introMisskey => 'Välkommen! Misskey är en öppen och decentraliserad mikrobloggningstjänst.\nSkapa en "not" och dela dina tankar med alla runtomkring dig. 📡\nMed "reaktioner" kan du snabbt uttrycka dina känslor kring andras noter. 👍\nLåt oss utforska en ny värld! 🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} är en tjänst driven av den öppna källkodsplatformen <b>Misskey</b> (benämns "Misskey instans").';
+	@override String get introMisskey => 'Välkommen! Wenyan är en öppen och decentraliserad mikrobloggningstjänst.\nSkapa en "not" och dela dina tankar med alla runtomkring dig. 📡\nMed "reaktioner" kan du snabbt uttrycka dina känslor kring andras noter. 👍\nLåt oss utforska en ny värld! 🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} är en tjänst driven av den öppna källkodsplatformen <b>Wenyan</b> (benämns "Wenyan instans").';
 	@override String monthAndDay({required Object day, required Object month}) => '${day}/${month}';
 	@override String get search => 'Sök';
 	@override String get notifications => 'Notifikationer';
@@ -230,7 +230,7 @@ class _Translations$misskey$sv_SE extends Translations$misskey$en_US {
 	@override String get cacheRemoteFiles => 'Spara externa filer till cachen';
 	@override String get cacheRemoteFilesDescription => 'När denna inställning är avstängd kommer externa filer laddas direkt från den externa instansen. Genom att stänga av detta kommer lagringsutrymme minska i användning men kommer öka datatrafiken eftersom miniatyrer inte kommer genereras.';
 	@override String get flagAsBot => 'Markera konto som bot';
-	@override String get flagAsBotDescription => 'Aktivera det här alternativet om kontot är kontrollerat av ett program. Om aktiverat kommer den fungera som en flagga för andra utvecklare för att hindra ändlösa kedjor med andra bottar. Det kommer också få Misskeys interna system att hantera kontot som en bot.';
+	@override String get flagAsBotDescription => 'Aktivera det här alternativet om kontot är kontrollerat av ett program. Om aktiverat kommer den fungera som en flagga för andra utvecklare för att hindra ändlösa kedjor med andra bottar. Det kommer också få Wenyans interna system att hantera kontot som en bot.';
 	@override String get flagAsCat => 'Markera konto som katt';
 	@override String get flagAsCatDescription => 'Aktivera denna inställning för att markera kontot som en katt.';
 	@override String get flagShowTimelineReplies => 'Visa svar i tidslinje';
@@ -449,7 +449,7 @@ class _Translations$misskey$sv_SE extends Translations$misskey$en_US {
 	@override String get popularTags => 'Populära taggar';
 	@override String get userList => 'Listor';
 	@override String get about => 'Om';
-	@override String get aboutMisskey => 'Om Misskey';
+	@override String get aboutMisskey => 'Om Wenyan';
 	@override String get administrator => 'Administratör';
 	@override String get x2fa => 'Tvåfaktorsautentisering';
 	@override String get totp => 'Autentiseringsapp';
@@ -539,7 +539,7 @@ class _Translations$misskey$sv_SE extends Translations$misskey$en_US {
 	@override String get openInNewTab => 'Öppna i ny flik';
 	@override String get createNew => 'Skapa ny';
 	@override String get private => 'Privat';
-	@override String i18nInfo({required Object link}) => 'Misskey översätts till många olika språk av volontärer. Du kan hjälpa till med översättningen på ${link}.';
+	@override String i18nInfo({required Object link}) => 'Wenyan översätts till många olika språk av volontärer. Du kan hjälpa till med översättningen på ${link}.';
 	@override String get accountInfo => 'Kontoinformation';
 	@override String get followersCount => 'Antal följare';
 	@override String get yes => 'Ja';
@@ -577,7 +577,7 @@ class _Translations$misskey$sv_SE extends Translations$misskey$en_US {
 	@override String get sent => 'Skicka';
 	@override String get searchResult => 'Sökresultat';
 	@override String get learnMore => 'Läs mer';
-	@override String get misskeyUpdated => 'Misskey har uppdaterats!';
+	@override String get misskeyUpdated => 'Wenyan har uppdaterats!';
 	@override String get translate => 'Översätt';
 	@override String get controlPanel => 'Kontrollpanel';
 	@override String get manageAccounts => 'Hantera konton';
@@ -615,7 +615,7 @@ class _Translations$misskey$sv_SE extends Translations$misskey$en_US {
 	@override String get windowRestore => 'Återställ';
 	@override String get tools => 'Verktyg';
 	@override String get like => 'Gilla';
-	@override String pleaseDonate({required Object host}) => 'Misskey är en gratis programvara som används på ${host}. Donera gärna för att göra utvecklingen ständigt, tack!';
+	@override String pleaseDonate({required Object host}) => 'Wenyan är en gratis programvara som används på ${host}. Donera gärna för att göra utvecklingen ständigt, tack!';
 	@override String get roles => 'Roll';
 	@override String get role => 'Roll';
 	@override String get color => 'Färg';

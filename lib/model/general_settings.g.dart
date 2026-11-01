@@ -200,7 +200,9 @@ GeneralSettings _$GeneralSettingsFromJson(
 Map<String, dynamic> _$GeneralSettingsToJson(
   GeneralSettings instance,
 ) => <String, dynamic>{
-  'monospaceFontFamily': ?instance.monospaceFontFamily,
+  'locale': ?_$AppLocaleEnumMap[instance.locale],
+  'collapseRenotes': instance.collapseRenotes,
+  'sensitive': _$SensitiveMediaDisplayEnumMap[instance.sensitive]!,
   'highlightSensitiveMedia': instance.highlightSensitiveMedia,
   'animatedMfm': instance.animatedMfm,
   'advancedMfm': instance.advancedMfm,
@@ -237,7 +239,7 @@ Map<String, dynamic> _$GeneralSettingsToJson(
   'emojiStyle': _$EmojiStyleEnumMap[instance.emojiStyle]!,
   'fontFamily': ?instance.fontFamily,
   'serifFontFamily': ?instance.serifFontFamily,
-  'locale': ?_$AppLocaleEnumMap[instance.locale],
+  'monospaceFontFamily': ?instance.monospaceFontFamily,
   'cursiveFontFamily': ?instance.cursiveFontFamily,
   'fantasyFontFamily': ?instance.fantasyFontFamily,
   'emojiFontFamily': ?instance.emojiFontFamily,
@@ -283,7 +285,7 @@ Map<String, dynamic> _$GeneralSettingsToJson(
   'showTimelineTabBarAtBottom': instance.showTimelineTabBarAtBottom,
   'showMenuButtonInTabBar': instance.showMenuButtonInTabBar,
   'showTabHeaderInOneLine': instance.showTabHeaderInOneLine,
-  'collapseRenotes': instance.collapseRenotes,
+  'alwaysShowTabHeader': instance.alwaysShowTabHeader,
   'showTimelineLastViewedAt': instance.showTimelineLastViewedAt,
   'showPopupOnNewNote': instance.showPopupOnNewNote,
   'timelinesPageButtonTypes': instance.timelinesPageButtonTypes
@@ -322,8 +324,6 @@ Map<String, dynamic> _$GeneralSettingsToJson(
   'darkThemeId': instance.darkThemeId,
   'sound': instance.sound.toJson(),
   'searchUsersByUsername': instance.searchUsersByUsername,
-  'sensitive': _$SensitiveMediaDisplayEnumMap[instance.sensitive]!,
-  'alwaysShowTabHeader': instance.alwaysShowTabHeader,
 };
 
 const _$AppLocaleEnumMap = {

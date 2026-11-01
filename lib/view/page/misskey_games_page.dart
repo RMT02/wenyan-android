@@ -17,7 +17,7 @@ class const MisskeyGamesPage({super.key, required final Account account})
     final serverUrl = ref.watch(serverUrlNotifierProvider(account.host));
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Misskey Games')),
+      appBar: AppBar(title: const Text('闻言小游戏')),
       body: ListView(
         children: [
           ListTile(

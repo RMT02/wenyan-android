@@ -288,7 +288,7 @@ class const _TimelineDrawerExpansionTile({
               onTap: () => context.push('/$account/games'),
               child: const ListTile(
                 leading: Icon(Icons.games),
-                title: Text('Misskey Games'),
+                title: Text('闻言小游戏'),
               ),
             ),
             PopupMenuItem(

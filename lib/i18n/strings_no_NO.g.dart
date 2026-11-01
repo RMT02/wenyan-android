@@ -51,7 +51,7 @@ class _Translations$aria$no_NO extends Translations$aria$en_US {
 		const TextSpan(text: '?'),
 	]);
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria oversettes til flere språk av frivillige. Du kan hjelpe til på '),
+		const TextSpan(text: 'Wenyan oversettes til flere språk av frivillige. Du kan hjelpe til på '),
 		link,
 		const TextSpan(text: '.'),
 	]);
@@ -79,7 +79,7 @@ class _Translations$misskey$no_NO extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'Norsk Bokmål';
 	@override String get headlineMisskey => 'Et nettverk forbundet med Notes';
-	@override String get introMisskey => 'Velkommen! Misskey er en desentralisert mikrobloggtjeneste med åpen kildekode.\nOpprett "Notes" for å dele tankene dine med alle rundt deg. 📡\nMed "reaksjoner" kan du også raskt gi uttrykk for hva du synes om alles Notes. 👍\nLa oss utforske en ny verden! 🚀';
+	@override String get introMisskey => 'Velkommen! Wenyan er en desentralisert mikrobloggtjeneste med åpen kildekode.\nOpprett "Notes" for å dele tankene dine med alle rundt deg. 📡\nMed "reaksjoner" kan du også raskt gi uttrykk for hva du synes om alles Notes. 👍\nLa oss utforske en ny verden! 🚀';
 	@override String monthAndDay({required Object day, required Object month}) => '${day}-${month}';
 	@override String get search => 'Søk';
 	@override String get notifications => 'Varsler';
@@ -205,7 +205,7 @@ class _Translations$misskey$no_NO extends Translations$misskey$en_US {
 	@override String get addEmoji => 'Legg til emoji';
 	@override String get settingGuide => 'Anbefalte innstillinger';
 	@override String get flagAsBot => 'Merk denne kontoen som en bot';
-	@override String get flagAsBotDescription => 'Aktiver dette alternativet hvis denne kontoen styres av et program. Hvis det er aktivert, vil det fungere som et flagg for andre utviklere for å forhindre endeløse interaksjonskjeder med andre roboter og justere Misskeys interne systemer til å behandle denne kontoen som en bot.';
+	@override String get flagAsBotDescription => 'Aktiver dette alternativet hvis denne kontoen styres av et program. Hvis det er aktivert, vil det fungere som et flagg for andre utviklere for å forhindre endeløse interaksjonskjeder med andre roboter og justere Wenyans interne systemer til å behandle denne kontoen som en bot.';
 	@override String get flagAsCat => 'Merk denne kontoen som en katt';
 	@override String get flagAsCatDescription => 'Aktiver dette alternativet for å merke denne kontoen som en katt.';
 	@override String get flagShowTimelineReplies => 'Vis svar i tidslinje';
@@ -360,7 +360,7 @@ class _Translations$misskey$no_NO extends Translations$misskey$en_US {
 	@override String get exploreFediverse => 'Utforsk Fediverse';
 	@override String get userList => 'Lister';
 	@override String get about => 'Informasjon';
-	@override String get aboutMisskey => 'Om Misskey';
+	@override String get aboutMisskey => 'Om Wenyan';
 	@override String newPasswordIs({required Object password}) => 'Det nye passordet er "${password}".';
 	@override String get share => 'Del';
 	@override String get notFound => 'Ikke funnet';
@@ -442,7 +442,7 @@ class _Translations$misskey$no_NO extends Translations$misskey$en_US {
 	@override String get random => 'Tilfeldig';
 	@override String get system => 'System';
 	@override String get desktop => 'Skrivebord';
-	@override String i18nInfo({required Object link}) => 'Misskey oversettes til flere språk av frivillige. Du kan hjelpe til på ${link}.';
+	@override String i18nInfo({required Object link}) => 'Wenyan oversettes til flere språk av frivillige. Du kan hjelpe til på ${link}.';
 	@override String get followingCount => 'Følger';
 	@override String get followersCount => 'Følgere';
 	@override String get yes => 'Ja';
@@ -477,7 +477,7 @@ class _Translations$misskey$no_NO extends Translations$misskey$en_US {
 	@override String get sent => 'Sendt';
 	@override String get received => 'Mottatt';
 	@override String get learnMore => 'Les mer';
-	@override String get misskeyUpdated => 'Misskey har blitt oppdatert!';
+	@override String get misskeyUpdated => 'Wenyan har blitt oppdatert!';
 	@override String get translate => 'Oversett';
 	@override String translatedFrom({required Object x}) => 'Oversatt fra ${x}';
 	@override String get unread => 'Ulest';
@@ -516,7 +516,7 @@ class _Translations$misskey$no_NO extends Translations$misskey$en_US {
 	@override String get show => 'Vis';
 	@override String get neverShow => 'Ikke vis igjen';
 	@override String get remindMeLater => 'Kanskje senere';
-	@override String get didYouLikeMisskey => 'Likte du Misskey?';
+	@override String get didYouLikeMisskey => 'Likte du Wenyan?';
 	@override String get roles => 'Roller';
 	@override String get role => 'Rolle';
 	@override String get color => 'Farge';
@@ -745,8 +745,8 @@ class _Translations$misskey$aboutMisskey_$no_NO extends Translations$misskey$abo
 	final TranslationsNoNo _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'Misskey er programvare med åpen kildekode som har blitt utviklet av syuilo siden 2014.';
-	@override String get translation => 'Oversett Misskey';
+	@override String get about => 'Wenyan er programvare med åpen kildekode som har blitt utviklet av syuilo siden 2014.';
+	@override String get translation => 'Oversett Wenyan';
 }
 
 // Path: misskey.instanceTicker_
@@ -1683,7 +1683,7 @@ class _Translations$misskey$achievements_$types_$brainDiver_$no_NO extends Trans
 
 	// Translations
 	@override String get title => 'Brain Diver';
-	@override String get flavor => 'Misskey-Misskey La-Tu-Ma';
+	@override String get flavor => 'Wenyan-Wenyan La-Tu-Ma';
 }
 
 // Path: misskey.abuseReport_.notificationRecipient_.recipientType_

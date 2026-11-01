@@ -51,7 +51,7 @@ class _Translations$aria$th_TH extends Translations$aria$en_US {
 		const TextSpan(text: ' ใช่ไหม?'),
 	]);
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria กำลังได้รับการแปลเป็นภาษาต่างๆ โดยอาสาสมัคร คุณสามารถช่วยเหลือได้ที่ '),
+		const TextSpan(text: 'เหวินหยาน กำลังได้รับการแปลเป็นภาษาต่างๆ โดยอาสาสมัคร คุณสามารถช่วยเหลือได้ที่ '),
 		link,
 	]);
 	@override TextSpan onlineUsersCount({required InlineSpan n}) => TextSpan(children: [
@@ -86,8 +86,8 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'ภาษาไทย';
 	@override String get headlineMisskey => 'เชื่อมต่อเครือข่ายโดยโน้ต';
-	@override String get introMisskey => 'ยินดีต้อนรับทุกคนจ้า! Misskey คือ ซอฟต์แวร์โอเพนซอร์สสำหรับบริการไมโครบล็อกกิ้ง (MicroBlogging) แบบกระจายศูนย์อำนาจ (Decentralized) \n\nเขียน “โน้ต (Note)” เพื่อส่งต่อเรื่องราวของคุณให้ทั้งโลกได้รับรู้📡\nและอย่าลืมที่จะ “รีแอคชั่น” กับเรื่องราวของคนอื่น ๆ ด้วยนะ! 👍\n\nท่องสำรวจโลกใบใหม่กันเถอะ🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} เป็นหนึ่งในเซิร์ฟเวอร์ของแพลตฟอร์มโอเพ่นซอร์ส <b>Misskey</b>';
+	@override String get introMisskey => 'ยินดีต้อนรับทุกคนจ้า! เหวินหยาน คือ ซอฟต์แวร์โอเพนซอร์สสำหรับบริการไมโครบล็อกกิ้ง (MicroBlogging) แบบกระจายศูนย์อำนาจ (Decentralized) \n\nเขียน “โน้ต (Note)” เพื่อส่งต่อเรื่องราวของคุณให้ทั้งโลกได้รับรู้📡\nและอย่าลืมที่จะ “รีแอคชั่น” กับเรื่องราวของคนอื่น ๆ ด้วยนะ! 👍\n\nท่องสำรวจโลกใบใหม่กันเถอะ🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} เป็นหนึ่งในเซิร์ฟเวอร์ของแพลตฟอร์มโอเพ่นซอร์ส <b>เหวินหยาน</b>';
 	@override String monthAndDay({required Object month, required Object day}) => '${month}/${day}';
 	@override String get search => 'ค้นหา';
 	@override String get reset => 'รีเซ็ต';
@@ -96,7 +96,7 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	@override String get password => 'รหัสผ่าน';
 	@override String get initialPasswordForSetup => 'รหัสผ่านเริ่มต้นสำหรับการตั้งค่า';
 	@override String get initialPasswordIsIncorrect => 'รหัสผ่านเริ่มต้นสำหรับตั้งค่านั้นไม่ถูกต้องค่ะ';
-	@override String get initialPasswordForSetupDescription => 'ถ้าหากคุณติดตั้ง Misskey เอง ให้ใช้รหัสผ่านที่คุณป้อนในไฟล์กำหนดค่า \nถ้าหากคุณกำลังใช้บริการโฮสต์ Misskey ให้ใช้รหัสผ่านที่ได้รับมา\nถ้ายังไม่มีรหัสผ่าน ให้ข้ามช่องรหัสผ่านไป แล้วกดต่อไป';
+	@override String get initialPasswordForSetupDescription => 'ถ้าหากคุณติดตั้ง เหวินหยาน เอง ให้ใช้รหัสผ่านที่คุณป้อนในไฟล์กำหนดค่า \nถ้าหากคุณกำลังใช้บริการโฮสต์ เหวินหยาน ให้ใช้รหัสผ่านที่ได้รับมา\nถ้ายังไม่มีรหัสผ่าน ให้ข้ามช่องรหัสผ่านไป แล้วกดต่อไป';
 	@override String get forgotPassword => 'ลืมรหัสผ่าน';
 	@override String get fetchingAsApObject => 'กำลังดึงข้อมูลจากสหพันธ์...';
 	@override String get ok => 'ตกลง';
@@ -264,7 +264,7 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	@override String get cacheRemoteSensitiveFiles => 'แคชไฟล์ระยะไกลที่มีเนื้อหาละเอียดอ่อน';
 	@override String get cacheRemoteSensitiveFilesDescription => 'เมื่อปิดการใช้งานการตั้งค่านี้ ไฟล์ระยะไกลที่มีเนื้อหาละเอียดอ่อนจะถูกโหลดโดยตรงจากเซิร์ฟเวอร์ระยะไกลโดยไม่มีการแคช';
 	@override String get flagAsBot => 'ทำเครื่องหมายบอกว่าบัญชีนี้เป็นบอต';
-	@override String get flagAsBotDescription => 'เปิดใช้งานตัวเลือกนี้หากบัญชีนี้ถูกควบคุมโดยโปรแกรม เมื่อเปิดใช้งาน มันจะทำหน้าที่เป็นแฟล็กสำหรับนักพัฒนารายอื่นในการป้องกันการสร้างห่วงโซ่การโต้ตอบแบบอนันต์กับบอตตัวอื่น และปรับระบบภายในของ Misskey เพื่อจัดการบัญชีนี้ในฐานะบอต';
+	@override String get flagAsBotDescription => 'เปิดใช้งานตัวเลือกนี้หากบัญชีนี้ถูกควบคุมโดยโปรแกรม เมื่อเปิดใช้งาน มันจะทำหน้าที่เป็นแฟล็กสำหรับนักพัฒนารายอื่นในการป้องกันการสร้างห่วงโซ่การโต้ตอบแบบอนันต์กับบอตตัวอื่น และปรับระบบภายในของ เหวินหยาน เพื่อจัดการบัญชีนี้ในฐานะบอต';
 	@override String get flagAsCat => 'เมี้ยววววววววววววววว!!!!!!!!!!!';
 	@override String get flagAsCatDescription => 'เหมียวเหมียวเมี้ยว??';
 	@override String get flagShowTimelineReplies => 'แสดงตอบกลับโน้ตลงไทม์ไลน์';
@@ -275,7 +275,7 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	@override String get loginFailed => 'การเข้าสู่ระบบไม่สำเร็จ';
 	@override String get showOnRemote => 'ดูบนเซิร์ฟเวอร์ฝั่งระยะไกล';
 	@override String get continueOnRemote => 'ดำเนินการต่อบนเซิร์ฟเวอร์ฝั่งระยะไกล';
-	@override String get chooseServerOnMisskeyHub => 'เลือกเซิร์ฟเวอร์จาก Misskey Hub';
+	@override String get chooseServerOnMisskeyHub => 'เลือกเซิร์ฟเวอร์จาก เหวินหยาน Hub';
 	@override String get specifyServerHost => 'ระบุโดเมนของเซิร์ฟเวอร์โดยตรง';
 	@override String get inputHostName => 'โปรดป้อนโดเมน';
 	@override String get general => 'ทั่วไป';
@@ -538,7 +538,7 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	@override String get popularTags => 'แท็กยอดนิยม';
 	@override String get userList => 'ลิสต์';
 	@override String get about => 'เกี่ยวกับ';
-	@override String get aboutMisskey => 'เกี่ยวกับ Misskey';
+	@override String get aboutMisskey => 'เกี่ยวกับ เหวินหยาน';
 	@override String get administrator => 'ผู้ดูแลระบบ';
 	@override String get token => 'โทเค็น';
 	@override String get x2fa => 'การยืนยันตัวตนแบบสองชั้น';
@@ -680,7 +680,7 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	@override String get volume => 'ระดับเสียง';
 	@override String get masterVolume => 'ระดับเสียงหลัก';
 	@override String get notUseSound => 'ไม่ใช้เสียง';
-	@override String get useSoundOnlyWhenActive => 'มีเสียงออกเฉพาะตอนกำลังใช้ Misskey อยู่เท่านั้น';
+	@override String get useSoundOnlyWhenActive => 'มีเสียงออกเฉพาะตอนกำลังใช้ เหวินหยาน อยู่เท่านั้น';
 	@override String get details => 'รายละเอียด';
 	@override String get renoteDetails => 'รายละเอียดรีโน้ต';
 	@override String get chooseEmoji => 'เลือกเอโมจิ';
@@ -697,7 +697,7 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	@override String get ascendingOrder => 'เรียงลำดับขึ้น';
 	@override String get descendingOrder => 'เรียงลำดับลง';
 	@override String get scratchpad => 'Scratchpad';
-	@override String get scratchpadDescription => 'Scratchpad ให้สภาพแวดล้อมสำหรับการทดลอง AiScript คุณสามารถเขียนโค้ด/สั่งดำเนินการ/ตรวจสอบผลลัพธ์ ของการโต้ตอบกับ Misskey ได้';
+	@override String get scratchpadDescription => 'Scratchpad ให้สภาพแวดล้อมสำหรับการทดลอง AiScript คุณสามารถเขียนโค้ด/สั่งดำเนินการ/ตรวจสอบผลลัพธ์ ของการโต้ตอบกับ เหวินหยาน ได้';
 	@override String get uiInspector => 'ตัวตรวจสอบ UI';
 	@override String get uiInspectorDescription => 'คุณสามารถตรวจสอบรายชื่อเซิร์ฟเวอร์ที่เกี่ยวข้องกับส่วนประกอบอินเตอร์เฟซผู้ใช้ (UI) บนหน่วยความจำของระบบ ส่วนประกอบ UI เหล่านี้จะถูกสร้างขึ้นโดยฟังก์ชัน Ui:C:';
 	@override String get output => 'เอาท์พุต';
@@ -840,7 +840,7 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	@override String confirmToUnclipAlreadyClippedNote({required Object name}) => 'โน้ตนี้เป็นส่วนหนึ่งของคลิป “${name}” อยู่แล้ว ต้องการนำมันออกจากคลิปใช่ไหม?';
 	@override String get public => 'สาธารณะ';
 	@override String get private => 'ส่วนตัว';
-	@override String i18nInfo({required Object link}) => 'Misskey กำลังได้รับการแปลเป็นภาษาต่างๆ โดยอาสาสมัคร คุณสามารถช่วยเหลือได้ที่ ${link}';
+	@override String i18nInfo({required Object link}) => 'เหวินหยาน กำลังได้รับการแปลเป็นภาษาต่างๆ โดยอาสาสมัคร คุณสามารถช่วยเหลือได้ที่ ${link}';
 	@override String get manageAccessTokens => 'การจัดการโทเค็นการเข้าถึง';
 	@override String get accountInfo => 'ข้อมูลบัญชี';
 	@override String get notesCount => 'จำนวนของโน้ต';
@@ -895,7 +895,7 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	@override String nUsers({required Object n}) => '${n} ผู้ใช้งาน';
 	@override String nNotes({required Object n}) => '${n} โน้ต';
 	@override String get sendErrorReports => 'ส่งรายงานข้อผิดพลาด';
-	@override String get sendErrorReportsDescription => 'เมื่อเปิดใช้งาน การแจ้งข้อผิดพลาดจะถูกแชร์กับ Misskey เมื่อเกิดปัญหา ซึ่งช่วยในการปรับปรุงคุณภาพของซอฟต์แวร์ ข้อมูลข้อผิดพลาดอาจรวมถึงเวอร์ชันของระบบปฏิบัติการ ประเภทของเบราว์เซอร์ และประวัติการใช้งาน ฯลฯ';
+	@override String get sendErrorReportsDescription => 'เมื่อเปิดใช้งาน การแจ้งข้อผิดพลาดจะถูกแชร์กับ เหวินหยาน เมื่อเกิดปัญหา ซึ่งช่วยในการปรับปรุงคุณภาพของซอฟต์แวร์ ข้อมูลข้อผิดพลาดอาจรวมถึงเวอร์ชันของระบบปฏิบัติการ ประเภทของเบราว์เซอร์ และประวัติการใช้งาน ฯลฯ';
 	@override String get myTheme => 'ธีมของฉัน';
 	@override String get backgroundColor => 'สีพื้นหลัง';
 	@override String get accentColor => 'สีหลัก';
@@ -990,7 +990,7 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'แก้ปัญหา';
 	@override String get useBlurEffect => 'ใช้เอฟเฟกต์เบลอใน UI';
 	@override String get learnMore => 'แสดงให้ดูหน่อย';
-	@override String get misskeyUpdated => 'Misskey ได้รับการอัปเดตแล้ว!';
+	@override String get misskeyUpdated => 'เหวินหยาน ได้รับการอัปเดตแล้ว!';
 	@override String get whatIsNew => 'แสดงการเปลี่ยนแปลง';
 	@override String get translate => 'แปลภาษา';
 	@override String translatedFrom({required Object x}) => 'แปลมาจาก ${x}';
@@ -1129,8 +1129,8 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	@override String get show => 'แสดงผล';
 	@override String get neverShow => 'ไม่ต้องแสดงข้อความนี้อีก';
 	@override String get remindMeLater => 'ไว้ครั้งหน้าแล้วกัน';
-	@override String get didYouLikeMisskey => 'คุณชอบ Misskey ไหม?';
-	@override String pleaseDonate({required Object host}) => 'Misskey เป็นซอฟต์แวร์ฟรีที่ใช้งานโดย ${host} เราขอขอบคุณการสนับสนุนของคุณอย่างสูงเพื่อให้การพัฒนา Misskey สามารถดำเนินต่อไปได้!';
+	@override String get didYouLikeMisskey => 'คุณชอบ เหวินหยาน ไหม?';
+	@override String pleaseDonate({required Object host}) => 'เหวินหยาน เป็นซอฟต์แวร์ฟรีที่ใช้งานโดย ${host} เราขอขอบคุณการสนับสนุนของคุณอย่างสูงเพื่อให้การพัฒนา เหวินหยาน สามารถดำเนินต่อไปได้!';
 	@override String correspondingSourceIsAvailable({required Object anchor}) => 'ซอร์สโค้ดที่เกี่ยวข้องมีอยู่ที่ ${anchor}';
 	@override String get roles => 'บทบาท';
 	@override String get role => 'บทบาท';
@@ -1259,7 +1259,7 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	@override String get cancelReactionConfirm => 'ต้องการลบรีแอคชั่นใช่ไหม?';
 	@override String get changeReactionConfirm => 'ต้องการเปลี่ยนรีแอคชั่นใช่ไหม?';
 	@override String get later => 'ไว้ทีหลัง';
-	@override String get goToMisskey => 'ถึง Misskey';
+	@override String get goToMisskey => 'ถึง เหวินหยาน';
 	@override String get additionalEmojiDictionary => 'พจนานุกรมเอโมจิเพิ่มเติม';
 	@override String get installed => 'ติดตั้งแล้ว';
 	@override String get branding => 'แบรนดิ้ง';
@@ -1322,7 +1322,7 @@ class _Translations$misskey$th_TH extends Translations$misskey$en_US {
 	@override String get sourceCode => 'ซอร์สโค้ด';
 	@override String get sourceCodeIsNotYetProvided => 'ซอร์สโค้ดยังไม่พร้อมใช้งาน โปรดติดต่อผู้ดูแลระบบเพื่อแก้ไขปัญหานี้';
 	@override String get repositoryUrl => 'URL ของ repository';
-	@override String get repositoryUrlDescription => 'หากมีที่เก็บซอร์สโค้ดที่เปิดเผยต่อสาธารณะ ให้ป้อน URL ที่เก็บซอร์สโค้ดนั้น แต่หากคุณใช้ Misskey ตามต้นฉบับ (ไม่มีการเปลี่ยนแปลงซอร์สโค้ด) ให้ป้อน https://github.com/misskey-dev/misskey';
+	@override String get repositoryUrlDescription => 'หากมีที่เก็บซอร์สโค้ดที่เปิดเผยต่อสาธารณะ ให้ป้อน URL ที่เก็บซอร์สโค้ดนั้น แต่หากคุณใช้ เหวินหยาน ตามต้นฉบับ (ไม่มีการเปลี่ยนแปลงซอร์สโค้ด) ให้ป้อน ';
 	@override String get repositoryUrlOrTarballRequired => 'หากคุณไม่มี repository สาธารณะ คุณจะต้องจัดเตรียม tarball แทน ดู .config/example.yml สำหรับรายละเอียด';
 	@override String get feedback => 'ฟีดแบ็ก';
 	@override String get feedbackUrl => 'URLของฟีดแบ็ก';
@@ -1911,7 +1911,7 @@ class _Translations$misskey$initialAccountSetting_$th_TH extends Translations$mi
 	@override String pushNotificationDescription({required Object name}) => 'เมื่อเปิดใช้งานการแจ้งเตือนแบบพุช จะสามารถรับการแจ้งเตือนจาก ${name} บนอุปกรณ์ที่ใช้งานอยู่ได้';
 	@override String get initialAccountSettingCompleted => 'ตั้งค่าโปรไฟล์เสร็จสมบูรณ์แล้ว!';
 	@override String haveFun({required Object name}) => 'ขอให้สนุกกับ ${name}!';
-	@override String youCanContinueTutorial({required Object name}) => 'คุณสามารถดำเนินการต่อด้วยบทช่วยสอนเกี่ยวกับวิธีใช้ ${name} (Misskey) หรือออกจากบทช่วยสอนแล้วเริ่มใช้งานได้ทันที';
+	@override String youCanContinueTutorial({required Object name}) => 'คุณสามารถดำเนินการต่อด้วยบทช่วยสอนเกี่ยวกับวิธีใช้ ${name} (เหวินหยาน) หรือออกจากบทช่วยสอนแล้วเริ่มใช้งานได้ทันที';
 	@override String get startTutorial => 'เริ่มการฝึกสอน';
 	@override String get skipAreYouSure => 'ต้องการข้ามการตั้งค่าโปรไฟล์จริงๆแบบนั้นหรอ?';
 	@override String get laterAreYouSure => 'ต้องการตั้งค่าโปรไฟล์ในภายหลังจริงๆอย่างงั้นหรอ?';
@@ -2023,7 +2023,7 @@ class _Translations$misskey$accountMigration_$th_TH extends Translations$misskey
 	@override String get moveTo => 'ย้ายบัญชีนี้ไปยังบัญชีใหม่';
 	@override String get moveToLabel => 'บัญชีที่จะย้ายไปที่:';
 	@override String get moveCannotBeUndone => 'ไม่สามารถยกเลิกการโอนย้ายบัญชีได้';
-	@override String get moveAccountDescription => 'การดำเนินการนี้จะย้ายบัญชีของคุณไปยังบัญชีอื่น\n・ผู้ที่กำลังติดตามคุณจากบัญชีนี้จะถูกย้ายไปยังบัญชีใหม่โดยอัตโนมัติ\n・บัญชีนี้จะเลิกติดตามผู้ใช้ทั้งหมดที่กำลังติดตามอยู่\n・คุณจะไม่สามารถสร้างโน้ต ฯลฯ ในบัญชีนี้ได้\n\nแม้ว่าการย้ายผู้ที่ติดตามคุณจะเป็นไปโดยอัตโนมัติ แต่คุณต้องเตรียมขั้นตอนบางอย่างด้วยตนเอง เพื่อย้ายรายชื่อผู้ใช้ที่คุณกำลังติดตาม โดยดำเนินการส่งออกรายชื่อแล้วค่อยนำเข้ามาภายหลังในเมนูการตั้งค่าของบัญชีใหม่ ใช้ขั้นตอนเดียวกันนี้ใช้รายชื่อผู้ใช้ที่ถูกปิดเสียงและถูกบล็อก\n\n(คำอธิบายนี้ใช้กับ Misskey v13.12.0 ขึ้นไป, ซอฟต์แวร์ ActivityPub อื่นๆ เช่น Mastodon อาจทำงานแตกต่างออกไป)';
+	@override String get moveAccountDescription => 'การดำเนินการนี้จะย้ายบัญชีของคุณไปยังบัญชีอื่น\n・ผู้ที่กำลังติดตามคุณจากบัญชีนี้จะถูกย้ายไปยังบัญชีใหม่โดยอัตโนมัติ\n・บัญชีนี้จะเลิกติดตามผู้ใช้ทั้งหมดที่กำลังติดตามอยู่\n・คุณจะไม่สามารถสร้างโน้ต ฯลฯ ในบัญชีนี้ได้\n\nแม้ว่าการย้ายผู้ที่ติดตามคุณจะเป็นไปโดยอัตโนมัติ แต่คุณต้องเตรียมขั้นตอนบางอย่างด้วยตนเอง เพื่อย้ายรายชื่อผู้ใช้ที่คุณกำลังติดตาม โดยดำเนินการส่งออกรายชื่อแล้วค่อยนำเข้ามาภายหลังในเมนูการตั้งค่าของบัญชีใหม่ ใช้ขั้นตอนเดียวกันนี้ใช้รายชื่อผู้ใช้ที่ถูกปิดเสียงและถูกบล็อก\n\n(คำอธิบายนี้ใช้กับ เหวินหยาน v13.12.0 ขึ้นไป, ซอฟต์แวร์ ActivityPub อื่นๆ เช่น Mastodon อาจทำงานแตกต่างออกไป)';
 	@override String get moveAccountHowTo => 'การย้ายบัญชีจะเริ่มต้นโดยการสร้างบัญชีนามแฝง (alias) ของบัญชีนี้ ณ บัญชีที่เป็นปลายทาง หลังจากสร้างนามแฝงแล้ว ให้ป้อนบัญชีปลายทางในรูปแบบดังนี้: @username@server.example.com';
 	@override String get startMigration => 'โอนย้าย';
 	@override String migrationConfirm({required Object account}) => 'ยืนยันการย้ายข้อมูลบัญชีนี้ไปที่ ${account} เมื่อเริ่มแล้วจะไม่สามารถหยุดหรือนำกลับคืนมาได้ และคุณจะไม่สามารถใช้บัญชีนี้ในสถานะดั้งเดิมได้อีกต่อไป\n\nนอกจากนี้ คุณจำเป็นต้องสร้างบัญชีสำรองสำหรับการย้ายบัญชี';
@@ -2272,14 +2272,14 @@ class _Translations$misskey$aboutMisskey_$th_TH extends Translations$misskey$abo
 	final TranslationsThTh _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'Misskey เป็นซอฟต์แวร์โอเพ่นซอร์สที่ถูกพัฒนาโดย Syuilo ตั้งแต่ปี 2014';
+	@override String get about => 'เหวินหยาน เป็นซอฟต์แวร์โอเพ่นซอร์สที่ถูกพัฒนาโดย Syuilo ตั้งแต่ปี 2014';
 	@override String get contributors => 'ผู้สนับสนุนหลัก';
 	@override String get allContributors => 'ผู้มีส่วนร่วมทั้งหมด';
 	@override String get source => 'ซอร์สโค้ด';
 	@override String get original => 'ต้นฉบับ';
-	@override String thisIsModifiedVersion({required Object name}) => '${name} ใช้ Misskey เวอร์ชันดัดแปลง';
-	@override String get translation => 'แปลภาษา Misskey';
-	@override String get donate => 'บริจาคให้กับ Misskey';
+	@override String thisIsModifiedVersion({required Object name}) => '${name} ใช้ เหวินหยาน เวอร์ชันดัดแปลง';
+	@override String get translation => 'แปลภาษา เหวินหยาน';
+	@override String get donate => 'บริจาคให้กับ เหวินหยาน';
 	@override String get morePatrons => 'และอีกหลายท่านที่ไม่ได้เอ่ยนาม ขอบคุณที่ร่วมช่วยเหลือตลอดมานะคะ 🥰';
 	@override String get patrons => 'ผู้อุปถัมภ์';
 	@override String get projectMembers => 'สมาชิกในโครงการ';
@@ -2447,7 +2447,7 @@ class _Translations$misskey$soundSettings_$th_TH extends Translations$misskey$so
 	@override String get driveFileTypeWarn => 'ไม่รองรับไฟล์นี้';
 	@override String get driveFileTypeWarnDescription => 'กรุณาเลือกไฟล์เสียง';
 	@override String get driveFileDurationWarn => 'เสียงยาวเกินไป';
-	@override String get driveFileDurationWarnDescription => 'การใช้เสียงที่ยาว อาจรบกวนการใช้งาน Misskey, ต้องการดำเนินการต่อใช่ไหม?';
+	@override String get driveFileDurationWarnDescription => 'การใช้เสียงที่ยาว อาจรบกวนการใช้งาน เหวินหยาน, ต้องการดำเนินการต่อใช่ไหม?';
 	@override String get driveFileError => 'ไม่สามารถโหลดไฟล์เสียงได้ กรุณาเปลี่ยนแปลงการตั้งค่า';
 }
 
@@ -3303,7 +3303,7 @@ class _Translations$misskey$reversi_$th_TH extends Translations$misskey$reversi_
 	@override String get lookingForPlayer => 'กำลังมองหาคู่ต่อสู้อยู่';
 	@override String get gameCanceled => 'ยกเลิกการเล่นแล้ว';
 	@override String get shareToTlTheGameWhenStart => 'โพสต์ลงไทม์ไลน์เมื่อเริ่มการเล่น';
-	@override String get iStartedAGame => 'เริ่มเล่นหมากรีเวอร์ซีแล้ว! #MisskeyReversi';
+	@override String get iStartedAGame => 'เริ่มเล่นหมากรีเวอร์ซีแล้ว! #เหวินหยานReversi';
 	@override String get opponentHasSettingsChanged => 'อีกฝ่ายเปลี่ยนการตั้งค่า';
 	@override String get allowIrregularRules => 'อนุญาตกฎที่ไม่ปรกติ (โหมดฟรีทุกอย่าง)';
 	@override String get disallowIrregularRules => 'ไม่อนุญาตกฎที่ไม่ปรกติ';
@@ -3342,7 +3342,7 @@ class _Translations$misskey$urlPreviewSetting_$th_TH extends Translations$misske
 	@override String get userAgent => 'User-Agent';
 	@override String get userAgentDescription => 'ตั้งค่า User-Agent ที่ใช้ในการรับการแสดงตัวอย่าง หากเว้นว่างไว้ ระบบจะใช้ User-Agent เริ่มต้น';
 	@override String get summaryProxy => 'endpoint ของพร็อกซีที่สร้างการแสดงตัวอย่าง';
-	@override String get summaryProxyDescription => 'สร้างการแสดงตัวอย่างด้วย summary Proxy แทนที่จะใช้เนื้อหา Misskey';
+	@override String get summaryProxyDescription => 'สร้างการแสดงตัวอย่างด้วย summary Proxy แทนที่จะใช้เนื้อหา เหวินหยาน';
 	@override String get summaryProxyDescription2 => 'พารามิเตอร์ต่อไปนี้จะถูกใช้เป็นสตริงการสืบค้นเพื่อเชื่อมต่อกับพร็อกซี หากฝั่งพร็อกซีไม่รองรับการตั้งค่าเหล่านี้จะถูกละเว้น';
 }
 
@@ -3495,7 +3495,7 @@ class _Translations$misskey$bootErrors_$th_TH extends Translations$misskey$bootE
 	@override String get otherOption1 => 'ลบการตั้งค่าและแคชของไคลเอนต์';
 	@override String get otherOption2 => 'เริ่มใช้งานไคลเอนต์แบบง่าย';
 	@override String get otherOption3 => 'เปิดเครื่องมือซ่อมแซม';
-	@override String get otherOption4 => 'เริ่มทำงาน Misskey ในโหมดปลอดภัย';
+	@override String get otherOption4 => 'เริ่มทำงาน เหวินหยาน ในโหมดปลอดภัย';
 }
 
 // Path: misskey.search_
@@ -3511,7 +3511,7 @@ class _Translations$misskey$search_$th_TH extends Translations$misskey$search_$e
 	@override String get searchScopeUser => 'ผู้ใช้เฉพาะ';
 	@override String get pleaseEnterServerHost => 'กรุณากรอกโฮสต์ของเซิร์ฟเวอร์';
 	@override String get pleaseSelectUser => 'กรุณาเลือกผู้ใช้';
-	@override String get serverHostPlaceholder => 'ตัวอย่าง: misskey.example.com';
+	@override String get serverHostPlaceholder => 'ตัวอย่าง: example.com';
 }
 
 // Path: misskey.serverSetupWizard_
@@ -3521,13 +3521,13 @@ class _Translations$misskey$serverSetupWizard_$th_TH extends Translations$misske
 	final TranslationsThTh _root; // ignore: unused_field
 
 	// Translations
-	@override String get installCompleted => 'การติดตั้ง Misskey เสร็จสมบูรณ์แล้ว!';
+	@override String get installCompleted => 'การติดตั้ง เหวินหยาน เสร็จสมบูรณ์แล้ว!';
 	@override String get firstCreateAccount => 'ขั้นแรก ให้สร้างบัญชีผู้ดูแลระบบ';
 	@override String get accountCreated => 'บัญชีผู้ดูแลระบบถูกสร้างขึ้นแล้ว!';
 	@override String get serverSetting => 'การตั้งค่าเซิร์ฟเวอร์';
 	@override String get youCanEasilyConfigureOptimalServerSettingsWithThisWizard => 'สามารถตั้งค่าเซิร์ฟเวอร์ได้อย่างง่ายดายด้วยวิซาร์ดนี้';
 	@override String get settingsYouMakeHereCanBeChangedLater => 'สามารถเปลี่ยนแปลงการตั้งค่าเหล่านี้ในภายหลังได้';
-	@override String get howWillYouUseMisskey => 'ต้องการใช้ Misskey อย่างไร?';
+	@override String get howWillYouUseMisskey => 'ต้องการใช้ เหวินหยาน อย่างไร?';
 	@override late final _Translations$misskey$serverSetupWizard_$use_$th_TH use_ = _Translations$misskey$serverSetupWizard_$use_$th_TH._(_root);
 	@override String get openServerAdvice => 'การเปิดรับผู้ใช้จำนวนมากมีความเสี่ยง ควรบริหารจัดการด้วยระบบดูแลที่เข้มงวดเพื่อรับมือกับปัญหาที่อาจเกิดขึ้น';
 	@override String get openServerAntiSpamAdvice => 'เพื่อป้องกันไม่ให้เซิร์ฟเวอร์ของตนกลายเป็นแหล่งส่งสแปม ควรเปิดใช้งานฟีเจอร์ป้องกันบอต เช่น reCAPTCHA และใส่ใจเรื่องความปลอดภัยอย่างเคร่งครัด';
@@ -3834,7 +3834,7 @@ class _Translations$misskey$initialTutorial_$landing_$th_TH extends Translations
 
 	// Translations
 	@override String get title => 'ยินดีต้อนรับสู่บทช่วยสอน';
-	@override String get description => 'คุณสามารถตรวจสอบการใช้งานและฟังก์ชั่นพื้นฐานของ Misskey ได้ที่นี่';
+	@override String get description => 'คุณสามารถตรวจสอบการใช้งานและฟังก์ชั่นพื้นฐานของ เหวินหยาน ได้ที่นี่';
 }
 
 // Path: misskey.initialTutorial_.note_
@@ -3845,7 +3845,7 @@ class _Translations$misskey$initialTutorial_$note_$th_TH extends Translations$mi
 
 	// Translations
 	@override String get title => 'โน้ตคืออะไร?';
-	@override String get description => 'โพสต์ใน Misskey เรียกว่า “โน้ต” ซึ่งจะจัดเรียงตามลำดับเวลาบนไทม์ไลน์และอัปเดตแบบเรียลไทม์';
+	@override String get description => 'โพสต์ใน เหวินหยาน เรียกว่า “โน้ต” ซึ่งจะจัดเรียงตามลำดับเวลาบนไทม์ไลน์และอัปเดตแบบเรียลไทม์';
 	@override String get reply => 'คุณสามารถตอบกลับได้ และคุณยังสามารถตอบกลับใส่การตอบกลับเพื่อสนทนาต่อได้เสมือนดั่งเธรด';
 	@override String get renote => 'คุณสามารถแชร์โน้ตไปยังไทม์ไลน์ของคุณเอง คุณยังสามารถเพิ่มข้อความและเครื่องหมายคำพูดได้';
 	@override String get reaction => 'คุณสามารถเพิ่มรีแอคชั่นได้ รายละเอียดจะอธิบายอยู่ในหน้าถัดไป';
@@ -3875,7 +3875,7 @@ class _Translations$misskey$initialTutorial_$timeline_$th_TH extends Translation
 
 	// Translations
 	@override String get title => 'แนวคิดเรื่องของไทม์ไลน์';
-	@override String get description1 => 'Misskey มีหลายไทม์ไลน์ขึ้นอยู่กับวิธีการใช้งานของคุณ (บางไทม์ไลน์อาจไม่สามารถใช้ได้ขึ้นอยู่กับนโยบายของเซิร์ฟเวอร์)';
+	@override String get description1 => 'เหวินหยาน มีหลายไทม์ไลน์ขึ้นอยู่กับวิธีการใช้งานของคุณ (บางไทม์ไลน์อาจไม่สามารถใช้ได้ขึ้นอยู่กับนโยบายของเซิร์ฟเวอร์)';
 	@override String get home => 'คุณสามารถดูโพสต์จากบัญชีที่คุณติดตามได้';
 	@override String get local => 'คุณสามารถดูโพสต์จากผู้ใช้ทั้งหมดบนเซิร์ฟเวอร์นี้';
 	@override String get social => 'จะแสดงโพสต์ทั้งจากไทม์ไลน์หลักและไทม์ไลน์ท้องถิ่น';
@@ -3892,7 +3892,7 @@ class _Translations$misskey$initialTutorial_$postNote_$th_TH extends Translation
 
 	// Translations
 	@override String get title => 'ตั้งค่าการโพสต์โน้ต';
-	@override String get description1 => 'เมื่อโพสต์โน้ตบน Misskey คุณสามารถตั้งค่าตัวเลือกต่างๆ ได้ แบบฟอร์มการส่งมีลักษณะดังนี้';
+	@override String get description1 => 'เมื่อโพสต์โน้ตบน เหวินหยาน คุณสามารถตั้งค่าตัวเลือกต่างๆ ได้ แบบฟอร์มการส่งมีลักษณะดังนี้';
 	@override late final _Translations$misskey$initialTutorial_$postNote_$visibility_$th_TH visibility_ = _Translations$misskey$initialTutorial_$postNote_$visibility_$th_TH._(_root);
 	@override late final _Translations$misskey$initialTutorial_$postNote_$cw_$th_TH cw_ = _Translations$misskey$initialTutorial_$postNote_$cw_$th_TH._(_root);
 }
@@ -3921,7 +3921,7 @@ class _Translations$misskey$initialTutorial_$done_$th_TH extends Translations$mi
 
 	// Translations
 	@override String get title => 'บทเรียนจบลงแล้วจ้า เย่เย่เย่  🎉';
-	@override String description({required Object link}) => 'คุณสมบัติที่แนะนำในที่นี่เป็นเพียงบางส่วนเท่านั้น หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับวิธีใช้ Misskey โปรดไปที่ ${link}';
+	@override String description({required Object link}) => 'คุณสมบัติที่แนะนำในที่นี่เป็นเพียงบางส่วนเท่านั้น หากต้องการเรียนรู้เพิ่มเติมเกี่ยวกับวิธีใช้ เหวินหยาน โปรดไปที่ ${link}';
 }
 
 // Path: misskey.serverSettings_.userGeneratedContentsVisibilityForVisitor_
@@ -4737,7 +4737,7 @@ class _Translations$misskey$serverSetupWizard_$donationRequest_$th_TH extends Tr
 	final TranslationsThTh _root; // ignore: unused_field
 
 	// Translations
-	@override String get text1 => 'Misskey เป็นซอฟต์แวร์ฟรีที่พัฒนาโดยอาสาสมัคร';
+	@override String get text1 => 'เหวินหยาน เป็นซอฟต์แวร์ฟรีที่พัฒนาโดยอาสาสมัคร';
 	@override String get text2 => 'เพื่อให้การพัฒนางานนี้สามารถดำเนินต่อไปได้ในอนาคต หากไม่เป็นการรบกวน รบกวนพิจารณาร่วมสมทบทุนด้วยนะคะ';
 	@override String get text3 => 'นอกจากนี้ยังมีสิทธิพิเศษสำหรับผู้สนับสนุนอีกด้วยค่ะ';
 }
@@ -4861,7 +4861,7 @@ class _Translations$misskey$achievements_$types_$notes1_$th_TH extends Translati
 	// Translations
 	@override String get title => 'just setting up my msky';
 	@override String get description => 'โพสต์โน้ตเป็นครั้งแรก';
-	@override String get flavor => 'ขอให้มีช่วงเวลาที่ดีกับ Misskey นะคะ!';
+	@override String get flavor => 'ขอให้มีช่วงเวลาที่ดีกับ เหวินหยาน นะคะ!';
 }
 
 // Path: misskey.achievements_.types_.notes10_
@@ -5096,7 +5096,7 @@ class _Translations$misskey$achievements_$types_$login100_$th_TH extends Transla
 	// Translations
 	@override String get title => 'มิสคิสต์ III';
 	@override String get description => 'เข้าสู่ระบบเป็นเวลารวม 100 วัน';
-	@override String get flavor => 'Violent Misskist (ทำไมเหมือนชื่อหนังสักเรื่องจังเลยนะ)';
+	@override String get flavor => 'Violent เวินหยานิสต์ (ทำไมเหมือนชื่อหนังสักเรื่องจังเลยนะ)';
 }
 
 // Path: misskey.achievements_.types_.login200_
@@ -5197,7 +5197,7 @@ class _Translations$misskey$achievements_$types_$login1000_$th_TH extends Transl
 	// Translations
 	@override String get title => 'ปรมาจารย์ด้านโน้ต III';
 	@override String get description => 'เข้าสู่ระบบเป็นเวลารวม 1,000 วัน';
-	@override String get flavor => 'ขอบคุณที่ใช้ Misskey นะ !';
+	@override String get flavor => 'ขอบคุณที่ใช้ เหวินหยาน นะ !';
 }
 
 // Path: misskey.achievements_.types_.noteClipped1_
@@ -5417,9 +5417,9 @@ class _Translations$misskey$achievements_$types_$iLoveMisskey_$th_TH extends Tra
 	final TranslationsThTh _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'ฉันรัก Misskey';
-	@override String get description => 'โพสต์ “I ❤ #Misskey”';
-	@override String get flavor => 'ขอบคุณพระคุณเป็นอย่างสูงที่ท่านใช้ Misskey นะคะ ! by ทีมผู้พัฒนา';
+	@override String get title => 'ฉันรัก เหวินหยาน';
+	@override String get description => 'โพสต์ “I ❤ #เหวินหยาน”';
+	@override String get flavor => 'ขอบคุณพระคุณเป็นอย่างสูงที่ท่านใช้ เหวินหยาน นะคะ ! by ทีมผู้พัฒนา';
 }
 
 // Path: misskey.achievements_.types_.foundTreasure_
@@ -5441,7 +5441,7 @@ class _Translations$misskey$achievements_$types_$client30min_$th_TH extends Tran
 
 	// Translations
 	@override String get title => 'พักผ่อนสักหน่อย';
-	@override String get description => 'ใช้เวลา 30 นาทีบน Misskey';
+	@override String get description => 'ใช้เวลา 30 นาทีบน เหวินหยาน';
 }
 
 // Path: misskey.achievements_.types_.client60min_
@@ -5451,8 +5451,8 @@ class _Translations$misskey$achievements_$types_$client60min_$th_TH extends Tran
 	final TranslationsThTh _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskey ต้องไม่มีสิ่งใด “Miss”';
-	@override String get description => 'เปิด Misskey ค้างไว้แล้วอย่างน้อย 60 นาที';
+	@override String get title => 'เหวินหยาน ต้องไม่มีสิ่งใด “Miss”';
+	@override String get description => 'เปิด เหวินหยาน ค้างไว้แล้วอย่างน้อย 60 นาที';
 }
 
 // Path: misskey.achievements_.types_.noteDeletedWithin1min_
@@ -5677,7 +5677,7 @@ class _Translations$misskey$achievements_$types_$brainDiver_$th_TH extends Trans
 	// Translations
 	@override String get title => 'Brain Diver';
 	@override String get description => 'โพสต์ลิงก์ไปยัง Brain Diver';
-	@override String get flavor => 'Misskey-Misskey La-Tu-Ma';
+	@override String get flavor => 'เหวินหยาน-เหวินหยาน La-Tu-Ma';
 }
 
 // Path: misskey.achievements_.types_.smashTestNotificationButton_
@@ -5698,7 +5698,7 @@ class _Translations$misskey$achievements_$types_$tutorialCompleted_$th_TH extend
 	final TranslationsThTh _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'ใบรับรองการสำเร็จหลักสูตร Misskey มือใหม่';
+	@override String get title => 'ใบรับรองการสำเร็จหลักสูตร เหวินหยาน มือใหม่';
 	@override String get description => 'เสร็จสิ้นการสอนแล้ว';
 }
 

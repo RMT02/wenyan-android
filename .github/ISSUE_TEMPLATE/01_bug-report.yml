@@ -45,14 +45,14 @@ body:
 
         Examples:
           * Model and OS of the device(s): Pixel 7a, Android 14
-          * Aria: 1.x.x+x
-          * Server URL: misskey.io
-          * Misskey: 2024.x.x
+          * 闻言：1.x.x+x
+          * 服务器地址：misskey.020209.xyz
+          * 服务端版本：1.x.x
       value: |
         * Model and OS of the device(s):
-        * Aria:
+        * 闻言：
         * Server URL:
-        * Misskey:
+        * 服务端版本：
       render: markdown
     validations:
       required: false

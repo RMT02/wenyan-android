@@ -1,12 +1,12 @@
 import 'package:collection/collection.dart';
 import 'package:flutter_html/flutter_html.dart';
-import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:intl/intl.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:misskey_dart/misskey_dart.dart';
 
 import '../../../constant/colors.dart';
+import '../../../constant/wenyan.dart';
 import '../../../i18n/strings.g.dart';
 import '../../../model/account.dart';
 import '../../../provider/api/federation_instance_provider.dart';
@@ -146,7 +146,7 @@ class const ServerOverview({
               horizontal: 16.0,
             ),
             child: KeyValueWidget(
-              label: instance?.softwareName ?? softwareName ?? 'Misskey',
+              label: instance?.softwareName ?? softwareName ?? wenyanAppName,
               text: meta?.version ?? instance?.softwareVersion,
             ),
           ),
@@ -163,21 +163,7 @@ class const ServerOverview({
                       .replaceAll(RegExp('</?b>'), ''),
                 ),
               ),
-            ListTile(
-              leading: const Icon(Icons.info_outline),
-              title: Text(t.misskey.aboutMisskey),
-              onTap: () => context.push('/about-misskey'),
-            ),
-            if (meta.repositoryUrl ??
-                    ((meta.providesTarball ?? false)
-                        ? serverUrl.replace(
-                            pathSegments: [
-                              'tarball',
-                              'misskey-${meta.version}.tar.gz',
-                            ],
-                          )
-                        : null)
-                case final sourceCode?)
+            if (meta.repositoryUrl case final sourceCode?)
               ListTile(
                 leading: const Icon(Icons.code),
                 title: Text(t.misskey.sourceCode),

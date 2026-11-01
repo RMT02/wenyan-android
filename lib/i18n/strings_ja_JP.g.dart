@@ -46,20 +46,14 @@ class Translations$aria$ja_JP extends Translations$aria$en_US {
 	final TranslationsJaJp _root; // ignore: unused_field
 
 	// Translations
-	@override String get aboutAria => 'Ariaについて';
+	@override String get aboutAria => '聞言について';
 	@override TextSpan acceptFollowRequestConfirm({required InlineSpan name}) => TextSpan(children: [
 		name,
 		const TextSpan(text: 'からのフォロー申請を許可しますか？'),
 	]);
 	@override String get accessTokenUpdated => 'アクセストークンを更新しました';
 	@override String get accountAdded => 'アカウントを追加しました';
-	@override TextSpan acknowledgements({required InlineSpan miria, required InlineSpan misskey}) => TextSpan(children: [
-		const TextSpan(text: 'Ariaは'),
-		miria,
-		const TextSpan(text: 'のフォークです。\nAriaのローカライゼーションは'),
-		misskey,
-		const TextSpan(text: 'のローカライゼーションファイルを基にしています。\n両プロジェクトのコントリビューターの皆様に感謝いたします。'),
-	]);
+	@override String get acknowledgements => '聞言は単一インスタンス向けのオープンソースクライアントです。\nインターフェースの文言はコミュニティのローカライズ成果を参考にしています。\nすべてのオープンソース貢献者に感謝します。';
 	@override String get addTab => 'タブを追加';
 	@override String get alwaysExpandCw => 'CWを常に展開する';
 	@override String get alwaysExpandLongNote => '長いノートを常に展開する';
@@ -120,7 +114,7 @@ class Translations$aria$ja_JP extends Translations$aria$en_US {
 	@override String get expandUser => 'ユーザーを展開する';
 	@override String get extraMentionsWarning => '返信元のノートには含まれていないメンションがあります';
 	@override String get fileNotFound => 'ファイルが見つかりません';
-	@override String get findServer => 'Misskeyサーバーを見つける';
+	@override String get findServer => '聞言サーバーを見つける';
 	@override TextSpan followConfirm({required InlineSpan name}) => TextSpan(children: [
 		name,
 		const TextSpan(text: 'をフォローしますか？'),
@@ -129,12 +123,12 @@ class Translations$aria$ja_JP extends Translations$aria$en_US {
 	@override String get fromDevice => '端末から';
 	@override String get guest => 'ゲスト';
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Ariaは有志によって様々な言語に翻訳されています。'),
+		const TextSpan(text: '聞言は有志によって様々な言語に翻訳されています。'),
 		link,
 		const TextSpan(text: 'で翻訳に協力できます。'),
 	]);
 	@override TextSpan iconAttribution({required InlineSpan sevenc_nanashi, required InlineSpan cc_by}) => TextSpan(children: [
-		const TextSpan(text: 'Ariaのアイコンは'),
+		const TextSpan(text: '聞言のアイコンは'),
 		sevenc_nanashi,
 		const TextSpan(text: 'によって作成され、'),
 		cc_by,
@@ -200,7 +194,7 @@ class Translations$aria$ja_JP extends Translations$aria$en_US {
 	@override String get parameters => 'パラメータ';
 	@override String get paste => '貼り付け';
 	@override TextSpan pastePinnedEmojisDescription({required InlineSpan url}) => TextSpan(children: [
-		const TextSpan(text: '絵文字のリストを貼り付けて一括でピン止めします。\nMisskey Webでピン止めした絵文字のリストは'),
+		const TextSpan(text: '絵文字のリストを貼り付けて一括でピン止めします。\n聞言 Webでピン止めした絵文字のリストは'),
 		url,
 		const TextSpan(text: 'からコピーすることができます。'),
 	]);
@@ -238,7 +232,7 @@ class Translations$aria$ja_JP extends Translations$aria$en_US {
 	@override String get sendMessageConfirm => 'このメッセージを送信しますか？';
 	@override String get server => 'サーバー';
 	@override String get serverUrl => 'サーバーのURL';
-	@override String get settingsFileForAria => 'Ariaの設定ファイル';
+	@override String get settingsFileForAria => '聞言の設定ファイル';
 	@override TextSpan settingsForUser({required InlineSpan user}) => TextSpan(children: [
 		user,
 		const TextSpan(text: 'の設定'),
@@ -317,8 +311,8 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => '日本語';
 	@override String get headlineMisskey => 'ノートでつながるネットワーク';
-	@override String get introMisskey => 'ようこそ！Misskeyは、オープンソースの分散型マイクロブログサービスです。\n「ノート」を作成して、いま起こっていることを共有したり、あなたについて皆に発信しよう📡\n「リアクション」機能で、皆のノートに素早く反応を追加することもできます👍\n新しい世界を探検しよう🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name}は、オープンソースのプラットフォーム<b>Misskey</b>のサーバーのひとつです。';
+	@override String get introMisskey => 'ようこそ！聞言は、オープンソースの分散型マイクロブログサービスです。\n「ノート」を作成して、いま起こっていることを共有したり、あなたについて皆に発信しよう📡\n「リアクション」機能で、皆のノートに素早く反応を追加することもできます👍\n新しい世界を探検しよう🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name}は、オープンソースのプラットフォーム<b>聞言</b>のサーバーのひとつです。';
 	@override String monthAndDay({required Object month, required Object day}) => '${month}月 ${day}日';
 	@override String get search => '検索';
 	@override String get reset => 'リセット';
@@ -327,7 +321,7 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	@override String get password => 'パスワード';
 	@override String get initialPasswordForSetup => '初期設定開始用パスワード';
 	@override String get initialPasswordIsIncorrect => '初期設定開始用のパスワードが違います。';
-	@override String get initialPasswordForSetupDescription => 'Misskeyを自分でインストールした場合は、設定ファイルに入力したパスワードを使用してください。\nMisskeyのホスティングサービスなどを使用している場合は、提供されたパスワードを使用してください。\nパスワードを設定していない場合は、空欄にしたまま続行してください。';
+	@override String get initialPasswordForSetupDescription => '聞言を自分でインストールした場合は、設定ファイルに入力したパスワードを使用してください。\n聞言のホスティングサービスなどを使用している場合は、提供されたパスワードを使用してください。\nパスワードを設定していない場合は、空欄にしたまま続行してください。';
 	@override String get forgotPassword => 'パスワードを忘れた';
 	@override String get fetchingAsApObject => '連合に照会中';
 	@override String get ok => 'OK';
@@ -495,7 +489,7 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	@override String get cacheRemoteSensitiveFiles => 'リモートのセンシティブなファイルをキャッシュする';
 	@override String get cacheRemoteSensitiveFilesDescription => 'この設定を無効にすると、リモートのセンシティブなファイルはキャッシュせず直リンクするようになります。';
 	@override String get flagAsBot => 'Botとして設定';
-	@override String get flagAsBotDescription => 'このアカウントがプログラムによって運用される場合は、このフラグをオンにします。オンにすると、反応の連鎖を防ぐためのフラグとして他の開発者に役立ったり、Misskeyのシステム上での扱いがBotに合ったものになります。';
+	@override String get flagAsBotDescription => 'このアカウントがプログラムによって運用される場合は、このフラグをオンにします。オンにすると、反応の連鎖を防ぐためのフラグとして他の開発者に役立ったり、聞言のシステム上での扱いがBotに合ったものになります。';
 	@override String get flagAsCat => 'にゃああああああああああああああ！！！！！！！！！！！！';
 	@override String get flagAsCatDescription => 'にゃにゃにゃ？？';
 	@override String get flagShowTimelineReplies => 'タイムラインにノートへの返信を表示する';
@@ -506,7 +500,7 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	@override String get loginFailed => 'ログインに失敗しました';
 	@override String get showOnRemote => 'リモートで表示';
 	@override String get continueOnRemote => 'リモートで続行';
-	@override String get chooseServerOnMisskeyHub => 'Misskey Hubからサーバーを選択';
+	@override String get chooseServerOnMisskeyHub => '聞言 Hubからサーバーを選択';
 	@override String get specifyServerHost => 'サーバーのドメインを直接指定';
 	@override String get inputHostName => 'ドメインを入力してください';
 	@override String get general => '全般';
@@ -769,7 +763,7 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	@override String get popularTags => '人気のタグ';
 	@override String get userList => 'リスト';
 	@override String get about => '情報';
-	@override String get aboutMisskey => 'Misskeyについて';
+	@override String get aboutMisskey => '聞言について';
 	@override String get administrator => '管理者';
 	@override String get token => '確認コード';
 	@override String get x2fa => '二要素認証';
@@ -911,7 +905,7 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	@override String get volume => '音量';
 	@override String get masterVolume => 'マスター音量';
 	@override String get notUseSound => 'サウンドを出力しない';
-	@override String get useSoundOnlyWhenActive => 'Misskeyがアクティブな時のみサウンドを出力する';
+	@override String get useSoundOnlyWhenActive => '聞言がアクティブな時のみサウンドを出力する';
 	@override String get details => '詳細';
 	@override String get renoteDetails => 'リノートの詳細';
 	@override String get chooseEmoji => '絵文字を選択';
@@ -928,7 +922,7 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	@override String get ascendingOrder => '昇順';
 	@override String get descendingOrder => '降順';
 	@override String get scratchpad => 'スクラッチパッド';
-	@override String get scratchpadDescription => 'スクラッチパッドは、AiScriptの実験環境を提供します。Misskeyと対話するコードの記述、実行、結果の確認ができます。';
+	@override String get scratchpadDescription => 'スクラッチパッドは、AiScriptの実験環境を提供します。聞言と対話するコードの記述、実行、結果の確認ができます。';
 	@override String get uiInspector => 'UIインスペクター';
 	@override String get uiInspectorDescription => 'メモリ上に存在しているUIコンポーネントのインスタンスの一覧を見ることができます。UIコンポーネントはUi:C:系関数により生成されます。';
 	@override String get output => '出力';
@@ -1075,7 +1069,7 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	@override String removeNoteFromAntennaConfirm({required Object name}) => '「${name}」からこのノートを削除しますか？';
 	@override String get public => 'パブリック';
 	@override String get private => '非公開';
-	@override String i18nInfo({required Object link}) => 'Misskeyは有志によって様々な言語に翻訳されています。${link}で翻訳に協力できます。';
+	@override String i18nInfo({required Object link}) => '聞言は有志によって様々な言語に翻訳されています。${link}で翻訳に協力できます。';
 	@override String get manageAccessTokens => 'アクセストークンの管理';
 	@override String get accountInfo => 'アカウント情報';
 	@override String get notesCount => 'ノートの数';
@@ -1130,7 +1124,7 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	@override String nUsers({required Object n}) => '${n}ユーザー';
 	@override String nNotes({required Object n}) => '${n}ノート';
 	@override String get sendErrorReports => 'エラーリポートを送信';
-	@override String get sendErrorReportsDescription => 'オンにすると、問題が発生したときにエラーの詳細情報がMisskeyに共有され、ソフトウェアの品質向上に役立てることができます。エラー情報には、OSのバージョン、ブラウザの種類、行動履歴などが含まれます。';
+	@override String get sendErrorReportsDescription => 'オンにすると、問題が発生したときにエラーの詳細情報が聞言に共有され、ソフトウェアの品質向上に役立てることができます。エラー情報には、OSのバージョン、ブラウザの種類、行動履歴などが含まれます。';
 	@override String get myTheme => 'マイテーマ';
 	@override String get backgroundColor => '背景';
 	@override String get accentColor => 'アクセント';
@@ -1225,7 +1219,7 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'トラブルシューティング';
 	@override String get useBlurEffect => 'UIにぼかし効果を使用';
 	@override String get learnMore => '詳しく';
-	@override String get misskeyUpdated => 'Misskeyが更新されました！';
+	@override String get misskeyUpdated => '聞言が更新されました！';
 	@override String get whatIsNew => '更新情報を見る';
 	@override String get translate => '翻訳';
 	@override String translatedFrom({required Object x}) => '${x}から翻訳';
@@ -1364,8 +1358,8 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	@override String get show => '表示';
 	@override String get neverShow => '今後表示しない';
 	@override String get remindMeLater => 'また後で';
-	@override String get didYouLikeMisskey => 'Misskeyを気に入っていただけましたか？';
-	@override String pleaseDonate({required Object host}) => 'Misskeyは${host}が使用している無料のソフトウェアです。これからも開発を続けられるように、ぜひ寄付をお願いします！';
+	@override String get didYouLikeMisskey => '聞言を気に入っていただけましたか？';
+	@override String pleaseDonate({required Object host}) => '聞言は${host}が使用している無料のソフトウェアです。これからも開発を続けられるように、ぜひ寄付をお願いします！';
 	@override String correspondingSourceIsAvailable({required Object anchor}) => '対応するソースコードは${anchor}から利用可能です。';
 	@override String get roles => 'ロール';
 	@override String get role => 'ロール';
@@ -1494,7 +1488,7 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	@override String get cancelReactionConfirm => 'リアクションを取り消しますか？';
 	@override String get changeReactionConfirm => 'リアクションを変更しますか？';
 	@override String get later => 'あとで';
-	@override String get goToMisskey => 'Misskeyへ';
+	@override String get goToMisskey => '聞言へ';
 	@override String get additionalEmojiDictionary => '絵文字の追加辞書';
 	@override String get installed => 'インストール済み';
 	@override String get branding => 'ブランディング';
@@ -1558,7 +1552,7 @@ class Translations$misskey$ja_JP extends Translations$misskey$en_US {
 	@override String get sourceCode => 'ソースコード';
 	@override String get sourceCodeIsNotYetProvided => 'ソースコードはまだ提供されていません。この問題の修正について管理者に問い合わせてください。';
 	@override String get repositoryUrl => 'リポジトリURL';
-	@override String get repositoryUrlDescription => 'ソースコードが公開されているリポジトリがある場合、そのURLを記入します。Misskeyを現状のまま（ソースコードにいかなる変更も加えずに）使用している場合は https://github.com/misskey-dev/misskey と記入します。';
+	@override String get repositoryUrlDescription => 'ソースコードが公開されているリポジトリがある場合、そのURLを記入します。聞言を現状のまま（ソースコードにいかなる変更も加えずに）使用している場合は と記入します。';
 	@override String get repositoryUrlOrTarballRequired => 'リポジトリを公開していない場合、代わりにtarballを提供する必要があります。詳細は.config/example.ymlを参照してください。';
 	@override String get feedback => 'フィードバック';
 	@override String get feedbackUrl => 'フィードバックURL';
@@ -2167,7 +2161,7 @@ class Translations$misskey$initialAccountSetting_$ja_JP extends Translations$mis
 	@override String pushNotificationDescription({required Object name}) => 'プッシュ通知を有効にすると${name}の通知をお使いのデバイスで受け取ることができます。';
 	@override String get initialAccountSettingCompleted => '初期設定が完了しました！';
 	@override String haveFun({required Object name}) => '${name}をお楽しみください！';
-	@override String youCanContinueTutorial({required Object name}) => 'このまま${name}(Misskey)の使い方についてのチュートリアルに進むこともできますが、ここで中断してすぐに使い始めることもできます。';
+	@override String youCanContinueTutorial({required Object name}) => 'このまま${name}(聞言)の使い方についてのチュートリアルに進むこともできますが、ここで中断してすぐに使い始めることもできます。';
 	@override String get startTutorial => 'チュートリアルを開始';
 	@override String get skipAreYouSure => '初期設定をスキップしますか？';
 	@override String get laterAreYouSure => '初期設定をあとでやり直しますか？';
@@ -2279,7 +2273,7 @@ class Translations$misskey$accountMigration_$ja_JP extends Translations$misskey$
 	@override String get moveTo => 'このアカウントを新しいアカウントへ移行';
 	@override String get moveToLabel => '移行先のアカウント:';
 	@override String get moveCannotBeUndone => 'アカウントを移行すると、取り消すことはできません。';
-	@override String get moveAccountDescription => '新しいアカウントへ移行します。\n　・フォロワーが新しいアカウントを自動でフォローします\n　・このアカウントからのフォローは全て解除されます\n　・このアカウントではノートの作成などができなくなります\n\nフォロワーの移行は自動ですが、フォローの移行は手動で行う必要があります。移行前にこのアカウントでフォローエクスポートし、移行後すぐに移行先アカウントでインポートを行なってください。\nリスト・ミュート・ブロックについても同様ですので、手動で移行する必要があります。\n\n（この説明はこのサーバー（Misskey v13.12.0以降）の仕様です。Mastodonなどの他のActivityPubソフトウェアでは挙動が異なる場合があります。）';
+	@override String get moveAccountDescription => '新しいアカウントへ移行します。\n　・フォロワーが新しいアカウントを自動でフォローします\n　・このアカウントからのフォローは全て解除されます\n　・このアカウントではノートの作成などができなくなります\n\nフォロワーの移行は自動ですが、フォローの移行は手動で行う必要があります。移行前にこのアカウントでフォローエクスポートし、移行後すぐに移行先アカウントでインポートを行なってください。\nリスト・ミュート・ブロックについても同様ですので、手動で移行する必要があります。\n\n（この説明はこのサーバー（聞言 v13.12.0以降）の仕様です。Mastodonなどの他のActivityPubソフトウェアでは挙動が異なる場合があります。）';
 	@override String get moveAccountHowTo => 'アカウントの移行には、まずは移行先のアカウントでこのアカウントに対しエイリアスを作成します。\nエイリアス作成後、移行先のアカウントを次のように入力してください: @username@server.example.com';
 	@override String get startMigration => '移行する';
 	@override String migrationConfirm({required Object account}) => '本当にこのアカウントを ${account} に移行しますか？一度移行すると取り消せず、二度とこのアカウントを元の状態で使用できなくなります。';
@@ -2537,14 +2531,14 @@ class Translations$misskey$aboutMisskey_$ja_JP extends Translations$misskey$abou
 	final TranslationsJaJp _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'Misskeyはsyuiloによって2014年から開発されている、オープンソースのソフトウェアです。';
+	@override String get about => '聞言はsyuiloによって2014年から開発されている、オープンソースのソフトウェアです。';
 	@override String get contributors => 'コントリビューター';
 	@override String get allContributors => '全てのコントリビューター';
 	@override String get source => 'ソースコード';
 	@override String get original => 'オリジナル';
-	@override String thisIsModifiedVersion({required Object name}) => '${name}はオリジナルのMisskeyを改変したバージョンを使用しています。';
-	@override String get translation => 'Misskeyを翻訳';
-	@override String get donate => 'Misskeyに寄付';
+	@override String thisIsModifiedVersion({required Object name}) => '${name}はオリジナルの聞言を改変したバージョンを使用しています。';
+	@override String get translation => '聞言を翻訳';
+	@override String get donate => '聞言に寄付';
 	@override String get morePatrons => '他にも多くの方が支援してくれています。ありがとうございます🥰';
 	@override String get patrons => '支援者';
 	@override String get projectMembers => 'プロジェクトメンバー';
@@ -2712,7 +2706,7 @@ class Translations$misskey$soundSettings_$ja_JP extends Translations$misskey$sou
 	@override String get driveFileTypeWarn => 'このファイルは対応していません';
 	@override String get driveFileTypeWarnDescription => '音声ファイルを選択してください';
 	@override String get driveFileDurationWarn => '音声が長すぎます';
-	@override String get driveFileDurationWarnDescription => '長い音声を使用するとMisskeyの使用に支障をきたす可能性があります。それでも続行しますか？';
+	@override String get driveFileDurationWarnDescription => '長い音声を使用すると聞言の使用に支障をきたす可能性があります。それでも続行しますか？';
 	@override String get driveFileError => '音声が読み込めませんでした。設定を変更してください';
 }
 
@@ -3570,7 +3564,7 @@ class Translations$misskey$reversi_$ja_JP extends Translations$misskey$reversi_$
 	@override String get lookingForPlayer => '対戦相手を探しています';
 	@override String get gameCanceled => '対局がキャンセルされました';
 	@override String get shareToTlTheGameWhenStart => '開始時に対局をタイムラインに投稿';
-	@override String get iStartedAGame => '対局を開始しました！ #MisskeyReversi';
+	@override String get iStartedAGame => '対局を開始しました！ #聞言Reversi';
 	@override String get opponentHasSettingsChanged => '相手が設定を変更しました';
 	@override String get allowIrregularRules => '変則許可 (完全フリー)';
 	@override String get disallowIrregularRules => '変則なし';
@@ -3609,7 +3603,7 @@ class Translations$misskey$urlPreviewSetting_$ja_JP extends Translations$misskey
 	@override String get userAgent => 'User-Agent';
 	@override String get userAgentDescription => 'プレビュー取得時に使用されるUser-Agentを設定します。空欄の場合、デフォルトのUser-Agentが使用されます。';
 	@override String get summaryProxy => 'プレビューを生成するプロキシのエンドポイント';
-	@override String get summaryProxyDescription => 'Misskey本体ではなく、サマリープロキシを使用してプレビューを生成します。';
+	@override String get summaryProxyDescription => '聞言本体ではなく、サマリープロキシを使用してプレビューを生成します。';
 	@override String get summaryProxyDescription2 => 'プロキシには下記パラメータがクエリ文字列として連携されます。プロキシ側がこれらをサポートしない場合、設定値は無視されます。';
 }
 
@@ -3762,7 +3756,7 @@ class Translations$misskey$bootErrors_$ja_JP extends Translations$misskey$bootEr
 	@override String get otherOption1 => 'クライアント設定とキャッシュを削除';
 	@override String get otherOption2 => '簡易クライアントを起動';
 	@override String get otherOption3 => '修復ツールを起動';
-	@override String get otherOption4 => 'Misskeyをセーフモードで起動';
+	@override String get otherOption4 => '聞言をセーフモードで起動';
 }
 
 // Path: misskey.search_
@@ -3778,7 +3772,7 @@ class Translations$misskey$search_$ja_JP extends Translations$misskey$search_$en
 	@override String get searchScopeUser => 'ユーザー指定';
 	@override String get pleaseEnterServerHost => 'サーバーのホストを入力してください';
 	@override String get pleaseSelectUser => 'ユーザーを選択してください';
-	@override String get serverHostPlaceholder => '例: misskey.example.com';
+	@override String get serverHostPlaceholder => '例: example.com';
 	@override String get postFrom => '投稿日時from';
 	@override String get postTo => '投稿日時to';
 }
@@ -3790,13 +3784,13 @@ class Translations$misskey$serverSetupWizard_$ja_JP extends Translations$misskey
 	final TranslationsJaJp _root; // ignore: unused_field
 
 	// Translations
-	@override String get installCompleted => 'Misskeyのインストールが完了しました！';
+	@override String get installCompleted => '聞言のインストールが完了しました！';
 	@override String get firstCreateAccount => 'まずは、管理者アカウントを作成しましょう。';
 	@override String get accountCreated => '管理者アカウントが作成されました！';
 	@override String get serverSetting => 'サーバーの設定';
 	@override String get youCanEasilyConfigureOptimalServerSettingsWithThisWizard => 'このウィザードで簡単に最適なサーバーの設定が行えます。';
 	@override String get settingsYouMakeHereCanBeChangedLater => 'ここでの設定は、あとからでも変更できます。';
-	@override String get howWillYouUseMisskey => 'Misskeyをどのように使いますか？';
+	@override String get howWillYouUseMisskey => '聞言をどのように使いますか？';
 	@override late final Translations$misskey$serverSetupWizard_$use_$ja_JP use_ = Translations$misskey$serverSetupWizard_$use_$ja_JP.internal(_root);
 	@override String get openServerAdvice => '不特定多数の利用者を受け入れることはリスクが伴います。トラブルに対処できるよう、確実なモデレーション体制で運営することを推奨します。';
 	@override String get openServerAntiSpamAdvice => '自サーバーがスパムの踏み台にならないように、reCAPTCHAといったアンチボット機能を有効にするなど、セキュリティについても細心の注意が必要です。';
@@ -4119,7 +4113,7 @@ class Translations$misskey$initialTutorial_$landing_$ja_JP extends Translations$
 
 	// Translations
 	@override String get title => 'チュートリアルへようこそ';
-	@override String get description => 'ここでは、Misskeyの基本的な使い方や機能を確認できます。';
+	@override String get description => 'ここでは、聞言の基本的な使い方や機能を確認できます。';
 }
 
 // Path: misskey.initialTutorial_.note_
@@ -4130,7 +4124,7 @@ class Translations$misskey$initialTutorial_$note_$ja_JP extends Translations$mis
 
 	// Translations
 	@override String get title => 'ノートって何？';
-	@override String get description => 'Misskeyでの投稿は「ノート」と呼びます。ノートはタイムラインに時系列で並んでいて、リアルタイムで更新されていきます。';
+	@override String get description => '聞言での投稿は「ノート」と呼びます。ノートはタイムラインに時系列で並んでいて、リアルタイムで更新されていきます。';
 	@override String get reply => '返信することができます。返信に対しての返信も可能で、スレッドのように会話を続けることもできます。';
 	@override String get renote => 'そのノートを自分のタイムラインに流して共有することができます。テキストを追加して引用することも可能です。';
 	@override String get reaction => 'リアクションをつけることができます。詳しくは次のページで解説します。';
@@ -4160,7 +4154,7 @@ class Translations$misskey$initialTutorial_$timeline_$ja_JP extends Translations
 
 	// Translations
 	@override String get title => 'タイムラインのしくみ';
-	@override String get description1 => 'Misskeyには、使い方に応じて複数のタイムラインが用意されています（サーバーによってはいずれかが無効になっていることがあります）。';
+	@override String get description1 => '聞言には、使い方に応じて複数のタイムラインが用意されています（サーバーによってはいずれかが無効になっていることがあります）。';
 	@override String get home => 'あなたがフォローしているアカウントの投稿を見られます。';
 	@override String get local => 'このサーバーにいるユーザー全員の投稿を見られます。';
 	@override String get social => 'ホームタイムラインとローカルタイムラインの投稿が両方表示されます。';
@@ -4177,7 +4171,7 @@ class Translations$misskey$initialTutorial_$postNote_$ja_JP extends Translations
 
 	// Translations
 	@override String get title => 'ノートの投稿設定';
-	@override String get description1 => 'Misskeyにノートを投稿する際には、様々なオプションの設定が可能です。投稿フォームはこのようになっています。';
+	@override String get description1 => '聞言にノートを投稿する際には、様々なオプションの設定が可能です。投稿フォームはこのようになっています。';
 	@override late final Translations$misskey$initialTutorial_$postNote_$visibility_$ja_JP visibility_ = Translations$misskey$initialTutorial_$postNote_$visibility_$ja_JP.internal(_root);
 	@override late final Translations$misskey$initialTutorial_$postNote_$cw_$ja_JP cw_ = Translations$misskey$initialTutorial_$postNote_$cw_$ja_JP.internal(_root);
 }
@@ -4206,7 +4200,7 @@ class Translations$misskey$initialTutorial_$done_$ja_JP extends Translations$mis
 
 	// Translations
 	@override String get title => 'チュートリアルは終了です🎉';
-	@override String description({required Object link}) => 'ここで紹介した機能はほんの一部にすぎません。Misskeyの使い方をより詳しく知るには、${link}をご覧ください。';
+	@override String description({required Object link}) => 'ここで紹介した機能はほんの一部にすぎません。聞言の使い方をより詳しく知るには、${link}をご覧ください。';
 }
 
 // Path: misskey.serverSettings_.userGeneratedContentsVisibilityForVisitor_
@@ -4340,7 +4334,7 @@ class Translations$misskey$role_$options_$ja_JP extends Translations$misskey$rol
 	@override String get driveCapacity => 'ドライブ容量';
 	@override String get maxFileSize => 'アップロード可能な最大ファイルサイズ';
 	@override String get maxFileSize_caption => 'リバースプロキシやCDNなど、前段で別の設定値が存在する場合があります。';
-	@override String maxFileSize_caption2({required Object max}) => 'サーバー全体の最大ファイルサイズ設定は ${max} です。これより大きいファイルをアップロードできるようにするには、Misskeyの設定ファイルからこの設定を緩和してください。';
+	@override String maxFileSize_caption2({required Object max}) => 'サーバー全体の最大ファイルサイズ設定は ${max} です。これより大きいファイルをアップロードできるようにするには、聞言の設定ファイルからこの設定を緩和してください。';
 	@override String get alwaysMarkNsfw => 'ファイルにNSFWを常に付与';
 	@override String get canUpdateBioMedia => 'アイコンとバナーの更新を許可';
 	@override String get pinMax => 'ノートのピン留めの最大数';
@@ -5023,7 +5017,7 @@ class Translations$misskey$serverSetupWizard_$donationRequest_$ja_JP extends Tra
 	final TranslationsJaJp _root; // ignore: unused_field
 
 	// Translations
-	@override String get text1 => 'Misskeyは有志によって開発されている無料のソフトウェアです。';
+	@override String get text1 => '聞言は有志によって開発されている無料のソフトウェアです。';
 	@override String get text2 => '今後も開発を続けられるように、よろしければぜひカンパをお願いいたします。';
 	@override String get text3 => '支援者向け特典もあります！';
 }
@@ -5163,7 +5157,7 @@ class Translations$misskey$achievements_$types_$notes1_$ja_JP extends Translatio
 	// Translations
 	@override String get title => 'just setting up my msky';
 	@override String get description => '初めてノートを投稿した';
-	@override String get flavor => '良いMisskeyライフを！';
+	@override String get flavor => '良い聞言ライフを！';
 }
 
 // Path: misskey.achievements_.types_.notes10_
@@ -5341,7 +5335,7 @@ class Translations$misskey$achievements_$types_$login3_$ja_JP extends Translatio
 	// Translations
 	@override String get title => 'ビギナーⅠ';
 	@override String get description => '通算ログイン日数が3日';
-	@override String get flavor => '今日からね僕は ミスキストってことで';
+	@override String get flavor => '今日からね僕は 聞言民ってことで';
 }
 
 // Path: misskey.achievements_.types_.login7_
@@ -5374,7 +5368,7 @@ class Translations$misskey$achievements_$types_$login30_$ja_JP extends Translati
 	final TranslationsJaJp _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'ミスキストⅠ';
+	@override String get title => '聞言民Ⅰ';
 	@override String get description => '通算ログイン日数が30日';
 }
 
@@ -5385,7 +5379,7 @@ class Translations$misskey$achievements_$types_$login60_$ja_JP extends Translati
 	final TranslationsJaJp _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'ミスキストⅡ';
+	@override String get title => '聞言民Ⅱ';
 	@override String get description => '通算ログイン日数が60日';
 }
 
@@ -5396,9 +5390,9 @@ class Translations$misskey$achievements_$types_$login100_$ja_JP extends Translat
 	final TranslationsJaJp _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'ミスキストⅢ';
+	@override String get title => '聞言民Ⅲ';
 	@override String get description => '通算ログイン日数が100日';
-	@override String get flavor => 'そのユーザー、ミスキストにつき';
+	@override String get flavor => 'そのユーザー、聞言民につき';
 }
 
 // Path: misskey.achievements_.types_.login200_
@@ -5499,7 +5493,7 @@ class Translations$misskey$achievements_$types_$login1000_$ja_JP extends Transla
 	// Translations
 	@override String get title => 'ノートマスターⅢ';
 	@override String get description => '通算ログイン日数が1,000日';
-	@override String get flavor => 'Misskeyを使ってくれてありがとう！';
+	@override String get flavor => '聞言を使ってくれてありがとう！';
 }
 
 // Path: misskey.achievements_.types_.noteClipped1_
@@ -5719,9 +5713,9 @@ class Translations$misskey$achievements_$types_$iLoveMisskey_$ja_JP extends Tran
 	final TranslationsJaJp _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'I Love Misskey';
-	@override String get description => '"I ❤ #Misskey"を投稿した';
-	@override String get flavor => 'Misskeyを使ってくださりありがとうございます！ by 開発チーム';
+	@override String get title => 'I Love 聞言';
+	@override String get description => '"I ❤ #聞言"を投稿した';
+	@override String get flavor => '聞言を使ってくださりありがとうございます！ by 開発チーム';
 }
 
 // Path: misskey.achievements_.types_.foundTreasure_
@@ -5753,7 +5747,7 @@ class Translations$misskey$achievements_$types_$client60min_$ja_JP extends Trans
 	final TranslationsJaJp _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskeyの見すぎ';
+	@override String get title => '聞言の見すぎ';
 	@override String get description => 'クライアントを起動してから60分以上経過した';
 }
 
@@ -5979,7 +5973,7 @@ class Translations$misskey$achievements_$types_$brainDiver_$ja_JP extends Transl
 	// Translations
 	@override String get title => 'Brain Diver';
 	@override String get description => 'Brain Diverへのリンクを投稿した';
-	@override String get flavor => 'Misskey-Misskey La-Tu-Ma';
+	@override String get flavor => '聞言-聞言 La-Tu-Ma';
 }
 
 // Path: misskey.achievements_.types_.smashTestNotificationButton_
@@ -6000,7 +5994,7 @@ class Translations$misskey$achievements_$types_$tutorialCompleted_$ja_JP extends
 	final TranslationsJaJp _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskey初心者講座 修了証';
+	@override String get title => '聞言初心者講座 修了証';
 	@override String get description => 'チュートリアルを完了した';
 }
 

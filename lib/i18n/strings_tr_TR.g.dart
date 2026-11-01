@@ -72,8 +72,8 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'Türkçe';
 	@override String get headlineMisskey => 'Notlarla birbirine bağlı bir ağ';
-	@override String get introMisskey => 'Hoş geldiniz! Misskey, merkezi olmayan bir açık kaynaklı mikroblog platformudur.\n“Notlar” yazarak şu anda neler olduğunu anlatabilir veya olayları başkalarıyla paylaşabilirsiniz. 📡\n“Tepkiler” ile diğer kullanıcıların notları hakkındaki duygularınızı hızlı bir şekilde ifade edebilirsiniz. 👍\nYeni bir dünya sizi bekliyor! 🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name}, açık kaynak platformu <b>Misskey</b> (kısaca “Misskey örneği” olarak anılır) tarafından desteklenen hizmetlerden biridir.';
+	@override String get introMisskey => 'Hoş geldiniz! Wenyan, merkezi olmayan bir açık kaynaklı mikroblog platformudur.\n“Notlar” yazarak şu anda neler olduğunu anlatabilir veya olayları başkalarıyla paylaşabilirsiniz. 📡\n“Tepkiler” ile diğer kullanıcıların notları hakkındaki duygularınızı hızlı bir şekilde ifade edebilirsiniz. 👍\nYeni bir dünya sizi bekliyor! 🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name}, açık kaynak platformu <b>Wenyan</b> (kısaca “Wenyan örneği” olarak anılır) tarafından desteklenen hizmetlerden biridir.';
 	@override String monthAndDay({required Object day, required Object month}) => '${day}.${month}.';
 	@override String get search => 'Ara';
 	@override String get reset => 'Sıfırla';
@@ -82,7 +82,7 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	@override String get password => 'Şifre';
 	@override String get initialPasswordForSetup => 'Kurulum için ilk şifre';
 	@override String get initialPasswordIsIncorrect => 'Kurulum için ilk şifre yanlış';
-	@override String get initialPasswordForSetupDescription => 'Misskey\'i kendiniz kurduysan, yapılandırma dosyasında belirtilen şifreyi kullan.\nMisskey barındırma hizmeti veya benzeri bir hizmet kullanıyorsan, orada belirtilen şifreyi kullan.\nŞifre belirlemediysen, devam etmek için boş bırak.';
+	@override String get initialPasswordForSetupDescription => 'Wenyan\'i kendiniz kurduysan, yapılandırma dosyasında belirtilen şifreyi kullan.\nWenyan barındırma hizmeti veya benzeri bir hizmet kullanıyorsan, orada belirtilen şifreyi kullan.\nŞifre belirlemediysen, devam etmek için boş bırak.';
 	@override String get forgotPassword => 'Şifremi unuttum';
 	@override String get fetchingAsApObject => 'Fediverse\'den talep ediliyor...';
 	@override String get ok => 'Tamam';
@@ -250,7 +250,7 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	@override String get cacheRemoteSensitiveFiles => 'Hassas uzak dosyalar ön belleğe alınsın';
 	@override String get cacheRemoteSensitiveFilesDescription => 'Bu ayar kapalı olduğunda hassas uzak dosyalar ön belleğe alınmadan doğrudan uzak sunucudan yüklenecek.';
 	@override String get flagAsBot => 'Bot olarak işaretle';
-	@override String get flagAsBotDescription => 'Bu hesap bir program tarafından kontrol ediliyorsa bu seçeneği etkinleştir. Etkinleştirildiğinde, diğer geliştiriciler için bir işaret görevi görerek diğer botlarla sonsuz etkileşim zincirlerini önleyecek ve Misskey\'in iç sistemlerini bu hesabı bir bot olarak ele alacak şekilde ayarlayacak.';
+	@override String get flagAsBotDescription => 'Bu hesap bir program tarafından kontrol ediliyorsa bu seçeneği etkinleştir. Etkinleştirildiğinde, diğer geliştiriciler için bir işaret görevi görerek diğer botlarla sonsuz etkileşim zincirlerini önleyecek ve Wenyan\'in iç sistemlerini bu hesabı bir bot olarak ele alacak şekilde ayarlayacak.';
 	@override String get flagAsCat => 'Kedi hesabı';
 	@override String get flagAsCatDescription => 'Kedi hesabı';
 	@override String get flagShowTimelineReplies => 'Pano\'da notlara gelen cevapları göster';
@@ -261,7 +261,7 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	@override String get loginFailed => 'Giriş başarısız oldu';
 	@override String get showOnRemote => 'Uzak sunucuda görüntüle';
 	@override String get continueOnRemote => 'Uzak bir sunucuda devam edin';
-	@override String get chooseServerOnMisskeyHub => 'Misskey Hub\'dan bir sunucu seçin.';
+	@override String get chooseServerOnMisskeyHub => 'Wenyan Hub\'dan bir sunucu seçin.';
 	@override String get specifyServerHost => 'Doğrudan bir sunucu ana bilgisayarı belirtin';
 	@override String get inputHostName => 'Alan adını girin';
 	@override String get general => 'Genel';
@@ -524,7 +524,7 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	@override String get popularTags => 'Popüler etiketler';
 	@override String get userList => 'Listeler';
 	@override String get about => 'Hakkında';
-	@override String get aboutMisskey => 'Misskey Hakkında';
+	@override String get aboutMisskey => 'Wenyan Hakkında';
 	@override String get administrator => 'Yönetici';
 	@override String get token => 'Token';
 	@override String get x2fa => 'İki faktörlü kimlik doğrulama';
@@ -666,7 +666,7 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	@override String get volume => 'Ses hacmi';
 	@override String get masterVolume => 'Ana ses seviyesi';
 	@override String get notUseSound => 'Sesi kapat';
-	@override String get useSoundOnlyWhenActive => 'Misskey etkin olduğunda ses çıkarılır.';
+	@override String get useSoundOnlyWhenActive => 'Wenyan etkin olduğunda ses çıkarılır.';
 	@override String get details => 'Ayrıntılar';
 	@override String get renoteDetails => 'Renote detayları';
 	@override String get chooseEmoji => 'Bir emoji seçin';
@@ -683,7 +683,7 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	@override String get ascendingOrder => 'Artan';
 	@override String get descendingOrder => 'Azalan';
 	@override String get scratchpad => 'Not defteri';
-	@override String get scratchpadDescription => 'Scratchpad, AiScript deneyleri için bir ortam sağlar. Misskey ile etkileşim halindeyken yazabilir, çalıştırabilir ve sonuçlarını kontrol edebilirsin.';
+	@override String get scratchpadDescription => 'Scratchpad, AiScript deneyleri için bir ortam sağlar. Wenyan ile etkileşim halindeyken yazabilir, çalıştırabilir ve sonuçlarını kontrol edebilirsin.';
 	@override String get uiInspector => 'UI denetçisi';
 	@override String get uiInspectorDescription => 'Bellekteki UI bileşeni sunucu listesini görebilirsin. UI bileşeni, Ui:C: işlevi tarafından oluşturulacak.';
 	@override String get output => 'Çıktı';
@@ -826,7 +826,7 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	@override String confirmToUnclipAlreadyClippedNote({required Object name}) => 'Bu not zaten “${name}” klibinin bir parçası. Bu klipten silmek ister misin?';
 	@override String get public => 'Herkese açık';
 	@override String get private => 'Özel';
-	@override String i18nInfo({required Object link}) => 'Misskey, gönüllüler tarafından çeşitli dillere çevrilmektedir. ${link} adresinden yardımcı olabilirsin.';
+	@override String i18nInfo({required Object link}) => 'Wenyan, gönüllüler tarafından çeşitli dillere çevrilmektedir. ${link} adresinden yardımcı olabilirsin.';
 	@override String get manageAccessTokens => 'Acces Tokens yönet';
 	@override String get accountInfo => 'Hesap bilgileri';
 	@override String get notesCount => 'Not sayısı';
@@ -874,14 +874,14 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	@override String get narrow => 'Dar';
 	@override String get reloadToApplySetting => 'Bu ayar, sayfa yeniden yüklendikten sonra geçerli olacaktır. Şimdi yeniden yüklemek ister misin?';
 	@override String get needReloadToApply => 'Bunun yansıtılması için yeniden yükleme yapılması gerekir.';
-	@override String get needToRestartServerToApply => 'Değişikliğin yansıtılması için Misskey\'in yeniden başlatılması gerekir.';
+	@override String get needToRestartServerToApply => 'Değişikliğin yansıtılması için Wenyan\'in yeniden başlatılması gerekir.';
 	@override String get showTitlebar => 'Başlık çubuğunu göster';
 	@override String get clearCache => 'Önbellek temizle';
 	@override String onlineUsersCount({required Object n}) => '${n} kullanıcı çevrim içi';
 	@override String nUsers({required Object n}) => '${n} Kullanıcı';
 	@override String nNotes({required Object n}) => '${n} Not';
 	@override String get sendErrorReports => 'Hata raporları gönder';
-	@override String get sendErrorReportsDescription => 'Etkinleştirildiğinde, bir sorun oluştuğunda ayrıntılı hata bilgileri Misskey ile paylaşılacak ve bu da Misskey\'in kalitesinin iyileştirilmesine yardımcı olacak.\nBu bilgiler arasında işletim sisteminizin sürümü, kullandığınız tarayıcı, Misskey\'deki faaliyetlerin vb. yer alacaktır.';
+	@override String get sendErrorReportsDescription => 'Etkinleştirildiğinde, bir sorun oluştuğunda ayrıntılı hata bilgileri Wenyan ile paylaşılacak ve bu da Wenyan\'in kalitesinin iyileştirilmesine yardımcı olacak.\nBu bilgiler arasında işletim sisteminizin sürümü, kullandığınız tarayıcı, Wenyan\'deki faaliyetlerin vb. yer alacaktır.';
 	@override String get myTheme => 'Benim temam';
 	@override String get backgroundColor => 'Arka plan rengi';
 	@override String get accentColor => 'Vurgu rengi';
@@ -976,7 +976,7 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'Sorun Giderme';
 	@override String get useBlurEffect => 'UI\'da bulanıklık efektleri kullanın';
 	@override String get learnMore => 'Daha fazla bilgi edinin';
-	@override String get misskeyUpdated => 'Misskey güncellendi!';
+	@override String get misskeyUpdated => 'Wenyan güncellendi!';
 	@override String get whatIsNew => 'Değişiklikleri göster';
 	@override String get translate => 'Çevir';
 	@override String translatedFrom({required Object x}) => '${x}\'ten çevrilmiştir.';
@@ -1115,8 +1115,8 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	@override String get show => 'Göster';
 	@override String get neverShow => 'Bir daha gösterme';
 	@override String get remindMeLater => 'Belki daha sonra';
-	@override String get didYouLikeMisskey => 'Misskey\'i sevdin mi?';
-	@override String pleaseDonate({required Object host}) => '${host} ücretsiz yazılım Misskey kullanmaktadır. Misskey\'in geliştirilmesinin devam edebilmesi için bağışlarınızı çok takdir ederiz!';
+	@override String get didYouLikeMisskey => 'Wenyan\'i sevdin mi?';
+	@override String pleaseDonate({required Object host}) => '${host} ücretsiz yazılım Wenyan kullanmaktadır. Wenyan\'in geliştirilmesinin devam edebilmesi için bağışlarınızı çok takdir ederiz!';
 	@override String correspondingSourceIsAvailable({required Object anchor}) => 'İlgili kaynak kodu ${anchor} adresinde mevcuttur.';
 	@override String get roles => 'Roller';
 	@override String get role => 'Rol';
@@ -1245,7 +1245,7 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	@override String get cancelReactionConfirm => 'Tepkini cidden silmek istiyor musun?';
 	@override String get changeReactionConfirm => 'Tepkini cidden değiştirmek istiyor musun?';
 	@override String get later => 'Daha sonra';
-	@override String get goToMisskey => 'Misskey\'e';
+	@override String get goToMisskey => 'Wenyan\'e';
 	@override String get additionalEmojiDictionary => 'Ek emoji sözlükleri';
 	@override String get installed => 'Yüklendi';
 	@override String get branding => 'Markalaşma';
@@ -1308,7 +1308,7 @@ class _Translations$misskey$tr_TR extends Translations$misskey$en_US {
 	@override String get sourceCode => 'Kaynak kodu';
 	@override String get sourceCodeIsNotYetProvided => 'Kaynak kodu henüz mevcut değildir. Bu sorunu gidermek için yöneticiyle iletişime geçin.';
 	@override String get repositoryUrl => 'Depo URL\'si';
-	@override String get repositoryUrlDescription => 'Misskey\'i olduğu gibi kullanıyorsanız (kaynak kodunda herhangi bir değişiklik yapmadan), https://github.com/misskey-dev/misskey adresini girin.';
+	@override String get repositoryUrlDescription => 'Wenyan\'i olduğu gibi kullanıyorsanız (kaynak kodunda herhangi bir değişiklik yapmadan), adresini girin.';
 	@override String get repositoryUrlOrTarballRequired => 'Bir depo yayınlamadıysanız, bunun yerine bir tarball sağlamalısınız. Daha fazla bilgi için .config/example.yml dosyasına bakın.';
 	@override String get feedback => 'Feedback';
 	@override String get feedbackUrl => 'Geri Bildirim URL\'si';
@@ -1897,7 +1897,7 @@ class _Translations$misskey$initialAccountSetting_$tr_TR extends Translations$mi
 	@override String pushNotificationDescription({required Object name}) => 'Push bildirimlerini etkinleştirdiğinde, ${name} adresinden gelen bildirimleri doğrudan cihazınıza alabilirsin.';
 	@override String get initialAccountSettingCompleted => 'Profil kurulumu tamamlandı!';
 	@override String haveFun({required Object name}) => '${name} ile iyi eğlenceler!';
-	@override String youCanContinueTutorial({required Object name}) => '${name} (Misskey) öğreticisine geçebilir veya buradan kurulumu sonlandırıp hemen kullanabilirsin.';
+	@override String youCanContinueTutorial({required Object name}) => '${name} (Wenyan) öğreticisine geçebilir veya buradan kurulumu sonlandırıp hemen kullanabilirsin.';
 	@override String get startTutorial => 'Öğreticiye başla';
 	@override String get skipAreYouSure => 'Profil kurulumunu cidden atlamak mı istiyorsun?';
 	@override String get laterAreYouSure => 'Profil ayarlarını cidden daha sonra mı yapacaksın?';
@@ -2009,7 +2009,7 @@ class _Translations$misskey$accountMigration_$tr_TR extends Translations$misskey
 	@override String get moveTo => 'Bu hesabı başka bir hesaba taşıyın';
 	@override String get moveToLabel => 'Taşınacak hesap:';
 	@override String get moveCannotBeUndone => 'Hesap taşıma işlemi geri alınamaz.';
-	@override String get moveAccountDescription => 'Bu işlem, hesabını farklı bir hesaba taşıyacaktır.\n・Bu hesabın takipçileri otomatik olarak yeni hesaba taşınacak.\n・Bu hesap, şu anda takip ettiği tüm kullanıcıları takipten çıkaracak.\n・Bu hesapta yeni notlar vb. oluşturamayacaksın.\n\nTakipçilerin taşınması otomatik olarak gerçekleşirken, takip ettiğin kullanıcıların listesini taşımak için bazı adımları manuel olarak hazırlaman gerekir. Bunu yapmak için, ayarlar menüsünden takipçilerini dışa aktar ve daha sonra yeni hesaba içe aktar. Aynı prosedür, listelerinin yanı sıra sessize aldığın ve engellediğin kullanıcılar için de geçerli.\n\n(Bu açıklama Misskey v13.12.0 ve sonraki sürümler için geçerlidir. Mastodon gibi diğer ActivityPub yazılımları farklı şekilde çalışabilir.)';
+	@override String get moveAccountDescription => 'Bu işlem, hesabını farklı bir hesaba taşıyacaktır.\n・Bu hesabın takipçileri otomatik olarak yeni hesaba taşınacak.\n・Bu hesap, şu anda takip ettiği tüm kullanıcıları takipten çıkaracak.\n・Bu hesapta yeni notlar vb. oluşturamayacaksın.\n\nTakipçilerin taşınması otomatik olarak gerçekleşirken, takip ettiğin kullanıcıların listesini taşımak için bazı adımları manuel olarak hazırlaman gerekir. Bunu yapmak için, ayarlar menüsünden takipçilerini dışa aktar ve daha sonra yeni hesaba içe aktar. Aynı prosedür, listelerinin yanı sıra sessize aldığın ve engellediğin kullanıcılar için de geçerli.\n\n(Bu açıklama Wenyan v13.12.0 ve sonraki sürümler için geçerlidir. Mastodon gibi diğer ActivityPub yazılımları farklı şekilde çalışabilir.)';
 	@override String get moveAccountHowTo => 'Geçiş yapmak için, önce taşınacak hesapta bu hesap için bir takma ad oluşturun.\nTakma adı oluşturduktan sonra, taşınacak hesabı aşağıdaki biçimde girin: @username@server.example.com';
 	@override String get startMigration => 'Taşın';
 	@override String migrationConfirm({required Object account}) => 'Bu hesabı ${account} hesabına gerçekten taşımak istiyor musun? Bu işlem başlatıldıktan sonra durdurulamaz veya geri alınamaz ve bu hesabı artık orijinal haliyle kullanamazsın.';
@@ -2258,14 +2258,14 @@ class _Translations$misskey$aboutMisskey_$tr_TR extends Translations$misskey$abo
 	final TranslationsTrTr _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'Misskey, 2014 yılından beri syuilo tarafından geliştirilen açık kaynaklı bir yazılımdır.';
+	@override String get about => 'Wenyan, 2014 yılından beri syuilo tarafından geliştirilen açık kaynaklı bir yazılımdır.';
 	@override String get contributors => 'Başlıca katkıda bulunanlar';
 	@override String get allContributors => 'Tüm katkıda bulunanlar';
 	@override String get source => 'Kaynak kodu';
 	@override String get original => 'Orijinal';
-	@override String thisIsModifiedVersion({required Object name}) => '${name} orijinal Misskey\'in değiştirilmiş bir sürümünü kullanır.';
-	@override String get translation => 'Misskey\'i çevir';
-	@override String get donate => 'Misskey\'e bağış yapın';
+	@override String thisIsModifiedVersion({required Object name}) => '${name} orijinal Wenyan\'in değiştirilmiş bir sürümünü kullanır.';
+	@override String get translation => 'Wenyan\'i çevir';
+	@override String get donate => 'Wenyan\'e bağış yapın';
 	@override String get morePatrons => 'Burada adı geçmeyen diğer birçok yardımseverin desteğine de teşekkür ederiz. Teşekkürler! 🥰';
 	@override String get patrons => 'Müşteriler';
 	@override String get projectMembers => 'Proje üyeleri';
@@ -2433,7 +2433,7 @@ class _Translations$misskey$soundSettings_$tr_TR extends Translations$misskey$so
 	@override String get driveFileTypeWarn => 'Bu dosya desteklenmiyor';
 	@override String get driveFileTypeWarnDescription => 'Bir ses dosyası seçin';
 	@override String get driveFileDurationWarn => 'Ses kaydı çok uzun.';
-	@override String get driveFileDurationWarnDescription => 'Uzun sesli mesajlar Misskey\'in kullanımını engelleyebilir. Devam etmek istiyor musunuz?';
+	@override String get driveFileDurationWarnDescription => 'Uzun sesli mesajlar Wenyan\'in kullanımını engelleyebilir. Devam etmek istiyor musunuz?';
 	@override String get driveFileError => 'Ses yüklenemedi. Lütfen ayarları değiştir.';
 }
 
@@ -3289,7 +3289,7 @@ class _Translations$misskey$reversi_$tr_TR extends Translations$misskey$reversi_
 	@override String get lookingForPlayer => 'Rakip aranıyor...';
 	@override String get gameCanceled => 'Oyun iptal edildi.';
 	@override String get shareToTlTheGameWhenStart => 'Oyun başlatıldığında panoda paylaş';
-	@override String get iStartedAGame => 'Oyun başladı! #MisskeyReversi';
+	@override String get iStartedAGame => 'Oyun başladı! #WenyanReversi';
 	@override String get opponentHasSettingsChanged => 'Rakip ayarlarını değiştirmiş.';
 	@override String get allowIrregularRules => 'Düzensiz kurallar (tamamen ücretsiz)';
 	@override String get disallowIrregularRules => 'Düzensiz kurallar yok';
@@ -3328,7 +3328,7 @@ class _Translations$misskey$urlPreviewSetting_$tr_TR extends Translations$misske
 	@override String get userAgent => 'Kullanıcı Aracısı';
 	@override String get userAgentDescription => 'Önizlemeleri alırken kullanılacak Kullanıcı Aracısını ayarlar. Boş bırakılırsa, varsayılan Kullanıcı Aracısı kullanılır.';
 	@override String get summaryProxy => 'Önizlemeler oluşturan proxy uç noktaları';
-	@override String get summaryProxyDescription => 'Misskey\'in kendisi değil, Summaly Proxy kullanarak önizlemeler oluştur.';
+	@override String get summaryProxyDescription => 'Wenyan\'in kendisi değil, Summaly Proxy kullanarak önizlemeler oluştur.';
 	@override String get summaryProxyDescription2 => 'Aşağıdaki parametreler, sorgu dizesi olarak proxy\'ye bağlanır. Proxy bunları desteklemiyorsa, değerler yok sayılır.';
 }
 
@@ -3481,7 +3481,7 @@ class _Translations$misskey$bootErrors_$tr_TR extends Translations$misskey$bootE
 	@override String get otherOption1 => 'İstemci ayarlarını ve önbelleği sil';
 	@override String get otherOption2 => 'Basit istemciyi başlatın';
 	@override String get otherOption3 => 'Onarım aracını başlatın';
-	@override String get otherOption4 => 'Misskey\'i güvenli modda başlatın';
+	@override String get otherOption4 => 'Wenyan\'i güvenli modda başlatın';
 }
 
 // Path: misskey.search_
@@ -3497,7 +3497,7 @@ class _Translations$misskey$search_$tr_TR extends Translations$misskey$search_$e
 	@override String get searchScopeUser => 'Spesifik kullanıcı';
 	@override String get pleaseEnterServerHost => 'Sunucu ana bilgisayarını girin';
 	@override String get pleaseSelectUser => 'Kullanıcı seç';
-	@override String get serverHostPlaceholder => 'Örnek: misskey.example.com';
+	@override String get serverHostPlaceholder => 'Örnek: example.com';
 }
 
 // Path: misskey.serverSetupWizard_
@@ -3507,13 +3507,13 @@ class _Translations$misskey$serverSetupWizard_$tr_TR extends Translations$misske
 	final TranslationsTrTr _root; // ignore: unused_field
 
 	// Translations
-	@override String get installCompleted => 'Misskey kurulumu tamamlandı!';
+	@override String get installCompleted => 'Wenyan kurulumu tamamlandı!';
 	@override String get firstCreateAccount => 'Başlamak için bir yönetici hesabı oluşturun.';
 	@override String get accountCreated => 'Yönetici hesabı oluşturuldu!';
 	@override String get serverSetting => 'Sunucu Ayarları';
 	@override String get youCanEasilyConfigureOptimalServerSettingsWithThisWizard => 'Bu sihirbaz, sunucu ayarlarını yapılandırmayı kolaylaştırır.';
 	@override String get settingsYouMakeHereCanBeChangedLater => 'Bu sihirbaz aracılığıyla değiştirilen ayarlar daha sonra yeniden düzenlenebilir.';
-	@override String get howWillYouUseMisskey => 'Misskey\'i nasıl kullanacaksınız?';
+	@override String get howWillYouUseMisskey => 'Wenyan\'i nasıl kullanacaksınız?';
 	@override late final _Translations$misskey$serverSetupWizard_$use_$tr_TR use_ = _Translations$misskey$serverSetupWizard_$use_$tr_TR._(_root);
 	@override String get openServerAdvice => 'Çok sayıda bilinmeyen kullanıcıyı kabul etmek risklidir. Herhangi bir sorunu çözmek için güvenilir bir moderasyon sistemi kullanmanızı öneririz.';
 	@override String get openServerAntiSpamAdvice => 'Sunucunuzun spam için bir basamak haline gelmesini önlemek için, reCAPTCHA gibi anti-bot işlevlerini etkinleştirerek güvenliğe de özen göstermelisin.';
@@ -3820,7 +3820,7 @@ class _Translations$misskey$initialTutorial_$landing_$tr_TR extends Translations
 
 	// Translations
 	@override String get title => 'Öğreticiye hoş geldin';
-	@override String get description => 'Burada, Misskey\'i kullanmanın temellerini ve özelliklerini öğrenebilirsin.';
+	@override String get description => 'Burada, Wenyan\'i kullanmanın temellerini ve özelliklerini öğrenebilirsin.';
 }
 
 // Path: misskey.initialTutorial_.note_
@@ -3831,7 +3831,7 @@ class _Translations$misskey$initialTutorial_$note_$tr_TR extends Translations$mi
 
 	// Translations
 	@override String get title => 'Not nedir?';
-	@override String get description => 'Misskey\'deki gönderiler “Notlar” olarak adlandırılır. Notlar panoda kronolojik olarak düzenlenir ve gerçek zamanlı olarak güncellenir.';
+	@override String get description => 'Wenyan\'deki gönderiler “Notlar” olarak adlandırılır. Notlar panoda kronolojik olarak düzenlenir ve gerçek zamanlı olarak güncellenir.';
 	@override String get reply => 'Bir mesaja yanıt vermek için bu düğmeye tıklayın. Yanıtlara yanıt vermek de mümkündür, böylece konuşma bir konu başlığı gibi devam eder.';
 	@override String get renote => 'Bu notu kendi panonda paylaşabilirsin. Ayrıca yorumlarınla birlikte alıntı da yapabilirsin.';
 	@override String get reaction => 'Not\'a tepkiler ekleyebilirsin. Daha fazla ayrıntı bir sonraki sayfada açıklanacak.';
@@ -3861,7 +3861,7 @@ class _Translations$misskey$initialTutorial_$timeline_$tr_TR extends Translation
 
 	// Translations
 	@override String get title => 'Pano Kavramı';
-	@override String get description1 => 'Misskey, kullanıma göre birden fazla Pano sunar (Bazı Pano\'lar sunucunun politikalarına bağlı olarak kullanılamayabilir).';
+	@override String get description1 => 'Wenyan, kullanıma göre birden fazla Pano sunar (Bazı Pano\'lar sunucunun politikalarına bağlı olarak kullanılamayabilir).';
 	@override String get home => 'Takip ettiğin hesapların notlarını görüntüleyebilirsin.';
 	@override String get local => 'Bu sunucudaki tüm kullanıcıların notlarını görüntüleyebilirsin.';
 	@override String get social => 'Ev ve Yerel Pano\'dan notlar görüntülenecek.';
@@ -3878,7 +3878,7 @@ class _Translations$misskey$initialTutorial_$postNote_$tr_TR extends Translation
 
 	// Translations
 	@override String get title => 'Not Yayınlama Ayarları';
-	@override String get description1 => 'Misskey\'de not yayınlarken çeşitli seçenekler mevcuttur. Yayınlama formu şu şekildedir.';
+	@override String get description1 => 'Wenyan\'de not yayınlarken çeşitli seçenekler mevcuttur. Yayınlama formu şu şekildedir.';
 	@override late final _Translations$misskey$initialTutorial_$postNote_$visibility_$tr_TR visibility_ = _Translations$misskey$initialTutorial_$postNote_$visibility_$tr_TR._(_root);
 	@override late final _Translations$misskey$initialTutorial_$postNote_$cw_$tr_TR cw_ = _Translations$misskey$initialTutorial_$postNote_$cw_$tr_TR._(_root);
 }
@@ -3907,7 +3907,7 @@ class _Translations$misskey$initialTutorial_$done_$tr_TR extends Translations$mi
 
 	// Translations
 	@override String get title => 'Eğitimi tamamladınız! 🎉';
-	@override String description({required Object link}) => 'Burada tanıtılan işlevler sadece küçük bir kısmıdır. Misskey\'i kullanma konusunda daha ayrıntılı bilgi için lütfen şu kaynağa bakın: ${link}.';
+	@override String description({required Object link}) => 'Burada tanıtılan işlevler sadece küçük bir kısmıdır. Wenyan\'i kullanma konusunda daha ayrıntılı bilgi için lütfen şu kaynağa bakın: ${link}.';
 }
 
 // Path: misskey.serverSettings_.userGeneratedContentsVisibilityForVisitor_
@@ -4722,7 +4722,7 @@ class _Translations$misskey$serverSetupWizard_$donationRequest_$tr_TR extends Tr
 	final TranslationsTrTr _root; // ignore: unused_field
 
 	// Translations
-	@override String get text1 => 'Misskey, gönüllüler tarafından geliştirilen ücretsiz bir yazılımdır.';
+	@override String get text1 => 'Wenyan, gönüllüler tarafından geliştirilen ücretsiz bir yazılımdır.';
 	@override String get text2 => 'Bu yazılımı gelecekte de geliştirmeye devam edebilmemiz için desteğini rica ederiz.';
 	@override String get text3 => 'Destekçilere özel avantajlar da var!';
 }
@@ -4846,7 +4846,7 @@ class _Translations$misskey$achievements_$types_$notes1_$tr_TR extends Translati
 	// Translations
 	@override String get title => 'msky\'ımı kuruyorum';
 	@override String get description => 'İlk notunuzu yayınlayın';
-	@override String get flavor => 'Misskey ile iyi vakit geçirin!';
+	@override String get flavor => 'Wenyan ile iyi vakit geçirin!';
 }
 
 // Path: misskey.achievements_.types_.notes10_
@@ -5057,7 +5057,7 @@ class _Translations$misskey$achievements_$types_$login30_$tr_TR extends Translat
 	final TranslationsTrTr _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskist I';
+	@override String get title => 'Wenyanist I';
 	@override String get description => 'Toplam 30 gün boyunca oturum açın';
 }
 
@@ -5068,7 +5068,7 @@ class _Translations$misskey$achievements_$types_$login60_$tr_TR extends Translat
 	final TranslationsTrTr _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskist II';
+	@override String get title => 'Wenyanist II';
 	@override String get description => 'Toplam 60 gün boyunca oturum açın';
 }
 
@@ -5079,9 +5079,9 @@ class _Translations$misskey$achievements_$types_$login100_$tr_TR extends Transla
 	final TranslationsTrTr _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskist III';
+	@override String get title => 'Wenyanist III';
 	@override String get description => 'Toplam 100 gün boyunca oturum açın';
-	@override String get flavor => 'Şiddetli Misskist';
+	@override String get flavor => 'Şiddetli Wenyanist';
 }
 
 // Path: misskey.achievements_.types_.login200_
@@ -5182,7 +5182,7 @@ class _Translations$misskey$achievements_$types_$login1000_$tr_TR extends Transl
 	// Translations
 	@override String get title => 'Notların Ustası III';
 	@override String get description => 'Toplam 1.000 gün boyunca oturum açın.';
-	@override String get flavor => 'Misskey\'i kullandığınız için teşekkür ederiz!';
+	@override String get flavor => 'Wenyan\'i kullandığınız için teşekkür ederiz!';
 }
 
 // Path: misskey.achievements_.types_.noteClipped1_
@@ -5402,9 +5402,9 @@ class _Translations$misskey$achievements_$types_$iLoveMisskey_$tr_TR extends Tra
 	final TranslationsTrTr _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskey\'i seviyorum';
-	@override String get description => '“I ❤ #Misskey” yazısını paylaş';
-	@override String get flavor => 'Misskey geliştirme ekibi desteğin için çok teşekkür eder!';
+	@override String get title => 'Wenyan\'i seviyorum';
+	@override String get description => '“I ❤ #Wenyan” yazısını paylaş';
+	@override String get flavor => 'Wenyan geliştirme ekibi desteğin için çok teşekkür eder!';
 }
 
 // Path: misskey.achievements_.types_.foundTreasure_
@@ -5426,7 +5426,7 @@ class _Translations$misskey$achievements_$types_$client30min_$tr_TR extends Tran
 
 	// Translations
 	@override String get title => 'Kısa mola';
-	@override String get description => 'Misskey\'i en az 30 dakika açık tutun.';
+	@override String get description => 'Wenyan\'i en az 30 dakika açık tutun.';
 }
 
 // Path: misskey.achievements_.types_.client60min_
@@ -5436,8 +5436,8 @@ class _Translations$misskey$achievements_$types_$client60min_$tr_TR extends Tran
 	final TranslationsTrTr _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskey\'de “Miss” yok';
-	@override String get description => 'Misskey\'i en az 60 dakika açık tutun.';
+	@override String get title => 'Wenyan\'de “Miss” yok';
+	@override String get description => 'Wenyan\'i en az 60 dakika açık tutun.';
 }
 
 // Path: misskey.achievements_.types_.noteDeletedWithin1min_
@@ -5662,7 +5662,7 @@ class _Translations$misskey$achievements_$types_$brainDiver_$tr_TR extends Trans
 	// Translations
 	@override String get title => 'Brain Diver';
 	@override String get description => 'Brain Diver bağlantısını paylaşın';
-	@override String get flavor => 'Misskey-Misskey La-Tu-Ma';
+	@override String get flavor => 'Wenyan-Wenyan La-Tu-Ma';
 }
 
 // Path: misskey.achievements_.types_.smashTestNotificationButton_
@@ -5683,7 +5683,7 @@ class _Translations$misskey$achievements_$types_$tutorialCompleted_$tr_TR extend
 	final TranslationsTrTr _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskey Temel Kurs Diploması';
+	@override String get title => 'Wenyan Temel Kurs Diploması';
 	@override String get description => 'Eğitim tamamlandı';
 }
 

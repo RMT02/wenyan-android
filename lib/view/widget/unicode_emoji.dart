@@ -45,7 +45,7 @@ class const UnicodeEmoji({
       return InkWell(
         onTap: onTap,
         onLongPress: onLongPress,
-        child: Assets.misskey.packages.frontend.assets.unknown.image(
+        child: Assets.wenyan.packages.frontend.assets.unknown.image(
           height: style.lineHeight,
           opacity: AlwaysStoppedAnimation(style.color?.a ?? 1.0),
         ),

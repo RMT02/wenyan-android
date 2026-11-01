@@ -50,7 +50,7 @@ class _Translations$aria$uz_UZ extends Translations$aria$en_US {
 		const TextSpan(text: ' ga obuna bo\'lmoqchimisiz?'),
 	]);
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria bir qancha volontyorlar yordamida bir qancha tillarga tarjima qilingan. Ushbu '),
+		const TextSpan(text: 'Wenyan bir qancha volontyorlar yordamida bir qancha tillarga tarjima qilingan. Ushbu '),
 		link,
 		const TextSpan(text: ' orqali ularga yordam berishingiz mumkin.'),
 	]);
@@ -81,8 +81,8 @@ class _Translations$misskey$uz_UZ extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'O\'zbek tili';
 	@override String get headlineMisskey => 'Qaydlar tarmog\'i';
-	@override String get introMisskey => 'Xush kelibsiz! Misskey ochiq kodli, markazlashmagan mikroblogging xizmati.\nO\'zingizni fikrlaringizni atrofingizdagilar bilan ulashish uchun "Qaydlar" yarating. 📡\nUstiga-ustak, "Reaktsiyalar" yordamida siz boshqalarning xatlari haqidagi o\'zingizni xissiyotlaringizni bildiring. 👍\nQani, yangi dunyoni kashf qilaylik! 🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} ochiq manbali <b>Misskey</b>("Misskey instance" deb ataladi) platformasi tomonidan qurilgan servislardan biri. ';
+	@override String get introMisskey => 'Xush kelibsiz! Wenyan ochiq kodli, markazlashmagan mikroblogging xizmati.\nO\'zingizni fikrlaringizni atrofingizdagilar bilan ulashish uchun "Qaydlar" yarating. 📡\nUstiga-ustak, "Reaktsiyalar" yordamida siz boshqalarning xatlari haqidagi o\'zingizni xissiyotlaringizni bildiring. 👍\nQani, yangi dunyoni kashf qilaylik! 🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} ochiq manbali <b>Wenyan</b>("Wenyan instance" deb ataladi) platformasi tomonidan qurilgan servislardan biri. ';
 	@override String monthAndDay({required Object day, required Object month}) => '${day}/${month}';
 	@override String get search => 'Izlash';
 	@override String get notifications => 'Xabarnomalar';
@@ -239,7 +239,7 @@ class _Translations$misskey$uz_UZ extends Translations$misskey$en_US {
 	@override String get cacheRemoteSensitiveFiles => 'Tashqi fayllarni keshlash';
 	@override String get cacheRemoteSensitiveFilesDescription => 'Bu sozlama oʻchiq boʻlsa, "barcha ko\'rishi mumkin bo\'lmagan" fayllar keshlashsiz toʻgʻridan-toʻgʻri masofaviy serverdan yuklanadi.';
 	@override String get flagAsBot => 'Ushbu akkauntni bot sifatida belgilash';
-	@override String get flagAsBotDescription => 'Agar bu akkaunt bot tomonidan boshqaralayotgan bo\'lsa, bu sozlamani yoqing. Sozlama yoqilganda, boshqa foydalanuvchilar uchun belgi sifatida ishlaydi, va Misskey ichki tizimlari bu akkauntni bot ekanini biladi.';
+	@override String get flagAsBotDescription => 'Agar bu akkaunt bot tomonidan boshqaralayotgan bo\'lsa, bu sozlamani yoqing. Sozlama yoqilganda, boshqa foydalanuvchilar uchun belgi sifatida ishlaydi, va Wenyan ichki tizimlari bu akkauntni bot ekanini biladi.';
 	@override String get flagAsCat => 'Bu akkauntni mushuk sifatida belgilash';
 	@override String get flagAsCatDescription => 'Ushbu akkauntni mushuk sifatida belgilash uchun ushbu sozlamani yoqing.';
 	@override String get flagShowTimelineReplies => 'Javoblarni xronogoliya bo\'yicha ko\'rsatish';
@@ -482,7 +482,7 @@ class _Translations$misskey$uz_UZ extends Translations$misskey$en_US {
 	@override String get popularTags => 'Ommabop teglar';
 	@override String get userList => 'Ro\'yxatlar';
 	@override String get about => 'Haqida';
-	@override String get aboutMisskey => 'Misskey haqida';
+	@override String get aboutMisskey => 'Wenyan haqida';
 	@override String get administrator => 'Administrator';
 	@override String get token => 'Tasdiqlash';
 	@override String get x2fa => 'Ikki faktorli autentifikatsiya';
@@ -720,7 +720,7 @@ class _Translations$misskey$uz_UZ extends Translations$misskey$en_US {
 	@override String get unclip => 'qirqish\n';
 	@override String confirmToUnclipAlreadyClippedNote({required Object name}) => 'Ushbu xat allaqachon "${name}" klipga tegishli. Uni ushbu klipdan olib tashlashni xohlaysizmi?';
 	@override String get public => 'Ommaviy';
-	@override String i18nInfo({required Object link}) => 'Misskey bir qancha volontyorlar yordamida bir qancha tillarga tarjima qilingan. Ushbu ${link} orqali ularga yordam berishingiz mumkin.';
+	@override String i18nInfo({required Object link}) => 'Wenyan bir qancha volontyorlar yordamida bir qancha tillarga tarjima qilingan. Ushbu ${link} orqali ularga yordam berishingiz mumkin.';
 	@override String get manageAccessTokens => 'Kirish tokenlarini boshqarish';
 	@override String get accountInfo => 'Akkount haqida ma\'lumot';
 	@override String get notesCount => 'Xatlar soni';
@@ -848,7 +848,7 @@ class _Translations$misskey$uz_UZ extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'Muammolarni bartaraf qilish';
 	@override String get useBlurEffect => 'Interfeysda xiralashtiruvchi effektlardan foydalanish';
 	@override String get learnMore => 'Batafsilroq';
-	@override String get misskeyUpdated => 'Misskey yangilandi!';
+	@override String get misskeyUpdated => 'Wenyan yangilandi!';
 	@override String get whatIsNew => 'O\'zgarishlarni ko\'rish';
 	@override String get translate => 'Tarjima qilish';
 	@override String translatedFrom({required Object x}) => '${x} tilidan tarjima qilindi';

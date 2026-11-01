@@ -74,8 +74,8 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'Română';
 	@override String get headlineMisskey => 'O rețea conectată prin note';
-	@override String get introMisskey => 'Bine ai venit! Misskey este un serviciu de microblogging open source și decentralizat.\nCreează "note" cu care să îți poți împărțasi gândurile cu oricine din jurul tău. 📡\nCu "reacții" îți poți exprima rapid părerea despre notele oricui. 👍\nHai să explorăm o lume nouă! 🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} este unul dintre serviciile care se folosește de platforma open source <b>Misskey</b>.';
+	@override String get introMisskey => 'Bine ai venit! Wenyan este un serviciu de microblogging open source și decentralizat.\nCreează "note" cu care să îți poți împărțasi gândurile cu oricine din jurul tău. 📡\nCu "reacții" îți poți exprima rapid părerea despre notele oricui. 👍\nHai să explorăm o lume nouă! 🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} este unul dintre serviciile care se folosește de platforma open source <b>Wenyan</b>.';
 	@override String monthAndDay({required Object day, required Object month}) => '${day}/${month}';
 	@override String get search => 'Caută';
 	@override String get reset => 'Resetează.';
@@ -84,7 +84,7 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	@override String get password => 'Parolă';
 	@override String get initialPasswordForSetup => 'Parola pentru a începe configurarea inițială.';
 	@override String get initialPasswordIsIncorrect => 'Parola inițială este incorectă.';
-	@override String get initialPasswordForSetupDescription => 'Dacă ai instalat singur Misskey, utilizează parola pe care ai introdus-o în fișierul de configurare.\n\nDacă utilizezi un serviciu de găzduire(hosting) precum Misskey, te rugăm să utilizezi parola furnizată.\n\nDacă nu ai setat o parolă, las-o necompletată și mergi mai departe.';
+	@override String get initialPasswordForSetupDescription => 'Dacă ai instalat singur Wenyan, utilizează parola pe care ai introdus-o în fișierul de configurare.\n\nDacă utilizezi un serviciu de găzduire(hosting) precum Wenyan, te rugăm să utilizezi parola furnizată.\n\nDacă nu ai setat o parolă, las-o necompletată și mergi mai departe.';
 	@override String get forgotPassword => 'Am uitat parola';
 	@override String get fetchingAsApObject => 'Se preia din Fediverse...';
 	@override String get ok => 'OK';
@@ -250,7 +250,7 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	@override String get cacheRemoteSensitiveFiles => 'Memorează în cache fișierele sensibile la distanță.';
 	@override String get cacheRemoteSensitiveFilesDescription => 'Dacă dezactivezi această setare, fișierele sensibile externe vor fi conectate direct și nu stocate în cache.';
 	@override String get flagAsBot => 'Marchează acest cont ca bot';
-	@override String get flagAsBotDescription => 'Activează această opțiune dacă acest cont este controlat de un program. Daca e activată, aceasta va juca rolul unui indicator pentru dezvoltatori pentru a preveni interacțiunea în lanțuri infinite cu ceilalți boți și ajustează sistemele interne al Misskey pentru a trata acest cont drept un bot.';
+	@override String get flagAsBotDescription => 'Activează această opțiune dacă acest cont este controlat de un program. Daca e activată, aceasta va juca rolul unui indicator pentru dezvoltatori pentru a preveni interacțiunea în lanțuri infinite cu ceilalți boți și ajustează sistemele interne al Wenyan pentru a trata acest cont drept un bot.';
 	@override String get flagAsCat => 'Marchează acest cont ca pisică';
 	@override String get flagAsCatDescription => 'Activează această opțiune dacă acest cont este o pisică.';
 	@override String get flagShowTimelineReplies => 'Arată răspunsurile în cronologie';
@@ -261,7 +261,7 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	@override String get loginFailed => 'Autentificare eșuată';
 	@override String get showOnRemote => 'Vezi mai multe pe instanța externă';
 	@override String get continueOnRemote => 'Continuă de pe sursa externa.';
-	@override String get chooseServerOnMisskeyHub => 'Selectează un server din Hub-ul Misskey.';
+	@override String get chooseServerOnMisskeyHub => 'Selectează un server din Hub-ul Wenyan.';
 	@override String get specifyServerHost => 'Specifică un server gazdă(host).';
 	@override String get inputHostName => 'Introdu numele gazdă(hostname).';
 	@override String get general => 'General';
@@ -517,7 +517,7 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	@override String get popularTags => 'Taguri populare';
 	@override String get userList => 'Liste';
 	@override String get about => 'Despre';
-	@override String get aboutMisskey => 'Despre Misskey';
+	@override String get aboutMisskey => 'Despre Wenyan';
 	@override String get administrator => 'Administrator';
 	@override String get token => 'Token';
 	@override String get x2fa => 'Autentificare cu doi factori';
@@ -656,7 +656,7 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	@override String get volume => 'Volum';
 	@override String get masterVolume => 'Volumul principal';
 	@override String get notUseSound => 'Oprește sunetul';
-	@override String get useSoundOnlyWhenActive => 'Sunetele se aud numai dacă fereastra de Misskey este activă';
+	@override String get useSoundOnlyWhenActive => 'Sunetele se aud numai dacă fereastra de Wenyan este activă';
 	@override String get details => 'Detalii';
 	@override String get renoteDetails => 'Detalii de re-notare';
 	@override String get chooseEmoji => 'Alege un emoji';
@@ -673,7 +673,7 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	@override String get ascendingOrder => 'Crescător';
 	@override String get descendingOrder => 'Descrescător';
 	@override String get scratchpad => 'Scratchpad';
-	@override String get scratchpadDescription => 'Scratchpad-ul oferă un mediu de experimentare în AiScript. Poți scrie, executa și verifica rezultatele acestuia interacționând cu Misskey în el.';
+	@override String get scratchpadDescription => 'Scratchpad-ul oferă un mediu de experimentare în AiScript. Poți scrie, executa și verifica rezultatele acestuia interacționând cu Wenyan în el.';
 	@override String get uiInspector => 'Inspector UI';
 	@override String get uiInspectorDescription => 'Poți vedea lista de servere de componente UI în memorie. Componenta UI va fi generată de funcția Ui:C:.';
 	@override String get output => 'Ieșire';
@@ -816,7 +816,7 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	@override String confirmToUnclipAlreadyClippedNote({required Object name}) => 'Această notă face deja parte din clipul „${name}”. Dorești, în schimb, să îl elimini din acest clip?';
 	@override String get public => 'Public';
 	@override String get private => 'Privat';
-	@override String i18nInfo({required Object link}) => 'Misskey este tradusă în diferite limbi de către voluntari. Puteți ajuta accesând ${link}.';
+	@override String i18nInfo({required Object link}) => 'Wenyan este tradusă în diferite limbi de către voluntari. Puteți ajuta accesând ${link}.';
 	@override String get manageAccessTokens => 'Gestionați token-urile de acces';
 	@override String get accountInfo => 'Informațiile contului';
 	@override String get notesCount => 'Numărul de note';
@@ -869,7 +869,7 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	@override String nUsers({required Object n}) => '${n} Utilizatori';
 	@override String nNotes({required Object n}) => '${n} de note';
 	@override String get sendErrorReports => 'Trimite rapoartele de eroare';
-	@override String get sendErrorReportsDescription => 'Când este pornit, informațiile detaliate despre erori vor fi partajate cu Misskey atunci când apare o problemă, ajutând la îmbunătățirea calității Misskey.\nAceasta va include informații precum versiunea sistemului de operare, ce browser utilizați, activitatea dvs. în Misskey etc.';
+	@override String get sendErrorReportsDescription => 'Când este pornit, informațiile detaliate despre erori vor fi partajate cu Wenyan atunci când apare o problemă, ajutând la îmbunătățirea calității Wenyan.\nAceasta va include informații precum versiunea sistemului de operare, ce browser utilizați, activitatea dvs. în Wenyan etc.';
 	@override String get myTheme => 'Tema mea';
 	@override String get backgroundColor => 'Culoare de fundal';
 	@override String get accentColor => 'Culoare de accent';
@@ -964,7 +964,7 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'Diagnosticare';
 	@override String get useBlurEffect => 'Utilizează efecte de estompare în interfața de utilizare';
 	@override String get learnMore => 'Află mai multe';
-	@override String get misskeyUpdated => 'Misskey a fost actualizat!';
+	@override String get misskeyUpdated => 'Wenyan a fost actualizat!';
 	@override String get whatIsNew => 'Vezi noile modificări';
 	@override String get translate => 'Tradu';
 	@override String translatedFrom({required Object x}) => 'Tradus din ${x}';
@@ -1099,8 +1099,8 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	@override String get show => 'Arată';
 	@override String get neverShow => 'Nu mai afișa';
 	@override String get remindMeLater => 'Poate mai târziu';
-	@override String get didYouLikeMisskey => 'A început sa îți placa Misskey?';
-	@override String pleaseDonate({required Object host}) => '${host} folosește software-ul gratuit, Misskey. Am aprecia foarte mult donațiile dumneavoastră, astfel încât dezvoltarea Misskey să poată continua!';
+	@override String get didYouLikeMisskey => 'A început sa îți placa Wenyan?';
+	@override String pleaseDonate({required Object host}) => '${host} folosește software-ul gratuit, Wenyan. Am aprecia foarte mult donațiile dumneavoastră, astfel încât dezvoltarea Wenyan să poată continua!';
 	@override String correspondingSourceIsAvailable({required Object anchor}) => 'Codul sursă corespunzător este disponibil la ${anchor}';
 	@override String get roles => 'Roluri';
 	@override String get role => 'Roluri';
@@ -1227,7 +1227,7 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	@override String get cancelReactionConfirm => 'Ești sigur(ă) că vrei să ștergi reacția ta?';
 	@override String get changeReactionConfirm => 'Sigur vrei sa îți ștergi reacția?';
 	@override String get later => 'Mai târziu';
-	@override String get goToMisskey => 'Spre Misskey';
+	@override String get goToMisskey => 'Spre Wenyan';
 	@override String get additionalEmojiDictionary => 'Dicționare emoji suplimentare';
 	@override String get installed => 'Instalat';
 	@override String get branding => 'Branding';
@@ -1282,7 +1282,7 @@ class _Translations$misskey$ro_RO extends Translations$misskey$en_US {
 	@override String get showRepliesToOthersInTimeline => 'Afișează răspunsurile către ceilalți în cronologie';
 	@override String get hideRepliesToOthersInTimeline => 'Ascunde răspunsurile către ceilalți în cronologie';
 	@override String get showRepliesToOthersInTimelineAll => 'Afișează răspunsurile către ceilalți de către cei ce ii urmărești în cronologie';
-	@override String get repositoryUrlDescription => 'Dacă utilizați Misskey așa cum este (fără modificări ale codului sursă), introduceți https://github.com/misskey-dev/misskey';
+	@override String get repositoryUrlDescription => 'Dacă utilizați Wenyan așa cum este (fără modificări ale codului sursă), introduceți ';
 	@override String get flip => 'Invers';
 	@override String get copyReplayData => 'Copiază datele de reluare';
 	@override String lastNDays({required Object n}) => 'Ultimele ${n} zile';
@@ -1776,7 +1776,7 @@ class _Translations$misskey$search_$ro_RO extends Translations$misskey$search_$e
 	@override String get searchScopeAll => 'Tot';
 	@override String get searchScopeLocal => 'Local';
 	@override String get searchScopeUser => 'Utilizator specific';
-	@override String get serverHostPlaceholder => 'Exemplu: misskey.example.com';
+	@override String get serverHostPlaceholder => 'Exemplu: example.com';
 }
 
 // Path: misskey.watermarkEditor_

@@ -45,7 +45,7 @@ class Translations$aria$zh_TW extends Translations$aria$en_US {
 	final TranslationsZhTw _root; // ignore: unused_field
 
 	// Translations
-	@override String get aboutAria => '關於 Aria';
+	@override String get aboutAria => '關於聞言';
 	@override TextSpan acceptFollowRequestConfirm({required InlineSpan name}) => TextSpan(children: [
 		const TextSpan(text: '確定要同意 '),
 		name,
@@ -53,13 +53,7 @@ class Translations$aria$zh_TW extends Translations$aria$en_US {
 	]);
 	@override String get accessTokenUpdated => '成功更新存取權杖';
 	@override String get accountAdded => '成功添加帳戶';
-	@override TextSpan acknowledgements({required InlineSpan miria, required InlineSpan misskey}) => TextSpan(children: [
-		const TextSpan(text: 'Aria 是 '),
-		miria,
-		const TextSpan(text: ' 的一個分支項目。\nAria 的本地化是基於 '),
-		misskey,
-		const TextSpan(text: ' 的本地化檔案。\n我們想對這些專案的所有貢獻者表示感謝。'),
-	]);
+	@override String get acknowledgements => '聞言是一款面向單一實例的開源社群客戶端。\n介面文案參考社群本地化成果整理。\n感謝所有開源貢獻者。';
 	@override String get addTab => '添加標籤';
 	@override String get alwaysExpandCw => '始終展開敏感的媒體內容';
 	@override String get alwaysExpandLongNote => '始終展開長貼文';
@@ -69,7 +63,7 @@ class Translations$aria$zh_TW extends Translations$aria$en_US {
 		const TextSpan(text: '嗎？'),
 	]);
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria 已被志願者們翻譯成各種語言版本。您可以瀏覽 '),
+		const TextSpan(text: '聞言已被志願者們翻譯成各種語言版本。您可以瀏覽 '),
 		link,
 		const TextSpan(text: ' 幫助翻譯。'),
 	]);
@@ -106,8 +100,8 @@ class Translations$misskey$zh_TW extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => '繁體中文（台灣）';
 	@override String get headlineMisskey => '貼文連繫網路';
-	@override String get introMisskey => '歡迎！Misskey 是一個開放原始碼且去中心化的社群網路服務。\n發布「貼文」向身邊的人分享您的想法！📡\n利用「反應」表達您對貼文的感覺！👍\n讓我們一起探索新的世界吧！🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name}是開放原始碼平臺 <b>Misskey</b> 的伺服器之一。';
+	@override String get introMisskey => '歡迎！聞言是一個開放原始碼且去中心化的社群網路服務。\n發布「貼文」向身邊的人分享您的想法！📡\n利用「反應」表達您對貼文的感覺！👍\n讓我們一起探索新的世界吧！🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name}是開放原始碼平臺 <b>聞言</b> 的伺服器之一。';
 	@override String monthAndDay({required Object month, required Object day}) => '${month} 月 ${day} 日';
 	@override String get search => '搜尋';
 	@override String get reset => '重設';
@@ -116,7 +110,7 @@ class Translations$misskey$zh_TW extends Translations$misskey$en_US {
 	@override String get password => '密碼';
 	@override String get initialPasswordForSetup => '啟動初始設定的密碼';
 	@override String get initialPasswordIsIncorrect => '啟動初始設定密碼錯誤。';
-	@override String get initialPasswordForSetupDescription => '如果您自己安裝了 Misskey，請使用您在設定檔中輸入的密碼。\n如果您使用 Misskey 的託管服務之類的服務，請使用提供的密碼。\n如果您尚未設定密碼，請將其留空並繼續。';
+	@override String get initialPasswordForSetupDescription => '如果您自己安裝了聞言，請使用您在設定檔中輸入的密碼。\n如果您使用聞言的託管服務之類的服務，請使用提供的密碼。\n如果您尚未設定密碼，請將其留空並繼續。';
 	@override String get forgotPassword => '忘記密碼';
 	@override String get fetchingAsApObject => '從聯邦宇宙取得中...';
 	@override String get ok => 'OK';
@@ -284,7 +278,7 @@ class Translations$misskey$zh_TW extends Translations$misskey$en_US {
 	@override String get cacheRemoteSensitiveFiles => '快取遠端的敏感檔案';
 	@override String get cacheRemoteSensitiveFilesDescription => '若停用這個設定，則不會快取遠端的敏感檔案，而是直接連結。';
 	@override String get flagAsBot => '此使用者是機器人';
-	@override String get flagAsBotDescription => '如果本帳戶是由程式控制，請啟用此選項。啟用後，會作為標示幫助其他開發者防止機器人之間產生無限互動的行為，並會調整 Misskey 內部系統將本帳戶識別為機器人。';
+	@override String get flagAsBotDescription => '如果本帳戶是由程式控制，請啟用此選項。啟用後，會作為標示幫助其他開發者防止機器人之間產生無限互動的行為，並會調整聞言內部系統將本帳戶識別為機器人。';
 	@override String get flagAsCat => '此帳戶是一隻貓，喵～～～！！！';
 	@override String get flagAsCatDescription => '喵喵喵？？';
 	@override String get flagShowTimelineReplies => '在時間軸上顯示貼文的回覆';
@@ -295,7 +289,7 @@ class Translations$misskey$zh_TW extends Translations$misskey$en_US {
 	@override String get loginFailed => '登入失敗';
 	@override String get showOnRemote => '轉到所在實例顯示';
 	@override String get continueOnRemote => '在遠端伺服器繼續';
-	@override String get chooseServerOnMisskeyHub => '從 Misskey Hub 選擇伺服器';
+	@override String get chooseServerOnMisskeyHub => '從聞言 Hub 選擇伺服器';
 	@override String get specifyServerHost => '直接指定伺服器網域';
 	@override String get inputHostName => '請輸入域名';
 	@override String get general => '一般';
@@ -558,7 +552,7 @@ class Translations$misskey$zh_TW extends Translations$misskey$en_US {
 	@override String get popularTags => '熱門標籤';
 	@override String get userList => '使用者清單';
 	@override String get about => '關於';
-	@override String get aboutMisskey => '關於 Misskey';
+	@override String get aboutMisskey => '關於聞言';
 	@override String get administrator => '管理員';
 	@override String get token => '權杖';
 	@override String get x2fa => '雙重驗證';
@@ -700,7 +694,7 @@ class Translations$misskey$zh_TW extends Translations$misskey$en_US {
 	@override String get volume => '音量';
 	@override String get masterVolume => '主音量';
 	@override String get notUseSound => '關閉音效';
-	@override String get useSoundOnlyWhenActive => '僅在 Misskey 於前景運作時發出音效';
+	@override String get useSoundOnlyWhenActive => '僅在聞言於前景運作時發出音效';
 	@override String get details => '詳細資訊';
 	@override String get renoteDetails => '轉發貼文的細節';
 	@override String get chooseEmoji => '選擇您的表情符號';
@@ -717,7 +711,7 @@ class Translations$misskey$zh_TW extends Translations$misskey$en_US {
 	@override String get ascendingOrder => '昇冪';
 	@override String get descendingOrder => '降冪';
 	@override String get scratchpad => '暫存記憶體';
-	@override String get scratchpadDescription => 'AiScript 控制臺為 AiScript 的實驗環境。您可以在此編寫、執行和確認程式碼與 Misskey 互動的結果。';
+	@override String get scratchpadDescription => 'AiScript 控制臺為 AiScript 的實驗環境。您可以在此編寫、執行和確認程式碼與聞言互動的結果。';
 	@override String get uiInspector => 'UI 檢查';
 	@override String get uiInspectorDescription => '您可以看到記憶體中存在的 UI 元件實例的清單。  UI 元件由 Ui:C: 系列函數產生。';
 	@override String get output => '輸出';
@@ -864,7 +858,7 @@ class Translations$misskey$zh_TW extends Translations$misskey$en_US {
 	@override String removeNoteFromAntennaConfirm({required Object name}) => '要從「${name}」刪除這則貼文嗎？';
 	@override String get public => '公開';
 	@override String get private => '私密';
-	@override String i18nInfo({required Object link}) => 'Misskey 已被志願者們翻譯成各種語言版本。您可以前往 ${link} 以協助翻譯。';
+	@override String i18nInfo({required Object link}) => '聞言已被志願者們翻譯成各種語言版本。您可以前往 ${link} 以協助翻譯。';
 	@override String get manageAccessTokens => '管理存取權杖';
 	@override String get accountInfo => '帳戶資訊';
 	@override String get notesCount => '貼文數量';
@@ -1014,7 +1008,7 @@ class Translations$misskey$zh_TW extends Translations$misskey$en_US {
 	@override String get troubleshooting => '故障排除';
 	@override String get useBlurEffect => '在 UI 上使用模糊效果';
 	@override String get learnMore => '更多資訊';
-	@override String get misskeyUpdated => 'Misskey 更新完成！';
+	@override String get misskeyUpdated => '聞言更新完成！';
 	@override String get whatIsNew => '顯示更新資訊';
 	@override String get translate => '翻譯';
 	@override String translatedFrom({required Object x}) => '從 ${x} 翻譯';
@@ -1153,8 +1147,8 @@ class Translations$misskey$zh_TW extends Translations$misskey$en_US {
 	@override String get show => '檢視';
 	@override String get neverShow => '不再顯示';
 	@override String get remindMeLater => '以後再說';
-	@override String get didYouLikeMisskey => '您喜歡 Misskey 嗎？';
-	@override String pleaseDonate({required Object host}) => 'Misskey是由${host}使用的免費軟體。請贊助我們，讓開發的工作能夠持續！';
+	@override String get didYouLikeMisskey => '您喜歡聞言嗎？';
+	@override String pleaseDonate({required Object host}) => '聞言是由${host}使用的免費軟體。請贊助我們，讓開發的工作能夠持續！';
 	@override String correspondingSourceIsAvailable({required Object anchor}) => '對應的原始碼可以在 ${anchor} 處找到。';
 	@override String get roles => '角色';
 	@override String get role => '角色';
@@ -1283,7 +1277,7 @@ class Translations$misskey$zh_TW extends Translations$misskey$en_US {
 	@override String get cancelReactionConfirm => '要取消此反應嗎？';
 	@override String get changeReactionConfirm => '要更改反應嗎？';
 	@override String get later => '稍後再說';
-	@override String get goToMisskey => '往 Misskey';
+	@override String get goToMisskey => '往聞言';
 	@override String get additionalEmojiDictionary => '表情符號的附加辭典';
 	@override String get installed => '已安裝';
 	@override String get branding => '品牌宣傳';
@@ -1347,7 +1341,7 @@ class Translations$misskey$zh_TW extends Translations$misskey$en_US {
 	@override String get sourceCode => '原始碼';
 	@override String get sourceCodeIsNotYetProvided => '尚未提供原始碼，請洽詢管理員解決這個問題。';
 	@override String get repositoryUrl => '儲存庫 URL';
-	@override String get repositoryUrlDescription => '如果存在可公開取得原始碼的儲存庫，請輸入其 URL。 如果您按原樣使用 Misskey（不對原始碼進行任何更改），請輸入 https://github.com/misskey-dev/misskey。';
+	@override String get repositoryUrlDescription => '如果存在可公開取得原始碼的儲存庫，請輸入其URL。如果您按原樣使用聞言（不對原始碼進行任何更改），請輸入。';
 	@override String get repositoryUrlOrTarballRequired => '如果儲存庫不是公開的，則必須提供 tarball。 詳細資訊請參閱 .config/example.yml。';
 	@override String get feedback => '意見回饋';
 	@override String get feedbackUrl => '意見回饋 URL';
@@ -1946,7 +1940,7 @@ class Translations$misskey$initialAccountSetting_$zh_TW extends Translations$mis
 	@override String pushNotificationDescription({required Object name}) => '啟用推送通知後，就可以在裝置上接收來自 ${name} 的通知了。';
 	@override String get initialAccountSettingCompleted => '初始設定完成了！';
 	@override String haveFun({required Object name}) => '盡情享受${name}吧！';
-	@override String youCanContinueTutorial({required Object name}) => '您可以繼續學習如何使用${name}(Misskey)，也可以就此打住，立即開始使用。';
+	@override String youCanContinueTutorial({required Object name}) => '您可以繼續學習如何使用${name}(聞言)，也可以就此打住，立即開始使用。';
 	@override String get startTutorial => '開始教學課程';
 	@override String get skipAreYouSure => '要略過初始設定嗎？';
 	@override String get laterAreYouSure => '稍後再重新進行初始設定嗎？';
@@ -2058,7 +2052,7 @@ class Translations$misskey$accountMigration_$zh_TW extends Translations$misskey$
 	@override String get moveTo => '將這個帳戶遷移至新的帳戶';
 	@override String get moveToLabel => '要遷移到的帳戶：';
 	@override String get moveCannotBeUndone => '一旦遷移帳戶，就無法取消。';
-	@override String get moveAccountDescription => '遷移至新帳戶。\n　・此帳戶的追隨者將自動追隨新帳戶；\n　・此帳戶的所有追隨者將被取消追隨；\n　・此帳戶不能再發文。\n\n雖然會自動遷移您的追隨者，但必須手動遷移您追隨的帳戶。請在遷移前匯出此帳戶的「追隨中」名單，並在遷移後自行匯入。\n列表名單、靜音名單及封鎖名單也必須如此處理。\n\n（此說明適用於本伺服器，以及運行 Misskey v13.12.0 或更新版本的其他伺服器；如 Mastodon 等使用 ActivityPub 協定的其他軟體或有不同的處理方式。）';
+	@override String get moveAccountDescription => '遷移至新帳戶。\n　・此帳戶的追隨者將自動追隨新帳戶；\n　・此帳戶的所有追隨者將被取消追隨；\n　・此帳戶不能再發文。\n\n雖然會自動遷移您的追隨者，但必須手動遷移您追隨的帳戶。請在遷移前匯出此帳戶的「追隨中」名單，並在遷移後自行匯入。\n列表名單、靜音名單及封鎖名單也必須如此處理。\n\n（此說明適用於本伺服器，以及運行聞言 v13.12.0 或更新版本的其他伺服器；如 Mastodon 等使用 ActivityPub 協定的其他軟體或有不同的處理方式。）';
 	@override String get moveAccountHowTo => '要遷移帳戶，首先要在目標帳戶中為此帳戶建立一個別名。\n 建立別名後，像這樣輸入目標帳戶：@username@server.example.com';
 	@override String get startMigration => '遷移';
 	@override String migrationConfirm({required Object account}) => '確定要將這個帳戶遷移至 ${account} 嗎？一旦遷移就無法撤銷，也就無法以原來的狀態使用這個帳戶。\n另外，請確認在要遷移到的帳戶已經建立了一個別名。';
@@ -2316,14 +2310,14 @@ class Translations$misskey$aboutMisskey_$zh_TW extends Translations$misskey$abou
 	final TranslationsZhTw _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'Misskey 是由 syuilo 自 2014 年起開發的開放原始碼軟體。';
+	@override String get about => '聞言是由 syuilo 自 2014 年起開發的開放原始碼軟體。';
 	@override String get contributors => '主要貢獻者';
 	@override String get allContributors => '全體貢獻人員';
 	@override String get source => '原始碼';
 	@override String get original => '原始';
-	@override String thisIsModifiedVersion({required Object name}) => '${name} 使用原始 Misskey 的修改版本。';
-	@override String get translation => '翻譯 Misskey';
-	@override String get donate => '贊助 Misskey';
+	@override String thisIsModifiedVersion({required Object name}) => '${name} 使用原始聞言的修改版本。';
+	@override String get translation => '翻譯聞言';
+	@override String get donate => '贊助聞言';
 	@override String get morePatrons => '還有許許多多幫助我們的其他人，非常感謝你們。 🥰';
 	@override String get patrons => '贊助者';
 	@override String get projectMembers => '專案成員';
@@ -2491,7 +2485,7 @@ class Translations$misskey$soundSettings_$zh_TW extends Translations$misskey$sou
 	@override String get driveFileTypeWarn => '不支援此檔案';
 	@override String get driveFileTypeWarnDescription => '請選擇音效檔案';
 	@override String get driveFileDurationWarn => '音效太長了';
-	@override String get driveFileDurationWarnDescription => '使用長音效檔可能會影響 Misskey 的使用體驗。仍要使用此檔案嗎？';
+	@override String get driveFileDurationWarnDescription => '使用長音效檔可能會影響聞言的使用體驗。仍要使用此檔案嗎？';
 	@override String get driveFileError => '無法載入語音。請變更設定';
 }
 
@@ -3349,7 +3343,7 @@ class Translations$misskey$reversi_$zh_TW extends Translations$misskey$reversi_$
 	@override String get lookingForPlayer => '正在搜尋對手';
 	@override String get gameCanceled => '對弈已被取消';
 	@override String get shareToTlTheGameWhenStart => '在遊戲開始時將對弈資訊發布到時間軸';
-	@override String get iStartedAGame => '對弈開始了！ #MisskeyReversi';
+	@override String get iStartedAGame => '對弈開始了！ #聞言Reversi';
 	@override String get opponentHasSettingsChanged => '對手更改了設定';
 	@override String get allowIrregularRules => '允許異常規則（完全自由）';
 	@override String get disallowIrregularRules => '不允許異常規則';
@@ -3388,7 +3382,7 @@ class Translations$misskey$urlPreviewSetting_$zh_TW extends Translations$misskey
 	@override String get userAgent => 'User-Agent';
 	@override String get userAgentDescription => '設定獲取預覽時使用的 User-Agent 。如果留空，將使用預設的 User-Agent 。';
 	@override String get summaryProxy => '產生預覽的代理端點';
-	@override String get summaryProxyDescription => '使用摘要代理程式而不是 Misskey 本身產生預覽。';
+	@override String get summaryProxyDescription => '使用摘要代理程式而不是聞言本身產生預覽。';
 	@override String get summaryProxyDescription2 => '以下參數會作為查詢字串連結到代理。如果代理端不支援，這些設定將被忽略。';
 }
 
@@ -3541,7 +3535,7 @@ class Translations$misskey$bootErrors_$zh_TW extends Translations$misskey$bootEr
 	@override String get otherOption1 => '刪除用戶端設定和快取';
 	@override String get otherOption2 => '啟動簡易用戶端';
 	@override String get otherOption3 => '啟動修復工具';
-	@override String get otherOption4 => '以安全模式啟動 Misskey';
+	@override String get otherOption4 => '以安全模式啟動聞言';
 }
 
 // Path: misskey.search_
@@ -3557,7 +3551,7 @@ class Translations$misskey$search_$zh_TW extends Translations$misskey$search_$en
 	@override String get searchScopeUser => '指定使用者';
 	@override String get pleaseEnterServerHost => '請輸入伺服器的主機名稱';
 	@override String get pleaseSelectUser => '請選擇使用者';
-	@override String get serverHostPlaceholder => '例：misskey.example.com';
+	@override String get serverHostPlaceholder => '例：example.com';
 	@override String get postFrom => '發布時間 from';
 	@override String get postTo => '發布時間 to';
 }
@@ -3569,13 +3563,13 @@ class Translations$misskey$serverSetupWizard_$zh_TW extends Translations$misskey
 	final TranslationsZhTw _root; // ignore: unused_field
 
 	// Translations
-	@override String get installCompleted => 'Misskey 的安裝已經完成了！';
+	@override String get installCompleted => '聞言的安裝已經完成了！';
 	@override String get firstCreateAccount => '首先，請建立管理者帳戶。';
 	@override String get accountCreated => '已建立管理者帳戶！';
 	@override String get serverSetting => '伺服器設定';
 	@override String get youCanEasilyConfigureOptimalServerSettingsWithThisWizard => '利用這個精靈，可以簡單地最佳化伺服器的設定。';
 	@override String get settingsYouMakeHereCanBeChangedLater => '這裡的設定之後也可以進行更改。\n';
-	@override String get howWillYouUseMisskey => '您打算如何使用 Misskey？\n';
+	@override String get howWillYouUseMisskey => '您打算如何使用聞言？\n';
 	@override late final Translations$misskey$serverSetupWizard_$use_$zh_TW use_ = Translations$misskey$serverSetupWizard_$use_$zh_TW.internal(_root);
 	@override String get openServerAdvice => '接納不特定多數使用者會帶來風險。為了能夠有效處理問題，建議建立完善的審查機制來進行運營。\n';
 	@override String get openServerAntiSpamAdvice => '為了防止自家伺服器成為垃圾郵件的跳板，必須啟用如 reCAPTCHA 等反機器人功能，並對安全性保持高度警覺。\n';
@@ -3882,7 +3876,7 @@ class Translations$misskey$initialTutorial_$landing_$zh_TW extends Translations$
 
 	// Translations
 	@override String get title => '歡迎使用本教學課程';
-	@override String get description => '在這裡您可以查看 Misskey 的基本使用方法和功能。';
+	@override String get description => '在這裡您可以查看聞言的基本使用方法和功能。';
 }
 
 // Path: misskey.initialTutorial_.note_
@@ -3893,7 +3887,7 @@ class Translations$misskey$initialTutorial_$note_$zh_TW extends Translations$mis
 
 	// Translations
 	@override String get title => '什麼是貼文？';
-	@override String get description => '在Misskey上發布的內容稱為「貼文」。貼文在時間軸上按時間順序排列，並即時更新。';
+	@override String get description => '在聞言上發布的內容稱為「貼文」。貼文在時間軸上按時間順序排列，並即時更新。';
 	@override String get reply => '您可以回覆貼文，並像討論串一樣繼續對話。';
 	@override String get renote => '您可以將此貼文分享到自己的時間軸。您也可以在引用時添加文字。';
 	@override String get reaction => '您可以加入反應。詳細資訊將在下一頁進行說明。';
@@ -3923,7 +3917,7 @@ class Translations$misskey$initialTutorial_$timeline_$zh_TW extends Translations
 
 	// Translations
 	@override String get title => '時間軸如何運作';
-	@override String get description1 => 'Misskey根據使用方式提供了多個時間軸（伺服器可能會將部份時間軸停用）。';
+	@override String get description1 => '聞言根據使用方式提供了多個時間軸（伺服器可能會將部份時間軸停用）。';
 	@override String get home => '您可以查看您追隨的使用者的貼文。';
 	@override String get local => '您可以看到此伺服器上所有使用者的貼文。';
 	@override String get social => '來自首頁時間軸和本地時間軸的貼文都會顯示。';
@@ -3940,7 +3934,7 @@ class Translations$misskey$initialTutorial_$postNote_$zh_TW extends Translations
 
 	// Translations
 	@override String get title => '貼文的發布設定';
-	@override String get description1 => '在Misskey上發布貼文時，可以設定各種選項。發布表單如下所示。';
+	@override String get description1 => '在聞言上發布貼文時，可以設定各種選項。發布表單如下所示。';
 	@override late final Translations$misskey$initialTutorial_$postNote_$visibility_$zh_TW visibility_ = Translations$misskey$initialTutorial_$postNote_$visibility_$zh_TW.internal(_root);
 	@override late final Translations$misskey$initialTutorial_$postNote_$cw_$zh_TW cw_ = Translations$misskey$initialTutorial_$postNote_$cw_$zh_TW.internal(_root);
 }
@@ -3969,7 +3963,7 @@ class Translations$misskey$initialTutorial_$done_$zh_TW extends Translations$mis
 
 	// Translations
 	@override String get title => '教學課程已結束';
-	@override String description({required Object link}) => '這裡介紹的功能只是其中的一小部分。要了解更多有關如何使用Misskey的資訊，請瀏覽${link}。';
+	@override String description({required Object link}) => '這裡介紹的功能只是其中的一小部分。要了解更多有關如何使用聞言的資訊，請瀏覽${link}。';
 }
 
 // Path: misskey.serverSettings_.userGeneratedContentsVisibilityForVisitor_
@@ -4103,7 +4097,7 @@ class Translations$misskey$role_$options_$zh_TW extends Translations$misskey$rol
 	@override String get driveCapacity => '雲端硬碟容量';
 	@override String get maxFileSize => '可上傳的最大檔案大小';
 	@override String get maxFileSize_caption => '前端可能還有其他設定值，例如反向代理或 CDN。';
-	@override String maxFileSize_caption2({required Object max}) => '伺服器整體的最大檔案大小設定為 ${max}。若要允許上傳更大的檔案，請在 Misskey 設定檔中放寬此設定。';
+	@override String maxFileSize_caption2({required Object max}) => '伺服器整體的最大檔案大小設定為 ${max}。若要允許上傳更大的檔案，請在聞言設定檔中放寬此設定。';
 	@override String get alwaysMarkNsfw => '總是將檔案標記為NSFW';
 	@override String get canUpdateBioMedia => '允許更新大頭貼和橫幅';
 	@override String get pinMax => '置頂貼文的最大數量';
@@ -4786,7 +4780,7 @@ class Translations$misskey$serverSetupWizard_$donationRequest_$zh_TW extends Tra
 	final TranslationsZhTw _root; // ignore: unused_field
 
 	// Translations
-	@override String get text1 => 'Misskey 是由志願者開發的免費軟體。';
+	@override String get text1 => '聞言是由志願者開發的免費軟體。';
 	@override String get text2 => '為了能夠繼續開發，若您願意的話，請考慮進行捐款。\n';
 	@override String get text3 => '也有提供支援者專屬的特典！\n';
 }
@@ -4910,7 +4904,7 @@ class Translations$misskey$achievements_$types_$notes1_$zh_TW extends Translatio
 	// Translations
 	@override String get title => '歡迎！';
 	@override String get description => '發出了第一則貼文';
-	@override String get flavor => '祝您的 Misskey 生活愉快！';
+	@override String get flavor => '祝您的聞言生活愉快！';
 }
 
 // Path: misskey.achievements_.types_.notes10_
@@ -5088,7 +5082,7 @@ class Translations$misskey$achievements_$types_$login3_$zh_TW extends Translatio
 	// Translations
 	@override String get title => '初學者Ⅰ';
 	@override String get description => '總登入天數為三天';
-	@override String get flavor => '從今天開始，我就是 Misskist';
+	@override String get flavor => '從今天開始，我就是聞言民';
 }
 
 // Path: misskey.achievements_.types_.login7_
@@ -5121,7 +5115,7 @@ class Translations$misskey$achievements_$types_$login30_$zh_TW extends Translati
 	final TranslationsZhTw _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskist Ⅰ';
+	@override String get title => '聞言民 Ⅰ';
 	@override String get description => '總登入天數為三十天';
 }
 
@@ -5132,7 +5126,7 @@ class Translations$misskey$achievements_$types_$login60_$zh_TW extends Translati
 	final TranslationsZhTw _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskist ⅠⅠ';
+	@override String get title => '聞言民 ⅠⅠ';
 	@override String get description => '總登入天數為六十天';
 }
 
@@ -5143,9 +5137,9 @@ class Translations$misskey$achievements_$types_$login100_$zh_TW extends Translat
 	final TranslationsZhTw _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskist ⅠⅠⅠ';
+	@override String get title => '聞言民 ⅠⅠⅠ';
 	@override String get description => '總登入天數為一百天';
-	@override String get flavor => '凶暴的 Misskist';
+	@override String get flavor => '凶暴的聞言民';
 }
 
 // Path: misskey.achievements_.types_.login200_
@@ -5246,7 +5240,7 @@ class Translations$misskey$achievements_$types_$login1000_$zh_TW extends Transla
 	// Translations
 	@override String get title => '貼文大師ⅠⅠⅠ';
 	@override String get description => '總登入天數為一千天';
-	@override String get flavor => '感謝您使用 Misskey！';
+	@override String get flavor => '感謝您使用聞言！';
 }
 
 // Path: misskey.achievements_.types_.noteClipped1_
@@ -5466,9 +5460,9 @@ class Translations$misskey$achievements_$types_$iLoveMisskey_$zh_TW extends Tran
 	final TranslationsZhTw _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'I Love Misskey';
-	@override String get description => '發佈「I ❤ #Misskey」';
-	@override String get flavor => '感謝您使用 Misskey！by 開發團隊';
+	@override String get title => 'I Love 聞言';
+	@override String get description => '發佈「I ❤ #聞言」';
+	@override String get flavor => '感謝您使用聞言！by 開發團隊';
 }
 
 // Path: misskey.achievements_.types_.foundTreasure_
@@ -5500,7 +5494,7 @@ class Translations$misskey$achievements_$types_$client60min_$zh_TW extends Trans
 	final TranslationsZhTw _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskey 看太多';
+	@override String get title => '聞言看太多';
 	@override String get description => '客戶端啟動已超過60分鐘';
 }
 
@@ -5726,7 +5720,7 @@ class Translations$misskey$achievements_$types_$brainDiver_$zh_TW extends Transl
 	// Translations
 	@override String get title => 'Brain Driver';
 	@override String get description => '發佈一篇含歌曲《Brain Driver》連結的貼文';
-	@override String get flavor => 'Misskey-Misskey La-Tu-Ma';
+	@override String get flavor => '聞言-聞言 La-Tu-Ma';
 }
 
 // Path: misskey.achievements_.types_.smashTestNotificationButton_
@@ -5747,7 +5741,7 @@ class Translations$misskey$achievements_$types_$tutorialCompleted_$zh_TW extends
 	final TranslationsZhTw _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskey新手講座 結業證書';
+	@override String get title => '聞言新手講座 結業證書';
 	@override String get description => '已完成教學課程';
 }
 

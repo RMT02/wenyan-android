@@ -494,7 +494,7 @@ class const _TimelinesPageButton({
       TimelinesPageButtonType.explore => t.misskey.explore,
       TimelinesPageButtonType.favorites => t.misskey.favorites,
       TimelinesPageButtonType.gallery => t.misskey.gallery,
-      TimelinesPageButtonType.games => 'Misskey Games',
+      TimelinesPageButtonType.games => '闻言小游戏',
       TimelinesPageButtonType.home => t.misskey.home,
       TimelinesPageButtonType.instanceInfo => t.misskey.instanceInfo,
       TimelinesPageButtonType.lists => t.misskey.lists,

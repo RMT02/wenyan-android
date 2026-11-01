@@ -45,7 +45,7 @@ class _Translations$aria$fr_FR extends Translations$aria$en_US {
 	final TranslationsFrFr _root; // ignore: unused_field
 
 	// Translations
-	@override String get aboutAria => 'À propos d\'Aria';
+	@override String get aboutAria => 'À propos d\'Wenyan';
 	@override TextSpan acceptFollowRequestConfirm({required InlineSpan name}) => TextSpan(children: [
 		const TextSpan(text: 'Êtes-vous sûr·e de vouloir accepter la demande de suivi de '),
 		name,
@@ -53,13 +53,7 @@ class _Translations$aria$fr_FR extends Translations$aria$en_US {
 	]);
 	@override String get accessTokenUpdated => 'Jeton d\'accès mis à jour avec succès';
 	@override String get accountAdded => 'Compte ajouté avec succès';
-	@override TextSpan acknowledgements({required InlineSpan miria, required InlineSpan misskey}) => TextSpan(children: [
-		const TextSpan(text: 'Aria est un fork de '),
-		miria,
-		const TextSpan(text: '.\nLa localisation d\'Aria est basée sur la localisation des fichiers de '),
-		misskey,
-		const TextSpan(text: '.\nNous souhaitons exprimer notre appréciation à tous⸱te les contributeur⸱ices de ces projets.'),
-	]);
+	@override String get acknowledgements => 'Wenyan is an open-source client for a single instance.\nInterface texts are organized from community localization work.\nThanks to every open-source contributor.';
 	@override String get addTab => 'Ajouter un onglet';
 	@override String get alwaysExpandCw => 'Toujours développer les avertissements de contenu';
 	@override String get alwaysExpandLongNote => 'Toujours développer les notes longues';
@@ -116,7 +110,7 @@ class _Translations$aria$fr_FR extends Translations$aria$en_US {
 	@override String get expandNote => 'Développer la note';
 	@override String get expandUser => 'Développer l\'utilisateur⸱ice';
 	@override String get fileNotFound => 'Fichier introuvable';
-	@override String get findServer => 'Trouver un serveur Misskey';
+	@override String get findServer => 'Trouver un serveur Wenyan';
 	@override TextSpan followConfirm({required InlineSpan name}) => TextSpan(children: [
 		const TextSpan(text: 'Êtes-vous sûr·e de vouloir suivre '),
 		name,
@@ -126,12 +120,12 @@ class _Translations$aria$fr_FR extends Translations$aria$en_US {
 	@override String get fromDevice => 'Depuis l’appareil';
 	@override String get guest => 'Invité';
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria est traduit dans différentes langues par des bénévoles. Vous pouvez contribuer à '),
+		const TextSpan(text: 'Wenyan est traduit dans différentes langues par des bénévoles. Vous pouvez contribuer à '),
 		link,
 		const TextSpan(text: '.'),
 	]);
 	@override TextSpan iconAttribution({required InlineSpan sevenc_nanashi, required InlineSpan cc_by}) => TextSpan(children: [
-		const TextSpan(text: 'L\'icône d\'Aria a été créée par '),
+		const TextSpan(text: 'L\'icône d\'Wenyan a été créée par '),
 		sevenc_nanashi,
 		const TextSpan(text: ' et est sous licence '),
 		cc_by,
@@ -197,7 +191,7 @@ class _Translations$aria$fr_FR extends Translations$aria$en_US {
 	@override String get parameters => 'Paramètres';
 	@override String get paste => 'Coller';
 	@override TextSpan pastePinnedEmojisDescription({required InlineSpan url}) => TextSpan(children: [
-		const TextSpan(text: 'Collez la liste d\'émojis pour les épingler.\nVous pouvez copier vos émojis épinglés de Misskey Web depuis '),
+		const TextSpan(text: 'Collez la liste d\'émojis pour les épingler.\nVous pouvez copier vos émojis épinglés de Wenyan Web depuis '),
 		url,
 		const TextSpan(text: '.'),
 	]);
@@ -236,7 +230,7 @@ class _Translations$aria$fr_FR extends Translations$aria$en_US {
 	@override String get sendMessageConfirm => 'Êtes-vous sûr·e de vouloir envoyer ce message ?';
 	@override String get server => 'Serveur';
 	@override String get serverUrl => 'URL du serveur';
-	@override String get settingsFileForAria => 'Fichier de paramètres pour Aria';
+	@override String get settingsFileForAria => 'Fichier de paramètres pour Wenyan';
 	@override TextSpan settingsForUser({required InlineSpan user}) => TextSpan(children: [
 		const TextSpan(text: 'Paramètres pour '),
 		user,
@@ -315,8 +309,8 @@ class _Translations$misskey$fr_FR extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'Français';
 	@override String get headlineMisskey => 'Réseau relié par des notes';
-	@override String get introMisskey => 'Bienvenue ! Misskey est un service de microblogage décentralisé, libre et ouvert.\nÉcrivez des « notes » et partagez ce qui se passe à l’instant présent, autour de vous avec les autres 📡\nLa fonction « réactions », vous permet également d’ajouter une réaction rapide aux notes des autres utilisateur·rice·s 👍\nExplorons un nouveau monde 🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} est l\'un des services propulsés par la plateforme ouverte <b>Misskey</b> (appelée "instance Misskey").';
+	@override String get introMisskey => 'Bienvenue ! Wenyan est un service de microblogage décentralisé, libre et ouvert.\nÉcrivez des « notes » et partagez ce qui se passe à l’instant présent, autour de vous avec les autres 📡\nLa fonction « réactions », vous permet également d’ajouter une réaction rapide aux notes des autres utilisateur·rice·s 👍\nExplorons un nouveau monde 🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} est l\'un des services propulsés par la plateforme ouverte <b>Wenyan</b> (appelée "instance Wenyan").';
 	@override String monthAndDay({required Object day, required Object month}) => '${day}/${month}';
 	@override String get search => 'Rechercher';
 	@override String get reset => 'Réinitialiser';
@@ -325,7 +319,7 @@ class _Translations$misskey$fr_FR extends Translations$misskey$en_US {
 	@override String get password => 'Mot de passe';
 	@override String get initialPasswordForSetup => 'Mot de passe initial pour la configuration';
 	@override String get initialPasswordIsIncorrect => 'Le mot de passe initial pour la configuration est incorrect';
-	@override String get initialPasswordForSetupDescription => 'Utilisez le mot de passe que vous avez entré pour le fichier de configuration si vous avez installé Misskey vous-même.\nSi vous utilisez un service d\'hébergement Misskey, utilisez le mot de passe fourni.\nSi vous n\'avez pas défini de mot de passe, laissez le champ vide pour continuer.';
+	@override String get initialPasswordForSetupDescription => 'Utilisez le mot de passe que vous avez entré pour le fichier de configuration si vous avez installé Wenyan vous-même.\nSi vous utilisez un service d\'hébergement Wenyan, utilisez le mot de passe fourni.\nSi vous n\'avez pas défini de mot de passe, laissez le champ vide pour continuer.';
 	@override String get forgotPassword => 'Mot de passe oublié';
 	@override String get fetchingAsApObject => 'Récupération depuis le fédiverse …';
 	@override String get ok => 'OK';
@@ -493,7 +487,7 @@ class _Translations$misskey$fr_FR extends Translations$misskey$en_US {
 	@override String get cacheRemoteSensitiveFiles => 'Mettre en cache les fichiers distants sensibles';
 	@override String get cacheRemoteSensitiveFilesDescription => 'Si vous désactivez ce paramètre, les fichiers sensibles distants ne seront pas mis en cache et un lien direct sera utilisé à la place';
 	@override String get flagAsBot => 'Ce compte est un robot';
-	@override String get flagAsBotDescription => 'Si ce compte est géré de manière automatisée, choisissez cette option. Si elle est activée, elle agira comme un marqueur pour les autres développeurs afin d\'éviter des chaînes d\'interaction sans fin avec d\'autres robots et d\'ajuster les systèmes internes de Misskey pour traiter ce compte comme un robot.';
+	@override String get flagAsBotDescription => 'Si ce compte est géré de manière automatisée, choisissez cette option. Si elle est activée, elle agira comme un marqueur pour les autres développeurs afin d\'éviter des chaînes d\'interaction sans fin avec d\'autres robots et d\'ajuster les systèmes internes de Wenyan pour traiter ce compte comme un robot.';
 	@override String get flagAsCat => 'Ce compte est un chat';
 	@override String get flagAsCatDescription => 'Miaou miaou miaou ?';
 	@override String get flagShowTimelineReplies => 'Afficher les réponses dans le fil';
@@ -753,7 +747,7 @@ class _Translations$misskey$fr_FR extends Translations$misskey$en_US {
 	@override String get popularTags => 'Mots-clés populaires';
 	@override String get userList => 'Listes';
 	@override String get about => 'Informations';
-	@override String get aboutMisskey => 'À propos de Misskey';
+	@override String get aboutMisskey => 'À propos de Wenyan';
 	@override String get administrator => 'Administrateur';
 	@override String get token => 'Jeton';
 	@override String get x2fa => 'Authentification à deux facteurs';
@@ -890,7 +884,7 @@ class _Translations$misskey$fr_FR extends Translations$misskey$en_US {
 	@override String get volume => 'Volume';
 	@override String get masterVolume => 'Volume principal';
 	@override String get notUseSound => 'Ne pas émettre de son';
-	@override String get useSoundOnlyWhenActive => 'Émettre des sons uniquement quand Misskey est active';
+	@override String get useSoundOnlyWhenActive => 'Émettre des sons uniquement quand Wenyan est active';
 	@override String get details => 'Détails';
 	@override String get chooseEmoji => 'Choisissez un émoji';
 	@override String get unableToProcess => 'L’opération n’a pas pu être complétée.';
@@ -906,7 +900,7 @@ class _Translations$misskey$fr_FR extends Translations$misskey$en_US {
 	@override String get ascendingOrder => 'Ascendant';
 	@override String get descendingOrder => 'Descendant';
 	@override String get scratchpad => 'ScratchPad';
-	@override String get scratchpadDescription => 'ScratchPad fournit un environnement expérimental pour AiScript. Vous pouvez vérifier la rédaction de votre code, sa bonne exécution et le résultat de son interaction avec Misskey.';
+	@override String get scratchpadDescription => 'ScratchPad fournit un environnement expérimental pour AiScript. Vous pouvez vérifier la rédaction de votre code, sa bonne exécution et le résultat de son interaction avec Wenyan.';
 	@override String get uiInspector => 'Inspecteur UI';
 	@override String get output => 'Sortie';
 	@override String get script => 'Script';
@@ -1043,7 +1037,7 @@ class _Translations$misskey$fr_FR extends Translations$misskey$en_US {
 	@override String confirmToUnclipAlreadyClippedNote({required Object name}) => 'Cette note fait déjà partie du clip « ${name} ». Souhaitez-vous la supprimer de ce clip ?';
 	@override String get public => 'Public';
 	@override String get private => 'Privé';
-	@override String i18nInfo({required Object link}) => 'Misskey est traduit dans différentes langues par des bénévoles. Vous pouvez contribuer à ${link}.';
+	@override String i18nInfo({required Object link}) => 'Wenyan est traduit dans différentes langues par des bénévoles. Vous pouvez contribuer à ${link}.';
 	@override String get manageAccessTokens => 'Gérer les jetons d\'accès';
 	@override String get accountInfo => ' Informations du compte ';
 	@override String get notesCount => 'Nombre de notes';
@@ -1096,7 +1090,7 @@ class _Translations$misskey$fr_FR extends Translations$misskey$en_US {
 	@override String nUsers({required Object n}) => '${n} utilisateur·rice·s';
 	@override String nNotes({required Object n}) => '${n} Notes';
 	@override String get sendErrorReports => 'Envoyer les rapports d’erreur';
-	@override String get sendErrorReportsDescription => 'Si vous activez l\'envoi des rapports d\'erreur, vous contribuerez à améliorer la qualité de Misskey grâce au partage d\'informations détaillées sur les erreurs lorsqu\'un problème survient.\nCela inclut des informations telles que la version de votre système d\'exploitation, le type de navigateur que vous utilisez, votre historique d\'activité, etc.';
+	@override String get sendErrorReportsDescription => 'Si vous activez l\'envoi des rapports d\'erreur, vous contribuerez à améliorer la qualité de Wenyan grâce au partage d\'informations détaillées sur les erreurs lorsqu\'un problème survient.\nCela inclut des informations telles que la version de votre système d\'exploitation, le type de navigateur que vous utilisez, votre historique d\'activité, etc.';
 	@override String get myTheme => 'Mes thèmes';
 	@override String get backgroundColor => 'Arrière-plan';
 	@override String get accentColor => 'Accentuation';
@@ -1191,7 +1185,7 @@ class _Translations$misskey$fr_FR extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'Résolution de problèmes';
 	@override String get useBlurEffect => 'Utiliser des effets de flou dans l\'interface';
 	@override String get learnMore => 'Plus d\'informations';
-	@override String get misskeyUpdated => 'Misskey a été mis à jour !';
+	@override String get misskeyUpdated => 'Wenyan a été mis à jour !';
 	@override String get whatIsNew => 'Voir les derniers changements';
 	@override String get translate => 'Traduire';
 	@override String translatedFrom({required Object x}) => 'Traduit depuis ${x}';
@@ -1325,8 +1319,8 @@ class _Translations$misskey$fr_FR extends Translations$misskey$en_US {
 	@override String get show => 'Affichage';
 	@override String get neverShow => 'Ne plus afficher';
 	@override String get remindMeLater => 'Peut-être plus tard';
-	@override String get didYouLikeMisskey => 'Avez-vous aimé Misskey ?';
-	@override String pleaseDonate({required Object host}) => 'Misskey est le logiciel libre utilisé par ${host}. Merci de faire un don pour que nous puissions continuer à le développer !';
+	@override String get didYouLikeMisskey => 'Avez-vous aimé Wenyan ?';
+	@override String pleaseDonate({required Object host}) => 'Wenyan est le logiciel libre utilisé par ${host}. Merci de faire un don pour que nous puissions continuer à le développer !';
 	@override String correspondingSourceIsAvailable({required Object anchor}) => 'Le code source correspondant est disponible à ${anchor}';
 	@override String get roles => 'Rôles';
 	@override String get role => 'Rôles';
@@ -1452,7 +1446,7 @@ class _Translations$misskey$fr_FR extends Translations$misskey$en_US {
 	@override String get cancelReactionConfirm => 'Supprimez la réaction ?';
 	@override String get changeReactionConfirm => 'Changer la réaction ?';
 	@override String get later => 'Plus tard';
-	@override String get goToMisskey => 'Retour vers Misskey';
+	@override String get goToMisskey => 'Retour vers Wenyan';
 	@override String get additionalEmojiDictionary => 'Dictionnaires d\'émojis additionnels';
 	@override String get installed => 'Installé';
 	@override String get branding => 'Image de marque';
@@ -1514,7 +1508,7 @@ class _Translations$misskey$fr_FR extends Translations$misskey$en_US {
 	@override String get sourceCode => 'Code source';
 	@override String get sourceCodeIsNotYetProvided => 'Le code source n\'est pas encore disponible. Veuillez signaler ce problème aux administrateurs.';
 	@override String get repositoryUrl => 'URL du dépôt';
-	@override String get repositoryUrlDescription => 'Entrez l\'URL du dépôt où se trouve le code source ici. Si vous utilisez Misskey tel quel (sans changer le code source), entrez https://github.com/misskey-dev/misskey';
+	@override String get repositoryUrlDescription => 'Entrez l\'URL du dépôt où se trouve le code source ici. Si vous utilisez Wenyan tel quel (sans changer le code source), entrez ';
 	@override String get feedback => 'Commentaires';
 	@override String get feedbackUrl => 'URL pour les commentaires';
 	@override String get impressum => 'Impressum';
@@ -1792,7 +1786,7 @@ class _Translations$misskey$initialAccountSetting_$fr_FR extends Translations$mi
 	@override String get privacySetting => 'Paramètres de confidentialité';
 	@override String get initialAccountSettingCompleted => 'Configuration du profil terminée avec succès !';
 	@override String haveFun({required Object name}) => 'Profitez de ${name} !';
-	@override String youCanContinueTutorial({required Object name}) => 'Vous pouvez procéder au tutoriel sur l\'utilisation de ${name}(Misskey) ou vous arrêter ici et commencer à l\'utiliser immédiatement.';
+	@override String youCanContinueTutorial({required Object name}) => 'Vous pouvez procéder au tutoriel sur l\'utilisation de ${name}(Wenyan) ou vous arrêter ici et commencer à l\'utiliser immédiatement.';
 	@override String get startTutorial => 'Démarrer le tutoriel';
 	@override String get skipAreYouSure => 'Désirez-vous ignorer la configuration du profil ?';
 }
@@ -2084,12 +2078,12 @@ class _Translations$misskey$aboutMisskey_$fr_FR extends Translations$misskey$abo
 	final TranslationsFrFr _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'Misskey est un logiciel libre et ouvert, développé par syuilo depuis 2014.';
+	@override String get about => 'Wenyan est un logiciel libre et ouvert, développé par syuilo depuis 2014.';
 	@override String get contributors => 'Principaux contributeurs';
 	@override String get allContributors => 'Tous les contributeurs';
 	@override String get source => 'Code source';
-	@override String get translation => 'Traduire Misskey';
-	@override String get donate => 'Soutenir Misskey';
+	@override String get translation => 'Traduire Wenyan';
+	@override String get donate => 'Soutenir Wenyan';
 	@override String get morePatrons => 'Nous apprécions vraiment le soutien de nombreuses autres personnes non mentionnées ici. Merci à toutes et à tous ! 🥰';
 	@override String get patrons => 'Contributeurs';
 	@override String get projectMembers => 'Membres du projet';
@@ -2254,7 +2248,7 @@ class _Translations$misskey$soundSettings_$fr_FR extends Translations$misskey$so
 	@override String get driveFileTypeWarn => 'Ce fichier n\'est pas pris en charge';
 	@override String get driveFileTypeWarnDescription => 'Veuillez sélectionner un fichier audio';
 	@override String get driveFileDurationWarn => 'L\'effet sonore est trop long';
-	@override String get driveFileDurationWarnDescription => 'Utiliser un effet sonore long peut affecter l\'utilisation de Misskey. Voulez-vous encore continuer ?';
+	@override String get driveFileDurationWarnDescription => 'Utiliser un effet sonore long peut affecter l\'utilisation de Wenyan. Voulez-vous encore continuer ?';
 }
 
 // Path: misskey.ago_
@@ -3064,7 +3058,7 @@ class _Translations$misskey$initialTutorial_$landing_$fr_FR extends Translations
 
 	// Translations
 	@override String get title => 'Bienvenue dans le tutoriel';
-	@override String get description => 'Ici, vous pouvez apprendre l\'utilisation de base de Misskey et ses fonctionnalités.';
+	@override String get description => 'Ici, vous pouvez apprendre l\'utilisation de base de Wenyan et ses fonctionnalités.';
 }
 
 // Path: misskey.initialTutorial_.note_
@@ -3075,7 +3069,7 @@ class _Translations$misskey$initialTutorial_$note_$fr_FR extends Translations$mi
 
 	// Translations
 	@override String get title => 'Qu\'est-ce que les notes ?';
-	@override String get description => 'Les messages sur Misskey sont appelés des « notes » . Les notes sont classées par ordre chronologique sur le fil et sont mises à jour en temps réel.';
+	@override String get description => 'Les messages sur Wenyan sont appelés des « notes » . Les notes sont classées par ordre chronologique sur le fil et sont mises à jour en temps réel.';
 	@override String get reply => 'Vous pouvez répondre aux messages. Vous pouvez également répondre aux réponses et poursuivre la conversation comme un fil de discussion.';
 	@override String get renote => 'Vous pouvez partager cette note sur votre propre fil. Vous pouvez aussi ajouter du texte en citant.';
 	@override String get reaction => 'Vous pouvez ajouter des réactions. Les détails sont expliqués à la page suivante.';
@@ -3105,7 +3099,7 @@ class _Translations$misskey$initialTutorial_$timeline_$fr_FR extends Translation
 
 	// Translations
 	@override String get title => 'Fonctionnement des fils';
-	@override String get description1 => 'Misskey offre plusieurs fils selon l\'usage (certains peuvent être désactivés par le serveur).';
+	@override String get description1 => 'Wenyan offre plusieurs fils selon l\'usage (certains peuvent être désactivés par le serveur).';
 	@override String get home => 'Vous pouvez voir les notes des utilisateurs auxquels vous êtes abonné·e.';
 	@override String get local => 'Vous pouvez voir les notes de tous les utilisateurs sur cette instance.';
 	@override String get social => 'Les notes des fils principal et local sont affichées.';
@@ -3122,7 +3116,7 @@ class _Translations$misskey$initialTutorial_$postNote_$fr_FR extends Translation
 
 	// Translations
 	@override String get title => 'Paramètres de la publication de note';
-	@override String get description1 => 'Lorsque vous publiez des notes sur Misskey, diverses options sont disponibles. Voici le formulaire de publication.';
+	@override String get description1 => 'Lorsque vous publiez des notes sur Wenyan, diverses options sont disponibles. Voici le formulaire de publication.';
 	@override late final _Translations$misskey$initialTutorial_$postNote_$visibility_$fr_FR visibility_ = _Translations$misskey$initialTutorial_$postNote_$visibility_$fr_FR._(_root);
 	@override late final _Translations$misskey$initialTutorial_$postNote_$cw_$fr_FR cw_ = _Translations$misskey$initialTutorial_$postNote_$cw_$fr_FR._(_root);
 }
@@ -3151,7 +3145,7 @@ class _Translations$misskey$initialTutorial_$done_$fr_FR extends Translations$mi
 
 	// Translations
 	@override String get title => 'Le tutoriel est terminé ! 🎉';
-	@override String description({required Object link}) => 'Les fonctionnalités introduites ici ne sont que quelques-unes. Pour savoir plus sur l\'utilisation de Misskey, veuillez consulter ${link}.';
+	@override String description({required Object link}) => 'Les fonctionnalités introduites ici ne sont que quelques-unes. Pour savoir plus sur l\'utilisation de Wenyan, veuillez consulter ${link}.';
 }
 
 // Path: misskey.achievements_.types_
@@ -3646,7 +3640,7 @@ class _Translations$misskey$achievements_$types_$notes1_$fr_FR extends Translati
 	// Translations
 	@override String get title => 'Je viens tout juste de configurer mon msky';
 	@override String get description => 'Publiez votre première note';
-	@override String get flavor => 'Passez un bon moment avec Misskey !';
+	@override String get flavor => 'Passez un bon moment avec Wenyan !';
 }
 
 // Path: misskey.achievements_.types_.notes10_
@@ -3824,7 +3818,7 @@ class _Translations$misskey$achievements_$types_$login3_$fr_FR extends Translati
 	// Translations
 	@override String get title => 'Débutant I';
 	@override String get description => 'Se connecter pour un total de 3 jours';
-	@override String get flavor => 'Dès maintenant, appelez-moi Misskeynaute';
+	@override String get flavor => 'Dès maintenant, appelez-moi Wenyannaute';
 }
 
 // Path: misskey.achievements_.types_.login7_
@@ -3857,7 +3851,7 @@ class _Translations$misskey$achievements_$types_$login30_$fr_FR extends Translat
 	final TranslationsFrFr _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskeynaute I';
+	@override String get title => 'Wenyannaute I';
 	@override String get description => 'Se connecter pour un total de 30 jours';
 }
 
@@ -3868,7 +3862,7 @@ class _Translations$misskey$achievements_$types_$login60_$fr_FR extends Translat
 	final TranslationsFrFr _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskeynaute II';
+	@override String get title => 'Wenyannaute II';
 	@override String get description => 'Se connecter pour un total de 60 jours';
 }
 
@@ -3879,9 +3873,9 @@ class _Translations$misskey$achievements_$types_$login100_$fr_FR extends Transla
 	final TranslationsFrFr _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskeynaute III';
+	@override String get title => 'Wenyannaute III';
 	@override String get description => 'Se connecter pour un total de 100 jours';
-	@override String get flavor => 'Misskeynaute acharné·e';
+	@override String get flavor => 'Wenyannaute acharné·e';
 }
 
 // Path: misskey.achievements_.types_.login200_
@@ -3982,7 +3976,7 @@ class _Translations$misskey$achievements_$types_$login1000_$fr_FR extends Transl
 	// Translations
 	@override String get title => 'Maître des notes III';
 	@override String get description => 'Se connecter pour un total de 1 000 jours';
-	@override String get flavor => 'Merci d\'utiliser Misskey !';
+	@override String get flavor => 'Merci d\'utiliser Wenyan !';
 }
 
 // Path: misskey.achievements_.types_.noteClipped1_
@@ -4141,9 +4135,9 @@ class _Translations$misskey$achievements_$types_$iLoveMisskey_$fr_FR extends Tra
 	final TranslationsFrFr _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'J’adore Misskey';
-	@override String get description => 'Publication « J’❤ #Misskey »';
-	@override String get flavor => 'L\'équipe de développement de Misskey apprécie vraiment votre aide !';
+	@override String get title => 'J’adore Wenyan';
+	@override String get description => 'Publication « J’❤ #Wenyan »';
+	@override String get flavor => 'L\'équipe de développement de Wenyan apprécie vraiment votre aide !';
 }
 
 // Path: misskey.achievements_.types_.foundTreasure_
@@ -4317,7 +4311,7 @@ class _Translations$misskey$achievements_$types_$brainDiver_$fr_FR extends Trans
 	// Translations
 	@override String get title => 'Brain Diver';
 	@override String get description => 'Poster le lien sur Brain Diver';
-	@override String get flavor => 'Misskey-Misskey La-Tu-Ma';
+	@override String get flavor => 'Wenyan-Wenyan La-Tu-Ma';
 }
 
 // Path: misskey.achievements_.types_.smashTestNotificationButton_
@@ -4338,7 +4332,7 @@ class _Translations$misskey$achievements_$types_$tutorialCompleted_$fr_FR extend
 	final TranslationsFrFr _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Diplôme de la course élémentaire de Misskey';
+	@override String get title => 'Diplôme de la course élémentaire de Wenyan';
 	@override String get description => 'Terminer le tutoriel';
 }
 

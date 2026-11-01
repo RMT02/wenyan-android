@@ -17,7 +17,6 @@ import '../provider/share_notifier_provider.dart';
 import '../util/safe_parse_double.dart';
 import '../util/show_toast.dart';
 import '../view/page/about_aria_page.dart';
-import '../view/page/about_misskey_page.dart';
 import '../view/page/announcements_page.dart';
 import '../view/page/antenna_page.dart';
 import '../view/page/antennas_page.dart';
@@ -125,10 +124,6 @@ GoRouter router(Ref ref) {
         },
       ),
       GoRoute(path: '/about-aria', builder: (_, _) => const AboutAriaPage()),
-      GoRoute(
-        path: '/about-misskey',
-        builder: (_, _) => const AboutMisskeyPage(),
-      ),
       GoRoute(
         path: '/login',
         builder: (_, state) =>

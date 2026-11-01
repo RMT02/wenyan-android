@@ -56,7 +56,7 @@ class const CustomEmoji({
           visible: onLongPress == null && !disableTooltip,
           child: Tooltip(
             message: emoji.replaceFirst('@.', ''),
-            child: Assets.misskey.packages.frontend.assets.unknown.image(
+            child: Assets.wenyan.packages.frontend.assets.unknown.image(
               height: height,
               opacity: AlwaysStoppedAnimation(opacity),
               fit: fit,
@@ -111,7 +111,7 @@ class const CustomEmoji({
                 alignment: alignment,
                 placeholderBuilder: placeholderBuilder,
                 errorBuilder: (_, _, _) => fallbackToImage
-                    ? Assets.misskey.packages.frontend.assets.dummy.image(
+                    ? Assets.wenyan.packages.frontend.assets.dummy.image(
                         height: height,
                         opacity: AlwaysStoppedAnimation(opacity),
                         fit: fit,

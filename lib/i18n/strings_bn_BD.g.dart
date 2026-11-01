@@ -50,7 +50,7 @@ class _Translations$aria$bn_BD extends Translations$aria$en_US {
 		const TextSpan(text: ' কে ফলোও করার ব্যাপারে নিশ্চিত?'),
 	]);
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria স্বেচ্ছাসেবকদের দ্বারা বিভিন্ন ভাষায় অনুবাদ করা হচ্ছে। আপনি '),
+		const TextSpan(text: 'ওয়েনইয়ান স্বেচ্ছাসেবকদের দ্বারা বিভিন্ন ভাষায় অনুবাদ করা হচ্ছে। আপনি '),
 		link,
 		const TextSpan(text: ' এ গিয়ে অনুবাদে সহযোগিতা করতে পারেন।'),
 	]);
@@ -82,7 +82,7 @@ class _Translations$misskey$bn_BD extends Translations$misskey$en_US {
 	@override String get lang__ => 'বাংলা';
 	@override String get headlineMisskey => 'নোট ব্যাবহার করে সংযুক্ত নেটওয়ার্ক';
 	@override String get introMisskey => 'স্বাগতম! মিসকি একটি ওপেন সোর্স, ডিসেন্ট্রালাইজড মাইক্রোব্লগিং পরিষেবা। \n"নোট" তৈরির মাধ্যমে যা ঘটছে তা সবার সাথে শেয়ার করুন 📡\n"রিঅ্যাকশন" গুলির মাধ্যমে যেকোনো নোট সম্পর্কে আপনার অনুভূতি ব্যাক্ত করতে পারেন 👍\nএকটি নতুন দুনিয়া ঘুরে দেখুন 🚀\n';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} হল ওপেন সোর্স প্ল্যাটফর্ম <b>Misskey</b>-এর সার্ভারগুলির একটি৷';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} হল ওপেন সোর্স প্ল্যাটফর্ম <b>ওয়েনইয়ান</b>-এর সার্ভারগুলির একটি৷';
 	@override String monthAndDay({required Object day, required Object month}) => '${day}/${month}';
 	@override String get search => 'খুঁজুন';
 	@override String get notifications => 'বিজ্ঞপ্তি';
@@ -236,7 +236,7 @@ class _Translations$misskey$bn_BD extends Translations$misskey$en_US {
 	@override String get cacheRemoteFiles => 'রিমোট ফাইলসমুহ ক্যাশ করুন';
 	@override String get cacheRemoteFilesDescription => 'যখন এই অপশনটি বন্ধ থাকে তখন রিমোট ফাইল সমূহ সরাসরি রিমোট ইন্সট্যান্স থেকে লোড করা হয়। এই অপশনটি বন্ধ করলে স্টোরেজ এর ব্যাবহার কমবে তবে থাম্বনেইল তৈরি না করার কারণে নেটওয়ার্ক ব্যান্ডউইথ বেশী লাগবে।  ';
 	@override String get flagAsBot => 'বট হিসাবে চিহ্নিত করুন';
-	@override String get flagAsBotDescription => 'এই অ্যাকাউন্টটি যদি একটি প্রোগ্রাম দ্বারা পরিচালিত হয়, তাহলে এই অপশনটি চালু করুন। ইন্টারঅ্যাকশান চেইনিং রোধ করতে, মিস্কির সিস্টেম পরিচালনাকে বট-বান্ধব করতে এবং অন্যান্য ডেভেলপারদের সাহায্য করতে আপনার বট এ এই অপশনটি চালু করুন৷';
+	@override String get flagAsBotDescription => 'এই অ্যাকাউন্টটি যদি একটি প্রোগ্রাম দ্বারা পরিচালিত হয়, তাহলে এই অপশনটি চালু করুন। ইন্টারঅ্যাকশান চেইনিং রোধ করতে, ওয়েনইয়ানের সিস্টেম পরিচালনাকে বট-বান্ধব করতে এবং অন্যান্য ডেভেলপারদের সাহায্য করতে আপনার বট এ এই অপশনটি চালু করুন৷';
 	@override String get flagAsCat => 'বিড়াল হিসাবে চিহ্নিত করুন';
 	@override String get flagAsCatDescription => 'অ্যাকাউন্টটিকে বিড়াল হিসাবে চিহ্নিত করার জন্য অপশনটি চালু করুন।';
 	@override String get flagShowTimelineReplies => 'টাইমলাইনে নোটগুলির রিপ্লাই দেখান';
@@ -471,7 +471,7 @@ class _Translations$misskey$bn_BD extends Translations$misskey$en_US {
 	@override String get popularTags => 'জনপ্রিয় ট্যাগগুলি';
 	@override String get userList => 'লিস্ট';
 	@override String get about => 'আপনার সম্পর্কে';
-	@override String get aboutMisskey => 'Misskey সম্পর্কে';
+	@override String get aboutMisskey => 'ওয়েনইয়ান সম্পর্কে';
 	@override String get administrator => 'প্রশাসক';
 	@override String get token => 'টোকেন';
 	@override String get moderator => 'মডারেটর';
@@ -595,7 +595,7 @@ class _Translations$misskey$bn_BD extends Translations$misskey$en_US {
 	@override String get ascendingOrder => 'ঊর্ধ্বক্রমে';
 	@override String get descendingOrder => 'নিম্নক্রমে';
 	@override String get scratchpad => 'স্ক্র্যাচপ্যাড';
-	@override String get scratchpadDescription => 'স্ক্র্যাচপ্যাড AiScript-এর জন্য একটি পরীক্ষামূলক পরিবেশ প্রদান করে। আপনি মিস্কির সাথে ইন্টারঅ্যাক্ট করে এমন কোড লিখতে, চালাতে এবং তার ফলাফল দেখতে পারেন।';
+	@override String get scratchpadDescription => 'স্ক্র্যাচপ্যাড AiScript-এর জন্য একটি পরীক্ষামূলক পরিবেশ প্রদান করে। আপনি ওয়েনইয়ানের সাথে ইন্টারঅ্যাক্ট করে এমন কোড লিখতে, চালাতে এবং তার ফলাফল দেখতে পারেন।';
 	@override String get output => 'আউটপুট';
 	@override String get script => 'স্ক্রিপ্ট';
 	@override String get disablePagesScript => 'পেজগুলোতে AiScript অক্ষম করুন';
@@ -715,7 +715,7 @@ class _Translations$misskey$bn_BD extends Translations$misskey$en_US {
 	@override String get createNewClip => 'নতুন ক্লিপ তৈরি করুন';
 	@override String get public => 'সর্বজনীন';
 	@override String get private => 'ব্যাক্তিগত';
-	@override String i18nInfo({required Object link}) => 'Misskey স্বেচ্ছাসেবকদের দ্বারা বিভিন্ন ভাষায় অনুবাদ করা হচ্ছে। আপনি ${link} এ গিয়ে অনুবাদে সহযোগিতা করতে পারেন।';
+	@override String i18nInfo({required Object link}) => 'ওয়েনইয়ান স্বেচ্ছাসেবকদের দ্বারা বিভিন্ন ভাষায় অনুবাদ করা হচ্ছে। আপনি ${link} এ গিয়ে অনুবাদে সহযোগিতা করতে পারেন।';
 	@override String get manageAccessTokens => 'অ্যাক্সেস টোকেন পরিচালনা করুন';
 	@override String get accountInfo => 'অ্যাকাউন্টের তথ্য';
 	@override String get notesCount => 'নোটের সংখ্যা';
@@ -765,7 +765,7 @@ class _Translations$misskey$bn_BD extends Translations$misskey$en_US {
 	@override String nUsers({required Object n}) => '${n} জন ব্যাবহারকারী';
 	@override String nNotes({required Object n}) => '${n} টি নোট';
 	@override String get sendErrorReports => 'ক্রুটি প্রতিবেদন পাঠান';
-	@override String get sendErrorReportsDescription => 'চালু থাকলে, বিস্তারিত ত্রুটির তথ্য Misskey-এর সাথে শেয়ার করা হয়। যা সফ্টওয়্যারটির গুণমান উন্নত করতে সাহায্য করে। ত্রুটির তথ্যের মধ্যে রয়েছে OS সংস্করণ, ব্রাউজারের ধরন, কর্মের ইতিহাস ইত্যাদি।';
+	@override String get sendErrorReportsDescription => 'চালু থাকলে, বিস্তারিত ত্রুটির তথ্য ওয়েনইয়ান-এর সাথে শেয়ার করা হয়। যা সফ্টওয়্যারটির গুণমান উন্নত করতে সাহায্য করে। ত্রুটির তথ্যের মধ্যে রয়েছে OS সংস্করণ, ব্রাউজারের ধরন, কর্মের ইতিহাস ইত্যাদি।';
 	@override String get myTheme => 'আমার থিম';
 	@override String get backgroundColor => 'পটভূমির রং';
 	@override String get accentColor => 'এক্সেন্টের রং';
@@ -856,7 +856,7 @@ class _Translations$misskey$bn_BD extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'ট্রাবলশুটিং';
 	@override String get useBlurEffect => 'UI তে ব্লার ইফেক্ট ব্যাবহার করুন';
 	@override String get learnMore => 'আরও জানুন';
-	@override String get misskeyUpdated => 'Misskey আপডেট করা হয়েছে！';
+	@override String get misskeyUpdated => 'ওয়েনইয়ান আপডেট করা হয়েছে！';
 	@override String get whatIsNew => 'পরিবর্তনগুলি দেখান';
 	@override String get translate => 'অনুবাদ';
 	@override String translatedFrom({required Object x}) => '${x} হতে অনুবাদ করা';
@@ -1183,12 +1183,12 @@ class _Translations$misskey$aboutMisskey_$bn_BD extends Translations$misskey$abo
 	final TranslationsBnBd _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'Misskey, একটি ওপেন সোর্স সফ্টওয়্যার যা 2014 সাল থেকে syuilo তৈরি করছেন।';
+	@override String get about => 'ওয়েনইয়ান, একটি ওপেন সোর্স সফ্টওয়্যার যা 2014 সাল থেকে syuilo তৈরি করছেন।';
 	@override String get contributors => 'প্রধান কন্ট্রিবিউটারগণ';
 	@override String get allContributors => 'সকল কন্ট্রিবিউটারগণ';
 	@override String get source => 'সোর্স কোড';
-	@override String get translation => 'Misskey অনুবাদ করুন';
-	@override String get donate => 'Misskey তে দান করুন';
+	@override String get translation => 'ওয়েনইয়ান অনুবাদ করুন';
+	@override String get donate => 'ওয়েনইয়ান তে দান করুন';
 	@override String get morePatrons => 'আরও অনেকে আমাদের সাহায্য করছেন। তাদের সবাইকে ধন্যবাদ 🥰';
 	@override String get patrons => 'সমর্থনকারী';
 }

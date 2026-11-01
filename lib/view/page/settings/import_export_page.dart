@@ -183,7 +183,7 @@ class const ImportExportPage({super.key}) extends ConsumerWidget {
                             .read(fileSystemProvider)
                             .systemTempDirectory
                             .createTemp();
-                        final tempFile = tempDirectory.childFile('aria.json');
+                        final tempFile = tempDirectory.childFile('wenyan.json');
                         if (!context.mounted) return;
                         final data = await futureWithDialog(
                           context,
@@ -282,7 +282,7 @@ class const ImportExportPage({super.key}) extends ConsumerWidget {
                       final files = await futureWithDialog(
                         context,
                         Future.wait(
-                          ['aria.json', 'aria.json.unknown'].map(
+                          ['wenyan.json', 'wenyan.json.unknown'].map(
                             (name) => ref
                                 .read(misskeyProvider(account))
                                 .drive

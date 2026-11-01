@@ -51,7 +51,7 @@ class _Translations$aria$vi_VN extends Translations$aria$en_US {
 		const TextSpan(text: '？'),
 	]);
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria đang được các tình nguyện viên dịch sang nhiều thứ tiếng khác nhau. Bạn có thể hỗ trợ tại '),
+		const TextSpan(text: 'Wenyan đang được các tình nguyện viên dịch sang nhiều thứ tiếng khác nhau. Bạn có thể hỗ trợ tại '),
 		link,
 		const TextSpan(text: '.'),
 	]);
@@ -83,8 +83,8 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'Tiếng Việt';
 	@override String get headlineMisskey => 'Mạng xã hội liên hợp';
-	@override String get introMisskey => 'Xin chào! Misskey là một nền tảng tiểu blog phi tập trung mã nguồn mở.\nViết "tút" để chia sẻ những suy nghĩ của bạn 📡\nBằng "biểu cảm", bạn có thể bày tỏ nhanh chóng cảm xúc của bạn với các tút 👍\nHãy khám phá một thế giới mới! 🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} là một trong những chủ máy của <b>Misskey</b> là nền tảng mã nguồn mở';
+	@override String get introMisskey => 'Xin chào! Wenyan là một nền tảng tiểu blog phi tập trung mã nguồn mở.\nViết "tút" để chia sẻ những suy nghĩ của bạn 📡\nBằng "biểu cảm", bạn có thể bày tỏ nhanh chóng cảm xúc của bạn với các tút 👍\nHãy khám phá một thế giới mới! 🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} là một trong những chủ máy của <b>Wenyan</b> là nền tảng mã nguồn mở';
 	@override String monthAndDay({required Object day, required Object month}) => '${day} tháng ${month}';
 	@override String get search => 'Tìm kiếm';
 	@override String get reset => 'cài lại';
@@ -93,7 +93,7 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	@override String get password => 'Mật khẩu';
 	@override String get initialPasswordForSetup => 'Mật khẩu ban đầu để thiết lập';
 	@override String get initialPasswordIsIncorrect => 'Mật khẩu ban đầu đã nhập sai';
-	@override String get initialPasswordForSetupDescription => 'Nếu bạn tự cài đặt Misskey, hãy sử dụng mật khẩu ban đầu của bạn đã nhập trong tệp cấu hình.\nNếu bạn đang sử dụng dịch vụ nào đó giống như dịch vụ lưu trữ của Misskey, hãy sử dụng mật khẩu ban đầu được cung cấp.\nNếu bạn chưa đặt mật khẩu ban đầu, vui lòng để trống và tiếp tục.';
+	@override String get initialPasswordForSetupDescription => 'Nếu bạn tự cài đặt Wenyan, hãy sử dụng mật khẩu ban đầu của bạn đã nhập trong tệp cấu hình.\nNếu bạn đang sử dụng dịch vụ nào đó giống như dịch vụ lưu trữ của Wenyan, hãy sử dụng mật khẩu ban đầu được cung cấp.\nNếu bạn chưa đặt mật khẩu ban đầu, vui lòng để trống và tiếp tục.';
 	@override String get forgotPassword => 'Quên mật khẩu';
 	@override String get fetchingAsApObject => 'Đang nạp dữ liệu từ Fediverse...';
 	@override String get ok => 'Đồng ý';
@@ -259,7 +259,7 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	@override String get cacheRemoteSensitiveFiles => 'Lưu các tập tin nhạy cảm vào bộ nhớ tạm từ xa';
 	@override String get cacheRemoteSensitiveFilesDescription => 'Khi bạn tắt tính năng này, các tệp nhạy cảm sẽ được tải trực tiếp từ máy chủ và không được lưu vào bộ nhớ tạm';
 	@override String get flagAsBot => 'Đánh dấu đây là tài khoản bot';
-	@override String get flagAsBotDescription => 'Bật tùy chọn này nếu tài khoản này được kiểm soát bởi một chương trình. Nếu được bật, nó sẽ được đánh dấu để các nhà phát triển khác ngăn chặn chuỗi tương tác vô tận với các bot khác và điều chỉnh hệ thống nội bộ của Misskey để coi tài khoản này như một bot.';
+	@override String get flagAsBotDescription => 'Bật tùy chọn này nếu tài khoản này được kiểm soát bởi một chương trình. Nếu được bật, nó sẽ được đánh dấu để các nhà phát triển khác ngăn chặn chuỗi tương tác vô tận với các bot khác và điều chỉnh hệ thống nội bộ của Wenyan để coi tài khoản này như một bot.';
 	@override String get flagAsCat => 'Chế độ Mèeeeeeeeeeo!!';
 	@override String get flagAsCatDescription => 'Nếu mà em là một con mèo thì cứ bật nó kiu mèo mèo mèeeeeeeo!! ';
 	@override String get flagShowTimelineReplies => 'Hiện lượt trả lời trong bảng tin';
@@ -270,7 +270,7 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	@override String get loginFailed => 'Đăng nhập không thành công';
 	@override String get showOnRemote => 'Truy cập trang của người này';
 	@override String get continueOnRemote => 'Tiếp tục trên phiên bản từ xa';
-	@override String get chooseServerOnMisskeyHub => 'Chọn một máy chủ từ Misskey Hub';
+	@override String get chooseServerOnMisskeyHub => 'Chọn một máy chủ từ Wenyan Hub';
 	@override String get specifyServerHost => 'Thiết lập một máy chủ';
 	@override String get inputHostName => 'Nhập địa chỉ máy chủ';
 	@override String get general => 'Tổng quan';
@@ -528,7 +528,7 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	@override String get popularTags => 'Hashtag thông dụng';
 	@override String get userList => 'Danh sách';
 	@override String get about => 'Giới thiệu';
-	@override String get aboutMisskey => 'Về Misskey';
+	@override String get aboutMisskey => 'Về Wenyan';
 	@override String get administrator => 'Quản trị viên';
 	@override String get token => 'Token';
 	@override String get x2fa => 'Xác thực 2 yếu tố';
@@ -669,7 +669,7 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	@override String get volume => 'Âm lượng';
 	@override String get masterVolume => 'Âm thanh chung';
 	@override String get notUseSound => 'Tắt tiếng';
-	@override String get useSoundOnlyWhenActive => 'Chỉ phát âm thanh khi Misskey đang được hiển thị';
+	@override String get useSoundOnlyWhenActive => 'Chỉ phát âm thanh khi Wenyan đang được hiển thị';
 	@override String get details => 'Chi tiết';
 	@override String get renoteDetails => 'Tìm hiểu thêm về đăng lại ';
 	@override String get chooseEmoji => 'Chọn emoji';
@@ -686,7 +686,7 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	@override String get ascendingOrder => 'Tăng dần';
 	@override String get descendingOrder => 'Giảm dần';
 	@override String get scratchpad => 'Scratchpad';
-	@override String get scratchpadDescription => 'Scratchpad cung cấp môi trường cho các thử nghiệm AiScript. Bạn có thể viết, thực thi và kiểm tra kết quả tương tác với Misskey trong đó.';
+	@override String get scratchpadDescription => 'Scratchpad cung cấp môi trường cho các thử nghiệm AiScript. Bạn có thể viết, thực thi và kiểm tra kết quả tương tác với Wenyan trong đó.';
 	@override String get uiInspector => 'Trình kiểm tra UI';
 	@override String get output => 'Nguồn ra';
 	@override String get script => 'Kịch bản';
@@ -828,7 +828,7 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	@override String confirmToUnclipAlreadyClippedNote({required Object name}) => 'Bài đăng này là một phần của "${name}" ghim. Bạn có muốn bỏ khỏi ghim?';
 	@override String get public => 'Công khai';
 	@override String get private => 'Riêng tư';
-	@override String i18nInfo({required Object link}) => 'Misskey đang được các tình nguyện viên dịch sang nhiều thứ tiếng khác nhau. Bạn có thể hỗ trợ tại ${link}.';
+	@override String i18nInfo({required Object link}) => 'Wenyan đang được các tình nguyện viên dịch sang nhiều thứ tiếng khác nhau. Bạn có thể hỗ trợ tại ${link}.';
 	@override String get manageAccessTokens => 'Tạo mã truy cập';
 	@override String get accountInfo => 'Thông tin tài khoản';
 	@override String get notesCount => 'Số lượng tút';
@@ -881,7 +881,7 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	@override String nUsers({required Object n}) => '${n} Người';
 	@override String nNotes({required Object n}) => '${n} Tút';
 	@override String get sendErrorReports => 'Báo lỗi';
-	@override String get sendErrorReportsDescription => 'Khi được bật, thông tin chi tiết về lỗi sẽ được chia sẻ với Misskey khi xảy ra sự cố, giúp nâng cao chất lượng của Misskey.\nBao gồm thông tin như phiên bản hệ điều hành của bạn, trình duyệt bạn đang sử dụng, hoạt động của bạn trong Misskey, v.v.';
+	@override String get sendErrorReportsDescription => 'Khi được bật, thông tin chi tiết về lỗi sẽ được chia sẻ với Wenyan khi xảy ra sự cố, giúp nâng cao chất lượng của Wenyan.\nBao gồm thông tin như phiên bản hệ điều hành của bạn, trình duyệt bạn đang sử dụng, hoạt động của bạn trong Wenyan, v.v.';
 	@override String get myTheme => 'Theme của tôi';
 	@override String get backgroundColor => 'Màu nền';
 	@override String get accentColor => 'Màu phụ';
@@ -976,7 +976,7 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'Khắc phục sự cố';
 	@override String get useBlurEffect => 'Dùng hiệu ứng làm mờ trong giao diện';
 	@override String get learnMore => 'Tìm hiểu thêm';
-	@override String get misskeyUpdated => 'Misskey vừa được cập nhật!';
+	@override String get misskeyUpdated => 'Wenyan vừa được cập nhật!';
 	@override String get whatIsNew => 'Hiện những thay đổi';
 	@override String get translate => 'Dịch';
 	@override String translatedFrom({required Object x}) => 'Dịch từ ${x}';
@@ -1112,7 +1112,7 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	@override String get neverShow => 'Không hiển thị nữa';
 	@override String get remindMeLater => 'Để sau';
 	@override String get didYouLikeMisskey => 'Bạn có ưa thích Mískey không?';
-	@override String pleaseDonate({required Object host}) => 'Misskey là phần mềm miễn phí mà ${host} đang sử dụng. Xin mong bạn quyên góp cho chúng tôi để chúng tôi có thể tiếp tục phát triển dịch vụ này. Xin cảm ơn!!';
+	@override String pleaseDonate({required Object host}) => 'Wenyan là phần mềm miễn phí mà ${host} đang sử dụng. Xin mong bạn quyên góp cho chúng tôi để chúng tôi có thể tiếp tục phát triển dịch vụ này. Xin cảm ơn!!';
 	@override String correspondingSourceIsAvailable({required Object anchor}) => 'Mã nguồn có thể được xem tại ${anchor}';
 	@override String get roles => 'Vai trò';
 	@override String get role => 'Vai trò';
@@ -1214,7 +1214,7 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	@override String get cancelReactionConfirm => 'Bạn có muốn hủy phản ứng của mình không?';
 	@override String get changeReactionConfirm => 'Bạn có muốn thay đổi phản ứng của mình không?';
 	@override String get later => 'Để sau';
-	@override String get goToMisskey => 'Tới Misskey';
+	@override String get goToMisskey => 'Tới Wenyan';
 	@override String get installed => 'Đã tải xuống';
 	@override String get branding => 'Thương hiệu';
 	@override String get turnOffToImprovePerformance => 'Tắt mục này có thể cải thiện hiệu năng.';
@@ -1262,7 +1262,7 @@ class _Translations$misskey$vi_VN extends Translations$misskey$en_US {
 	@override String get externalServices => 'Các dịch vụ bên ngoài';
 	@override String get sourceCode => 'Mã nguồn';
 	@override String get sourceCodeIsNotYetProvided => 'Mã nguồn hiện chưa có sẵn, vui lòng liên hệ với quản trị viên để khắc phục sự cố này.';
-	@override String get repositoryUrlDescription => 'Nếu bạn có kho lưu trữ mã nguồn có thể truy cập công khai, hãy nhập URL. Nếu bạn đang sử dụng Misskey theo mặc định (không thực hiện bất kỳ thay đổi nào đối với mã nguồn), hãy nhập https://github.com/misskey-dev/misskey.';
+	@override String get repositoryUrlDescription => 'Nếu bạn có kho lưu trữ mã nguồn có thể truy cập công khai, hãy nhập URL. Nếu bạn đang sử dụng Wenyan theo mặc định (không thực hiện bất kỳ thay đổi nào đối với mã nguồn), hãy nhập ';
 	@override String get feedback => 'Phản hồi';
 	@override String get feedbackUrl => 'URL phản hồi';
 	@override String get impressum => 'Thông tin nhà điều hành';
@@ -1481,7 +1481,7 @@ class _Translations$misskey$initialAccountSetting_$vi_VN extends Translations$mi
 	@override String pushNotificationDescription({required Object name}) => 'Bật thông báo đẩy sẽ cho phép bạn nhận thông báo từ ${name} trực tiếp từ thiết bị của bạn.';
 	@override String get initialAccountSettingCompleted => 'Thiết lập tài khoản thành công!';
 	@override String haveFun({required Object name}) => 'Hãy tận hưởng ${name} nhé!';
-	@override String youCanContinueTutorial({required Object name}) => 'Bạn có thể tiếp tục xem hướng dẫn về cách sử dụng ${name} (Misskey) hoặc bạn có thể thoát khỏi phần thiết lập tại đây và bắt đầu sử dụng ngay lập tức.';
+	@override String youCanContinueTutorial({required Object name}) => 'Bạn có thể tiếp tục xem hướng dẫn về cách sử dụng ${name} (Wenyan) hoặc bạn có thể thoát khỏi phần thiết lập tại đây và bắt đầu sử dụng ngay lập tức.';
 	@override String get startTutorial => 'Bắt đầu hướng dẫn';
 	@override String get skipAreYouSure => 'Bạn thực sự muốn bỏ qua mục thiết lập tài khoản?';
 	@override String get laterAreYouSure => 'Bạn thực sự muốn thiết lập tài khoản vào lúc khác?';
@@ -1539,7 +1539,7 @@ class _Translations$misskey$accountMigration_$vi_VN extends Translations$misskey
 	@override String moveFromLabel({required Object n}) => 'Tài khoản gốc #${n}';
 	@override String get moveTo => 'Chuyển tài khoản này vào một tài khoản khác';
 	@override String get moveCannotBeUndone => 'Việc chuyển tài khoản không thể huỷ.';
-	@override String get moveAccountDescription => 'Điều này sẽ chuyển tài khoản này sang một tài khoản khác.\n　・Những người theo dõi sẽ tự động được chuyển sang tài khoản mới\n　・Tài khoản này sẽ tự bỏ theo dõi những người mà bạn đã theo dõi trước đây\n　・Bạn sẽ không thể đăng tút mới, v.v trên tài khoản này\n\nDù việc chuyển người theo dõi được diễn ra tự động, bạn vẫn phải tự chuẩn bị một vài bước để chuyển danh sách những người dùng bạn đang theo dõi. Để làm vậy, vui lòng thực hiện việc xuất dữ liệu những người dùng đã theo dõi mà sau này bạn sẽ dùng để nhập vào tài khoản mới ở menu Cài đặt. Hành động tương tự áp dụng với danh sách những người dùng bị chặn hoặc tắt tiếng.\n\n(Điều này áp dụng cho phiên bản Misskey v13.12.0 và sau này. Các phần mềm ActivityPub khác , ví dụ như Mastodon, sẽ có thể hoạt động khác đi.)';
+	@override String get moveAccountDescription => 'Điều này sẽ chuyển tài khoản này sang một tài khoản khác.\n　・Những người theo dõi sẽ tự động được chuyển sang tài khoản mới\n　・Tài khoản này sẽ tự bỏ theo dõi những người mà bạn đã theo dõi trước đây\n　・Bạn sẽ không thể đăng tút mới, v.v trên tài khoản này\n\nDù việc chuyển người theo dõi được diễn ra tự động, bạn vẫn phải tự chuẩn bị một vài bước để chuyển danh sách những người dùng bạn đang theo dõi. Để làm vậy, vui lòng thực hiện việc xuất dữ liệu những người dùng đã theo dõi mà sau này bạn sẽ dùng để nhập vào tài khoản mới ở menu Cài đặt. Hành động tương tự áp dụng với danh sách những người dùng bị chặn hoặc tắt tiếng.\n\n(Điều này áp dụng cho phiên bản Wenyan v13.12.0 và sau này. Các phần mềm ActivityPub khác , ví dụ như Mastodon, sẽ có thể hoạt động khác đi.)';
 	@override String get startMigration => 'Chuyển';
 	@override String get movedAndCannotBeUndone => '\nTài khoản này đã được chuyển đi.\nViệc di chuyển tài khoản không thể bị huỷ bỏ.';
 	@override String get movedTo => 'Tài khoản mới:';
@@ -1747,12 +1747,12 @@ class _Translations$misskey$aboutMisskey_$vi_VN extends Translations$misskey$abo
 	final TranslationsViVn _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'Misskey là phần mềm mã nguồn mở được phát triển bởi syuilo từ năm 2014.';
+	@override String get about => 'Wenyan là phần mềm mã nguồn mở được phát triển bởi syuilo từ năm 2014.';
 	@override String get contributors => 'Những người đóng góp nổi bật';
 	@override String get allContributors => 'Toàn bộ người đóng góp';
 	@override String get source => 'Mã nguồn';
-	@override String get translation => 'Dịch Misskey';
-	@override String get donate => 'Ủng hộ Misskey';
+	@override String get translation => 'Dịch Wenyan';
+	@override String get donate => 'Ủng hộ Wenyan';
 	@override String get morePatrons => 'Chúng tôi cũng trân trọng sự hỗ trợ của nhiều người đóng góp khác không được liệt kê ở đây. Cảm ơn! 🥰';
 	@override String get patrons => 'Người ủng hộ';
 }
@@ -2545,7 +2545,7 @@ class _Translations$misskey$initialTutorial_$landing_$vi_VN extends Translations
 
 	// Translations
 	@override String get title => 'Chào mừng đến với Hướng dẫn';
-	@override String get description => 'Tại đây, bạn có thể tìm hiểu những điều cơ bản về cách sử dụng Misskey và các tính năng của nó.';
+	@override String get description => 'Tại đây, bạn có thể tìm hiểu những điều cơ bản về cách sử dụng Wenyan và các tính năng của nó.';
 }
 
 // Path: misskey.initialTutorial_.note_
@@ -2556,7 +2556,7 @@ class _Translations$misskey$initialTutorial_$note_$vi_VN extends Translations$mi
 
 	// Translations
 	@override String get title => 'Bài Viết là gì?';
-	@override String get description => 'Các bài đăng trên Misskey được gọi là \'Bài Viết\'. Ghi chú được sắp xếp theo thứ tự thời gian trên dòng thời gian và được cập nhật theo thời gian thực.';
+	@override String get description => 'Các bài đăng trên Wenyan được gọi là \'Bài Viết\'. Ghi chú được sắp xếp theo thứ tự thời gian trên dòng thời gian và được cập nhật theo thời gian thực.';
 }
 
 // Path: misskey.initialTutorial_.timeline_
@@ -2971,7 +2971,7 @@ class _Translations$misskey$achievements_$types_$notes1_$vi_VN extends Translati
 	// Translations
 	@override String get title => 'just setting up my msky';
 	@override String get description => 'Lần đầu tiên đăng bài';
-	@override String get flavor => 'Chúc bạn trên Miskey vui vẻ nha!!';
+	@override String get flavor => 'Chúc bạn trên Wenyan vui vẻ nha!!';
 }
 
 // Path: misskey.achievements_.types_.notes10_
@@ -3105,7 +3105,7 @@ class _Translations$misskey$achievements_$types_$login3_$vi_VN extends Translati
 	// Translations
 	@override String get title => 'Sơ cấp I';
 	@override String get description => 'Tổng số ngày đăng nhập đạt 3 ngày';
-	@override String get flavor => 'Từ nay các bạn cứ xem như mình là một Misskist đó';
+	@override String get flavor => 'Từ nay các bạn cứ xem như mình là một Wenyanist đó';
 }
 
 // Path: misskey.achievements_.types_.login7_
@@ -3138,7 +3138,7 @@ class _Translations$misskey$achievements_$types_$login30_$vi_VN extends Translat
 	final TranslationsViVn _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskist cấp I';
+	@override String get title => 'Wenyanist cấp I';
 	@override String get description => 'Tổng số ngày đăng nhập đạt 30 ngày';
 }
 
@@ -3149,7 +3149,7 @@ class _Translations$misskey$achievements_$types_$login60_$vi_VN extends Translat
 	final TranslationsViVn _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskist cấp II';
+	@override String get title => 'Wenyanist cấp II';
 	@override String get description => 'Tổng số ngày đăng nhập đạt 60 ngày';
 }
 
@@ -3160,9 +3160,9 @@ class _Translations$misskey$achievements_$types_$login100_$vi_VN extends Transla
 	final TranslationsViVn _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Misskist cấp III';
+	@override String get title => 'Wenyanist cấp III';
 	@override String get description => 'Tổng số ngày đăng nhập đạt 100 ngày';
-	@override String get flavor => 'Người dùng này, chính vì đó là một Misskist';
+	@override String get flavor => 'Người dùng này, chính vì đó là một Wenyanist';
 }
 
 // Path: misskey.achievements_.types_.login200_
@@ -3205,7 +3205,7 @@ class _Translations$misskey$achievements_$types_$login1000_$vi_VN extends Transl
 	final TranslationsViVn _root; // ignore: unused_field
 
 	// Translations
-	@override String get flavor => 'Cảm ơn bạn đã sử dụng Misskey!';
+	@override String get flavor => 'Cảm ơn bạn đã sử dụng Wenyan!';
 }
 
 // Path: misskey.achievements_.types_.noteFavorited1_
@@ -3412,9 +3412,9 @@ class _Translations$misskey$achievements_$types_$iLoveMisskey_$vi_VN extends Tra
 	final TranslationsViVn _root; // ignore: unused_field
 
 	// Translations
-	@override String get title => 'Tôi Yêu Misskey';
-	@override String get description => 'Đăng lời nói "I ❤ #Misskey"';
-	@override String get flavor => 'Xin chân thành cảm ơn bạn đã sử dụng Misskey!!  by Đội ngũ phát triển';
+	@override String get title => 'Tôi Yêu Wenyan';
+	@override String get description => 'Đăng lời nói "I ❤ #Wenyan"';
+	@override String get flavor => 'Xin chân thành cảm ơn bạn đã sử dụng Wenyan!! by Đội ngũ phát triển';
 }
 
 // Path: misskey.achievements_.types_.foundTreasure_
@@ -3436,7 +3436,7 @@ class _Translations$misskey$achievements_$types_$client30min_$vi_VN extends Tran
 
 	// Translations
 	@override String get title => 'Giải lao xỉu';
-	@override String get description => 'Giữ Misskey mở trong ít nhất 30 phút';
+	@override String get description => 'Giữ Wenyan mở trong ít nhất 30 phút';
 }
 
 // Path: misskey.achievements_.types_.client60min_
@@ -3446,7 +3446,7 @@ class _Translations$misskey$achievements_$types_$client60min_$vi_VN extends Tran
 	final TranslationsViVn _root; // ignore: unused_field
 
 	// Translations
-	@override String get description => 'Giữ Misskey mở trong ít nhất 60 phút';
+	@override String get description => 'Giữ Wenyan mở trong ít nhất 60 phút';
 }
 
 // Path: misskey.achievements_.types_.noteDeletedWithin1min_

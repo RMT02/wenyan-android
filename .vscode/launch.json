@@ -2,18 +2,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "aria",
+            "name": "闻言",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "aria (profile mode)",
+            "name": "闻言（profile 模式）",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "aria (release mode)",
+            "name": "闻言（release 模式）",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

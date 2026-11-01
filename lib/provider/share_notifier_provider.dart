@@ -10,7 +10,6 @@ import 'accounts_notifier_provider.dart';
 import 'api/attaches_notifier_provider.dart';
 import 'file_system_provider.dart';
 import 'miauth_notifier_provider.dart';
-import 'misskey_servers_provider.dart';
 import 'post_notifier_provider.dart';
 import 'receive_sharing_intent_provider.dart';
 
@@ -37,7 +36,7 @@ class ShareNotifier extends _$ShareNotifier {
     if (sharedFiles.isNotEmpty) {
       if (sharedFiles.singleOrNull?.type == SharedMediaType.url) {
         final url = Uri.parse(sharedFiles.single.path);
-        if (url.scheme == 'aria') {
+        if (url.scheme == 'wenyan') {
           if (url.path == '/miauth') {
             final result = await ref
                 .read(miAuthNotifierProvider.notifier)
@@ -64,10 +63,8 @@ class ShareNotifier extends _$ShareNotifier {
           if (account != null) {
             return '/$account/${url.pathSegments.join('/')}';
           }
-          final servers = await ref.read(misskeyServersProvider.future);
-          if (servers.any((server) => server.url == url.host)) {
-            return '/${url.host}/${url.pathSegments.join('/')}';
-          }
+          // 闻言面向单一实例，不再查询实例列表：未知源站一律按远程地址跳转。
+          return '/${url.host}/${url.pathSegments.join('/')}';
         }
       }
 

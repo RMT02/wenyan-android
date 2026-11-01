@@ -79,8 +79,8 @@ class _Translations$misskey$ar_SA extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'العربية';
 	@override String get headlineMisskey => 'شبكة مرتبطة بالملاحظات';
-	@override String get introMisskey => 'اهلا بك! ميسكي هو منصة تدوين مصغر لا مركزية ومفتوحة المصدر.\nيمكنك مشاركة "ملاحظات" عن ما يجري حولك، وإخبار الجميع عن نفسك 📡\nتسمح لك "الانفعالات" بتعبير عن شعورك حول ملاحظات الآخرين 👍\nاكتشف عالمًا جديدًا 🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} هو إحدى الخِدمات التي تستخدم المنصة مفتوحة المصدر <b>ميسكي</b> (يشار إليه كمثيل ميسكي)';
+	@override String get introMisskey => 'اهلا بك! وين يان هو منصة تدوين مصغر لا مركزية ومفتوحة المصدر.\nيمكنك مشاركة "ملاحظات" عن ما يجري حولك، وإخبار الجميع عن نفسك 📡\nتسمح لك "الانفعالات" بتعبير عن شعورك حول ملاحظات الآخرين 👍\nاكتشف عالمًا جديدًا 🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} هو إحدى الخِدمات التي تستخدم المنصة مفتوحة المصدر <b>وين يان</b> (يشار إليه كمثيل وين يان)';
 	@override String monthAndDay({required Object day, required Object month}) => '${day}/${month}';
 	@override String get search => 'البحث';
 	@override String get notifications => 'الإشعارات';
@@ -235,7 +235,7 @@ class _Translations$misskey$ar_SA extends Translations$misskey$en_US {
 	@override String get cacheRemoteFiles => 'خزن مؤقتا الملفات البعيدة';
 	@override String get cacheRemoteFilesDescription => 'إذا عُطل هذا الإعداد، ستُحمل الملفات من المثيل البعيد، هذا سيقلل من المساحة المستغلة على القرص لكن سيزيد حجم تدفق البيانات وهذا لأن الصور المصغرة لن تولّد.';
 	@override String get flagAsBot => 'علّمه كحساب آلي';
-	@override String get flagAsBotDescription => 'فعّل هذا الخيار إذا كان هذا الحساب يُدار عبر برمجية. إذا فُعل فسيكون بمثابة علامة للمطورين الآخرين لتجنب سلاسل لا متناهية من التفاعل بين حسابات الآلية وضبط أنظمة ميسكي للتعامل مع هذا الحساب كآلي.';
+	@override String get flagAsBotDescription => 'فعّل هذا الخيار إذا كان هذا الحساب يُدار عبر برمجية. إذا فُعل فسيكون بمثابة علامة للمطورين الآخرين لتجنب سلاسل لا متناهية من التفاعل بين حسابات الآلية وضبط أنظمة وين يان للتعامل مع هذا الحساب كآلي.';
 	@override String get flagAsCat => 'علّم هذا الحساب كحساب قط';
 	@override String get flagAsCatDescription => 'فعّل هذا الخيار لوضع علامة على الحساب لتوضيح أنه حساب قط.';
 	@override String get flagShowTimelineReplies => 'أظهر التعليقات في الخيط الزمني';
@@ -473,7 +473,7 @@ class _Translations$misskey$ar_SA extends Translations$misskey$en_US {
 	@override String get popularTags => 'الوسوم الرائجة';
 	@override String get userList => 'القوائم';
 	@override String get about => 'عن';
-	@override String get aboutMisskey => 'عن Misskey';
+	@override String get aboutMisskey => 'عن وين يان';
 	@override String get administrator => 'المدير';
 	@override String get token => 'الرمز المميز';
 	@override String get x2fa => 'الاستيثاق بعاملَيْن';
@@ -715,7 +715,7 @@ class _Translations$misskey$ar_SA extends Translations$misskey$en_US {
 	@override String confirmToUnclipAlreadyClippedNote({required Object name}) => 'هذه الملاحظة تنتمي للمشبك ${name} سلفًا، أتريد حذفها منه⸮';
 	@override String get public => 'علني';
 	@override String get private => 'خاص';
-	@override String i18nInfo({required Object link}) => 'يترجم متطوعون ميسكي إلى عدة لغات، يمكنك المساعدة عبر ${link}';
+	@override String i18nInfo({required Object link}) => 'يترجم متطوعون وين يان إلى عدة لغات، يمكنك المساعدة عبر ${link}';
 	@override String get manageAccessTokens => 'إدارة رموز الوصول';
 	@override String get accountInfo => 'معلومات الحساب';
 	@override String get notesCount => 'عدد الملاحظات';
@@ -765,7 +765,7 @@ class _Translations$misskey$ar_SA extends Translations$misskey$en_US {
 	@override String nUsers({required Object n}) => '${n} مستخدم';
 	@override String nNotes({required Object n}) => '${n} ملاحظة';
 	@override String get sendErrorReports => 'أرسل تقارير الأخطاء';
-	@override String get sendErrorReportsDescription => 'إذا فعّلته ستساعد في تحسين ميسكي وذلك عبر مشاركة معلومات تفصيلية عن الخطأ.\nومما تحتويه التقارير: نسخة نظام التشغيل ونوع المتصفح وسجل نشاطك إلخ.';
+	@override String get sendErrorReportsDescription => 'إذا فعّلته ستساعد في تحسين وين يان وذلك عبر مشاركة معلومات تفصيلية عن الخطأ.\nومما تحتويه التقارير: نسخة نظام التشغيل ونوع المتصفح وسجل نشاطك إلخ.';
 	@override String get myTheme => 'سماتي';
 	@override String get backgroundColor => 'لون الخلفية';
 	@override String get accentColor => 'طابع لوني';
@@ -859,7 +859,7 @@ class _Translations$misskey$ar_SA extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'استكشاف الأخطاء وإصلاحها';
 	@override String get useBlurEffect => 'استخدم تأثير الطمس في الواجهة';
 	@override String get learnMore => 'راجع المزيد';
-	@override String get misskeyUpdated => 'حُدث ميسكي!';
+	@override String get misskeyUpdated => 'حُدث وين يان!';
 	@override String get whatIsNew => 'اعرض التغييرات';
 	@override String get translate => 'ترجم';
 	@override String translatedFrom({required Object x}) => 'تُرجم من ${x}';
@@ -979,8 +979,8 @@ class _Translations$misskey$ar_SA extends Translations$misskey$en_US {
 	@override String get show => 'المظهر';
 	@override String get neverShow => 'لا تظهره مجددًا';
 	@override String get remindMeLater => 'ربما لاحقا';
-	@override String get didYouLikeMisskey => 'هل أعجبك ميسكي؟';
-	@override String pleaseDonate({required Object host}) => 'يستخدم ${host} البرمجية الحرة ميسكي. نتمنى أن تتبرعوا للمشروع مما سيسمح لنا متابعة تطويره!';
+	@override String get didYouLikeMisskey => 'هل أعجبك وين يان؟';
+	@override String pleaseDonate({required Object host}) => 'يستخدم ${host} البرمجية الحرة وين يان. نتمنى أن تتبرعوا للمشروع مما سيسمح لنا متابعة تطويره!';
 	@override String get roles => 'الأدوار';
 	@override String get role => 'الدور';
 	@override String get noRole => 'لم يُعثر على دور';
@@ -1063,7 +1063,7 @@ class _Translations$misskey$ar_SA extends Translations$misskey$en_US {
 	@override String get cancelReactionConfirm => 'أتريد حذف تفاعلك؟';
 	@override String get changeReactionConfirm => 'أتريد تعديل تفاعلك؟';
 	@override String get later => 'لاحقاً';
-	@override String get goToMisskey => 'لميسكي';
+	@override String get goToMisskey => 'لوين يان';
 	@override String get additionalEmojiDictionary => 'قواميس إيموجي إضافية';
 	@override String get installed => 'مُثبت';
 	@override String get enableServerMachineStats => 'نشر إحصائيات عتاد الخادم';
@@ -1421,12 +1421,12 @@ class _Translations$misskey$aboutMisskey_$ar_SA extends Translations$misskey$abo
 	final TranslationsArSa _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'ميسكي هو برمجية مفتوحة المصدر يطورها syuilo منذ 2014.';
+	@override String get about => 'وين يان هو برمجية مفتوحة المصدر يطورها syuilo منذ 2014.';
 	@override String get contributors => 'المساهمون الرئيسيون';
 	@override String get allContributors => 'كل المساهمين';
 	@override String get source => 'الشفرة المصدرية';
-	@override String get translation => 'ترجم ميسكي';
-	@override String get donate => 'تبرع لميسكي';
+	@override String get translation => 'ترجم وين يان';
+	@override String get donate => 'تبرع لوين يان';
 	@override String get morePatrons => 'نحن نقدر الدعم الذي قدمه العديد من الأشخاص الذين لم نذكرهم. شكرًا لكم 🥰';
 	@override String get patrons => 'الداعمون';
 }
@@ -2434,7 +2434,7 @@ class _Translations$misskey$achievements_$types_$notes1_$ar_SA extends Translati
 
 	// Translations
 	@override String get description => 'انشر ملاحظتك الأولى';
-	@override String get flavor => 'تمتع باستخدام ميسكي!';
+	@override String get flavor => 'تمتع باستخدام وين يان!';
 }
 
 // Path: misskey.achievements_.types_.notes10_

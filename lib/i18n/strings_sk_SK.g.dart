@@ -51,7 +51,7 @@ class _Translations$aria$sk_SK extends Translations$aria$en_US {
 		const TextSpan(text: '?'),
 	]);
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria je prekladaný do rôznych jazykov dobrovoľníkmi. Pomôcť môžete na '),
+		const TextSpan(text: 'Wenyan je prekladaný do rôznych jazykov dobrovoľníkmi. Pomôcť môžete na '),
 		link,
 		const TextSpan(text: '.'),
 	]);
@@ -83,8 +83,8 @@ class _Translations$misskey$sk_SK extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'Slovenčina';
 	@override String get headlineMisskey => 'Sieť prepojená poznámkami';
-	@override String get introMisskey => 'Vitajte! Misskey je otvorená a decentralizovaná mikroblogovacia služba.\n"Poznámkami" môžete zdieľať svoje myšlienky so všetkými okolo. 📡\nPomocou "reakcií" môžete rýchlo vyjadri svoje pocity o každého poznámkach. 👍\nPoďte objavovať svet! 🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} je jedným zo serverov využívajúcich open source platformu <b>Misskey</b> (nazývaných Misskey inštancia).';
+	@override String get introMisskey => 'Vitajte! Wenyan je otvorená a decentralizovaná mikroblogovacia služba.\n"Poznámkami" môžete zdieľať svoje myšlienky so všetkými okolo. 📡\nPomocou "reakcií" môžete rýchlo vyjadri svoje pocity o každého poznámkach. 👍\nPoďte objavovať svet! 🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} je jedným zo serverov využívajúcich open source platformu <b>Wenyan</b> (nazývaných Wenyan inštancia).';
 	@override String monthAndDay({required Object day, required Object month}) => '${day}. ${month}.';
 	@override String get search => 'Hľadať';
 	@override String get notifications => 'Oznámenia';
@@ -227,7 +227,7 @@ class _Translations$misskey$sk_SK extends Translations$misskey$en_US {
 	@override String get cacheRemoteFiles => 'Cachovanie vzdialených súborov';
 	@override String get cacheRemoteFilesDescription => 'Zakázanie tohoto nastavenia spôsobí, že vzdialené súbory budú odkazované priamo, namiesto ukladania do cache. Ušetrí sa tak miesto na serveri, ale zvýši sa dátový tok, pretože sa negenerujú miniatúry.';
 	@override String get flagAsBot => 'Tento účet je bot';
-	@override String get flagAsBotDescription => 'Ak je tento účet ovládaný programom, zaškrtnite túto voľbu. Ostatní uvidia, že je to bot a zabráni nekonečným interakciám s ďalšími botmi a upraví interné systémy Misskey, aby ho považoval za bota.';
+	@override String get flagAsBotDescription => 'Ak je tento účet ovládaný programom, zaškrtnite túto voľbu. Ostatní uvidia, že je to bot a zabráni nekonečným interakciám s ďalšími botmi a upraví interné systémy Wenyan, aby ho považoval za bota.';
 	@override String get flagAsCat => 'Tento účet je mačka';
 	@override String get flagAsCatDescription => 'Zvoľte túto voľbu, aby bol tento účet označený ako mačka.';
 	@override String get flagShowTimelineReplies => 'Zobraziť odpovede na poznámky v časovej osi';
@@ -467,7 +467,7 @@ class _Translations$misskey$sk_SK extends Translations$misskey$en_US {
 	@override String get popularTags => 'Populárne značky';
 	@override String get userList => 'Zoznamy';
 	@override String get about => 'Informácie';
-	@override String get aboutMisskey => 'O Misskey';
+	@override String get aboutMisskey => 'O Wenyan';
 	@override String get administrator => 'Administrátor';
 	@override String get token => 'Token';
 	@override String get x2fa => 'Dvojfaktorové overenie (2FA)';
@@ -603,7 +603,7 @@ class _Translations$misskey$sk_SK extends Translations$misskey$en_US {
 	@override String get ascendingOrder => 'Vzostupne';
 	@override String get descendingOrder => 'Zostupne';
 	@override String get scratchpad => 'Zápisník';
-	@override String get scratchpadDescription => 'Zápisník poskytuje prostredia pre experimenty s AiScriptom. Môžete písať, spúšťať a skúšať vysledky pri interakcii s Misskey.';
+	@override String get scratchpadDescription => 'Zápisník poskytuje prostredia pre experimenty s AiScriptom. Môžete písať, spúšťať a skúšať vysledky pri interakcii s Wenyan.';
 	@override String get output => 'Výstup';
 	@override String get script => 'Skript';
 	@override String get disablePagesScript => 'Vypnúť AiScript na stránkach';
@@ -726,7 +726,7 @@ class _Translations$misskey$sk_SK extends Translations$misskey$en_US {
 	@override String confirmToUnclipAlreadyClippedNote({required Object name}) => 'Táto poznámka je už pripnutá ako "${name}". Naozaj ju chcete odopnúť?';
 	@override String get public => 'Verejné';
 	@override String get private => 'Súkromné';
-	@override String i18nInfo({required Object link}) => 'Misskey je prekladaný do rôznych jazykov dobrovoľníkmi. Pomôcť môžete na ${link}.';
+	@override String i18nInfo({required Object link}) => 'Wenyan je prekladaný do rôznych jazykov dobrovoľníkmi. Pomôcť môžete na ${link}.';
 	@override String get manageAccessTokens => 'Spravovať prístupové tokeny';
 	@override String get accountInfo => 'Informácie o účte';
 	@override String get notesCount => 'Počet poznámok';
@@ -776,7 +776,7 @@ class _Translations$misskey$sk_SK extends Translations$misskey$en_US {
 	@override String nUsers({required Object n}) => '${n} používateľov';
 	@override String nNotes({required Object n}) => '${n} poznámok';
 	@override String get sendErrorReports => 'Poslať nahlásenie chyby';
-	@override String get sendErrorReportsDescription => 'Keď je zapnuté, v prípade problému sa odošlú podrobné informácie o chybe do Misskey. Pomôžete tak zvýšiť kvalitu Misskey.\nTieto informácie zahŕňajú verziu vášho OS, použitý prehliadač, históriu aktivít, atď.';
+	@override String get sendErrorReportsDescription => 'Keď je zapnuté, v prípade problému sa odošlú podrobné informácie o chybe do Wenyan. Pomôžete tak zvýšiť kvalitu Wenyan.\nTieto informácie zahŕňajú verziu vášho OS, použitý prehliadač, históriu aktivít, atď.';
 	@override String get myTheme => 'Moja téma';
 	@override String get backgroundColor => 'Pozadie';
 	@override String get accentColor => 'Akcent';
@@ -869,7 +869,7 @@ class _Translations$misskey$sk_SK extends Translations$misskey$en_US {
 	@override String get troubleshooting => 'Riešenie problémov';
 	@override String get useBlurEffect => 'Používať efekty rozmazania v UI';
 	@override String get learnMore => 'Zistiť viac';
-	@override String get misskeyUpdated => 'Misskey sa aktualizoval!';
+	@override String get misskeyUpdated => 'Wenyan sa aktualizoval!';
 	@override String get whatIsNew => 'Čo je nové?';
 	@override String get translate => 'Preložiť';
 	@override String translatedFrom({required Object x}) => 'Preložené z ${x}';
@@ -982,8 +982,8 @@ class _Translations$misskey$sk_SK extends Translations$misskey$en_US {
 	@override String get show => 'Zobraziť';
 	@override String get neverShow => 'Nabudúce nezobrazovať';
 	@override String get remindMeLater => 'Pripomenúť neskôr';
-	@override String get didYouLikeMisskey => 'Páči sa vám Misskey?';
-	@override String pleaseDonate({required Object host}) => 'Misskey je bezplatný softvér, ktorý používa ${host}. Prosím, prispejte, aby sme ho mohli ďalej rozvíjať!';
+	@override String get didYouLikeMisskey => 'Páči sa vám Wenyan?';
+	@override String pleaseDonate({required Object host}) => 'Wenyan je bezplatný softvér, ktorý používa ${host}. Prosím, prispejte, aby sme ho mohli ďalej rozvíjať!';
 	@override String get color => 'Farba';
 	@override String get horizontal => 'Strana';
 	@override String get youFollowing => 'Sledované';
@@ -1295,12 +1295,12 @@ class _Translations$misskey$aboutMisskey_$sk_SK extends Translations$misskey$abo
 	final TranslationsSkSk _root; // ignore: unused_field
 
 	// Translations
-	@override String get about => 'Misskey je open-source softvér, ktorý vyvíja syuilo od 2014.';
+	@override String get about => 'Wenyan je open-source softvér, ktorý vyvíja syuilo od 2014.';
 	@override String get contributors => 'Hlavní prispievatelia';
 	@override String get allContributors => 'Všetci prispievatelia';
 	@override String get source => 'Zdrojový kód';
-	@override String get translation => 'Preložiť Misskey';
-	@override String get donate => 'Podporiť Misskey';
+	@override String get translation => 'Preložiť Wenyan';
+	@override String get donate => 'Podporiť Wenyan';
 	@override String get morePatrons => 'Takisto oceňujeme podporu mnoých ďalších, ktorí tu nie sú uvedení. Ďakujeme! 🥰';
 	@override String get patrons => 'Prispievatelia';
 }

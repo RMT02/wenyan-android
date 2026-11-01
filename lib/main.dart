@@ -75,9 +75,9 @@ void main() async {
     yield LicenseEntryWithLineBreaks([
       'Twemoji Mozilla',
     ], await rootBundle.loadString(Assets.fonts.twemojiMozilla.license));
-    for (final asset in Assets.misskey.values) {
+    for (final asset in Assets.wenyan.values) {
       yield LicenseEntryWithLineBreaks([
-        'Misskey',
+        wenyanAppName,
       ], await rootBundle.loadString(asset));
     }
     for (final asset in Assets.twemoji.values) {

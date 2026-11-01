@@ -41,7 +41,7 @@ final class ShareNotifierProvider
   }
 }
 
-String _$shareNotifierHash() => r'258c6f66a2fd2e890db70cb1cf002674070f4a9a';
+String _$shareNotifierHash() => r'38ab21afa5ab17473c84cf51be7b89cca9c79fc1';
 
 abstract class _$ShareNotifier extends $Notifier<bool> {
   bool build();

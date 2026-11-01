@@ -10,8 +10,8 @@ import '../../../provider/api/pinned_users_provider.dart';
 import '../../../provider/api/users_notifier_provider.dart';
 import '../../../util/punycode.dart';
 import '../../widget/error_message.dart';
-import '../../widget/misskey_server_autocomplete.dart';
 import '../../widget/paginated_list_view.dart';
+import '../../widget/server_host_field.dart';
 import '../../widget/user_info.dart';
 import '../../widget/users_sort_type_widget.dart';
 
@@ -160,9 +160,11 @@ class const ExploreUsers({
                 child: Container(
                   margin: const EdgeInsets.symmetric(horizontal: 8.0),
                   width: maxContentWidth,
-                  child: MisskeyServerAutocomplete(
+                  child: ServerHostField(
                     controller: controller,
                     focusNode: focusNode,
+                    labelText: t.aria.serverUrl,
+                    hintText: 'example.com',
                     onSubmitted: (value) {
                       final text = toAscii(
                         value

@@ -16,7 +16,6 @@ import '../../provider/timeline_tabs_notifier_provider.dart';
 import '../../util/future_with_dialog.dart';
 import '../../util/punycode.dart';
 import '../../util/show_toast.dart';
-import '../widget/misskey_server_background.dart';
 
 class const TokenLoginPage({super.key, final String? query})
     extends HookConsumerWidget {
@@ -50,8 +49,6 @@ class const TokenLoginPage({super.key, final String? query})
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     // 闻言版把服务器固定为内置实例，本页不再提供服务器选择。
-    final queryController = useTextEditingController(text: wenyanServerUrl.host);
-    final query = useState(wenyanServerUrl.host);
     final tokenController = useTextEditingController();
     final token = useState('');
     final tokenFocusNode = useFocusNode();
@@ -61,129 +58,124 @@ class const TokenLoginPage({super.key, final String? query})
     }, []);
 
     return Scaffold(
-      body: MisskeyServerBackground(
-        controller: queryController,
-        child: Column(
-          children: [
-            ClipRect(
-              child: BackdropFilter(
-                filter: ImageFilter.blur(sigmaX: 6.0, sigmaY: 6.0),
-                child: AppBar(
-                  title: Text(t.aria.loginWithAccessToken),
-                  backgroundColor: Theme.of(context).scaffoldBackgroundColor
-                      .withValues(alpha: 0.5),
-                ),
+      body: Column(
+        children: [
+          ClipRect(
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 6.0, sigmaY: 6.0),
+              child: AppBar(
+                title: Text(t.aria.loginWithAccessToken),
+                backgroundColor: Theme.of(context).scaffoldBackgroundColor
+                    .withValues(alpha: 0.5),
               ),
             ),
-            Expanded(
-              child: Center(
-                child: SizedBox(
-                  width: maxContentWidth,
-                  child: Card(
-                    margin: const EdgeInsets.all(16.0),
-                    child: Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          SizedBox.square(
-                            dimension: 56,
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(16),
-                              child: Image.asset(
-                                'assets/icons/wenyan.png',
-                                fit: BoxFit.contain,
-                                errorBuilder:
-                                    (context, error, stackTrace) =>
-                                        const ColoredBox(
-                                          color: wenyanColor,
-                                          child: Center(
-                                            child: Text(
-                                              '闻',
-                                              style: TextStyle(
-                                                fontSize: 28,
-                                                color: Colors.white,
-                                              ),
+          ),
+          Expanded(
+            child: Center(
+              child: SizedBox(
+                width: maxContentWidth,
+                child: Card(
+                  margin: const EdgeInsets.all(16.0),
+                  child: Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        SizedBox.square(
+                          dimension: 56,
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.circular(16),
+                            child: Image.asset(
+                              'assets/icons/wenyan.png',
+                              fit: BoxFit.contain,
+                              errorBuilder:
+                                  (context, error, stackTrace) =>
+                                      const ColoredBox(
+                                        color: wenyanColor,
+                                        child: Center(
+                                          child: Text(
+                                            '闻',
+                                            style: TextStyle(
+                                              fontSize: 28,
+                                              color: Colors.white,
                                             ),
                                           ),
                                         ),
-                              ),
+                                      ),
                             ),
                           ),
-                          const SizedBox(height: 16.0),
-                          // 闻言版服务器固定，这里只做展示，不提供切换。
-                          Row(
-                            children: [
-                              const Icon(Icons.dns, size: 20),
-                              const SizedBox(width: 8),
-                              Expanded(
-                                child: Text(
-                                  wenyanServerUrl.host,
-                                  style: Theme.of(context).textTheme.bodyMedium,
-                                ),
+                        ),
+                        const SizedBox(height: 16.0),
+                        // 闻言版服务器固定，这里只做展示，不提供切换。
+                        Row(
+                          children: [
+                            const Icon(Icons.dns, size: 20),
+                            const SizedBox(width: 8),
+                            Expanded(
+                              child: Text(
+                                wenyanServerUrl.host,
+                                style: Theme.of(context).textTheme.bodyMedium,
                               ),
-                            ],
-                          ),
-                          const SizedBox(height: 8.0),
-                          Shortcuts(
-                            shortcuts: {
-                              ...disablingTextShortcuts,
-                              submitActivator: VoidCallbackIntent(
-                                () =>
-                                    queryController.text.isNotEmpty &&
-                                        tokenController.text.isNotEmpty
-                                    ? futureWithDialog(
-                                        context,
-                                        _login(
-                                          ref,
-                                          queryController.text,
-                                          tokenController.text,
-                                        ),
-                                      )
-                                    : null,
-                              ),
-                            },
-                            child: TextField(
-                              controller: tokenController,
-                              focusNode: tokenFocusNode,
-                              decoration: InputDecoration(
-                                labelText: t.misskey.accessToken,
-                                prefixIcon: const Icon(Icons.key),
-                                suffixIcon: IconButton(
-                                  onPressed: () => tokenController.clear(),
-                                  icon: const Icon(Icons.close),
-                                ),
-                              ),
-                              keyboardType: TextInputType.visiblePassword,
-                              textInputAction: TextInputAction.done,
-                              onTapOutside: (_) => primaryFocus?.unfocus(),
                             ),
+                          ],
+                        ),
+                        const SizedBox(height: 8.0),
+                        Shortcuts(
+                          shortcuts: {
+                            ...disablingTextShortcuts,
+                            submitActivator: VoidCallbackIntent(
+                              () => tokenController.text.isNotEmpty
+                                  ? futureWithDialog(
+                                      context,
+                                      _login(
+                                        ref,
+                                        wenyanServerUrl.host,
+                                        tokenController.text,
+                                      ),
+                                    )
+                                  : null,
+                            ),
+                          },
+                          child: TextField(
+                            controller: tokenController,
+                            focusNode: tokenFocusNode,
+                            decoration: InputDecoration(
+                              labelText: t.misskey.accessToken,
+                              prefixIcon: const Icon(Icons.key),
+                              suffixIcon: IconButton(
+                                onPressed: () => tokenController.clear(),
+                                icon: const Icon(Icons.close),
+                              ),
+                            ),
+                            keyboardType: TextInputType.visiblePassword,
+                            textInputAction: TextInputAction.done,
+                            onTapOutside: (_) => primaryFocus?.unfocus(),
                           ),
-                          const SizedBox(height: 16.0),
-                          ElevatedButton.icon(
-                            onPressed:
-                                query.value.isNotEmpty && token.value.isNotEmpty
-                                ? () => futureWithDialog(
-                                    context,
-                                    _login(
-                                      ref,
-                                      queryController.text,
-                                      tokenController.text,
-                                    ),
-                                  )
-                                : null,
-                            icon: const Icon(Icons.key),
-                            label: Text(t.misskey.login),
-                          ),
-                        ],
-                      ),
+                        ),
+                        const SizedBox(height: 16.0),
+                        ElevatedButton.icon(
+                          onPressed:
+                              token.value.isNotEmpty
+                              ? () => futureWithDialog(
+                                  context,
+                                  _login(
+                                    ref,
+                                    wenyanServerUrl.host,
+                                    tokenController.text,
+                                  ),
+                                )
+                              : null,
+                          icon: const Icon(Icons.key),
+                          label: Text(t.misskey.login),
+                        ),
+                      ],
                     ),
                   ),
                 ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

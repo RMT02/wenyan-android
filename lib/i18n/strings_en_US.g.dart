@@ -65,14 +65,8 @@ class Translations$aria$en_US {
 	/// en-US: 'Successfully added an account'
 	String get accountAdded => 'Successfully added an account';
 
-	/// en-US: 'Wenyan is a Misskey client built on {miria} for a single instance. Interface texts are based on {misskey}. We would like to show our appreciation to all contributors of these projects.'
-	TextSpan acknowledgements({required InlineSpan miria, required InlineSpan misskey}) => TextSpan(children: [
-		const TextSpan(text: 'Wenyan is a Misskey client built on '),
-		miria,
-		const TextSpan(text: ' for a single instance.\nInterface texts are based on '),
-		misskey,
-		const TextSpan(text: '.\nWe would like to show our appreciation to all contributors of these projects.'),
-	]);
+	/// en-US: 'Wenyan is an open-source client for a single instance. Interface texts are organized from community localization work. Thanks to every open-source contributor.'
+	String get acknowledgements => 'Wenyan is an open-source client for a single instance.\nInterface texts are organized from community localization work.\nThanks to every open-source contributor.';
 
 	/// en-US: 'Add tab'
 	String get addTab => 'Add tab';
@@ -237,8 +231,8 @@ class Translations$aria$en_US {
 	/// en-US: 'File not found'
 	String get fileNotFound => 'File not found';
 
-	/// en-US: 'Find a Misskey server'
-	String get findServer => 'Find a Misskey server';
+	/// en-US: 'Find a Wenyan server'
+	String get findServer => 'Find a Wenyan server';
 
 	/// en-US: 'Are you sure that you want to follow {name}?'
 	TextSpan followConfirm({required InlineSpan name}) => TextSpan(children: [
@@ -429,9 +423,9 @@ class Translations$aria$en_US {
 	/// en-US: 'Paste'
 	String get paste => 'Paste';
 
-	/// en-US: 'Paste emoji list to pin the emojis. You can copy your pinned emojis for Misskey Web from {url}.'
+	/// en-US: 'Paste emoji list to pin the emojis. You can copy your pinned emojis for Wenyan Web from {url}.'
 	TextSpan pastePinnedEmojisDescription({required InlineSpan url}) => TextSpan(children: [
-		const TextSpan(text: 'Paste emoji list to pin the emojis.\nYou can copy your pinned emojis for Misskey Web from '),
+		const TextSpan(text: 'Paste emoji list to pin the emojis.\nYou can copy your pinned emojis for Wenyan Web from '),
 		url,
 		const TextSpan(text: '.'),
 	]);
@@ -521,8 +515,8 @@ class Translations$aria$en_US {
 	/// en-US: 'Server URL'
 	String get serverUrl => 'Server URL';
 
-	/// en-US: 'Settings file for Aria'
-	String get settingsFileForAria => 'Settings file for Aria';
+	/// en-US: 'Settings file for Wenyan'
+	String get settingsFileForAria => 'Settings file for Wenyan';
 
 	/// en-US: 'Settings for {user}'
 	TextSpan settingsForUser({required InlineSpan user}) => TextSpan(children: [
@@ -733,11 +727,11 @@ class Translations$misskey$en_US {
 	/// en-US: 'A network connected by notes'
 	String get headlineMisskey => 'A network connected by notes';
 
-	/// en-US: 'Welcome! Misskey is an open source, decentralized microblogging service. Create "notes" to share your thoughts with everyone around you. 📡 With "reactions", you can also quickly express your feelings about everyone's notes. 👍 Let's explore a new world! 🚀'
-	String get introMisskey => 'Welcome! Misskey is an open source, decentralized microblogging service.\nCreate "notes" to share your thoughts with everyone around you. 📡\nWith "reactions", you can also quickly express your feelings about everyone\'s notes. 👍\nLet\'s explore a new world! 🚀';
+	/// en-US: 'Welcome! Wenyan is an open source, decentralized microblogging service. Create "notes" to share your thoughts with everyone around you. 📡 With "reactions", you can also quickly express your feelings about everyone's notes. 👍 Let's explore a new world! 🚀'
+	String get introMisskey => 'Welcome! Wenyan is an open source, decentralized microblogging service.\nCreate "notes" to share your thoughts with everyone around you. 📡\nWith "reactions", you can also quickly express your feelings about everyone\'s notes. 👍\nLet\'s explore a new world! 🚀';
 
-	/// en-US: '{name} is one of the services powered by the open source platform <b>Misskey</b> (referred to as a "Misskey instance").'
-	String poweredByMisskeyDescription({required Object name}) => '${name} is one of the services powered by the open source platform <b>Misskey</b> (referred to as a "Misskey instance").';
+	/// en-US: '{name} is one of the services powered by the open source platform <b>Wenyan</b> (referred to as a "Wenyan instance").'
+	String poweredByMisskeyDescription({required Object name}) => '${name} is one of the services powered by the open source platform <b>Wenyan</b> (referred to as a "Wenyan instance").';
 
 	/// en-US: '{month}/{day}'
 	String monthAndDay({required Object month, required Object day}) => '${month}/${day}';
@@ -763,8 +757,8 @@ class Translations$misskey$en_US {
 	/// en-US: 'Initial password for setup is incorrect'
 	String get initialPasswordIsIncorrect => 'Initial password for setup is incorrect';
 
-	/// en-US: 'Use the password you entered in the configuration file if you installed Misskey yourself. If you are using a Misskey hosting service, use the password provided. If you have not set a password, leave it blank to continue.'
-	String get initialPasswordForSetupDescription => 'Use the password you entered in the configuration file if you installed Misskey yourself.\n If you are using a Misskey hosting service, use the password provided.\n If you have not set a password, leave it blank to continue.';
+	/// en-US: 'Use the password you entered in the configuration file if you installed Wenyan yourself. If you are using a Wenyan hosting service, use the password provided. If you have not set a password, leave it blank to continue.'
+	String get initialPasswordForSetupDescription => 'Use the password you entered in the configuration file if you installed Wenyan yourself.\n If you are using a Wenyan hosting service, use the password provided.\n If you have not set a password, leave it blank to continue.';
 
 	/// en-US: 'Forgot password'
 	String get forgotPassword => 'Forgot password';
@@ -1267,8 +1261,8 @@ class Translations$misskey$en_US {
 	/// en-US: 'Mark this account as a bot'
 	String get flagAsBot => 'Mark this account as a bot';
 
-	/// en-US: 'Enable this option if this account is controlled by a program. If enabled, it will act as a flag for other developers to prevent endless interaction chains with other bots and adjust Misskey's internal systems to treat this account as a bot.'
-	String get flagAsBotDescription => 'Enable this option if this account is controlled by a program. If enabled, it will act as a flag for other developers to prevent endless interaction chains with other bots and adjust Misskey\'s internal systems to treat this account as a bot.';
+	/// en-US: 'Enable this option if this account is controlled by a program. If enabled, it will act as a flag for other developers to prevent endless interaction chains with other bots and adjust Wenyan's internal systems to treat this account as a bot.'
+	String get flagAsBotDescription => 'Enable this option if this account is controlled by a program. If enabled, it will act as a flag for other developers to prevent endless interaction chains with other bots and adjust Wenyan\'s internal systems to treat this account as a bot.';
 
 	/// en-US: 'Mark this account as a cat'
 	String get flagAsCat => 'Mark this account as a cat';
@@ -1300,8 +1294,8 @@ class Translations$misskey$en_US {
 	/// en-US: 'Continue on a remote server'
 	String get continueOnRemote => 'Continue on a remote server';
 
-	/// en-US: 'Choose a server from the Misskey Hub'
-	String get chooseServerOnMisskeyHub => 'Choose a server from the Misskey Hub';
+	/// en-US: 'Choose a server from the Wenyan Hub'
+	String get chooseServerOnMisskeyHub => 'Choose a server from the Wenyan Hub';
 
 	/// en-US: 'Specify a server host directly'
 	String get specifyServerHost => 'Specify a server host directly';
@@ -2089,8 +2083,8 @@ class Translations$misskey$en_US {
 	/// en-US: 'About'
 	String get about => 'About';
 
-	/// en-US: 'About Misskey'
-	String get aboutMisskey => 'About Misskey';
+	/// en-US: 'About Wenyan'
+	String get aboutMisskey => 'About Wenyan';
 
 	/// en-US: 'Administrator'
 	String get administrator => 'Administrator';
@@ -2515,8 +2509,8 @@ class Translations$misskey$en_US {
 	/// en-US: 'Disable sound'
 	String get notUseSound => 'Disable sound';
 
-	/// en-US: 'Output sounds only if Misskey is active'
-	String get useSoundOnlyWhenActive => 'Output sounds only if Misskey is active';
+	/// en-US: 'Output sounds only if Wenyan is active'
+	String get useSoundOnlyWhenActive => 'Output sounds only if Wenyan is active';
 
 	/// en-US: 'Details'
 	String get details => 'Details';
@@ -2566,8 +2560,8 @@ class Translations$misskey$en_US {
 	/// en-US: 'Scratchpad'
 	String get scratchpad => 'Scratchpad';
 
-	/// en-US: 'The Scratchpad provides an environment for AiScript experiments. You can write, execute, and check the results of it interacting with Misskey in it.'
-	String get scratchpadDescription => 'The Scratchpad provides an environment for AiScript experiments. You can write, execute, and check the results of it interacting with Misskey in it.';
+	/// en-US: 'The Scratchpad provides an environment for AiScript experiments. You can write, execute, and check the results of it interacting with Wenyan in it.'
+	String get scratchpadDescription => 'The Scratchpad provides an environment for AiScript experiments. You can write, execute, and check the results of it interacting with Wenyan in it.';
 
 	/// en-US: 'UI inspector'
 	String get uiInspector => 'UI inspector';
@@ -3007,8 +3001,8 @@ class Translations$misskey$en_US {
 	/// en-US: 'Private'
 	String get private => 'Private';
 
-	/// en-US: 'Misskey is being translated into various languages by volunteers. You can help at {link}.'
-	String i18nInfo({required Object link}) => 'Misskey is being translated into various languages by volunteers. You can help at ${link}.';
+	/// en-US: 'Wenyan is being translated into various languages by volunteers. You can help at {link}.'
+	String i18nInfo({required Object link}) => 'Wenyan is being translated into various languages by volunteers. You can help at ${link}.';
 
 	/// en-US: 'Manage access tokens'
 	String get manageAccessTokens => 'Manage access tokens';
@@ -3151,8 +3145,8 @@ class Translations$misskey$en_US {
 	/// en-US: 'A reload is required for this to be reflected.'
 	String get needReloadToApply => 'A reload is required for this to be reflected.';
 
-	/// en-US: 'A Misskey restart is required to reflect the change.'
-	String get needToRestartServerToApply => 'A Misskey restart is required to reflect the change.';
+	/// en-US: 'A Wenyan restart is required to reflect the change.'
+	String get needToRestartServerToApply => 'A Wenyan restart is required to reflect the change.';
 
 	/// en-US: 'Show title bar'
 	String get showTitlebar => 'Show title bar';
@@ -3172,8 +3166,8 @@ class Translations$misskey$en_US {
 	/// en-US: 'Send error reports'
 	String get sendErrorReports => 'Send error reports';
 
-	/// en-US: 'When turned on, detailed error information will be shared with Misskey when a problem occurs, helping to improve the quality of Misskey. This will include information such the version of your OS, what browser you're using, your activity in Misskey, etc.'
-	String get sendErrorReportsDescription => 'When turned on, detailed error information will be shared with Misskey when a problem occurs, helping to improve the quality of Misskey.\nThis will include information such the version of your OS, what browser you\'re using, your activity in Misskey, etc.';
+	/// en-US: 'When turned on, detailed error information will be shared with Wenyan when a problem occurs, helping to improve the quality of Wenyan. This will include information such the version of your OS, what browser you're using, your activity in Wenyan, etc.'
+	String get sendErrorReportsDescription => 'When turned on, detailed error information will be shared with Wenyan when a problem occurs, helping to improve the quality of Wenyan.\nThis will include information such the version of your OS, what browser you\'re using, your activity in Wenyan, etc.';
 
 	/// en-US: 'My theme'
 	String get myTheme => 'My theme';
@@ -3457,8 +3451,8 @@ class Translations$misskey$en_US {
 	/// en-US: 'Learn more'
 	String get learnMore => 'Learn more';
 
-	/// en-US: 'Misskey has been updated!'
-	String get misskeyUpdated => 'Misskey has been updated!';
+	/// en-US: 'Wenyan has been updated!'
+	String get misskeyUpdated => 'Wenyan has been updated!';
 
 	/// en-US: 'Show changes'
 	String get whatIsNew => 'Show changes';
@@ -3874,11 +3868,11 @@ class Translations$misskey$en_US {
 	/// en-US: 'Maybe later'
 	String get remindMeLater => 'Maybe later';
 
-	/// en-US: 'Have you taken a liking to Misskey?'
-	String get didYouLikeMisskey => 'Have you taken a liking to Misskey?';
+	/// en-US: 'Have you taken a liking to Wenyan?'
+	String get didYouLikeMisskey => 'Have you taken a liking to Wenyan?';
 
-	/// en-US: '{host} uses the free software, Misskey. We would highly appreciate your donations so development of Misskey can continue!'
-	String pleaseDonate({required Object host}) => '${host} uses the free software, Misskey. We would highly appreciate your donations so development of Misskey can continue!';
+	/// en-US: '{host} uses the free software, Wenyan. We would highly appreciate your donations so development of Wenyan can continue!'
+	String pleaseDonate({required Object host}) => '${host} uses the free software, Wenyan. We would highly appreciate your donations so development of Wenyan can continue!';
 
 	/// en-US: 'The corresponding source code is available at {anchor}'
 	String correspondingSourceIsAvailable({required Object anchor}) => 'The corresponding source code is available at ${anchor}';
@@ -4264,8 +4258,8 @@ class Translations$misskey$en_US {
 	/// en-US: 'Later'
 	String get later => 'Later';
 
-	/// en-US: 'To Misskey'
-	String get goToMisskey => 'To Misskey';
+	/// en-US: 'To Wenyan'
+	String get goToMisskey => 'To Wenyan';
 
 	/// en-US: 'Additional emoji dictionaries'
 	String get additionalEmojiDictionary => 'Additional emoji dictionaries';
@@ -4456,8 +4450,8 @@ class Translations$misskey$en_US {
 	/// en-US: 'Repository URL'
 	String get repositoryUrl => 'Repository URL';
 
-	/// en-US: 'If you are using Misskey as is (without any changes to the source code), enter https://github.com/misskey-dev/misskey'
-	String get repositoryUrlDescription => 'If you are using Misskey as is (without any changes to the source code), enter https://github.com/misskey-dev/misskey';
+	/// en-US: 'If you are using Wenyan as is (without any changes to the source code), enter '
+	String get repositoryUrlDescription => 'If you are using Wenyan as is (without any changes to the source code), enter ';
 
 	/// en-US: 'If you have not published a repository, you must provide a tarball instead. See .config/example.yml for more information.'
 	String get repositoryUrlOrTarballRequired => 'If you have not published a repository, you must provide a tarball instead. See .config/example.yml for more information.';
@@ -5779,8 +5773,8 @@ class Translations$misskey$initialAccountSetting_$en_US {
 	/// en-US: 'Enjoy {name}!'
 	String haveFun({required Object name}) => 'Enjoy ${name}!';
 
-	/// en-US: 'You can proceed to a tutorial on how to use {name} (Misskey) or you can exit the setup here and start using it immediately.'
-	String youCanContinueTutorial({required Object name}) => 'You can proceed to a tutorial on how to use ${name} (Misskey) or you can exit the setup here and start using it immediately.';
+	/// en-US: 'You can proceed to a tutorial on how to use {name} (Wenyan) or you can exit the setup here and start using it immediately.'
+	String youCanContinueTutorial({required Object name}) => 'You can proceed to a tutorial on how to use ${name} (Wenyan) or you can exit the setup here and start using it immediately.';
 
 	/// en-US: 'Start Tutorial'
 	String get startTutorial => 'Start Tutorial';
@@ -6011,8 +6005,8 @@ class Translations$misskey$accountMigration_$en_US {
 	/// en-US: 'Account migration cannot be undone.'
 	String get moveCannotBeUndone => 'Account migration cannot be undone.';
 
-	/// en-US: 'This will migrate your account to a different one. ・Followers from this account will automatically be migrated to the new account ・This account will unfollow all users it is currently following ・You will be unable to create new notes etc. on this account While migration of followers is automatic, you must manually prepare some steps to migrate the list of users you are following. To do so, carry out a follows export that you will later import on the new account in the settings menu. The same procedure applies to your lists as well as your muted and blocked users. (This explanation applies to Misskey v13.12.0 and later. Other ActivityPub software, such as Mastodon, might function differently.)'
-	String get moveAccountDescription => 'This will migrate your account to a different one.\n　・Followers from this account will automatically be migrated to the new account\n　・This account will unfollow all users it is currently following\n　・You will be unable to create new notes etc. on this account\n\nWhile migration of followers is automatic, you must manually prepare some steps to migrate the list of users you are following. To do so, carry out a follows export that you will later import on the new account in the settings menu. The same procedure applies to your lists as well as your muted and blocked users.\n\n(This explanation applies to Misskey v13.12.0 and later. Other ActivityPub software, such as Mastodon, might function differently.)';
+	/// en-US: 'This will migrate your account to a different one. ・Followers from this account will automatically be migrated to the new account ・This account will unfollow all users it is currently following ・You will be unable to create new notes etc. on this account While migration of followers is automatic, you must manually prepare some steps to migrate the list of users you are following. To do so, carry out a follows export that you will later import on the new account in the settings menu. The same procedure applies to your lists as well as your muted and blocked users. (This explanation applies to Wenyan v13.12.0 and later. Other ActivityPub software, such as Mastodon, might function differently.)'
+	String get moveAccountDescription => 'This will migrate your account to a different one.\n　・Followers from this account will automatically be migrated to the new account\n　・This account will unfollow all users it is currently following\n　・You will be unable to create new notes etc. on this account\n\nWhile migration of followers is automatic, you must manually prepare some steps to migrate the list of users you are following. To do so, carry out a follows export that you will later import on the new account in the settings menu. The same procedure applies to your lists as well as your muted and blocked users.\n\n(This explanation applies to Wenyan v13.12.0 and later. Other ActivityPub software, such as Mastodon, might function differently.)';
 
 	/// en-US: 'To migrate, first create an alias for this account on the account to move to. After you have created the alias, enter the account to move to in the following format: @username@server.example.com'
 	String get moveAccountHowTo => 'To migrate, first create an alias for this account on the account to move to.\nAfter you have created the alias, enter the account to move to in the following format: @username@server.example.com';
@@ -6505,8 +6499,8 @@ class Translations$misskey$aboutMisskey_$en_US {
 
 	// Translations
 
-	/// en-US: 'Misskey is open-source software being developed by syuilo since 2014.'
-	String get about => 'Misskey is open-source software being developed by syuilo since 2014.';
+	/// en-US: 'Wenyan is open-source software being developed by syuilo since 2014.'
+	String get about => 'Wenyan is open-source software being developed by syuilo since 2014.';
 
 	/// en-US: 'Main contributors'
 	String get contributors => 'Main contributors';
@@ -6520,14 +6514,14 @@ class Translations$misskey$aboutMisskey_$en_US {
 	/// en-US: 'Original'
 	String get original => 'Original';
 
-	/// en-US: '{name} uses a modified version of the original Misskey.'
-	String thisIsModifiedVersion({required Object name}) => '${name} uses a modified version of the original Misskey.';
+	/// en-US: '{name} uses a modified version of the original Wenyan.'
+	String thisIsModifiedVersion({required Object name}) => '${name} uses a modified version of the original Wenyan.';
 
-	/// en-US: 'Translate Misskey'
-	String get translation => 'Translate Misskey';
+	/// en-US: 'Translate Wenyan'
+	String get translation => 'Translate Wenyan';
 
-	/// en-US: 'Donate to Misskey'
-	String get donate => 'Donate to Misskey';
+	/// en-US: 'Donate to Wenyan'
+	String get donate => 'Donate to Wenyan';
 
 	/// en-US: 'We also appreciate the support of many other helpers not listed here. Thank you! 🥰'
 	String get morePatrons => 'We also appreciate the support of many other helpers not listed here. Thank you! 🥰';
@@ -6849,8 +6843,8 @@ class Translations$misskey$soundSettings_$en_US {
 	/// en-US: 'The audio is too long.'
 	String get driveFileDurationWarn => 'The audio is too long.';
 
-	/// en-US: 'Long audio may disrupt using Misskey. Still continue?'
-	String get driveFileDurationWarnDescription => 'Long audio may disrupt using Misskey. Still continue?';
+	/// en-US: 'Long audio may disrupt using Wenyan. Still continue?'
+	String get driveFileDurationWarnDescription => 'Long audio may disrupt using Wenyan. Still continue?';
 
 	/// en-US: 'It couldn't load the sound. Please change the setting.'
 	String get driveFileError => 'It couldn\'t load the sound. Please change the setting.';
@@ -8747,8 +8741,8 @@ class Translations$misskey$reversi_$en_US {
 	/// en-US: 'Share Game to timeline when started'
 	String get shareToTlTheGameWhenStart => 'Share Game to timeline when started';
 
-	/// en-US: 'The game has begun! #MisskeyReversi'
-	String get iStartedAGame => 'The game has begun! #MisskeyReversi';
+	/// en-US: 'The game has begun! #WenyanReversi'
+	String get iStartedAGame => 'The game has begun! #WenyanReversi';
 
 	/// en-US: 'The opponent has changed their settings.'
 	String get opponentHasSettingsChanged => 'The opponent has changed their settings.';
@@ -8828,8 +8822,8 @@ class Translations$misskey$urlPreviewSetting_$en_US {
 	/// en-US: 'Proxy endpoints that generate previews'
 	String get summaryProxy => 'Proxy endpoints that generate previews';
 
-	/// en-US: 'Not Misskey itself, but generate previews using Summaly Proxy.'
-	String get summaryProxyDescription => 'Not Misskey itself, but generate previews using Summaly Proxy.';
+	/// en-US: 'Not Wenyan itself, but generate previews using Summaly Proxy.'
+	String get summaryProxyDescription => 'Not Wenyan itself, but generate previews using Summaly Proxy.';
 
 	/// en-US: 'The following parameters are linked to the proxy as a query string. If the proxy does not support them, the values are ignored.'
 	String get summaryProxyDescription2 => 'The following parameters are linked to the proxy as a query string. If the proxy does not support them, the values are ignored.';
@@ -9068,8 +9062,8 @@ class Translations$misskey$bootErrors_$en_US {
 	/// en-US: 'Launch the repair tool'
 	String get otherOption3 => 'Launch the repair tool';
 
-	/// en-US: 'Launch Misskey in safe mode'
-	String get otherOption4 => 'Launch Misskey in safe mode';
+	/// en-US: 'Launch Wenyan in safe mode'
+	String get otherOption4 => 'Launch Wenyan in safe mode';
 }
 
 // Path: misskey.search_
@@ -9098,8 +9092,8 @@ class Translations$misskey$search_$en_US {
 	/// en-US: 'Select user'
 	String get pleaseSelectUser => 'Select user';
 
-	/// en-US: 'Example: misskey.example.com'
-	String get serverHostPlaceholder => 'Example: misskey.example.com';
+	/// en-US: 'Example: example.com'
+	String get serverHostPlaceholder => 'Example: example.com';
 
 	/// en-US: 'Date posted from'
 	String get postFrom => 'Date posted from';
@@ -9116,8 +9110,8 @@ class Translations$misskey$serverSetupWizard_$en_US {
 
 	// Translations
 
-	/// en-US: 'Misskey installation is now complete!'
-	String get installCompleted => 'Misskey installation is now complete!';
+	/// en-US: 'Wenyan installation is now complete!'
+	String get installCompleted => 'Wenyan installation is now complete!';
 
 	/// en-US: 'To begin, create an administrator account.'
 	String get firstCreateAccount => 'To begin, create an administrator account.';
@@ -9134,8 +9128,8 @@ class Translations$misskey$serverSetupWizard_$en_US {
 	/// en-US: 'The settings that were changed via this wizard can be adjusted later.'
 	String get settingsYouMakeHereCanBeChangedLater => 'The settings that were changed via this wizard can be adjusted later.';
 
-	/// en-US: 'How will you use Misskey?'
-	String get howWillYouUseMisskey => 'How will you use Misskey?';
+	/// en-US: 'How will you use Wenyan?'
+	String get howWillYouUseMisskey => 'How will you use Wenyan?';
 
 	late final Translations$misskey$serverSetupWizard_$use_$en_US use_ = Translations$misskey$serverSetupWizard_$use_$en_US.internal(_root);
 
@@ -9771,8 +9765,8 @@ class Translations$misskey$initialTutorial_$landing_$en_US {
 	/// en-US: 'Welcome to the Tutorial'
 	String get title => 'Welcome to the Tutorial';
 
-	/// en-US: 'Here, you can learn the basics of using Misskey and its features.'
-	String get description => 'Here, you can learn the basics of using Misskey and its features.';
+	/// en-US: 'Here, you can learn the basics of using Wenyan and its features.'
+	String get description => 'Here, you can learn the basics of using Wenyan and its features.';
 }
 
 // Path: misskey.initialTutorial_.note_
@@ -9786,8 +9780,8 @@ class Translations$misskey$initialTutorial_$note_$en_US {
 	/// en-US: 'What is a Note?'
 	String get title => 'What is a Note?';
 
-	/// en-US: 'Posts on Misskey are called 'Notes.' Notes are arranged chronologically on the timeline and are updated in real-time.'
-	String get description => 'Posts on Misskey are called \'Notes.\' Notes are arranged chronologically on the timeline and are updated in real-time.';
+	/// en-US: 'Posts on Wenyan are called 'Notes.' Notes are arranged chronologically on the timeline and are updated in real-time.'
+	String get description => 'Posts on Wenyan are called \'Notes.\' Notes are arranged chronologically on the timeline and are updated in real-time.';
 
 	/// en-US: 'Click on this button to reply to a message. It's also possible to reply to replies, continuing the conversation like a thread.'
 	String get reply => 'Click on this button to reply to a message. It\'s also possible to reply to replies, continuing the conversation like a thread.';
@@ -9840,8 +9834,8 @@ class Translations$misskey$initialTutorial_$timeline_$en_US {
 	/// en-US: 'The Concept of Timelines'
 	String get title => 'The Concept of Timelines';
 
-	/// en-US: 'Misskey provides multiple timelines based on usage (some may not be available depending on the server's policies).'
-	String get description1 => 'Misskey provides multiple timelines based on usage (some may not be available depending on the server\'s policies).';
+	/// en-US: 'Wenyan provides multiple timelines based on usage (some may not be available depending on the server's policies).'
+	String get description1 => 'Wenyan provides multiple timelines based on usage (some may not be available depending on the server\'s policies).';
 
 	/// en-US: 'You can view notes from accounts you follow.'
 	String get home => 'You can view notes from accounts you follow.';
@@ -9873,8 +9867,8 @@ class Translations$misskey$initialTutorial_$postNote_$en_US {
 	/// en-US: 'Note Posting Settings'
 	String get title => 'Note Posting Settings';
 
-	/// en-US: 'When posting a note on Misskey, various options are available. The posting form looks like this.'
-	String get description1 => 'When posting a note on Misskey, various options are available. The posting form looks like this.';
+	/// en-US: 'When posting a note on Wenyan, various options are available. The posting form looks like this.'
+	String get description1 => 'When posting a note on Wenyan, various options are available. The posting form looks like this.';
 
 	late final Translations$misskey$initialTutorial_$postNote_$visibility_$en_US visibility_ = Translations$misskey$initialTutorial_$postNote_$visibility_$en_US.internal(_root);
 	late final Translations$misskey$initialTutorial_$postNote_$cw_$en_US cw_ = Translations$misskey$initialTutorial_$postNote_$cw_$en_US.internal(_root);
@@ -9920,8 +9914,8 @@ class Translations$misskey$initialTutorial_$done_$en_US {
 	/// en-US: 'You've completed the tutorial! 🎉'
 	String get title => 'You\'ve completed the tutorial! 🎉';
 
-	/// en-US: 'The functions introduced here are just a small part. For a more detailed understanding of using Misskey, please refer to {link}.'
-	String description({required Object link}) => 'The functions introduced here are just a small part. For a more detailed understanding of using Misskey, please refer to ${link}.';
+	/// en-US: 'The functions introduced here are just a small part. For a more detailed understanding of using Wenyan, please refer to {link}.'
+	String description({required Object link}) => 'The functions introduced here are just a small part. For a more detailed understanding of using Wenyan, please refer to ${link}.';
 }
 
 // Path: misskey.serverSettings_.userGeneratedContentsVisibilityForVisitor_
@@ -10094,8 +10088,8 @@ class Translations$misskey$role_$options_$en_US {
 	/// en-US: 'Reverse proxies, CDNs, and other front-end components may have their own configuration settings.'
 	String get maxFileSize_caption => 'Reverse proxies, CDNs, and other front-end components may have their own configuration settings.';
 
-	/// en-US: 'The maximum file size setting for the entire server is {max}. To allow uploading files larger than this, please adjust this setting in the Misskey configuration file.'
-	String maxFileSize_caption2({required Object max}) => 'The maximum file size setting for the entire server is ${max}. To allow uploading files larger than this, please adjust this setting in the Misskey configuration file.';
+	/// en-US: 'The maximum file size setting for the entire server is {max}. To allow uploading files larger than this, please adjust this setting in the Wenyan configuration file.'
+	String maxFileSize_caption2({required Object max}) => 'The maximum file size setting for the entire server is ${max}. To allow uploading files larger than this, please adjust this setting in the Wenyan configuration file.';
 
 	/// en-US: 'Always mark files as NSFW'
 	String get alwaysMarkNsfw => 'Always mark files as NSFW';
@@ -11306,8 +11300,8 @@ class Translations$misskey$serverSetupWizard_$donationRequest_$en_US {
 
 	// Translations
 
-	/// en-US: 'Misskey is a free software developed by volunteers.'
-	String get text1 => 'Misskey is a free software developed by volunteers.';
+	/// en-US: 'Wenyan is a free software developed by volunteers.'
+	String get text1 => 'Wenyan is a free software developed by volunteers.';
 
 	/// en-US: 'We would appreciate your support so that we can continue to develop this software further into the future.'
 	String get text2 => 'We would appreciate your support so that we can continue to develop this software further into the future.';
@@ -11599,8 +11593,8 @@ class Translations$misskey$achievements_$types_$notes1_$en_US {
 	/// en-US: 'Post your first note'
 	String get description => 'Post your first note';
 
-	/// en-US: 'Have a good time with Misskey!'
-	String get flavor => 'Have a good time with Misskey!';
+	/// en-US: 'Have a good time with Wenyan!'
+	String get flavor => 'Have a good time with Wenyan!';
 }
 
 // Path: misskey.achievements_.types_.notes10_
@@ -11845,8 +11839,8 @@ class Translations$misskey$achievements_$types_$login3_$en_US {
 	/// en-US: 'Log in for a total of 3 days'
 	String get description => 'Log in for a total of 3 days';
 
-	/// en-US: 'Starting today, just call me Misskist'
-	String get flavor => 'Starting today, just call me Misskist';
+	/// en-US: 'Starting today, just call me Wenyanist'
+	String get flavor => 'Starting today, just call me Wenyanist';
 }
 
 // Path: misskey.achievements_.types_.login7_
@@ -11890,8 +11884,8 @@ class Translations$misskey$achievements_$types_$login30_$en_US {
 
 	// Translations
 
-	/// en-US: 'Misskist I'
-	String get title => 'Misskist I';
+	/// en-US: 'Wenyanist I'
+	String get title => 'Wenyanist I';
 
 	/// en-US: 'Log in for a total of 30 days'
 	String get description => 'Log in for a total of 30 days';
@@ -11905,8 +11899,8 @@ class Translations$misskey$achievements_$types_$login60_$en_US {
 
 	// Translations
 
-	/// en-US: 'Misskist II'
-	String get title => 'Misskist II';
+	/// en-US: 'Wenyanist II'
+	String get title => 'Wenyanist II';
 
 	/// en-US: 'Log in for a total of 60 days'
 	String get description => 'Log in for a total of 60 days';
@@ -11920,14 +11914,14 @@ class Translations$misskey$achievements_$types_$login100_$en_US {
 
 	// Translations
 
-	/// en-US: 'Misskist III'
-	String get title => 'Misskist III';
+	/// en-US: 'Wenyanist III'
+	String get title => 'Wenyanist III';
 
 	/// en-US: 'Log in for a total of 100 days'
 	String get description => 'Log in for a total of 100 days';
 
-	/// en-US: 'Violent Misskist'
-	String get flavor => 'Violent Misskist';
+	/// en-US: 'Violent Wenyanist'
+	String get flavor => 'Violent Wenyanist';
 }
 
 // Path: misskey.achievements_.types_.login200_
@@ -12067,8 +12061,8 @@ class Translations$misskey$achievements_$types_$login1000_$en_US {
 	/// en-US: 'Log in for a total of 1,000 days'
 	String get description => 'Log in for a total of 1,000 days';
 
-	/// en-US: 'Thank you for using Misskey!'
-	String get flavor => 'Thank you for using Misskey!';
+	/// en-US: 'Thank you for using Wenyan!'
+	String get flavor => 'Thank you for using Wenyan!';
 }
 
 // Path: misskey.achievements_.types_.noteClipped1_
@@ -12367,14 +12361,14 @@ class Translations$misskey$achievements_$types_$iLoveMisskey_$en_US {
 
 	// Translations
 
-	/// en-US: 'I Love Misskey'
-	String get title => 'I Love Misskey';
+	/// en-US: 'I Love Wenyan'
+	String get title => 'I Love Wenyan';
 
-	/// en-US: 'Post "I ❤ #Misskey"'
-	String get description => 'Post "I ❤ #Misskey"';
+	/// en-US: 'Post "I ❤ #Wenyan"'
+	String get description => 'Post "I ❤ #Wenyan"';
 
-	/// en-US: 'Misskey's development team greatly appreciates your support!'
-	String get flavor => 'Misskey\'s development team greatly appreciates your support!';
+	/// en-US: 'Wenyan's development team greatly appreciates your support!'
+	String get flavor => 'Wenyan\'s development team greatly appreciates your support!';
 }
 
 // Path: misskey.achievements_.types_.foundTreasure_
@@ -12403,8 +12397,8 @@ class Translations$misskey$achievements_$types_$client30min_$en_US {
 	/// en-US: 'Short break'
 	String get title => 'Short break';
 
-	/// en-US: 'Keep Misskey opened for at least 30 minutes'
-	String get description => 'Keep Misskey opened for at least 30 minutes';
+	/// en-US: 'Keep Wenyan opened for at least 30 minutes'
+	String get description => 'Keep Wenyan opened for at least 30 minutes';
 }
 
 // Path: misskey.achievements_.types_.client60min_
@@ -12415,11 +12409,11 @@ class Translations$misskey$achievements_$types_$client60min_$en_US {
 
 	// Translations
 
-	/// en-US: 'No "Miss" in Misskey'
-	String get title => 'No "Miss" in Misskey';
+	/// en-US: 'No "Miss" in Wenyan'
+	String get title => 'No "Miss" in Wenyan';
 
-	/// en-US: 'Keep Misskey opened for at least 60 minutes'
-	String get description => 'Keep Misskey opened for at least 60 minutes';
+	/// en-US: 'Keep Wenyan opened for at least 60 minutes'
+	String get description => 'Keep Wenyan opened for at least 60 minutes';
 }
 
 // Path: misskey.achievements_.types_.noteDeletedWithin1min_
@@ -12733,8 +12727,8 @@ class Translations$misskey$achievements_$types_$brainDiver_$en_US {
 	/// en-US: 'Post the link to Brain Diver'
 	String get description => 'Post the link to Brain Diver';
 
-	/// en-US: 'Misskey-Misskey La-Tu-Ma'
-	String get flavor => 'Misskey-Misskey La-Tu-Ma';
+	/// en-US: 'Wenyan-Wenyan La-Tu-Ma'
+	String get flavor => 'Wenyan-Wenyan La-Tu-Ma';
 }
 
 // Path: misskey.achievements_.types_.smashTestNotificationButton_
@@ -12760,8 +12754,8 @@ class Translations$misskey$achievements_$types_$tutorialCompleted_$en_US {
 
 	// Translations
 
-	/// en-US: 'Misskey Elementary Course Diploma'
-	String get title => 'Misskey Elementary Course Diploma';
+	/// en-US: 'Wenyan Elementary Course Diploma'
+	String get title => 'Wenyan Elementary Course Diploma';
 
 	/// en-US: 'Tutorial completed'
 	String get description => 'Tutorial completed';

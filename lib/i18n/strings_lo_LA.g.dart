@@ -65,8 +65,8 @@ class _Translations$misskey$lo_LA extends Translations$misskey$en_US {
 	// Translations
 	@override String get lang__ => 'ພາສາລາວ';
 	@override String get headlineMisskey => 'ເຊື່ອມຕໍ່ເຄືອຂ່າຍໂດຍ note';
-	@override String get introMisskey => 'ຍິນດີຕ້ອນຮັບ! Misskey ເປັນຊອຟແວopensource, ສຳລັບບໍລິການ microblogging ແບບ decentralized\nສ້າງ “note” ເພື່ອແບ່ງປັນຄວາມຄິດຂອງທ່ານກັບທຸກໆ ຄົນທີ່ຢູ່ອ້ອມຮອບທ່ານ 📡\nຢ່າລືມ “reaction” ໂນຕຂອງລາວເພື່ອສະແດງຄວາມຮູ້ສຶກ 👍\nມາສຳຫຼວດໂລກໃໝ່ແນ! 🚀';
-	@override String poweredByMisskeyDescription({required Object name}) => '${name} ແມ່ນສ່ວນໜຶ່ງຂອງການບໍລິການທີ່ຂັບເຄື່ອນໂດຍແພລດຟອມ open source. <b>Misskey</b> (ເອີ້ນວ່າ "Misskey instance")';
+	@override String get introMisskey => 'ຍິນດີຕ້ອນຮັບ! Wenyan ເປັນຊອຟແວopensource, ສຳລັບບໍລິການ microblogging ແບບ decentralized\nສ້າງ “note” ເພື່ອແບ່ງປັນຄວາມຄິດຂອງທ່ານກັບທຸກໆ ຄົນທີ່ຢູ່ອ້ອມຮອບທ່ານ 📡\nຢ່າລືມ “reaction” ໂນຕຂອງລາວເພື່ອສະແດງຄວາມຮູ້ສຶກ 👍\nມາສຳຫຼວດໂລກໃໝ່ແນ! 🚀';
+	@override String poweredByMisskeyDescription({required Object name}) => '${name} ແມ່ນສ່ວນໜຶ່ງຂອງການບໍລິການທີ່ຂັບເຄື່ອນໂດຍແພລດຟອມ open source. <b>Wenyan</b> (ເອີ້ນວ່າ "Wenyan instance")';
 	@override String monthAndDay({required Object month, required Object day}) => 'ເດືອນ${month} / ວັນ${day}';
 	@override String get search => 'ຄົ້ນຫາ';
 	@override String get reset => 'ຣີເຊັດ';
@@ -380,7 +380,7 @@ class _Translations$misskey$lo_LA extends Translations$misskey$en_US {
 	@override String get name => 'ຊື່';
 	@override String get userList => 'ລາຍການ';
 	@override String get about => 'ກ່ຽວກັບ';
-	@override String get aboutMisskey => 'ກ່ຽວກັບ Misskey';
+	@override String get aboutMisskey => 'ກ່ຽວກັບ Wenyan';
 	@override String get administrator => 'ຜູ້ດູແລ';
 	@override String get token => 'ໂທເຄັນ';
 	@override String get share => 'ແບ່ງປັນ';

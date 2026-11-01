@@ -17,6 +17,7 @@ import '../../util/future_with_dialog.dart';
 import '../../util/get_link_background_color.dart';
 import '../../util/launch_url.dart';
 import '../widget/url_sheet.dart';
+import 'wenyan_license_page.dart';
 
 class const AboutAriaPage({super.key}) extends HookConsumerWidget {
   @override
@@ -77,29 +78,6 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
       }
 
       return {
-        'miria': registerRecognizer(
-          linkId: 'miria',
-          onTap: () => launchUrl(
-            ref,
-            Uri.https('github.com', 'shiosyakeyakini-info/miria'),
-          ),
-          onLongPress: () => showModalBottomSheet<void>(
-            context: context,
-            builder: (context) => const UrlSheet(
-              url: 'https://github.com/shiosyakeyakini-info/miria',
-            ),
-          ),
-        ),
-        'misskey': registerRecognizer(
-          linkId: 'misskey',
-          onTap: () =>
-              launchUrl(ref, Uri.https('github.com', 'misskey-dev/misskey')),
-          onLongPress: () => showModalBottomSheet<void>(
-            context: context,
-            builder: (context) =>
-                const UrlSheet(url: 'https://github.com/misskey-dev/misskey'),
-          ),
-        ),
         'sevenc_nanashi': registerRecognizer(
           linkId: 'sevenc_nanashi',
           onTap: () => launchUrl(ref, Uri.https('misskey.020209.xyz', '/@rmt')),
@@ -181,61 +159,7 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
               child: Text.rich(
                 TextSpan(
                   children: [
-                    t.aria.acknowledgements(
-                      miria: TextSpan(
-                        text: 'Aria',
-                        style: TextStyle(
-                          color: colors.link,
-                          backgroundColor: activeLinkId.value == 'miria'
-                              ? getLinkBackgroundColor(
-                                  Theme.brightnessOf(context),
-                                  animationValue,
-                                )
-                              : null,
-                        ),
-                        recognizer: recognizers['miria'],
-                        onEnter: (_) {
-                          if (!controller.isAnimating &&
-                              controller.value < 1.0) {
-                            activeLinkId.value = 'miria';
-                            controller.value = 0.25;
-                          }
-                        },
-                        onExit: (_) {
-                          if (!controller.isAnimating &&
-                              controller.value < 1.0) {
-                            controller.value = 0.0;
-                          }
-                        },
-                        mouseCursor: SystemMouseCursors.click,
-                      ),
-                      misskey: TextSpan(
-                        text: 'Misskey',
-                        style: TextStyle(
-                          color: colors.link,
-                          backgroundColor: activeLinkId.value == 'misskey'
-                              ? getLinkBackgroundColor(
-                                  Theme.brightnessOf(context),
-                                  animationValue,
-                                )
-                              : null,
-                        ),
-                        recognizer: recognizers['misskey'],
-                        onEnter: (_) {
-                          if (!controller.isAnimating &&
-                              controller.value < 1.0) {
-                            activeLinkId.value = 'misskey';
-                            controller.value = 0.25;
-                          }
-                        },
-                        onExit: (_) {
-                          if (!controller.isAnimating &&
-                              controller.value < 1.0) {
-                            controller.value = 0.0;
-                          }
-                        },
-                      ),
-                    ),
+                    TextSpan(text: t.aria.acknowledgements),
                     const TextSpan(text: '\n\n'),
                     t.aria.iconAttribution(
                       sevenc_nanashi: TextSpan(
@@ -305,12 +229,14 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
               child: ListTile(
                 leading: const Icon(Icons.code),
                 title: Text(t.misskey.aboutMisskey_.source),
-                onTap: () =>
-                    launchUrl(ref, Uri.https('github.com', 'RMT02/aria')),
+                onTap: () => launchUrl(
+                  ref,
+                  Uri.https('github.com', 'RMT02/wenyan-android'),
+                ),
                 onLongPress: () => showModalBottomSheet<void>(
                   context: context,
                   builder: (context) => const UrlSheet(
-                    url: 'https://github.com/RMT02/aria',
+                    url: 'https://github.com/RMT02/wenyan-android',
                   ),
                 ),
               ),
@@ -342,14 +268,20 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
                 onTap: () async {
                   final version = (await packageInfo).version;
                   if (!context.mounted) return;
-                  showLicensePage(
-                    context: context,
-                    applicationVersion: version,
-                    applicationIcon: ClipRRect(
-                      borderRadius: BorderRadius.circular(16.0),
-                      child: Assets.icons.wenyan.image(width: 80.0, height: 80.0),
+                  await Navigator.of(context).push<void>(
+                    MaterialPageRoute(
+                      builder: (context) => WenyanLicensePage(
+                        version: version,
+                        icon: ClipRRect(
+                          borderRadius: BorderRadius.circular(16.0),
+                          child: Assets.icons.wenyan.image(
+                            width: 80.0,
+                            height: 80.0,
+                          ),
+                        ),
+                        legalese: 'Licensed under AGPL v3',
+                      ),
                     ),
-                    applicationLegalese: 'Licensed under AGPL v3',
                   );
                 },
               ),

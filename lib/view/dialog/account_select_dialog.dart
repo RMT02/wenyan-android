@@ -3,12 +3,10 @@ import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:material_ui/material_ui.dart';
 
+import '../../constant/wenyan.dart';
 import '../../i18n/strings.g.dart';
 import '../../model/account.dart';
 import '../../provider/accounts_notifier_provider.dart';
-import '../../util/punycode.dart';
-import '../widget/misskey_server_autocomplete.dart';
-import 'misskey_server_list_dialog.dart';
 
 class const AccountSelectDialog({super.key, final Account? initialAccount})
     extends HookConsumerWidget {
@@ -16,22 +14,6 @@ class const AccountSelectDialog({super.key, final Account? initialAccount})
   Widget build(BuildContext context, WidgetRef ref) {
     final accounts = ref.watch(accountsNotifierProvider);
     final account = useState(initialAccount);
-    final controller = useTextEditingController(text: initialAccount?.host);
-    final focusNode = useFocusNode();
-    useEffect(() {
-      controller.addListener(
-        () => account.value = Account(
-          host: toAscii(
-            controller.text
-                .trim()
-                .replaceFirst('https://', '')
-                .split('/')
-                .first,
-          ).toLowerCase(),
-        ),
-      );
-      return;
-    }, []);
     final theme = Theme.of(context);
 
     return AlertDialog(
@@ -48,7 +30,7 @@ class const AccountSelectDialog({super.key, final Account? initialAccount})
             if (value.$1 != null) {
               account.value = value.$1;
             } else {
-              account.value = Account(host: controller.text);
+              account.value = Account(host: wenyanServerUrl.host);
             }
           }
         },
@@ -70,24 +52,6 @@ class const AccountSelectDialog({super.key, final Account? initialAccount})
               title: Text(t.aria.guest),
               value: (null,),
             ),
-            if (account.value?.isGuest ?? false) ...[
-              MisskeyServerAutocomplete(
-                controller: controller,
-                focusNode: focusNode,
-              ),
-              TextButton(
-                onPressed: () async {
-                  final host = await showDialog<String>(
-                    context: context,
-                    builder: (context) => const MisskeyServerListDialog(),
-                  );
-                  if (host != null) {
-                    controller.text = host;
-                  }
-                },
-                child: Text(t.aria.findServer),
-              ),
-            ],
           ],
         ),
       ),
