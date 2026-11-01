@@ -6,8 +6,11 @@ import 'package:material_ui/material_ui.dart';
 
 import '../../constant/max_content_width.dart';
 import '../../constant/wenyan.dart';
+import '../../model/account.dart';
+import '../../model/tab_settings.dart';
 import '../../provider/accounts_notifier_provider.dart';
 import '../../provider/dio_provider.dart';
+import '../../provider/timeline_tabs_notifier_provider.dart';
 import '../../repository/wenyan_auth_repository.dart';
 import '../../util/show_toast.dart';
 import '../dialog/message_dialog.dart';
@@ -75,6 +78,20 @@ class const WenyanAuthPage({super.key, final String? query})
               token: session.token,
               userId: session.userId,
             );
+        if (!context.mounted) return;
+        // 首次登录时自动准备一个主时间线，做到打开即用
+        if (ref.read(timelineTabsNotifierProvider).isEmpty) {
+          await ref
+              .read(timelineTabsNotifierProvider.notifier)
+              .add(
+                TabSettings.homeTimeline(
+                  Account(
+                    host: wenyanServerUrl.host,
+                    username: session.username,
+                  ),
+                ),
+              );
+        }
         if (!context.mounted) return;
         showToast(
           context: context,
