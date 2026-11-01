@@ -33,7 +33,12 @@ class AccountsNotifier extends _$AccountsNotifier {
         .setStringList(_key, state.map((e) => jsonEncode(e)).toList());
   }
 
-  Future<({bool added})> login({
+  /// 保存登录状态，并返回真正写入的 [Account]。
+  ///
+  /// 返回的账号带服务端 `/api/meta` 解析出的规范 host 与非空用户名，
+  /// 调用方应当用它（而不是自行拼接）去创建时间线标签页等依赖账号的数据，
+  /// 否则会得到 host 不同或用户名为空的「假账号」，进而取不到令牌。
+  Future<({bool added, Account account})> login({
     required Uri serverUrl,
     required String username,
     required String token,
@@ -66,14 +71,17 @@ class AccountsNotifier extends _$AccountsNotifier {
     await ref.read(tokensNotifierProvider.notifier).add(account, token);
     await ref.read(userIdsNotifierProvider.notifier).add(account, userId);
     if (state.contains(account)) {
-      return (added: false);
+      return (added: false, account: account);
     }
     state = {...state, account}.toList();
     await _save();
-    return (added: true);
+    return (added: true, account: account);
   }
 
-  Future<({bool added})> loginWithToken(Uri serverUrl, String token) async {
+  Future<({bool added, Account account})> loginWithToken(
+    Uri serverUrl,
+    String token,
+  ) async {
     final i = await ref
         .read(dioProvider)
         .postUri<Map<String, dynamic>>(

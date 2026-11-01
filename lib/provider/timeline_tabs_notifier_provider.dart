@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 import 'package:uuid/uuid.dart';
 
+import '../model/account.dart';
 import '../model/tab_settings.dart';
 import '../model/tab_type.dart';
 import 'shared_preferences_provider.dart';
@@ -35,6 +36,31 @@ class TimelineTabsNotifier extends _$TimelineTabsNotifier {
     await ref
         .read(sharedPreferencesProvider)
         .setStringList(_key, state.map((e) => jsonEncode(e.toJson())).toList());
+  }
+
+  /// 修复标签页里指向「假账号」的引用。
+  ///
+  /// 早期版本登录后自动建主时间线时用了一个用户名为空串的账号，导致该标签页
+  /// 取不到令牌并报「请先登录」。这里把这类标签页重新绑定到 [accounts] 中
+  /// 真正的账号上。
+  ///
+  /// 注意区分：游客标签页的 `username` 是 `null`（这是合法状态，不能动），
+  /// 而这里要修的是 `username` 为空字符串的坏数据。
+  Future<void> repairAccounts(List<Account> accounts) async {
+    var changed = false;
+    final repaired = state.map((tab) {
+      final account = tab.account;
+      if (account.username?.isEmpty != true) return tab;
+      final candidates = accounts
+          .where((acct) => acct.host == account.host && !acct.isGuest)
+          .toList();
+      if (candidates.length != 1) return tab;
+      changed = true;
+      return tab.copyWith(account: candidates.single);
+    }).toList();
+    if (!changed) return;
+    state = repaired;
+    await _save();
   }
 
   TabSettings _removeUnusedValues(TabSettings tabSettings) {

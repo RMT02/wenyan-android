@@ -64,11 +64,13 @@ jobs:
           STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
         run: |
           set -euo pipefail
+          VERSION=$(grep -m1 '^version:' pubspec.yaml | sed 's/^version: *//; s/+.*//')
+          echo "版本 $VERSION"
           mkdir -p out
           for abi in android-arm64 android-arm; do
             flutter build apk --release --split-per-abi --target-platform "$abi"
             for f in build/app/outputs/flutter-apk/*.apk; do
-              cp "$f" "out/wenyan-1.0.0-$(basename "$f")"
+              cp "$f" "out/wenyan-${VERSION}-$(basename "$f")"
             done
           done
           ls -lh out

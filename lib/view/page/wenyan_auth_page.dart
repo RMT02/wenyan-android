@@ -6,7 +6,6 @@ import 'package:material_ui/material_ui.dart';
 
 import '../../constant/max_content_width.dart';
 import '../../constant/wenyan.dart';
-import '../../model/account.dart';
 import '../../model/tab_settings.dart';
 import '../../provider/accounts_notifier_provider.dart';
 import '../../provider/dio_provider.dart';
@@ -79,18 +78,14 @@ class const WenyanAuthPage({super.key, final String? query})
               userId: session.userId,
             );
         if (!context.mounted) return;
-        // 首次登录时自动准备一个主时间线，做到打开即用
+        // 首次登录时自动准备一个主时间线，做到打开即用。
+        // 必须用 login() 返回的账号：它的 host 是服务端解析出的规范值、
+        // 用户名也非空；自行拼 Account 会拼出 host 不一致的「假账号」，
+        // 导致时间线取不到令牌、报「请先登录」。
         if (ref.read(timelineTabsNotifierProvider).isEmpty) {
           await ref
               .read(timelineTabsNotifierProvider.notifier)
-              .add(
-                TabSettings.homeTimeline(
-                  Account(
-                    host: wenyanServerUrl.host,
-                    username: session.username,
-                  ),
-                ),
-              );
+              .add(TabSettings.homeTimeline(result.account));
         }
         if (!context.mounted) return;
         showToast(

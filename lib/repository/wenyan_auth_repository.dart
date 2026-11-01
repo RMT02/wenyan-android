@@ -40,7 +40,9 @@ class const WenyanAuthRepository(final Dio _dio) {
     );
     final data = response.data ?? const <String, dynamic>{};
     if (data['finished'] == true) {
-      return _sessionFrom(data);
+      // signin-flow 的响应只有 `finished` / `id` / `i`，不带用户名，
+      // 这里用调用方传入的用户名兜底。
+      return _sessionFrom(data, fallbackUsername: username);
     }
     final next = data['next'];
     if (next == 'totp' || next == 'password') {
@@ -87,7 +89,10 @@ class const WenyanAuthRepository(final Dio _dio) {
     return _sessionFrom(data);
   }
 
-  WenyanSession _sessionFrom(Map<String, dynamic> data) {
+  WenyanSession _sessionFrom(
+    Map<String, dynamic> data, {
+    String? fallbackUsername,
+  }) {
     // `/signin-flow` 与 `/signup-pending` 返回字段为 `i`，
     // 而免邮箱确认的 `/signup` 返回的是 `token`。
     final token = data['i'] ?? data['token'];
@@ -96,11 +101,11 @@ class const WenyanAuthRepository(final Dio _dio) {
     if (token is! String || token.isEmpty || id is! String) {
       throw const WenyanAuthException('服务器返回了异常数据，请稍后重试。');
     }
-    return (
-      token: token,
-      userId: id,
-      username: username is String ? username : '',
-    );
+    final resolvedUsername = switch (username) {
+      final String name when name.isNotEmpty => name,
+      _ => fallbackUsername ?? '',
+    };
+    return (token: token, userId: id, username: resolvedUsername);
   }
 
   Future<Response<Map<String, dynamic>>> _post(

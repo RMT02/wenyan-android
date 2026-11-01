@@ -1,7 +1,6 @@
 import 'dart:async';
 import 'dart:ui';
 
-import 'package:collection/collection.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
@@ -9,15 +8,14 @@ import 'package:material_ui/material_ui.dart';
 
 import '../../constant/max_content_width.dart';
 import '../../constant/shortcuts.dart';
+import '../../constant/wenyan.dart';
 import '../../i18n/strings.g.dart';
+import '../../model/tab_settings.dart';
 import '../../provider/accounts_notifier_provider.dart';
-import '../../provider/misskey_servers_provider.dart';
+import '../../provider/timeline_tabs_notifier_provider.dart';
 import '../../util/future_with_dialog.dart';
 import '../../util/punycode.dart';
 import '../../util/show_toast.dart';
-import '../dialog/misskey_server_list_dialog.dart';
-import '../widget/image_widget.dart';
-import '../widget/misskey_server_autocomplete.dart';
 import '../widget/misskey_server_background.dart';
 
 class const TokenLoginPage({super.key, final String? query})
@@ -35,6 +33,12 @@ class const TokenLoginPage({super.key, final String? query})
     final result = await ref
         .read(accountsNotifierProvider.notifier)
         .loginWithToken(serverUrl, token);
+    // 与账号密码登录保持一致：首次登录自动准备主时间线。
+    if (ref.read(timelineTabsNotifierProvider).isEmpty) {
+      await ref
+          .read(timelineTabsNotifierProvider.notifier)
+          .add(TabSettings.homeTimeline(result.account));
+    }
     showToast(
       context: ref.context.mounted ? ref.context : null,
       message: result.added ? t.aria.accountAdded : t.aria.accessTokenUpdated,
@@ -45,33 +49,13 @@ class const TokenLoginPage({super.key, final String? query})
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final servers = ref.watch(misskeyServersProvider).value ?? [];
-    final queryController = useTextEditingController(text: this.query);
-    final query = useState(this.query ?? '');
-    final host = query.value
-        .trim()
-        .replaceFirst(RegExp('https?://'), '')
-        .split('/')
-        .first;
-    final queryFocusNode = useFocusNode();
-    final server = servers.firstWhereOrNull((server) => server.url == host);
-    final iconUrl = switch (server?.meta) {
-      {'iconUrl': final String iconUrl} when iconUrl.isNotEmpty => iconUrl,
-      _ when server != null && server.icon =>
-        'https://instanceapp.misskey.page/instance-icons/${server.url}.webp',
-      _ when server != null => 'https://${server.url}/favicon.ico',
-      _ => null,
-    };
+    // 闻言版把服务器固定为内置实例，本页不再提供服务器选择。
+    final queryController = useTextEditingController(text: wenyanServerUrl.host);
+    final query = useState(wenyanServerUrl.host);
     final tokenController = useTextEditingController();
     final token = useState('');
     final tokenFocusNode = useFocusNode();
     useEffect(() {
-      queryController.addListener(
-        () => query.value = queryController.text.replaceFirst(
-          RegExp('^https://'),
-          '',
-        ),
-      );
       tokenController.addListener(() => token.value = tokenController.text);
       return;
     }, []);
@@ -102,50 +86,43 @@ class const TokenLoginPage({super.key, final String? query})
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          DecoratedBox(
-                            decoration: const BoxDecoration(
-                              color: Color(0xffdddddd),
-                              shape: BoxShape.circle,
+                          SizedBox.square(
+                            dimension: 56,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(16),
+                              child: Image.asset(
+                                'assets/icons/wenyan.png',
+                                fit: BoxFit.contain,
+                                errorBuilder:
+                                    (context, error, stackTrace) =>
+                                        const ColoredBox(
+                                          color: wenyanColor,
+                                          child: Center(
+                                            child: Text(
+                                              '闻',
+                                              style: TextStyle(
+                                                fontSize: 28,
+                                                color: Colors.white,
+                                              ),
+                                            ),
+                                          ),
+                                        ),
+                              ),
                             ),
-                            child: iconUrl != null
-                                ? ClipRRect(
-                                    borderRadius: BorderRadius.circular(50.0),
-                                    child: ImageWidget(
-                                      url: iconUrl,
-                                      width: 50.0,
-                                      height: 50.0,
-                                    ),
-                                  )
-                                : const SizedBox.square(dimension: 50.0),
                           ),
                           const SizedBox(height: 16.0),
-                          MisskeyServerAutocomplete(
-                            controller: queryController,
-                            focusNode: queryFocusNode,
-                            autofocus: this.query?.isEmpty ?? true,
-                            onSubmitted: (_) => tokenFocusNode.requestFocus(),
-                          ),
-                          Align(
-                            alignment: AlignmentDirectional.centerStart,
-                            child: TextButton(
-                              style: TextButton.styleFrom(
-                                minimumSize: Size.zero,
-                                tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+                          // 闻言版服务器固定，这里只做展示，不提供切换。
+                          Row(
+                            children: [
+                              const Icon(Icons.dns, size: 20),
+                              const SizedBox(width: 8),
+                              Expanded(
+                                child: Text(
+                                  wenyanServerUrl.host,
+                                  style: Theme.of(context).textTheme.bodyMedium,
+                                ),
                               ),
-                              onPressed: () async {
-                                final host = await showDialog<String>(
-                                  context: context,
-                                  builder: (context) =>
-                                      const MisskeyServerListDialog(),
-                                );
-                                if (host != null) {
-                                  queryController.text = host;
-                                  if (!context.mounted) return;
-                                  tokenFocusNode.requestFocus();
-                                }
-                              },
-                              child: Text(t.aria.findServer),
-                            ),
+                            ],
                           ),
                           const SizedBox(height: 8.0),
                           Shortcuts(
