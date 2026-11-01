@@ -54,7 +54,7 @@ class const MiAuthRepository(final Dio dio) {
         'name': 'Aria',
         'permission': _permissions.map((e) => e.value).join(','),
         if (defaultTargetPlatform == TargetPlatform.android)
-          'callback': 'aria://aria/miauth',
+          'callback': 'wenyan://wenyan/miauth',
       },
     );
     return (sessionId: sessionId, url: url);

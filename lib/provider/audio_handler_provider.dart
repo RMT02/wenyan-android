@@ -13,7 +13,7 @@ FutureOr<AudioHandler> audioHandler(Ref ref) {
     TargetPlatform.macOS => AudioService.init(
       builder: () => _AudioPlayerHandler(),
       config: const AudioServiceConfig(
-        androidNotificationChannelId: 'com.poppingmoon.aria.channel.audio',
+        androidNotificationChannelId: 'xyz.zero20209.wenyan.channel.audio',
         androidNotificationChannelName: 'Audio playback',
         androidNotificationIcon: 'drawable/ic_notification',
         androidNotificationOngoing: true,

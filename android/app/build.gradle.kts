@@ -7,7 +7,7 @@ plugins {
 }
 
 android {
-    namespace = "com.poppingmoon.aria"
+    namespace = "xyz.zero20209.wenyan"
     compileSdk = 37
     ndkVersion = flutter.ndkVersion
 
@@ -18,7 +18,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.poppingmoon.aria"
+        applicationId = "xyz.zero20209.wenyan"
         minSdk = flutter.minSdkVersion
         multiDexEnabled = true
         targetSdk = flutter.targetSdkVersion

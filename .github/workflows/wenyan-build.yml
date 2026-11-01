@@ -1,0 +1,85 @@
+name: 闻言 APK
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+  workflow_dispatch:
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: 释放磁盘空间
+        run: rm -rf /opt/hostedtoolcache || true
+
+      # Isar 的原生构建钩子在 CI 中必须显式开启（上游 build.yml 同样处理）
+      - name: 启用 isar 本地构建
+        run: sed -i 's/local_build: false/local_build: true/' pubspec.yaml
+
+      - name: 安装 Flutter
+        uses: subosito/flutter-action@v2.23.0
+        with:
+          flutter-version-file: .fvmrc
+          cache: true
+
+      - name: 拉取依赖
+        run: flutter pub get
+
+      - uses: actions/setup-java@v6.0.1
+        with:
+          distribution: zulu
+          java-version: '21'
+
+      - name: 写入签名密钥
+        env:
+          UPLOAD_KEYSTORE: ${{ secrets.UPLOAD_KEYSTORE }}
+        run: |
+          if [ -z "$UPLOAD_KEYSTORE" ]; then
+            echo "缺少 UPLOAD_KEYSTORE secret" >&2
+            exit 1
+          fi
+          printf '%s' "$UPLOAD_KEYSTORE" | base64 -d > android/app/upload.keystore
+
+      - name: 设置 NDK 路径
+        run: echo "ANDROID_NDK_HOME=$ANDROID_HOME/ndk/28.2.13676358" >> "$GITHUB_ENV"
+
+      - name: 构建 arm64 与 armv7 APK
+        env:
+          HOME: /tmp
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+          STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
+        run: |
+          set -euo pipefail
+          mkdir -p out
+          for abi in android-arm64 android-arm; do
+            flutter build apk --release --split-per-abi --target-platform "$abi"
+            for f in build/app/outputs/flutter-apk/*.apk; do
+              cp "$f" "out/wenyan-1.0.0-$(basename "$f")"
+            done
+          done
+          ls -lh out
+
+      - uses: actions/upload-artifact@v7.0.2
+        with:
+          name: wenyan-apk
+          path: out/*.apk
+          if-no-files-found: error
+
+      - name: 校验包名与版本
+        run: |
+          APK=$(ls out/*.apk | head -n 1)
+          echo "检查 $APK"
+          $ANDROID_HOME/cmdline-tools/latest/bin/apkanalyzer manifest application-id "$APK"
+          $ANDROID_HOME/cmdline-tools/latest/bin/apkanalyzer manifest version-name "$APK"

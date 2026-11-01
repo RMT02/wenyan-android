@@ -24,6 +24,7 @@ import 'package:window_manager/window_manager.dart';
 
 import 'constant/colors.dart';
 import 'constant/shortcuts.dart';
+import 'constant/wenyan.dart';
 import 'extension/app_locale_utils_extension.dart';
 import 'extension/user_extension.dart';
 import 'gen/assets.gen.dart';
@@ -868,7 +869,7 @@ class const Aria({super.key}) extends HookConsumerWidget {
 
     return MaterialApp.router(
       routerConfig: router,
-      title: 'Aria',
+      title: wenyanAppName,
       theme: lightTheme,
       darkTheme: darkTheme,
       themeMode: themeMode,

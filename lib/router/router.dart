@@ -7,6 +7,7 @@ import 'package:riverpod_annotation/riverpod_annotation.dart';
 import '../i18n/strings.g.dart';
 import '../model/account.dart';
 import '../model/tab_settings.dart';
+import '../provider/accounts_notifier_provider.dart';
 import '../provider/boot_state_provider.dart';
 import '../provider/message_opened_app_notifier_provider.dart';
 import '../provider/miauth_notifier_provider.dart';
@@ -41,7 +42,6 @@ import '../view/page/gallery/gallery_post_page.dart';
 import '../view/page/image_page.dart';
 import '../view/page/list/list_page.dart';
 import '../view/page/list/lists_page.dart';
-import '../view/page/login_page.dart';
 import '../view/page/misskey_games_page.dart';
 import '../view/page/note_page.dart';
 import '../view/page/notes_after_renotes_page.dart';
@@ -93,6 +93,7 @@ import '../view/page/user/followers_page.dart';
 import '../view/page/user/following_page.dart';
 import '../view/page/user/user_list_page.dart';
 import '../view/page/user/user_page.dart';
+import '../view/page/wenyan_auth_page.dart';
 
 part 'router.g.dart';
 
@@ -115,6 +116,9 @@ GoRouter router(Ref ref) {
         redirect: (_, _) {
           if (!bootState.hasValue || bootState.value == null) {
             return null;
+          } else if (ref.read(accountsNotifierProvider).isEmpty) {
+            // 聞言版: 未登录时直接进入应用内登录 / 注册页，而不是时间线。
+            return '/login';
           } else {
             return '/timelines';
           }
@@ -128,7 +132,7 @@ GoRouter router(Ref ref) {
       GoRoute(
         path: '/login',
         builder: (_, state) =>
-            LoginPage(query: state.uri.queryParameters['query']),
+            WenyanAuthPage(query: state.uri.queryParameters['query']),
         routes: [
           GoRoute(
             path: 'authenticate',

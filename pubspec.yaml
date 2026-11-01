@@ -1,7 +1,7 @@
 name: aria
 description: "A client app for Misskey, a federated social media platform."
 publish_to: "none"
-version: 1.5.15+113
+version: 1.0.0+1
 
 environment:
   sdk: ">=3.13.0 <4.0.0"
@@ -220,6 +220,7 @@ flutter:
     - assets/fonts/Pretendard/LICENSE.txt
     - assets/fonts/Twemoji_Mozilla/LICENSE.md
     - assets/icons/aria.png
+    - assets/icons/wenyan.png
     - assets/misskey/COPYING
     - assets/misskey/LICENSE
     - assets/misskey/packages/frontend/assets/

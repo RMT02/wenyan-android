@@ -5,7 +5,7 @@ import '../model/account.dart';
 
 class const NotificationSettingsRepository() {
   static const _channel = MethodChannel(
-    'com.poppingmoon.aria/notification_settings',
+    'xyz.zero20209.wenyan/notification_settings',
   );
 
   Future<void> saveKeySet(Account account, WebPushKeySet keySet) async {
