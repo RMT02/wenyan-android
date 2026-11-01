@@ -1,7 +1,7 @@
 name: aria
 description: "A client app for Misskey, a federated social media platform."
 publish_to: "none"
-version: 1.0.3+4
+version: 1.0.4+5
 
 environment:
   sdk: ">=3.13.0 <4.0.0"
@@ -40,6 +40,7 @@ dependencies:
       path: flutter_apns_only
   flutter_blurhash: ^0.9.1
   flutter_cache_manager: ^3.4.5
+  flutter_foreground_task: ^11.0.3
   flutter_highlighting:
     git:
       url: https://github.com/poppingmoon/dart-highlighting

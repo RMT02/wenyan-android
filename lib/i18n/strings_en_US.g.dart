@@ -702,6 +702,21 @@ class Translations$aria$en_US {
 
 	/// en-US: 'Web browser'
 	String get webBrowser => 'Web browser';
+
+	/// en-US: 'Wenyan notifications'
+	String get wenyanPush => 'Wenyan notifications';
+
+	/// en-US: 'Receive notifications in the background through the Wenyan channel. Notifications keep arriving while the app process is alive or running as a foreground service; reopening the app restores them after the system kills the process.'
+	String get wenyanPushDescription => 'Receive notifications in the background through the Wenyan channel. Notifications keep arriving while the app process is alive or running as a foreground service; reopening the app restores them after the system kills the process.';
+
+	/// en-US: 'Enable push notifications'
+	String get wenyanPushEnabled => 'Enable push notifications';
+
+	/// en-US: 'Push the following notifications'
+	String get wenyanPushTypes => 'Push the following notifications';
+
+	/// en-US: 'Receiving notifications'
+	String get wenyanPushServiceRunning => 'Receiving notifications';
 }
 
 // Path: misskey

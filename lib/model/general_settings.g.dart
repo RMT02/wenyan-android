@@ -137,6 +137,12 @@ GeneralSettings _$GeneralSettingsFromJson(
   showImageInNotification: json['showImageInNotification'] as bool? ?? true,
   showEmojiInReactionNotification:
       json['showEmojiInReactionNotification'] as bool? ?? false,
+  wenyanPushEnabled: json['wenyanPushEnabled'] as bool? ?? true,
+  wenyanPushDisabledTypes:
+      (json['wenyanPushDisabledTypes'] as List<dynamic>?)
+          ?.map((e) => e as String)
+          .toList() ??
+      const [],
   enableInfiniteScroll: json['enableInfiniteScroll'] as bool? ?? true,
   keepScreenOn: json['keepScreenOn'] as bool? ?? false,
   openSensitiveMediaOnDoubleTap:
@@ -194,7 +200,7 @@ GeneralSettings _$GeneralSettingsFromJson(
 Map<String, dynamic> _$GeneralSettingsToJson(
   GeneralSettings instance,
 ) => <String, dynamic>{
-  'serifFontFamily': ?instance.serifFontFamily,
+  'monospaceFontFamily': ?instance.monospaceFontFamily,
   'highlightSensitiveMedia': instance.highlightSensitiveMedia,
   'animatedMfm': instance.animatedMfm,
   'advancedMfm': instance.advancedMfm,
@@ -230,8 +236,8 @@ Map<String, dynamic> _$GeneralSettingsToJson(
   'thumbnailBoxFit': _$BoxFitEnumMap[instance.thumbnailBoxFit]!,
   'emojiStyle': _$EmojiStyleEnumMap[instance.emojiStyle]!,
   'fontFamily': ?instance.fontFamily,
+  'serifFontFamily': ?instance.serifFontFamily,
   'locale': ?_$AppLocaleEnumMap[instance.locale],
-  'monospaceFontFamily': ?instance.monospaceFontFamily,
   'cursiveFontFamily': ?instance.cursiveFontFamily,
   'fantasyFontFamily': ?instance.fantasyFontFamily,
   'emojiFontFamily': ?instance.emojiFontFamily,
@@ -276,8 +282,8 @@ Map<String, dynamic> _$GeneralSettingsToJson(
   'showOnlineStatus': instance.showOnlineStatus,
   'showTimelineTabBarAtBottom': instance.showTimelineTabBarAtBottom,
   'showMenuButtonInTabBar': instance.showMenuButtonInTabBar,
+  'showTabHeaderInOneLine': instance.showTabHeaderInOneLine,
   'collapseRenotes': instance.collapseRenotes,
-  'alwaysShowTabHeader': instance.alwaysShowTabHeader,
   'showTimelineLastViewedAt': instance.showTimelineLastViewedAt,
   'showPopupOnNewNote': instance.showPopupOnNewNote,
   'timelinesPageButtonTypes': instance.timelinesPageButtonTypes
@@ -287,6 +293,8 @@ Map<String, dynamic> _$GeneralSettingsToJson(
   'showSquaredTimelinesPageButtons': instance.showSquaredTimelinesPageButtons,
   'showImageInNotification': instance.showImageInNotification,
   'showEmojiInReactionNotification': instance.showEmojiInReactionNotification,
+  'wenyanPushEnabled': instance.wenyanPushEnabled,
+  'wenyanPushDisabledTypes': instance.wenyanPushDisabledTypes,
   'enableInfiniteScroll': instance.enableInfiniteScroll,
   'keepScreenOn': instance.keepScreenOn,
   'openSensitiveMediaOnDoubleTap': instance.openSensitiveMediaOnDoubleTap,
@@ -315,7 +323,7 @@ Map<String, dynamic> _$GeneralSettingsToJson(
   'sound': instance.sound.toJson(),
   'searchUsersByUsername': instance.searchUsersByUsername,
   'sensitive': _$SensitiveMediaDisplayEnumMap[instance.sensitive]!,
-  'showTabHeaderInOneLine': instance.showTabHeaderInOneLine,
+  'alwaysShowTabHeader': instance.alwaysShowTabHeader,
 };
 
 const _$AppLocaleEnumMap = {

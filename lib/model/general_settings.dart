@@ -131,6 +131,10 @@ class const GeneralSettings({
   final bool showImageInNotification = true,
   final bool showEmojiInReactionNotification = false,
 
+  // Wenyan push notification
+  final bool wenyanPushEnabled = true,
+  final List<String> wenyanPushDisabledTypes = const [],
+
   // Behavior
   final bool enableInfiniteScroll = true,
   final bool keepScreenOn = false,

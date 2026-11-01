@@ -506,6 +506,24 @@ class GeneralSettingsNotifier extends _$GeneralSettingsNotifier {
     await _save();
   }
 
+  Future<void> setWenyanPushEnabled(bool wenyanPushEnabled) async {
+    state = state.copyWith(wenyanPushEnabled: wenyanPushEnabled);
+    await _save();
+  }
+
+  Future<void> setWenyanPushTypeEnabled(String type, bool enabled) async {
+    final disabledTypes = Set<String>.of(state.wenyanPushDisabledTypes);
+    if (enabled) {
+      disabledTypes.remove(type);
+    } else {
+      disabledTypes.add(type);
+    }
+    state = state.copyWith(
+      wenyanPushDisabledTypes: disabledTypes.toList()..sort(),
+    );
+    await _save();
+  }
+
   Future<void> setEnableInfiniteScroll(bool enableInfiniteScroll) async {
     state = state.copyWith(enableInfiniteScroll: enableInfiniteScroll);
     await _save();

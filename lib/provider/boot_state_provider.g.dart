@@ -32,7 +32,7 @@ final class BootStateProvider extends $AsyncNotifierProvider<BootState, bool?> {
   BootState create() => BootState();
 }
 
-String _$bootStateHash() => r'19d3fd126c79299a3de35ee77f99f1fd7943e5bf';
+String _$bootStateHash() => r'8975a2cbee5ec257098ab632b3779098414e0274';
 
 abstract class _$BootState extends $AsyncNotifier<bool?> {
   FutureOr<bool?> build();
