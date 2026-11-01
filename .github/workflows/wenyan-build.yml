@@ -25,7 +25,9 @@ jobs:
 
       # Isar 的原生构建钩子在 CI 中必须显式开启（上游 build.yml 同样处理）
       - name: 启用 isar 本地构建
-        run: sed -i 's/local_build: false/local_build: true/' pubspec.yaml
+        run: |
+          sed -i 's/local_build: false/local_build: true/' pubspec.yaml
+          grep -n 'local_build' pubspec.yaml
 
       - name: 安装 Flutter
         uses: subosito/flutter-action@v2.23.0
