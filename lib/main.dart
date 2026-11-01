@@ -43,6 +43,7 @@ import 'provider/theme_data_provider.dart';
 import 'provider/unified_push_endpoint_notifier_provider.dart';
 import 'provider/user_ids_notifier_provider.dart';
 import 'provider/web_push_key_set_notifier_provider.dart';
+import 'provider/wenyan_image_resolver_provider.dart';
 import 'provider/wenyan_local_notifications_provider.dart';
 import 'provider/wenyan_push_service.dart';
 import 'provider/window_position_repository_provider.dart';
@@ -242,8 +243,8 @@ class const Aria({super.key}) extends HookConsumerWidget {
       }
 
       // 启动闻言自建推送通道（前台服务 + main 频道长连接）。
-      final pushService = ref.read(wenyanPushServiceProvider.notifier);
-      pushService.imageResolver = (Uri url) async {
+      // 图像解析器依赖 Isar 缓存（autoDispose），所以在 UI 层注入进去。
+      ref.read(wenyanImageResolverProvider).resolve = (Uri url) async {
         try {
           return await ref
               .read(cacheManagerProvider)
@@ -253,6 +254,7 @@ class const Aria({super.key}) extends HookConsumerWidget {
           return null;
         }
       };
+      ref.read(wenyanPushServiceProvider);
     } else if (defaultTargetPlatform == TargetPlatform.iOS) {
       Future<void> onMessageOpenedApp(ApnsRemoteMessage message) async {
         dynamic stringifyKeys(dynamic value) {

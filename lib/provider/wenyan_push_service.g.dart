@@ -77,7 +77,7 @@ final class WenyanPushServiceProvider
   }
 }
 
-String _$wenyanPushServiceHash() => r'fb6a11367b56ebbc1374e1be511ca68492a7c8f0';
+String _$wenyanPushServiceHash() => r'3bb8a42500fff58caaeda777b9e14e9743c05bb9';
 
 /// 闻言自建推送通道。
 ///

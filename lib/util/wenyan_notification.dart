@@ -171,11 +171,19 @@ Future<void> showWenyanNotification({
       groupId: acct,
     ),
   };
-  await plugin
+  final androidPlugin = plugin
       .resolvePlatformSpecificImplementation<
         AndroidFlutterLocalNotificationsPlugin
-      >()
-      ?.createNotificationChannel(channel);
+      >();
+  // 渠道是按账号分组的（`groupId: acct`），Android 要求分组先存在，
+  // 否则 createNotificationChannel 会抛 IllegalArgumentException:
+  // NotificationChannelGroup doesn't exist，而调用点为了不让推送拖垮
+  // App 会把这个异常吞掉 —— 表现为「一条通知都不弹」。UnifiedPush 通路
+  // 之所以没事，是因为订阅时顺带建过分组；自建通道必须自己建。
+  await androidPlugin?.createNotificationChannelGroup(
+    AndroidNotificationChannelGroup(acct, acct),
+  );
+  await androidPlugin?.createNotificationChannel(channel);
 
   final title = switch (notification) {
     NotificationPushNotification(:final body) => switch (body.type) {

@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter_foreground_task/flutter_foreground_task.dart';
 import 'package:misskey_dart/misskey_dart.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
@@ -17,6 +18,7 @@ import 'general_settings_notifier_provider.dart';
 import 'server_url_notifier_provider.dart';
 import 'token_provider.dart';
 import 'tokens_notifier_provider.dart';
+import 'wenyan_image_resolver_provider.dart';
 import 'wenyan_local_notifications_provider.dart';
 
 part 'wenyan_push_service.g.dart';
@@ -43,8 +45,10 @@ class WenyanPushService extends _$WenyanPushService {
   /// 大图（头像 / 自定义表情）解析器。
   ///
   /// 图片缓存依赖 Isar，而 Isar 的 provider 是 autoDispose 的，不能在
-  /// keepAlive 的 provider 里直接读；由 UI 层在初始化时注入。
-  Future<File?> Function(Uri url)? imageResolver;
+  /// keepAlive 的 provider 里直接读；由 UI 层初始化时注入到
+  /// [wenyanImageResolverProvider] 的持有者里。
+  Future<File?> Function(Uri url)? get _imageResolver =>
+      ref.read(wenyanImageResolverProvider).resolve;
 
   @override
   void build() {
@@ -187,15 +191,17 @@ class WenyanPushService extends _$WenyanPushService {
         notification: notification,
         generalSettings: _settings,
         serverUrl: ref.read(serverUrlNotifierProvider(account.host)),
-        resolveImage: imageResolver ?? (url) async => null,
+        resolveImage: _imageResolver ?? (url) async => null,
       );
-    } catch (error) {
-      _ignore(error);
+    } catch (error, stackTrace) {
+      // 通知渲染失败绝不能影响 App 正常使用，但也不能静默吞掉：
+      // 曾经因为「渠道分组未创建」被吞掉整整一轮排查。
+      debugPrint('[wenyan-push] 渲染通知失败: $error\n$stackTrace');
     }
   }
 
-  void _ignore(Object? _) {
-    // 推送失败不应该影响 App 正常使用。
+  void _ignore(Object? error) {
+    debugPrint('[wenyan-push] $error');
   }
 }
 
@@ -249,6 +255,7 @@ class _WenyanPushConnection {
           'body': {'channel': 'main', 'id': 'main'},
         }),
       );
+      debugPrint('[wenyan-push] 已连接 $account');
       _subscription = webSocket.listen(
         _onMessage,
         onError: (Object _) => _scheduleReconnect(),
@@ -299,8 +306,10 @@ class _WenyanPushConnection {
     if (payload is! Map<String, dynamic>) return;
     switch (body['type']) {
       case 'notification':
+        debugPrint('[wenyan-push] 收到 notification');
         _dispatch(payload, isChatMessage: false);
       case 'newChatMessage':
+        debugPrint('[wenyan-push] 收到 newChatMessage');
         _dispatch(payload, isChatMessage: true);
     }
   }
@@ -315,14 +324,19 @@ class _WenyanPushConnection {
         'dateTime': DateTime.now().millisecondsSinceEpoch,
         'body': payload,
       });
-    } catch (_) {
+    } catch (error) {
+      debugPrint('[wenyan-push] 解析通知失败: $error');
       return;
     }
     final current = settings();
     if (!current.wenyanPushEnabled) return;
     final type = WenyanPushType.of(notification);
     if (type == null) return;
-    if (current.wenyanPushDisabledTypes.contains(type.key)) return;
+    if (current.wenyanPushDisabledTypes.contains(type.key)) {
+      debugPrint('[wenyan-push] 类型 ${type.key} 已被用户关闭');
+      return;
+    }
+    debugPrint('[wenyan-push] 展示通知 ${type.key}');
     unawaited(onNotification(account, notification));
   }
 }
