@@ -37,7 +37,7 @@ class const TokenLoginPage({super.key, final String? query})
     if (ref.read(timelineTabsNotifierProvider).isEmpty) {
       await ref
           .read(timelineTabsNotifierProvider.notifier)
-          .add(TabSettings.homeTimeline(result.account));
+          .add(TabSettings.localTimeline(result.account));
     }
     showToast(
       context: ref.context.mounted ? ref.context : null,

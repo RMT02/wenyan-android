@@ -1,18 +1,10 @@
-import 'package:material_ui/material_ui.dart';
-
 import '../i18n/strings.g.dart';
 
 extension AppLocaleUtilsExtension on AppLocaleUtils {
   AppLocale findDeviceLocale() {
-    final deviceLocale = WidgetsBinding.instance.platformDispatcher.locale;
-    if (deviceLocale.languageCode == 'zh' &&
-        deviceLocale.scriptCode == 'Hant') {
-      return AppLocale.zhTw;
-    }
-    return parseLocaleParts(
-      languageCode: deviceLocale.languageCode,
-      scriptCode: deviceLocale.scriptCode,
-      countryCode: deviceLocale.countryCode,
-    );
+    // 聞言版：首次启动一律使用简体中文界面，不跟随系统语言，
+    // 避免在英文系统上出现整屏英文。用户可在
+    // 设置 → 通用 → 语言 中自行切换为其它语言。
+    return AppLocale.zhCn;
   }
 }

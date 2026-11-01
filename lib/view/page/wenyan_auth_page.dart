@@ -85,7 +85,7 @@ class const WenyanAuthPage({super.key, final String? query})
         if (ref.read(timelineTabsNotifierProvider).isEmpty) {
           await ref
               .read(timelineTabsNotifierProvider.notifier)
-              .add(TabSettings.homeTimeline(result.account));
+              .add(TabSettings.localTimeline(result.account));
         }
         if (!context.mounted) return;
         showToast(
@@ -237,7 +237,7 @@ class const WenyanAuthPage({super.key, final String? query})
                                 decoration: const InputDecoration(
                                   labelText: '邮箱',
                                   prefixIcon: Icon(Icons.mail_outline),
-                                  helperText: '用于接收验证邮件与找回密码',
+                                  helperText: '选填，用于找回密码与接收通知',
                                 ),
                               ),
                               if (pendingEmail.value) ...[
