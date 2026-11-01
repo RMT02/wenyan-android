@@ -56,7 +56,7 @@ jobs:
       - name: 设置 NDK 路径
         run: echo "ANDROID_NDK_HOME=$ANDROID_HOME/ndk/28.2.13676358" >> "$GITHUB_ENV"
 
-      - name: 构建 arm64 与 armv7 APK
+      - name: 构建 arm64、armv7 与 x86_64 APK
         env:
           HOME: /tmp
           KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
@@ -67,7 +67,7 @@ jobs:
           VERSION=$(grep -m1 '^version:' pubspec.yaml | sed 's/^version: *//; s/+.*//')
           echo "版本 $VERSION"
           mkdir -p out
-          for abi in android-arm64 android-arm; do
+          for abi in android-arm64 android-arm android-x64; do
             flutter build apk --release --split-per-abi --target-platform "$abi"
             for f in build/app/outputs/flutter-apk/*.apk; do
               cp "$f" "out/wenyan-${VERSION}-$(basename "$f")"
