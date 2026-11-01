@@ -2,12 +2,12 @@ import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
-import 'package:go_router/go_router.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:material_ui/material_ui.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 
 import '../../constant/max_content_width.dart';
+import '../../constant/wenyan.dart';
 import '../../gen/assets.gen.dart';
 import '../../i18n/strings.g.dart';
 import '../../provider/misskey_colors_provider.dart';
@@ -102,11 +102,11 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
         ),
         'sevenc_nanashi': registerRecognizer(
           linkId: 'sevenc_nanashi',
-          onTap: () => context.push('/voskey.icalo.net/users/9d8sfcv0qj'),
+          onTap: () => launchUrl(ref, Uri.https('misskey.020209.xyz', '/@rmt')),
           onLongPress: () => showModalBottomSheet<void>(
             context: context,
             builder: (context) =>
-                const UrlSheet(url: 'https://voskey.icalo.net/@sevenc_nanashi'),
+                const UrlSheet(url: 'https://misskey.020209.xyz/@rmt'),
           ),
         ),
         'cc_by': registerRecognizer(
@@ -153,13 +153,13 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
                       padding: const EdgeInsets.all(8.0),
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(16.0),
-                        child: Assets.icons.aria.image(
+                        child: Assets.icons.wenyan.image(
                           width: 80.0,
                           height: 80.0,
                         ),
                       ),
                     ),
-                    const Text('Aria'),
+                    const Text(wenyanAppName),
                     if (version != null && buildNumber != null)
                       Text(
                         '$version+$buildNumber',
@@ -183,7 +183,7 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
                   children: [
                     t.aria.acknowledgements(
                       miria: TextSpan(
-                        text: 'Miria',
+                        text: 'Aria',
                         style: TextStyle(
                           color: colors.link,
                           backgroundColor: activeLinkId.value == 'miria'
@@ -239,7 +239,7 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
                     const TextSpan(text: '\n\n'),
                     t.aria.iconAttribution(
                       sevenc_nanashi: TextSpan(
-                        text: '@sevenc_nanashi@voskey.icalo.net',
+                        text: 'RMT',
                         style: TextStyle(
                           color: colors.mention,
                           backgroundColor:
@@ -306,11 +306,11 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
                 leading: const Icon(Icons.code),
                 title: Text(t.misskey.aboutMisskey_.source),
                 onTap: () =>
-                    launchUrl(ref, Uri.https('github.com', 'poppingmoon/aria')),
+                    launchUrl(ref, Uri.https('github.com', 'RMT02/aria')),
                 onLongPress: () => showModalBottomSheet<void>(
                   context: context,
                   builder: (context) => const UrlSheet(
-                    url: 'https://github.com/poppingmoon/aria',
+                    url: 'https://github.com/RMT02/aria',
                   ),
                 ),
               ),
@@ -323,11 +323,11 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
               child: ListTile(
                 leading: const Icon(Icons.alternate_email),
                 title: Text(t.misskey.contact),
-                onTap: () => context.push('/misskey.io/users/9qaqpdbgn1nk03sc'),
+                onTap: () => launchUrl(ref, Uri.https('misskey.020209.xyz', '/@rmt')),
                 onLongPress: () => showModalBottomSheet<void>(
                   context: context,
                   builder: (context) =>
-                      const UrlSheet(url: 'https://misskey.io/@aria_app'),
+                      const UrlSheet(url: 'https://misskey.020209.xyz/@rmt'),
                 ),
               ),
             ),
@@ -347,7 +347,7 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
                     applicationVersion: version,
                     applicationIcon: ClipRRect(
                       borderRadius: BorderRadius.circular(16.0),
-                      child: Assets.icons.aria.image(width: 80.0, height: 80.0),
+                      child: Assets.icons.wenyan.image(width: 80.0, height: 80.0),
                     ),
                     applicationLegalese: 'Licensed under AGPL v3',
                   );
@@ -406,7 +406,7 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
                                 subtitle: Text(deviceInfo),
                               ),
                               ListTile(
-                                title: const Text('Aria'),
+                                title: const Text(wenyanAppName),
                                 subtitle: Text(packageInfo),
                               ),
                             ],
@@ -416,7 +416,7 @@ class const AboutAriaPage({super.key}) extends HookConsumerWidget {
                           ElevatedButton(
                             onPressed: () => copyToClipboard(
                               context,
-                              'Device: $deviceInfo\nAria: $packageInfo',
+                              'Device: $deviceInfo\n$wenyanAppName: $packageInfo',
                             ),
                             child: Text(t.misskey.copy),
                           ),

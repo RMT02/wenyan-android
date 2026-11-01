@@ -49,8 +49,8 @@ class Translations$aria$en_US {
 
 	// Translations
 
-	/// en-US: 'About Aria'
-	String get aboutAria => 'About Aria';
+	/// en-US: 'About Wenyan'
+	String get aboutAria => 'About Wenyan';
 
 	/// en-US: 'Are you sure that you want to accept the follow request from {name}?'
 	TextSpan acceptFollowRequestConfirm({required InlineSpan name}) => TextSpan(children: [
@@ -65,13 +65,13 @@ class Translations$aria$en_US {
 	/// en-US: 'Successfully added an account'
 	String get accountAdded => 'Successfully added an account';
 
-	/// en-US: 'Aria is a fork of {miria}. Localization of Aria is based on localization files of {misskey}. We would like to show our appreciation to all contributers of these projects.'
+	/// en-US: 'Wenyan is a Misskey client built on {miria} for a single instance. Interface texts are based on {misskey}. We would like to show our appreciation to all contributors of these projects.'
 	TextSpan acknowledgements({required InlineSpan miria, required InlineSpan misskey}) => TextSpan(children: [
-		const TextSpan(text: 'Aria is a fork of '),
+		const TextSpan(text: 'Wenyan is a Misskey client built on '),
 		miria,
-		const TextSpan(text: '.\nLocalization of Aria is based on localization files of '),
+		const TextSpan(text: ' for a single instance.\nInterface texts are based on '),
 		misskey,
-		const TextSpan(text: '.\nWe would like to show our appreciation to all contributers of these projects.'),
+		const TextSpan(text: '.\nWe would like to show our appreciation to all contributors of these projects.'),
 	]);
 
 	/// en-US: 'Add tab'
@@ -256,16 +256,16 @@ class Translations$aria$en_US {
 	/// en-US: 'Guest'
 	String get guest => 'Guest';
 
-	/// en-US: 'Aria is being translated into various languages by volunteers. You can help at {link}.'
+	/// en-US: 'Interface texts of Wenyan come from open-source projects such as {link}. The Simplified Chinese localization is maintained by RMT.'
 	TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria is being translated into various languages by volunteers. You can help at '),
+		const TextSpan(text: 'Interface texts of Wenyan come from open-source projects such as '),
 		link,
-		const TextSpan(text: '.'),
+		const TextSpan(text: '. The Simplified Chinese localization is maintained by RMT.'),
 	]);
 
-	/// en-US: 'The icon of Aria was created by {sevenc_nanashi} and is licensed under {cc_by}.'
+	/// en-US: 'The icon of Wenyan was created by {sevenc_nanashi} and is licensed under {cc_by}.'
 	TextSpan iconAttribution({required InlineSpan sevenc_nanashi, required InlineSpan cc_by}) => TextSpan(children: [
-		const TextSpan(text: 'The icon of Aria was created by '),
+		const TextSpan(text: 'The icon of Wenyan was created by '),
 		sevenc_nanashi,
 		const TextSpan(text: ' and is licensed under '),
 		cc_by,

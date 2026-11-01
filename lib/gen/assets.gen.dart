@@ -72,8 +72,11 @@ class $AssetsIconsGen {
   /// File path: assets/icons/aria.png
   AssetGenImage get aria => const AssetGenImage('assets/icons/aria.png');
 
+  /// File path: assets/icons/wenyan.png
+  AssetGenImage get wenyan => const AssetGenImage('assets/icons/wenyan.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [aria];
+  List<AssetGenImage> get values => [aria, wenyan];
 }
 
 class $AssetsMisskeyGen {

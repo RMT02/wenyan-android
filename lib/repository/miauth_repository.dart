@@ -2,6 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:misskey_dart/misskey_dart.dart';
 import 'package:uuid/uuid.dart';
+import '../../constant/wenyan.dart';
 
 const _permissions = [
   Permission.readAccount,
@@ -51,7 +52,7 @@ class const MiAuthRepository(final Dio dio) {
     final url = serverUrl.replace(
       pathSegments: ['miauth', sessionId],
       queryParameters: {
-        'name': 'Aria',
+        'name': wenyanAppName,
         'permission': _permissions.map((e) => e.value).join(','),
         if (defaultTargetPlatform == TargetPlatform.android)
           'callback': 'wenyan://wenyan/miauth',

@@ -45,7 +45,7 @@ class Translations$aria$zh_CN extends Translations$aria$en_US {
 	final TranslationsZhCn _root; // ignore: unused_field
 
 	// Translations
-	@override String get aboutAria => '关于 Aria';
+	@override String get aboutAria => '关于闻言';
 	@override TextSpan acceptFollowRequestConfirm({required InlineSpan name}) => TextSpan(children: [
 		const TextSpan(text: '确认同意 '),
 		name,
@@ -54,11 +54,11 @@ class Translations$aria$zh_CN extends Translations$aria$en_US {
 	@override String get accessTokenUpdated => '成功更新访问令牌';
 	@override String get accountAdded => '成功添加账户';
 	@override TextSpan acknowledgements({required InlineSpan miria, required InlineSpan misskey}) => TextSpan(children: [
-		const TextSpan(text: 'Aria 是 '),
+		const TextSpan(text: '闻言 是一个基于 '),
 		miria,
-		const TextSpan(text: ' 的一个派生项目。\nAria 的本地化基于 '),
+		const TextSpan(text: ' 打造、面向单一实例的 Misskey 客户端。\n界面文案参考自 '),
 		misskey,
-		const TextSpan(text: ' 的本地化文件。\n我们想要对这些项目的所有贡献者表示感谢。'),
+		const TextSpan(text: '。\n感谢这些项目的所有贡献者。'),
 	]);
 	@override String get addTab => '添加标签页';
 	@override String get alwaysExpandCw => '总是展开内容警告';
@@ -131,14 +131,14 @@ class Translations$aria$zh_CN extends Translations$aria$en_US {
 	@override String get fromDevice => '从设备';
 	@override String get guest => '游客';
 	@override TextSpan i18nInfo({required InlineSpan link}) => TextSpan(children: [
-		const TextSpan(text: 'Aria 已经被志愿者们翻译成了各种语言。如果你也有兴趣，可以通过 '),
+		const TextSpan(text: '闻言 的界面文本来自 '),
 		link,
-		const TextSpan(text: ' 帮助翻译。'),
+		const TextSpan(text: ' 等开源项目，简体中文由 RMT 汉化。'),
 	]);
 	@override TextSpan iconAttribution({required InlineSpan sevenc_nanashi, required InlineSpan cc_by}) => TextSpan(children: [
-		const TextSpan(text: 'Aria 应用图标由 '),
+		const TextSpan(text: '闻言 的应用图标由 '),
 		sevenc_nanashi,
-		const TextSpan(text: ' 创作，采用 '),
+		const TextSpan(text: ' 制作，遵循 '),
 		cc_by,
 		const TextSpan(text: ' 许可协议。'),
 	]);
@@ -241,7 +241,7 @@ class Translations$aria$zh_CN extends Translations$aria$en_US {
 	@override String get sendMessageConfirm => '确定要发送这条消息吗？';
 	@override String get server => '服务器';
 	@override String get serverUrl => '服务器地址';
-	@override String get settingsFileForAria => 'Aria 的配置文件';
+	@override String get settingsFileForAria => '闻言 的配置文件';
 	@override TextSpan settingsForUser({required InlineSpan user}) => TextSpan(children: [
 		user,
 		const TextSpan(text: ' 的设置'),

@@ -5,14 +5,9 @@ import 'package:material_ui/material_ui.dart';
 import '../../../constant/max_content_width.dart';
 import '../../../extension/app_locale_utils_extension.dart';
 import '../../../i18n/strings.g.dart';
-import '../../../model/account.dart';
 import '../../../provider/general_settings_notifier_provider.dart';
 import '../../../provider/misskey_colors_provider.dart';
-import '../../../util/launch_url.dart';
 import '../../widget/general_settings_scaffold.dart';
-import '../../widget/link_widget.dart';
-import '../../widget/mfm.dart';
-import '../../widget/url_sheet.dart';
 
 class const LanguagesPage({super.key}) extends ConsumerWidget {
   @override
@@ -42,48 +37,11 @@ class const LanguagesPage({super.key}) extends ConsumerWidget {
                   child: Card(
                     margin: EdgeInsets.zero,
                     child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: ListTileTheme(
-                        child: Mfm(
-                          account: const Account.dummy(),
-                          text: t.misskey.i18nInfo(
-                            link: '[Crowdin](https://crowdin.com/project/misskey)',
-                          ),
-                          style: TextStyle(
-                            color: theme.colorScheme.onSecondaryContainer,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 8.0),
-              Center(
-                child: Container(
-                  margin: const EdgeInsets.symmetric(horizontal: 8.0),
-                  width: maxContentWidth,
-                  child: Card(
-                    margin: EdgeInsets.zero,
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: LinkWidget(
-                        text: 'Crowdin',
-                        builder: (context, span) => Text.rich(
-                          t.aria.i18nInfo(link: span),
-                          style: TextStyle(
-                            color: theme.colorScheme.onSecondaryContainer,
-                          ),
-                        ),
-                        onTap: () => launchUrl(
-                          ref,
-                          Uri.https('crowdin.com', 'project/aria-for-misskey'),
-                        ),
-                        onLongPress: () => showModalBottomSheet<void>(
-                          context: context,
-                          builder: (context) => const UrlSheet(
-                            url: 'https://crowdin.com/project/aria-for-misskey',
-                          ),
+                      padding: const EdgeInsets.all(16.0),
+                      child: Text(
+                        '闻言 的界面文本来自 Misskey 与 Aria 等开源项目，简体中文由 RMT 汉化维护。',
+                        style: TextStyle(
+                          color: theme.colorScheme.onSecondaryContainer,
                         ),
                       ),
                     ),

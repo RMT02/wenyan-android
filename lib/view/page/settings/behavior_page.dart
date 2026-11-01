@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter_hooks/flutter_hooks.dart';
@@ -10,6 +9,7 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:wakelock_plus/wakelock_plus.dart';
 
 import '../../../constant/max_content_width.dart';
+import '../../../constant/wenyan.dart';
 import '../../../i18n/strings.g.dart';
 import '../../../model/database/riverpod_storage_item.dart';
 import '../../../model/general_settings.dart';
@@ -346,7 +346,7 @@ class const BehaviorPage({super.key}) extends HookConsumerWidget {
                       context,
                       title: Text(t.aria.mediaSaveLocation),
                       initialText: settings.mediaSaveLocation,
-                      decoration: const InputDecoration(hintText: 'Aria'),
+                      decoration: const InputDecoration(hintText: wenyanAppName),
                     );
                     if (result != null) {
                       await ref

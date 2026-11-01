@@ -7,6 +7,7 @@ import 'package:misskey_dart/misskey_dart.dart' hide Clip;
 
 import '../../constant/categorized_unicode_emojis.g.dart';
 import '../../constant/shortcuts.dart';
+import '../../constant/unicode_emoji_category_labels.dart';
 import '../../extension/emoji_extension.dart';
 import '../../extension/text_style_extension.dart';
 import '../../i18n/strings.g.dart';
@@ -491,7 +492,7 @@ class const EmojiPicker({
           final category = e.key;
           final emojis = e.value;
           return ExpansionTile(
-            title: Text(category),
+            title: Text(localizeUnicodeEmojiCategory(category)),
             children: [
               Padding(
                 padding: const EdgeInsets.all(8.0),
