@@ -262,12 +262,12 @@ class const Aria({super.key}) extends HookConsumerWidget {
       // 系统权限弹窗与提示对话框都需要可用的 Navigator，所以等首帧渲染完成后再执行。
       WidgetsBinding.instance.addPostFrameCallback((_) {
         unawaited(() async {
-          final granted = await ref
+          final result = await ref
               .read(wenyanNotificationPermissionProvider.notifier)
               .requestIfFirstRun();
-          if (granted) return;
+          if (result.granted || !result.firstRun) return;
           if (!ref.context.mounted) return;
-          await showWenyanPushPermissionDialog(ref.context, ref);
+          await showWenyanPushPermissionDialog(ref: ref);
         }());
       });
     } else if (defaultTargetPlatform == TargetPlatform.iOS) {

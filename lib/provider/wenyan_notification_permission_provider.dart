@@ -40,10 +40,17 @@ class WenyanNotificationPermission extends _$WenyanNotificationPermission {
   }
 
   /// 首次运行时申请通知权限；已经申请过则只刷新当前状态。
-  Future<bool> requestIfFirstRun() {
+  ///
+  /// 返回值里的 `firstRun` 用来区分「这次真的弹了系统权限框」和「只是刷新」：
+  /// 提示「通知权限未获取」只在首次申请失败时弹一次，之后靠设置页顶部的
+  /// 提示条提醒，避免每次冷启动都打断用户。
+  Future<({bool granted, bool firstRun})> requestIfFirstRun() async {
     final prefs = ref.read(sharedPreferencesProvider);
-    if (prefs.getBool(askedKey) ?? false) return refresh();
-    return prefs.setBool(askedKey, true).then((_) => request());
+    if (prefs.getBool(askedKey) ?? false) {
+      return (granted: await refresh(), firstRun: false);
+    }
+    await prefs.setBool(askedKey, true);
+    return (granted: await request(), firstRun: true);
   }
 
   /// 向系统申请通知权限，返回最终是否可用。

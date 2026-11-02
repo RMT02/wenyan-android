@@ -41,7 +41,7 @@ class const WenyanPushSettingsSection({
         .read(generalSettingsNotifierProvider.notifier)
         .setWenyanPushEnabled(true);
     if (!granted && ref.context.mounted) {
-      await showWenyanPushPermissionDialog(ref.context, ref);
+      await showWenyanPushPermissionDialog(ref: ref, context: ref.context);
     }
   }
 

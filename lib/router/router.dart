@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:go_router/go_router.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
+import '../constant/wenyan_root_navigator_key.dart';
 import '../i18n/strings.g.dart';
 import '../model/account.dart';
 import '../model/tab_settings.dart';
@@ -109,6 +110,7 @@ GoRouter router(Ref ref) {
 
   return GoRouter(
     debugLogDiagnostics: true,
+    navigatorKey: wenyanRootNavigatorKey,
     routes: [
       GoRoute(
         path: '/',
