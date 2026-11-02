@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:ui' as ui;
 
 import 'package:app_settings/app_settings.dart';
 import 'package:flutter/foundation.dart';
@@ -13,23 +12,20 @@ import 'package:webpush_encryption/webpush_encryption.dart';
 
 import '../../../constant/max_content_width.dart';
 import '../../../constant/web_push_proxy_url.dart';
-import '../../../constant/wenyan_push_types.dart';
 import '../../../i18n/strings.g.dart';
 import '../../../model/account.dart';
-import '../../../model/general_settings.dart';
 import '../../../provider/api/i_notifier_provider.dart';
 import '../../../provider/api/meta_notifier_provider.dart';
 import '../../../provider/apns_push_connector_provider.dart';
 import '../../../provider/apns_token_provider.dart';
-import '../../../provider/general_settings_notifier_provider.dart';
 import '../../../provider/push_subscription_notifier_provider.dart';
 import '../../../provider/unified_push_endpoint_notifier_provider.dart';
 import '../../../provider/user_ids_notifier_provider.dart';
-import '../../../provider/wenyan_local_notifications_provider.dart';
 import '../../../util/future_with_dialog.dart';
 import '../../dialog/message_dialog.dart';
 import '../../dialog/sw_register_dialog.dart';
 import '../../widget/account_settings_scaffold.dart';
+import '../../widget/wenyan_push_settings_section.dart';
 
 class const NotificationsSettingsPage({
   super.key,
@@ -174,35 +170,11 @@ class const NotificationsSettingsPage({
     );
   }
 
-  /// 打开闻言自建推送：先申请通知权限，再让推送服务重新同步。
-  Future<void> _enableWenyanPush(WidgetRef ref) async {
-    if (defaultTargetPlatform == TargetPlatform.android) {
-      final result = await futureWithDialog(
-        ref.context,
-        ref
-            .read(wenyanLocalNotificationsPluginProvider)
-            .resolvePlatformSpecificImplementation<
-              AndroidFlutterLocalNotificationsPlugin
-            >()
-            ?.requestNotificationsPermission(),
-      );
-      if (!ref.context.mounted) return;
-      if (!(result ?? false)) {
-        await showMessageDialog(ref.context, t.misskey.permissionDeniedError);
-        return;
-      }
-    }
-    await ref
-        .read(generalSettingsNotifierProvider.notifier)
-        .setWenyanPushEnabled(true);
-  }
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final i = ref.watch(iNotifierProvider(account)).value;
     final endpoint = ref.watch(pushSubscriptionNotifierProvider(account));
     final meta = ref.watch(metaNotifierProvider(account.host)).value;
-    final generalSettings = ref.watch(generalSettingsNotifierProvider);
     final isPushNotificationSupported = switch (defaultTargetPlatform) {
       TargetPlatform.android || TargetPlatform.iOS => meta?.swPublickey != null,
       _ => false,
@@ -278,119 +250,13 @@ class const NotificationsSettingsPage({
                 ),
               ),
             ),
-          ..._buildWenyanPushSection(context, ref, generalSettings, theme),
+          const WenyanPushSettingsSection(),
         ],
       ),
       selectedDestination: AccountSettingsDestination.notifications,
     );
   }
 
-  /// 闻言自建推送通道：总开关 + 逐类型开关。
-  List<Widget> _buildWenyanPushSection(
-    BuildContext context,
-    WidgetRef ref,
-    GeneralSettings settings,
-    ThemeData theme,
-  ) {
-    final enabled = settings.wenyanPushEnabled;
-    const types = WenyanPushType.values;
-    return [
-      const SizedBox(height: 24.0),
-      Center(
-        child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 8.0),
-          width: maxContentWidth,
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: Text(
-            t.aria.wenyanPush,
-            style: const TextStyle(fontWeight: FontWeight.bold),
-          ),
-        ),
-      ),
-      Center(
-        child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
-          width: maxContentWidth,
-          padding: const EdgeInsets.symmetric(horizontal: 16.0),
-          child: Text(
-            t.aria.wenyanPushDescription,
-            style: TextStyle(color: theme.colorScheme.onSurfaceVariant),
-          ),
-        ),
-      ),
-      const SizedBox(height: 8.0),
-      Center(
-        child: Container(
-          margin: const EdgeInsets.symmetric(horizontal: 8.0),
-          width: maxContentWidth,
-          child: Material(
-            color: theme.colorScheme.surface,
-            borderRadius: BorderRadius.vertical(
-              top: const Radius.circular(8.0),
-              bottom: Radius.circular(enabled ? 0.0 : 8.0),
-            ),
-            clipBehavior: ui.Clip.hardEdge,
-            child: SwitchListTile(
-              title: Text(t.aria.wenyanPushEnabled),
-              value: enabled,
-              onChanged: (value) => value
-                  ? _enableWenyanPush(ref)
-                  : ref
-                        .read(generalSettingsNotifierProvider.notifier)
-                        .setWenyanPushEnabled(false),
-            ),
-          ),
-        ),
-      ),
-      if (enabled)
-        Center(
-          child: Container(
-            margin: const EdgeInsets.symmetric(horizontal: 8.0),
-            width: maxContentWidth,
-            padding: const EdgeInsets.fromLTRB(16.0, 8.0, 16.0, 4.0),
-            child: Text(
-              t.aria.wenyanPushTypes,
-              style: const TextStyle(fontWeight: FontWeight.bold),
-            ),
-          ),
-        ),
-      if (enabled)
-        Center(
-          child: Container(
-            margin: const EdgeInsets.symmetric(horizontal: 8.0),
-            width: maxContentWidth,
-            child: Material(
-              color: theme.colorScheme.surface,
-              borderRadius: const BorderRadius.vertical(
-                bottom: Radius.circular(8.0),
-              ),
-              clipBehavior: ui.Clip.hardEdge,
-              child: Column(
-                children: [
-                  for (final (index, type) in types.indexed)
-                    SwitchListTile(
-                      title: Text(type.label),
-                      value: !settings.wenyanPushDisabledTypes.contains(
-                        type.key,
-                      ),
-                      onChanged: (value) => ref
-                          .read(generalSettingsNotifierProvider.notifier)
-                          .setWenyanPushTypeEnabled(type.key, value),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.vertical(
-                          bottom: Radius.circular(
-                            index == types.length - 1 ? 8.0 : 0.0,
-                          ),
-                        ),
-                      ),
-                    ),
-                ],
-              ),
-            ),
-          ),
-        ),
-    ];
-  }
 }
 
 class const _UnifiedPushFunctions({final String? vapid})

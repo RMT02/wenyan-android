@@ -308,8 +308,11 @@ class Translations$aria$zh_CN extends Translations$aria$en_US {
 	@override String get wenyanPush => '闻言推送';
 	@override String get wenyanPushDescription => '通过闻言自建通道在后台接收通知：只要应用进程存活（或正以前台服务运行），即可实时收到消息提醒。若系统清理了进程，重新打开应用即恢复。';
 	@override String get wenyanPushEnabled => '启用推送通知';
-	@override String get wenyanPushTypes => '推送以下通知';
+	@override String get wenyanPushPermissionDenied => '通知权限未获取，通知不可用';
+	@override String get wenyanPushPermissionDeniedDescription => '请在系统通知设置中允许闻言发送通知，然后回到本页重新检查。';
+	@override String get wenyanPushRecheckPermission => '重新检查';
 	@override String get wenyanPushServiceRunning => '正在接收通知';
+	@override String get wenyanPushTypes => '推送以下通知';
 }
 
 // Path: misskey

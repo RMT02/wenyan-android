@@ -82,6 +82,7 @@ import '../view/page/settings/tabs_page.dart';
 import '../view/page/settings/theme_manage_page.dart';
 import '../view/page/settings/theme_page.dart';
 import '../view/page/settings/timeline_buttons_page.dart';
+import '../view/page/settings/wenyan_notifications_page.dart';
 import '../view/page/share_page.dart';
 import '../view/page/splash_page.dart';
 import '../view/page/tag/tag_page.dart';
@@ -163,6 +164,10 @@ GoRouter router(Ref ref) {
         path: '/settings',
         builder: (_, _) => const SettingsPage(),
         routes: [
+          GoRoute(
+            path: 'notifications',
+            builder: (_, _) => const WenyanNotificationsPage(),
+          ),
           GoRoute(
             path: 'accounts',
             builder: (_, _) => const AccountsPage(),

@@ -45,6 +45,7 @@ import 'provider/user_ids_notifier_provider.dart';
 import 'provider/web_push_key_set_notifier_provider.dart';
 import 'provider/wenyan_image_resolver_provider.dart';
 import 'provider/wenyan_local_notifications_provider.dart';
+import 'provider/wenyan_notification_permission_provider.dart';
 import 'provider/wenyan_push_service.dart';
 import 'provider/window_position_repository_provider.dart';
 import 'provider/window_size_repository_provider.dart';
@@ -54,6 +55,7 @@ import 'router/router.dart';
 import 'util/get_retry_delay.dart';
 import 'util/wenyan_notification.dart';
 import 'view/dialog/error_message_dialog.dart';
+import 'view/dialog/wenyan_push_permission_dialog.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -255,6 +257,19 @@ class const Aria({super.key}) extends HookConsumerWidget {
         }
       };
       ref.read(wenyanPushServiceProvider);
+
+      // 首次运行时申请通知权限；被拒绝或申请未成功时提示「通知权限未获取，通知不可用」。
+      // 系统权限弹窗与提示对话框都需要可用的 Navigator，所以等首帧渲染完成后再执行。
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        unawaited(() async {
+          final granted = await ref
+              .read(wenyanNotificationPermissionProvider.notifier)
+              .requestIfFirstRun();
+          if (granted) return;
+          if (!ref.context.mounted) return;
+          await showWenyanPushPermissionDialog(ref.context, ref);
+        }());
+      });
     } else if (defaultTargetPlatform == TargetPlatform.iOS) {
       Future<void> onMessageOpenedApp(ApnsRemoteMessage message) async {
         dynamic stringifyKeys(dynamic value) {

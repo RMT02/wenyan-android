@@ -5,6 +5,7 @@ import 'package:material_ui/material_ui.dart';
 import '../../i18n/strings.g.dart';
 
 enum GeneralSettingsDestination {
+  notifications,
   tabs,
   accounts,
   language,
@@ -27,6 +28,9 @@ class const GeneralSettingsNavigation({
 }) extends StatelessWidget {
   Widget _buildIcon(GeneralSettingsDestination destination) {
     return switch (destination) {
+      GeneralSettingsDestination.notifications => const Icon(
+        Icons.notifications,
+      ),
       GeneralSettingsDestination.tabs => const Icon(Icons.bookmark),
       GeneralSettingsDestination.accounts => const Icon(Icons.person),
       GeneralSettingsDestination.language => const Icon(Icons.translate),
@@ -43,6 +47,7 @@ class const GeneralSettingsNavigation({
 
   String _buildLabel(GeneralSettingsDestination destination) {
     return switch (destination) {
+      GeneralSettingsDestination.notifications => t.misskey.notifications,
       GeneralSettingsDestination.tabs => t.aria.tabs,
       GeneralSettingsDestination.accounts => t.misskey.accounts,
       GeneralSettingsDestination.language => t.misskey.uiLanguage,
@@ -59,6 +64,7 @@ class const GeneralSettingsNavigation({
 
   void _onTap(BuildContext context, GeneralSettingsDestination destination) {
     final location = switch (destination) {
+      GeneralSettingsDestination.notifications => '/settings/notifications',
       GeneralSettingsDestination.tabs => '/settings/tab',
       GeneralSettingsDestination.accounts => '/settings/accounts',
       GeneralSettingsDestination.language => '/settings/language',

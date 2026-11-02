@@ -706,11 +706,20 @@ class Translations$aria$en_US {
 	/// en-US: 'Enable push notifications'
 	String get wenyanPushEnabled => 'Enable push notifications';
 
-	/// en-US: 'Push the following notifications'
-	String get wenyanPushTypes => 'Push the following notifications';
+	/// en-US: 'Notification permission is not granted. Notifications are unavailable.'
+	String get wenyanPushPermissionDenied => 'Notification permission is not granted. Notifications are unavailable.';
+
+	/// en-US: 'Allow Wenyan to send notifications in the system settings, then come back and check again.'
+	String get wenyanPushPermissionDeniedDescription => 'Allow Wenyan to send notifications in the system settings, then come back and check again.';
+
+	/// en-US: 'Check again'
+	String get wenyanPushRecheckPermission => 'Check again';
 
 	/// en-US: 'Receiving notifications'
 	String get wenyanPushServiceRunning => 'Receiving notifications';
+
+	/// en-US: 'Push the following notifications'
+	String get wenyanPushTypes => 'Push the following notifications';
 }
 
 // Path: misskey
